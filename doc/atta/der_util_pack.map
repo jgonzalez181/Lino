@@ -1,0 +1,12 @@
+<map id="G" name="G">
+<area shape="rect" id="node1" href="com.cclip.model.geo.cadastre.aacc.AaccUnidad.html" title="com.cclip.model.geo.cadastre.aacc.AaccUnidad" alt="" coords="2575,217,2835,9655"/>
+<area shape="rect" id="node2" href="com.cclip.model.geo.cadastre.aacc.AaccInmueble.html" title="com.cclip.model.geo.cadastre.aacc.AaccInmueble" alt="" coords="2298,217,2558,9655"/>
+<area shape="rect" id="node3" href="com.cclip.model.geo.cadastre.aacc.AaccSubcuenta.html" title="com.cclip.model.geo.cadastre.aacc.AaccSubcuenta" alt="" coords="2021,217,2281,9655"/>
+<area shape="rect" id="node4" href="com.cclip.model.geo.cadastre.aacc.AaccSuperficie.html" title="com.cclip.model.geo.cadastre.aacc.AaccSuperficie" alt="" coords="1743,217,2003,9655"/>
+<area shape="rect" id="node5" href="com.cclip.model.geo.cadastre.aacc.AaccDatosPostales.html" title="com.cclip.model.geo.cadastre.aacc.AaccDatosPostales" alt="" coords="1466,217,1726,9655"/>
+<area shape="rect" id="node6" href="com.cclip.model.geo.cadastre.aacc.AaccUnidadNov.html" title="com.cclip.model.geo.cadastre.aacc.AaccUnidadNov" alt="" coords="1189,217,1449,9655"/>
+<area shape="rect" id="node7" href="com.cclip.model.geo.cadastre.aacc.AaccInmuebleNov.html" title="com.cclip.model.geo.cadastre.aacc.AaccInmuebleNov" alt="" coords="911,217,1171,9655"/>
+<area shape="rect" id="node8" href="com.cclip.model.geo.cadastre.aacc.AaccSubcuentaNov.html" title="com.cclip.model.geo.cadastre.aacc.AaccSubcuentaNov" alt="" coords="634,217,894,9655"/>
+<area shape="rect" id="node9" href="com.cclip.model.geo.cadastre.aacc.AaccSuperficieNov.html" title="com.cclip.model.geo.cadastre.aacc.AaccSuperficieNov" alt="" coords="357,217,617,9655"/>
+<area shape="rect" id="node10" href="com.cclip.model.geo.cadastre.aacc.AaccDatosPostalesNov.html" title="com.cclip.model.geo.cadastre.aacc.AaccDatosPostalesNov" alt="" coords="79,217,339,9655"/>
+</map>

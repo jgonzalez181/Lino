@@ -1,0 +1,1227 @@
+digraph G {
+
+	graph [
+		label="Modelo de Datos Simplificado de Cclip Censo y Barrido (Basado en UML Class Diagram)"
+		bgcolor="#FFFFFF"
+		labeljust="l"
+		nodesep="0.18"
+		ranksep="0.46"
+		fontname="Helvetica"
+		fontsize="8"
+		rankdir="RL"
+	];
+	node [
+		fontname="Helvetica"
+		fontsize="9"
+		shape="plaintext"
+		
+	];
+	edge [
+		arrowsize="0.8"
+	];
+
+				//com.cclip.model.ConfSystem
+				ConfSystem [
+					label=<
+						<TABLE BORDER="0" CELLBORDER="0" CELLSPACING="0" BGCOLOR="#ffffff">
+				<TR><TD COLSPAN="3" BGCOLOR="#FFF176" ALIGN="CENTER"><B>com.cclip.model.ConfSystem</B></TD></TR>
+
+				<TR><TD PORT="id" COLSPAN="3" BGCOLOR="#FFF59D" ALIGN="LEFT">  id:String  </TD></TR>
+				<TR><TD PORT="erased" COLSPAN="3" BGCOLOR="#FFF59D" ALIGN="LEFT">  erased:Boolean  </TD></TR>
+				<TR><TD PORT="urlFiles" COLSPAN="3" BGCOLOR="#FFF59D" ALIGN="LEFT">  urlFiles:String  </TD></TR>
+				<TR><TD PORT="urlInFilesImportDbIce" COLSPAN="3" BGCOLOR="#FFF59D" ALIGN="LEFT">  urlInFilesImportDbIce:String  </TD></TR>
+						</TABLE>>
+						URL="com.cclip.model.ConfSystem.html"
+						tooltip="com.cclip.model.ConfSystem"
+				];
+
+					//com.cclip.model.geo.CityArea
+					CityArea [
+						label=<
+							<TABLE BORDER="0" CELLBORDER="0" CELLSPACING="0" BGCOLOR="#ffffff">
+				<TR><TD COLSPAN="3" BGCOLOR="#FFF176" ALIGN="CENTER"><B>com.cclip.model.geo.CityArea</B></TD></TR>
+
+				<TR><TD PORT="id" COLSPAN="3" BGCOLOR="#FFF59D" ALIGN="LEFT">  id:String  </TD></TR>
+				<TR><TD PORT="erased" COLSPAN="3" BGCOLOR="#FFF59D" ALIGN="LEFT">  erased:Boolean  </TD></TR>
+				<TR><TD PORT="code" COLSPAN="3" BGCOLOR="#FFF59D" ALIGN="LEFT">  code:String  </TD></TR>
+				<TR><TD PORT="name" COLSPAN="3" BGCOLOR="#FFF59D" ALIGN="LEFT">  name:String  </TD></TR>
+				<TR><TD PORT="comment" COLSPAN="3" BGCOLOR="#FFF59D" ALIGN="LEFT">  comment:String  </TD></TR>
+							</TABLE>>
+							URL="com.cclip.model.geo.CityArea.html"
+							tooltip="com.cclip.model.geo.CityArea"
+					];
+
+					//com.cclip.model.geo.Neighbourhood
+					Neighbourhood [
+						label=<
+							<TABLE BORDER="0" CELLBORDER="0" CELLSPACING="0" BGCOLOR="#ffffff">
+				<TR><TD COLSPAN="3" BGCOLOR="#FFF176" ALIGN="CENTER"><B>com.cclip.model.geo.Neighbourhood</B></TD></TR>
+
+				<TR><TD PORT="id" COLSPAN="3" BGCOLOR="#FFF59D" ALIGN="LEFT">  id:String  </TD></TR>
+				<TR><TD PORT="erased" COLSPAN="3" BGCOLOR="#FFF59D" ALIGN="LEFT">  erased:Boolean  </TD></TR>
+				<TR><TD PORT="code" COLSPAN="3" BGCOLOR="#FFF59D" ALIGN="LEFT">  code:String  </TD></TR>
+				<TR><TD PORT="name" COLSPAN="3" BGCOLOR="#FFF59D" ALIGN="LEFT">  name:String  </TD></TR>
+				<TR><TD PORT="comment" COLSPAN="3" BGCOLOR="#FFF59D" ALIGN="LEFT">  comment:String  </TD></TR>
+							</TABLE>>
+							URL="com.cclip.model.geo.Neighbourhood.html"
+							tooltip="com.cclip.model.geo.Neighbourhood"
+					];
+
+						//com.cclip.model.geo.cadastre.CadastreType
+						CadastreType [
+							label=<
+								<TABLE BORDER="0" CELLBORDER="0" CELLSPACING="0" BGCOLOR="#ffffff">
+				<TR><TD COLSPAN="3" BGCOLOR="#FFF176" ALIGN="CENTER"><B>com.cclip.model.geo.cadastre.CadastreType</B></TD></TR>
+
+				<TR><TD PORT="id" COLSPAN="3" BGCOLOR="#FFF59D" ALIGN="LEFT">  id:String  </TD></TR>
+				<TR><TD PORT="erased" COLSPAN="3" BGCOLOR="#FFF59D" ALIGN="LEFT">  erased:Boolean  </TD></TR>
+				<TR><TD PORT="code" COLSPAN="3" BGCOLOR="#FFF59D" ALIGN="LEFT">  code:String  </TD></TR>
+				<TR><TD PORT="name" COLSPAN="3" BGCOLOR="#FFF59D" ALIGN="LEFT">  name:String  </TD></TR>
+				<TR><TD PORT="comment" COLSPAN="3" BGCOLOR="#FFF59D" ALIGN="LEFT">  comment:String  </TD></TR>
+								</TABLE>>
+								URL="com.cclip.model.geo.cadastre.CadastreType.html"
+								tooltip="com.cclip.model.geo.cadastre.CadastreType"
+						];
+
+						//com.cclip.model.geo.cadastre.CadastreSituation
+						CadastreSituation [
+							label=<
+								<TABLE BORDER="0" CELLBORDER="0" CELLSPACING="0" BGCOLOR="#ffffff">
+				<TR><TD COLSPAN="3" BGCOLOR="#FFF176" ALIGN="CENTER"><B>com.cclip.model.geo.cadastre.CadastreSituation</B></TD></TR>
+
+				<TR><TD PORT="id" COLSPAN="3" BGCOLOR="#FFF59D" ALIGN="LEFT">  id:String  </TD></TR>
+				<TR><TD PORT="erased" COLSPAN="3" BGCOLOR="#FFF59D" ALIGN="LEFT">  erased:Boolean  </TD></TR>
+				<TR><TD PORT="code" COLSPAN="3" BGCOLOR="#FFF59D" ALIGN="LEFT">  code:String  </TD></TR>
+				<TR><TD PORT="name" COLSPAN="3" BGCOLOR="#FFF59D" ALIGN="LEFT">  name:String  </TD></TR>
+				<TR><TD PORT="comment" COLSPAN="3" BGCOLOR="#FFF59D" ALIGN="LEFT">  comment:String  </TD></TR>
+								</TABLE>>
+								URL="com.cclip.model.geo.cadastre.CadastreSituation.html"
+								tooltip="com.cclip.model.geo.cadastre.CadastreSituation"
+						];
+
+						//com.cclip.model.geo.cadastre.UserWaterSituation
+						UserWaterSituation [
+							label=<
+								<TABLE BORDER="0" CELLBORDER="0" CELLSPACING="0" BGCOLOR="#ffffff">
+				<TR><TD COLSPAN="3" BGCOLOR="#FFF176" ALIGN="CENTER"><B>com.cclip.model.geo.cadastre.UserWaterSituation</B></TD></TR>
+
+				<TR><TD PORT="id" COLSPAN="3" BGCOLOR="#FFF59D" ALIGN="LEFT">  id:String  </TD></TR>
+				<TR><TD PORT="erased" COLSPAN="3" BGCOLOR="#FFF59D" ALIGN="LEFT">  erased:Boolean  </TD></TR>
+				<TR><TD PORT="code" COLSPAN="3" BGCOLOR="#FFF59D" ALIGN="LEFT">  code:String  </TD></TR>
+				<TR><TD PORT="name" COLSPAN="3" BGCOLOR="#FFF59D" ALIGN="LEFT">  name:String  </TD></TR>
+				<TR><TD PORT="comment" COLSPAN="3" BGCOLOR="#FFF59D" ALIGN="LEFT">  comment:String  </TD></TR>
+								</TABLE>>
+								URL="com.cclip.model.geo.cadastre.UserWaterSituation.html"
+								tooltip="com.cclip.model.geo.cadastre.UserWaterSituation"
+						];
+
+						//com.cclip.model.geo.cadastre.Cadastre
+						Cadastre [
+							label=<
+								<TABLE BORDER="0" CELLBORDER="0" CELLSPACING="0" BGCOLOR="#ffffff">
+				<TR><TD COLSPAN="3" BGCOLOR="#FFF176" ALIGN="CENTER"><B>com.cclip.model.geo.cadastre.Cadastre</B></TD></TR>
+
+				<TR><TD PORT="id" COLSPAN="3" BGCOLOR="#FFF59D" ALIGN="LEFT">  id:String  </TD></TR>
+				<TR><TD PORT="erased" COLSPAN="3" BGCOLOR="#FFF59D" ALIGN="LEFT">  erased:Boolean  </TD></TR>
+				<TR><TD PORT="dateCreate" COLSPAN="3" BGCOLOR="#FFF59D" ALIGN="LEFT">  dateCreate:Timestamp  </TD></TR>
+				<TR><TD PORT="dateDelete" COLSPAN="3" BGCOLOR="#FFF59D" ALIGN="LEFT">  dateDelete:Timestamp  </TD></TR>
+				<TR><TD PORT="cadastralCode" COLSPAN="3" BGCOLOR="#FFF59D" ALIGN="LEFT">  cadastralCode:String  </TD></TR>
+				<TR><TD PORT="m2" COLSPAN="3" BGCOLOR="#FFF59D" ALIGN="LEFT">  m2:Double  </TD></TR>
+				<TR><TD PORT="m2Covered" COLSPAN="3" BGCOLOR="#FFF59D" ALIGN="LEFT">  m2Covered:Double  </TD></TR>
+				<TR><TD PORT="ctaCli" COLSPAN="3" BGCOLOR="#FFF59D" ALIGN="LEFT">  ctaCli:String  </TD></TR>
+				<TR><TD PORT="subCtaCli" COLSPAN="3" BGCOLOR="#FFF59D" ALIGN="LEFT">  subCtaCli:String  </TD></TR>
+				<TR><TD PORT="dv" COLSPAN="3" BGCOLOR="#FFF59D" ALIGN="LEFT">  dv:String  </TD></TR>
+				<TR><TD PORT="userWaterService" COLSPAN="3" BGCOLOR="#FFF59D" ALIGN="LEFT">  userWaterService:String  </TD></TR>
+				<TR><TD PORT="userWaterServiceDni" COLSPAN="3" BGCOLOR="#FFF59D" ALIGN="LEFT">  userWaterServiceDni:String  </TD></TR>
+				<TR><TD PORT="userWaterServiceCuit" COLSPAN="3" BGCOLOR="#FFF59D" ALIGN="LEFT">  userWaterServiceCuit:String  </TD></TR>
+				<TR><TD PORT="waterMeter" COLSPAN="3" BGCOLOR="#FFF59D" ALIGN="LEFT">  waterMeter:Boolean  </TD></TR>
+				<TR><TD PORT="comment" COLSPAN="3" BGCOLOR="#FFF59D" ALIGN="LEFT">  comment:String  </TD></TR>
+				<TR><TD PORT="inmLocality" COLSPAN="3" BGCOLOR="#FFF59D" ALIGN="LEFT">  inmLocality:String  </TD></TR>
+				<TR><TD PORT="inmNeighbourhoodComment" COLSPAN="3" BGCOLOR="#FFF59D" ALIGN="LEFT">  inmNeighbourhoodComment:String  </TD></TR>
+				<TR><TD PORT="inmStreet" COLSPAN="3" BGCOLOR="#FFF59D" ALIGN="LEFT">  inmStreet:String  </TD></TR>
+				<TR><TD PORT="inmStreetNumber" COLSPAN="3" BGCOLOR="#FFF59D" ALIGN="LEFT">  inmStreetNumber:String  </TD></TR>
+				<TR><TD PORT="inmStreetNumberEstimated" COLSPAN="3" BGCOLOR="#FFF59D" ALIGN="LEFT">  inmStreetNumberEstimated:Boolean  </TD></TR>
+				<TR><TD PORT="inmBuildingFloor" COLSPAN="3" BGCOLOR="#FFF59D" ALIGN="LEFT">  inmBuildingFloor:String  </TD></TR>
+				<TR><TD PORT="inmBuildingRoom" COLSPAN="3" BGCOLOR="#FFF59D" ALIGN="LEFT">  inmBuildingRoom:String  </TD></TR>
+				<TR><TD PORT="inmBuilding" COLSPAN="3" BGCOLOR="#FFF59D" ALIGN="LEFT">  inmBuilding:String  </TD></TR>
+				<TR><TD PORT="inmPostalCode" COLSPAN="3" BGCOLOR="#FFF59D" ALIGN="LEFT">  inmPostalCode:String  </TD></TR>
+				<TR><TD PORT="inmCommentAddress" COLSPAN="3" BGCOLOR="#FFF59D" ALIGN="LEFT">  inmCommentAddress:String  </TD></TR>
+				<TR><TD PORT="inmLat" COLSPAN="3" BGCOLOR="#FFF59D" ALIGN="LEFT">  inmLat:Double  </TD></TR>
+				<TR><TD PORT="inmLng" COLSPAN="3" BGCOLOR="#FFF59D" ALIGN="LEFT">  inmLng:Double  </TD></TR>
+				<TR><TD PORT="userPostalCountryCode" COLSPAN="3" BGCOLOR="#FFF59D" ALIGN="LEFT">  userPostalCountryCode:String  </TD></TR>
+				<TR><TD PORT="userPostalCountry" COLSPAN="3" BGCOLOR="#FFF59D" ALIGN="LEFT">  userPostalCountry:String  </TD></TR>
+				<TR><TD PORT="userPostalAdminAreaLevel1Code" COLSPAN="3" BGCOLOR="#FFF59D" ALIGN="LEFT">  userPostalAdminAreaLevel1Code:String  </TD></TR>
+				<TR><TD PORT="userPostalAdminAreaLevel1" COLSPAN="3" BGCOLOR="#FFF59D" ALIGN="LEFT">  userPostalAdminAreaLevel1:String  </TD></TR>
+				<TR><TD PORT="userPostalAdminAreaLevel2" COLSPAN="3" BGCOLOR="#FFF59D" ALIGN="LEFT">  userPostalAdminAreaLevel2:String  </TD></TR>
+				<TR><TD PORT="userPostalLocality" COLSPAN="3" BGCOLOR="#FFF59D" ALIGN="LEFT">  userPostalLocality:String  </TD></TR>
+				<TR><TD PORT="userPostalNeighbourhood" COLSPAN="3" BGCOLOR="#FFF59D" ALIGN="LEFT">  userPostalNeighbourhood:String  </TD></TR>
+				<TR><TD PORT="userPostalStreet" COLSPAN="3" BGCOLOR="#FFF59D" ALIGN="LEFT">  userPostalStreet:String  </TD></TR>
+				<TR><TD PORT="userPostalStreetNumber" COLSPAN="3" BGCOLOR="#FFF59D" ALIGN="LEFT">  userPostalStreetNumber:String  </TD></TR>
+				<TR><TD PORT="userPostalBuildingFloor" COLSPAN="3" BGCOLOR="#FFF59D" ALIGN="LEFT">  userPostalBuildingFloor:String  </TD></TR>
+				<TR><TD PORT="userPostalBuildingRoom" COLSPAN="3" BGCOLOR="#FFF59D" ALIGN="LEFT">  userPostalBuildingRoom:String  </TD></TR>
+				<TR><TD PORT="userPostalBuilding" COLSPAN="3" BGCOLOR="#FFF59D" ALIGN="LEFT">  userPostalBuilding:String  </TD></TR>
+				<TR><TD PORT="userPostalPostalCode" COLSPAN="3" BGCOLOR="#FFF59D" ALIGN="LEFT">  userPostalPostalCode:String  </TD></TR>
+				<TR><TD PORT="userPostalCommentAddress" COLSPAN="3" BGCOLOR="#FFF59D" ALIGN="LEFT">  userPostalCommentAddress:String  </TD></TR>
+				<TR><TD PORT="userPostalLat" COLSPAN="3" BGCOLOR="#FFF59D" ALIGN="LEFT">  userPostalLat:Double  </TD></TR>
+				<TR><TD PORT="userPostalLng" COLSPAN="3" BGCOLOR="#FFF59D" ALIGN="LEFT">  userPostalLng:Double  </TD></TR>
+				<TR><TD PORT="userPhone" COLSPAN="3" BGCOLOR="#FFF59D" ALIGN="LEFT">  userPhone:String  </TD></TR>
+				<TR><TD PORT="codeReasonLow" COLSPAN="3" BGCOLOR="#FFF59D" ALIGN="LEFT">  codeReasonLow:String  </TD></TR>
+				<TR><TD PORT="reasonLow" COLSPAN="3" BGCOLOR="#FFF59D" ALIGN="LEFT">  reasonLow:String  </TD></TR>
+				<TR><TD PORT="auditDateCreate" COLSPAN="3" BGCOLOR="#FFF59D" ALIGN="LEFT">  auditDateCreate:Timestamp  </TD></TR>
+				<TR><TD PORT="auditUserCreate" COLSPAN="3" BGCOLOR="#FFF59D" ALIGN="LEFT">  auditUserCreate:String  </TD></TR>
+				<TR><TD PORT="auditDateUpdate" COLSPAN="3" BGCOLOR="#FFF59D" ALIGN="LEFT">  auditDateUpdate:Timestamp  </TD></TR>
+				<TR><TD PORT="auditUserUpdate" COLSPAN="3" BGCOLOR="#FFF59D" ALIGN="LEFT">  auditUserUpdate:String  </TD></TR>
+				<TR><TD PORT="auditVersion" COLSPAN="3" BGCOLOR="#FFF59D" ALIGN="LEFT">  auditVersion:Long  </TD></TR>
+				<TR><TD PORT="auditVersionCodeLabel" COLSPAN="3" BGCOLOR="#FFF59D" ALIGN="LEFT">  auditVersionCodeLabel:String  </TD></TR>
+				<TR><TD PORT="auditVersionLabel" COLSPAN="3" BGCOLOR="#FFF59D" ALIGN="LEFT">  auditVersionLabel:String  </TD></TR>
+				<TR><TD PORT="userIva" COLSPAN="3" BGCOLOR="#FFF59D" ALIGN="LEFT">  userIva : <B>Iva</B>  </TD></TR>
+				<TR><TD PORT="userWaterSituation" COLSPAN="3" BGCOLOR="#FFF59D" ALIGN="LEFT">  userWaterSituation : <B>UserWaterSituation</B>  </TD></TR>
+				<TR><TD PORT="uf" COLSPAN="3" BGCOLOR="#FFF59D" ALIGN="LEFT">  uf : <B>Uf</B>  </TD></TR>
+				<TR><TD PORT="cityArea" COLSPAN="3" BGCOLOR="#FFF59D" ALIGN="LEFT">  cityArea : <B>CityArea</B>  </TD></TR>
+				<TR><TD PORT="cadastreBlock" COLSPAN="3" BGCOLOR="#FFF59D" ALIGN="LEFT">  cadastreBlockList : <B>CadastreBlock[]</B>  </TD></TR>
+				<TR><TD PORT="cadastreSubDivision" COLSPAN="3" BGCOLOR="#FFF59D" ALIGN="LEFT">  cadastreSubDivisionList : <B>CadastreSubDivision[]</B>  </TD></TR>
+				<TR><TD PORT="scheduleScanningItem" COLSPAN="3" BGCOLOR="#FFF59D" ALIGN="LEFT">  scheduleScanningItemList : <B>ScheduleScanningItem[]</B>  </TD></TR>
+				<TR><TD PORT="cadastreType" COLSPAN="3" BGCOLOR="#FFF59D" ALIGN="LEFT">  cadastreType : <B>CadastreType</B>  </TD></TR>
+				<TR><TD PORT="cadastreSituation" COLSPAN="3" BGCOLOR="#FFF59D" ALIGN="LEFT">  cadastreSituation : <B>CadastreSituation</B>  </TD></TR>
+				<TR><TD PORT="inmNeighbourhood" COLSPAN="3" BGCOLOR="#FFF59D" ALIGN="LEFT">  inmNeighbourhood : <B>Neighbourhood</B>  </TD></TR>
+				<TR><TD PORT="scheduleCensus" COLSPAN="3" BGCOLOR="#FFF59D" ALIGN="LEFT">  scheduleCensusList : <B>ScheduleCensus[]</B>  </TD></TR>
+				<TR><TD PORT="cadastreInsDel" COLSPAN="3" BGCOLOR="#FFF59D" ALIGN="LEFT">  cadastreInsDel : <B>CadastreInsDel</B>  </TD></TR>
+								</TABLE>>
+								URL="com.cclip.model.geo.cadastre.Cadastre.html"
+								tooltip="com.cclip.model.geo.cadastre.Cadastre"
+						];
+
+						//com.cclip.model.geo.cadastre.CadastreActivityType
+						CadastreActivityType [
+							label=<
+								<TABLE BORDER="0" CELLBORDER="0" CELLSPACING="0" BGCOLOR="#ffffff">
+				<TR><TD COLSPAN="3" BGCOLOR="#FFF176" ALIGN="CENTER"><B>com.cclip.model.geo.cadastre.CadastreActivityType</B></TD></TR>
+
+				<TR><TD PORT="id" COLSPAN="3" BGCOLOR="#FFF59D" ALIGN="LEFT">  id:String  </TD></TR>
+				<TR><TD PORT="erased" COLSPAN="3" BGCOLOR="#FFF59D" ALIGN="LEFT">  erased:Boolean  </TD></TR>
+				<TR><TD PORT="code" COLSPAN="3" BGCOLOR="#FFF59D" ALIGN="LEFT">  code:String  </TD></TR>
+				<TR><TD PORT="name" COLSPAN="3" BGCOLOR="#FFF59D" ALIGN="LEFT">  name:String  </TD></TR>
+				<TR><TD PORT="comment" COLSPAN="3" BGCOLOR="#FFF59D" ALIGN="LEFT">  comment:String  </TD></TR>
+								</TABLE>>
+								URL="com.cclip.model.geo.cadastre.CadastreActivityType.html"
+								tooltip="com.cclip.model.geo.cadastre.CadastreActivityType"
+						];
+
+							//com.cclip.model.geo.cadastre.aacc.AaccUnidad
+							AaccUnidad [
+								label=<
+									<TABLE BORDER="0" CELLBORDER="0" CELLSPACING="0" BGCOLOR="#ffffff">
+				<TR><TD COLSPAN="3" BGCOLOR="#FFF176" ALIGN="CENTER"><B>com.cclip.model.geo.cadastre.aacc.AaccUnidad</B></TD></TR>
+
+				<TR><TD PORT="id" COLSPAN="3" BGCOLOR="#FFF59D" ALIGN="LEFT">  id:String  </TD></TR>
+				<TR><TD PORT="erased" COLSPAN="3" BGCOLOR="#FFF59D" ALIGN="LEFT">  erased:Boolean  </TD></TR>
+				<TR><TD PORT="auditDateCreate" COLSPAN="3" BGCOLOR="#FFF59D" ALIGN="LEFT">  auditDateCreate:Timestamp  </TD></TR>
+				<TR><TD PORT="auditUserCreate" COLSPAN="3" BGCOLOR="#FFF59D" ALIGN="LEFT">  auditUserCreate:String  </TD></TR>
+				<TR><TD PORT="auditDateUpdate" COLSPAN="3" BGCOLOR="#FFF59D" ALIGN="LEFT">  auditDateUpdate:Timestamp  </TD></TR>
+				<TR><TD PORT="auditUserUpdate" COLSPAN="3" BGCOLOR="#FFF59D" ALIGN="LEFT">  auditUserUpdate:String  </TD></TR>
+				<TR><TD PORT="auditVersion" COLSPAN="3" BGCOLOR="#FFF59D" ALIGN="LEFT">  auditVersion:Long  </TD></TR>
+				<TR><TD PORT="unidad" COLSPAN="3" BGCOLOR="#FFF59D" ALIGN="LEFT">  unidad:String  </TD></TR>
+				<TR><TD PORT="unidad_alt" COLSPAN="3" BGCOLOR="#FFF59D" ALIGN="LEFT">  unidad_alt:String  </TD></TR>
+				<TR><TD PORT="razon" COLSPAN="3" BGCOLOR="#FFF59D" ALIGN="LEFT">  razon:String  </TD></TR>
+				<TR><TD PORT="usuario" COLSPAN="3" BGCOLOR="#FFF59D" ALIGN="LEFT">  usuario:String  </TD></TR>
+				<TR><TD PORT="zona" COLSPAN="3" BGCOLOR="#FFF59D" ALIGN="LEFT">  zona:String  </TD></TR>
+				<TR><TD PORT="calle" COLSPAN="3" BGCOLOR="#FFF59D" ALIGN="LEFT">  calle:String  </TD></TR>
+				<TR><TD PORT="numero" COLSPAN="3" BGCOLOR="#FFF59D" ALIGN="LEFT">  numero:String  </TD></TR>
+				<TR><TD PORT="piso" COLSPAN="3" BGCOLOR="#FFF59D" ALIGN="LEFT">  piso:String  </TD></TR>
+				<TR><TD PORT="depto" COLSPAN="3" BGCOLOR="#FFF59D" ALIGN="LEFT">  depto:String  </TD></TR>
+				<TR><TD PORT="dat_complem" COLSPAN="3" BGCOLOR="#FFF59D" ALIGN="LEFT">  dat_complem:String  </TD></TR>
+				<TR><TD PORT="locali" COLSPAN="3" BGCOLOR="#FFF59D" ALIGN="LEFT">  locali:String  </TD></TR>
+				<TR><TD PORT="cod_pos" COLSPAN="3" BGCOLOR="#FFF59D" ALIGN="LEFT">  cod_pos:String  </TD></TR>
+				<TR><TD PORT="seccion" COLSPAN="3" BGCOLOR="#FFF59D" ALIGN="LEFT">  seccion:String  </TD></TR>
+				<TR><TD PORT="manzana" COLSPAN="3" BGCOLOR="#FFF59D" ALIGN="LEFT">  manzana:String  </TD></TR>
+				<TR><TD PORT="parcela" COLSPAN="3" BGCOLOR="#FFF59D" ALIGN="LEFT">  parcela:String  </TD></TR>
+				<TR><TD PORT="subparcela" COLSPAN="3" BGCOLOR="#FFF59D" ALIGN="LEFT">  subparcela:String  </TD></TR>
+				<TR><TD PORT="uni_fun" COLSPAN="3" BGCOLOR="#FFF59D" ALIGN="LEFT">  uni_fun:String  </TD></TR>
+				<TR><TD PORT="cod_edi" COLSPAN="3" BGCOLOR="#FFF59D" ALIGN="LEFT">  cod_edi:String  </TD></TR>
+				<TR><TD PORT="nom_edi" COLSPAN="3" BGCOLOR="#FFF59D" ALIGN="LEFT">  nom_edi:String  </TD></TR>
+				<TR><TD PORT="dir_env" COLSPAN="3" BGCOLOR="#FFF59D" ALIGN="LEFT">  dir_env:String  </TD></TR>
+				<TR><TD PORT="dir_cob" COLSPAN="3" BGCOLOR="#FFF59D" ALIGN="LEFT">  dir_cob:String  </TD></TR>
+				<TR><TD PORT="reparto" COLSPAN="3" BGCOLOR="#FFF59D" ALIGN="LEFT">  reparto:String  </TD></TR>
+				<TR><TD PORT="ruta_dis" COLSPAN="3" BGCOLOR="#FFF59D" ALIGN="LEFT">  ruta_dis:String  </TD></TR>
+				<TR><TD PORT="tpo_doc" COLSPAN="3" BGCOLOR="#FFF59D" ALIGN="LEFT">  tpo_doc:String  </TD></TR>
+				<TR><TD PORT="num_doc" COLSPAN="3" BGCOLOR="#FFF59D" ALIGN="LEFT">  num_doc:String  </TD></TR>
+				<TR><TD PORT="tpo_iva" COLSPAN="3" BGCOLOR="#FFF59D" ALIGN="LEFT">  tpo_iva:String  </TD></TR>
+				<TR><TD PORT="por_gra" COLSPAN="3" BGCOLOR="#FFF59D" ALIGN="LEFT">  por_gra:String  </TD></TR>
+				<TR><TD PORT="cuenta" COLSPAN="3" BGCOLOR="#FFF59D" ALIGN="LEFT">  cuenta:String  </TD></TR>
+				<TR><TD PORT="ite_agr" COLSPAN="3" BGCOLOR="#FFF59D" ALIGN="LEFT">  ite_agr:String  </TD></TR>
+				<TR><TD PORT="val_atr_0" COLSPAN="3" BGCOLOR="#FFF59D" ALIGN="LEFT">  val_atr_0:String  </TD></TR>
+				<TR><TD PORT="val_atr_1" COLSPAN="3" BGCOLOR="#FFF59D" ALIGN="LEFT">  val_atr_1:String  </TD></TR>
+				<TR><TD PORT="val_atr_2" COLSPAN="3" BGCOLOR="#FFF59D" ALIGN="LEFT">  val_atr_2:String  </TD></TR>
+				<TR><TD PORT="val_atr_3" COLSPAN="3" BGCOLOR="#FFF59D" ALIGN="LEFT">  val_atr_3:String  </TD></TR>
+				<TR><TD PORT="val_atr_4" COLSPAN="3" BGCOLOR="#FFF59D" ALIGN="LEFT">  val_atr_4:String  </TD></TR>
+				<TR><TD PORT="val_atr_5" COLSPAN="3" BGCOLOR="#FFF59D" ALIGN="LEFT">  val_atr_5:String  </TD></TR>
+				<TR><TD PORT="val_atr_6" COLSPAN="3" BGCOLOR="#FFF59D" ALIGN="LEFT">  val_atr_6:String  </TD></TR>
+				<TR><TD PORT="val_atr_7" COLSPAN="3" BGCOLOR="#FFF59D" ALIGN="LEFT">  val_atr_7:String  </TD></TR>
+				<TR><TD PORT="val_atr_8" COLSPAN="3" BGCOLOR="#FFF59D" ALIGN="LEFT">  val_atr_8:String  </TD></TR>
+				<TR><TD PORT="val_atr_9" COLSPAN="3" BGCOLOR="#FFF59D" ALIGN="LEFT">  val_atr_9:String  </TD></TR>
+				<TR><TD PORT="nro_calle" COLSPAN="3" BGCOLOR="#FFF59D" ALIGN="LEFT">  nro_calle:String  </TD></TR>
+				<TR><TD PORT="ult_act" COLSPAN="3" BGCOLOR="#FFF59D" ALIGN="LEFT">  ult_act:String  </TD></TR>
+				<TR><TD PORT="usu_act" COLSPAN="3" BGCOLOR="#FFF59D" ALIGN="LEFT">  usu_act:String  </TD></TR>
+				<TR><TD PORT="situacion" COLSPAN="3" BGCOLOR="#FFF59D" ALIGN="LEFT">  situacion:String  </TD></TR>
+				<TR><TD PORT="usu_sit" COLSPAN="3" BGCOLOR="#FFF59D" ALIGN="LEFT">  usu_sit:String  </TD></TR>
+				<TR><TD PORT="fec_sit" COLSPAN="3" BGCOLOR="#FFF59D" ALIGN="LEFT">  fec_sit:String  </TD></TR>
+				<TR><TD PORT="cortable" COLSPAN="3" BGCOLOR="#FFF59D" ALIGN="LEFT">  cortable:String  </TD></TR>
+				<TR><TD PORT="lec_obl" COLSPAN="3" BGCOLOR="#FFF59D" ALIGN="LEFT">  lec_obl:String  </TD></TR>
+				<TR><TD PORT="rep_obl" COLSPAN="3" BGCOLOR="#FFF59D" ALIGN="LEFT">  rep_obl:String  </TD></TR>
+				<TR><TD PORT="telefono" COLSPAN="3" BGCOLOR="#FFF59D" ALIGN="LEFT">  telefono:String  </TD></TR>
+				<TR><TD PORT="val_atr_10" COLSPAN="3" BGCOLOR="#FFF59D" ALIGN="LEFT">  val_atr_10:String  </TD></TR>
+				<TR><TD PORT="val_atr_11" COLSPAN="3" BGCOLOR="#FFF59D" ALIGN="LEFT">  val_atr_11:String  </TD></TR>
+				<TR><TD PORT="val_atr_12" COLSPAN="3" BGCOLOR="#FFF59D" ALIGN="LEFT">  val_atr_12:String  </TD></TR>
+				<TR><TD PORT="val_atr_13" COLSPAN="3" BGCOLOR="#FFF59D" ALIGN="LEFT">  val_atr_13:String  </TD></TR>
+				<TR><TD PORT="val_atr_14" COLSPAN="3" BGCOLOR="#FFF59D" ALIGN="LEFT">  val_atr_14:String  </TD></TR>
+				<TR><TD PORT="val_atr_15" COLSPAN="3" BGCOLOR="#FFF59D" ALIGN="LEFT">  val_atr_15:String  </TD></TR>
+				<TR><TD PORT="val_atr_16" COLSPAN="3" BGCOLOR="#FFF59D" ALIGN="LEFT">  val_atr_16:String  </TD></TR>
+				<TR><TD PORT="val_atr_17" COLSPAN="3" BGCOLOR="#FFF59D" ALIGN="LEFT">  val_atr_17:String  </TD></TR>
+				<TR><TD PORT="val_atr_18" COLSPAN="3" BGCOLOR="#FFF59D" ALIGN="LEFT">  val_atr_18:String  </TD></TR>
+				<TR><TD PORT="val_atr_19" COLSPAN="3" BGCOLOR="#FFF59D" ALIGN="LEFT">  val_atr_19:String  </TD></TR>
+				<TR><TD PORT="val_atr_20" COLSPAN="3" BGCOLOR="#FFF59D" ALIGN="LEFT">  val_atr_20:String  </TD></TR>
+				<TR><TD PORT="val_atr_21" COLSPAN="3" BGCOLOR="#FFF59D" ALIGN="LEFT">  val_atr_21:String  </TD></TR>
+				<TR><TD PORT="val_atr_22" COLSPAN="3" BGCOLOR="#FFF59D" ALIGN="LEFT">  val_atr_22:String  </TD></TR>
+				<TR><TD PORT="val_atr_23" COLSPAN="3" BGCOLOR="#FFF59D" ALIGN="LEFT">  val_atr_23:String  </TD></TR>
+				<TR><TD PORT="val_atr_24" COLSPAN="3" BGCOLOR="#FFF59D" ALIGN="LEFT">  val_atr_24:String  </TD></TR>
+				<TR><TD PORT="val_atr_25" COLSPAN="3" BGCOLOR="#FFF59D" ALIGN="LEFT">  val_atr_25:String  </TD></TR>
+				<TR><TD PORT="val_atr_26" COLSPAN="3" BGCOLOR="#FFF59D" ALIGN="LEFT">  val_atr_26:String  </TD></TR>
+				<TR><TD PORT="val_atr_27" COLSPAN="3" BGCOLOR="#FFF59D" ALIGN="LEFT">  val_atr_27:String  </TD></TR>
+				<TR><TD PORT="val_atr_28" COLSPAN="3" BGCOLOR="#FFF59D" ALIGN="LEFT">  val_atr_28:String  </TD></TR>
+				<TR><TD PORT="val_atr_29" COLSPAN="3" BGCOLOR="#FFF59D" ALIGN="LEFT">  val_atr_29:String  </TD></TR>
+									</TABLE>>
+									URL="com.cclip.model.geo.cadastre.aacc.AaccUnidad.html"
+									tooltip="com.cclip.model.geo.cadastre.aacc.AaccUnidad"
+							];
+
+							//com.cclip.model.geo.cadastre.aacc.AaccUnidadBack
+							AaccUnidadBack [
+								label=<
+									<TABLE BORDER="0" CELLBORDER="0" CELLSPACING="0" BGCOLOR="#ffffff">
+				<TR><TD COLSPAN="3" BGCOLOR="#FFF176" ALIGN="CENTER"><B>com.cclip.model.geo.cadastre.aacc.AaccUnidadBack</B></TD></TR>
+
+				<TR><TD PORT="id" COLSPAN="3" BGCOLOR="#FFF59D" ALIGN="LEFT">  id:String  </TD></TR>
+				<TR><TD PORT="erased" COLSPAN="3" BGCOLOR="#FFF59D" ALIGN="LEFT">  erased:Boolean  </TD></TR>
+				<TR><TD PORT="auditDateCreate" COLSPAN="3" BGCOLOR="#FFF59D" ALIGN="LEFT">  auditDateCreate:Timestamp  </TD></TR>
+				<TR><TD PORT="auditUserCreate" COLSPAN="3" BGCOLOR="#FFF59D" ALIGN="LEFT">  auditUserCreate:String  </TD></TR>
+				<TR><TD PORT="auditDateUpdate" COLSPAN="3" BGCOLOR="#FFF59D" ALIGN="LEFT">  auditDateUpdate:Timestamp  </TD></TR>
+				<TR><TD PORT="auditUserUpdate" COLSPAN="3" BGCOLOR="#FFF59D" ALIGN="LEFT">  auditUserUpdate:String  </TD></TR>
+				<TR><TD PORT="auditVersion" COLSPAN="3" BGCOLOR="#FFF59D" ALIGN="LEFT">  auditVersion:Long  </TD></TR>
+				<TR><TD PORT="unidad" COLSPAN="3" BGCOLOR="#FFF59D" ALIGN="LEFT">  unidad:String  </TD></TR>
+				<TR><TD PORT="unidad_alt" COLSPAN="3" BGCOLOR="#FFF59D" ALIGN="LEFT">  unidad_alt:String  </TD></TR>
+				<TR><TD PORT="razon" COLSPAN="3" BGCOLOR="#FFF59D" ALIGN="LEFT">  razon:String  </TD></TR>
+				<TR><TD PORT="usuario" COLSPAN="3" BGCOLOR="#FFF59D" ALIGN="LEFT">  usuario:String  </TD></TR>
+				<TR><TD PORT="zona" COLSPAN="3" BGCOLOR="#FFF59D" ALIGN="LEFT">  zona:String  </TD></TR>
+				<TR><TD PORT="calle" COLSPAN="3" BGCOLOR="#FFF59D" ALIGN="LEFT">  calle:String  </TD></TR>
+				<TR><TD PORT="numero" COLSPAN="3" BGCOLOR="#FFF59D" ALIGN="LEFT">  numero:String  </TD></TR>
+				<TR><TD PORT="piso" COLSPAN="3" BGCOLOR="#FFF59D" ALIGN="LEFT">  piso:String  </TD></TR>
+				<TR><TD PORT="depto" COLSPAN="3" BGCOLOR="#FFF59D" ALIGN="LEFT">  depto:String  </TD></TR>
+				<TR><TD PORT="dat_complem" COLSPAN="3" BGCOLOR="#FFF59D" ALIGN="LEFT">  dat_complem:String  </TD></TR>
+				<TR><TD PORT="locali" COLSPAN="3" BGCOLOR="#FFF59D" ALIGN="LEFT">  locali:String  </TD></TR>
+				<TR><TD PORT="cod_pos" COLSPAN="3" BGCOLOR="#FFF59D" ALIGN="LEFT">  cod_pos:String  </TD></TR>
+				<TR><TD PORT="seccion" COLSPAN="3" BGCOLOR="#FFF59D" ALIGN="LEFT">  seccion:String  </TD></TR>
+				<TR><TD PORT="manzana" COLSPAN="3" BGCOLOR="#FFF59D" ALIGN="LEFT">  manzana:String  </TD></TR>
+				<TR><TD PORT="parcela" COLSPAN="3" BGCOLOR="#FFF59D" ALIGN="LEFT">  parcela:String  </TD></TR>
+				<TR><TD PORT="subparcela" COLSPAN="3" BGCOLOR="#FFF59D" ALIGN="LEFT">  subparcela:String  </TD></TR>
+				<TR><TD PORT="uni_fun" COLSPAN="3" BGCOLOR="#FFF59D" ALIGN="LEFT">  uni_fun:String  </TD></TR>
+				<TR><TD PORT="cod_edi" COLSPAN="3" BGCOLOR="#FFF59D" ALIGN="LEFT">  cod_edi:String  </TD></TR>
+				<TR><TD PORT="nom_edi" COLSPAN="3" BGCOLOR="#FFF59D" ALIGN="LEFT">  nom_edi:String  </TD></TR>
+				<TR><TD PORT="dir_env" COLSPAN="3" BGCOLOR="#FFF59D" ALIGN="LEFT">  dir_env:String  </TD></TR>
+				<TR><TD PORT="dir_cob" COLSPAN="3" BGCOLOR="#FFF59D" ALIGN="LEFT">  dir_cob:String  </TD></TR>
+				<TR><TD PORT="reparto" COLSPAN="3" BGCOLOR="#FFF59D" ALIGN="LEFT">  reparto:String  </TD></TR>
+				<TR><TD PORT="ruta_dis" COLSPAN="3" BGCOLOR="#FFF59D" ALIGN="LEFT">  ruta_dis:String  </TD></TR>
+				<TR><TD PORT="tpo_doc" COLSPAN="3" BGCOLOR="#FFF59D" ALIGN="LEFT">  tpo_doc:String  </TD></TR>
+				<TR><TD PORT="num_doc" COLSPAN="3" BGCOLOR="#FFF59D" ALIGN="LEFT">  num_doc:String  </TD></TR>
+				<TR><TD PORT="tpo_iva" COLSPAN="3" BGCOLOR="#FFF59D" ALIGN="LEFT">  tpo_iva:String  </TD></TR>
+				<TR><TD PORT="por_gra" COLSPAN="3" BGCOLOR="#FFF59D" ALIGN="LEFT">  por_gra:String  </TD></TR>
+				<TR><TD PORT="cuenta" COLSPAN="3" BGCOLOR="#FFF59D" ALIGN="LEFT">  cuenta:String  </TD></TR>
+				<TR><TD PORT="ite_agr" COLSPAN="3" BGCOLOR="#FFF59D" ALIGN="LEFT">  ite_agr:String  </TD></TR>
+				<TR><TD PORT="val_atr_0" COLSPAN="3" BGCOLOR="#FFF59D" ALIGN="LEFT">  val_atr_0:String  </TD></TR>
+				<TR><TD PORT="val_atr_1" COLSPAN="3" BGCOLOR="#FFF59D" ALIGN="LEFT">  val_atr_1:String  </TD></TR>
+				<TR><TD PORT="val_atr_2" COLSPAN="3" BGCOLOR="#FFF59D" ALIGN="LEFT">  val_atr_2:String  </TD></TR>
+				<TR><TD PORT="val_atr_3" COLSPAN="3" BGCOLOR="#FFF59D" ALIGN="LEFT">  val_atr_3:String  </TD></TR>
+				<TR><TD PORT="val_atr_4" COLSPAN="3" BGCOLOR="#FFF59D" ALIGN="LEFT">  val_atr_4:String  </TD></TR>
+				<TR><TD PORT="val_atr_5" COLSPAN="3" BGCOLOR="#FFF59D" ALIGN="LEFT">  val_atr_5:String  </TD></TR>
+				<TR><TD PORT="val_atr_6" COLSPAN="3" BGCOLOR="#FFF59D" ALIGN="LEFT">  val_atr_6:String  </TD></TR>
+				<TR><TD PORT="val_atr_7" COLSPAN="3" BGCOLOR="#FFF59D" ALIGN="LEFT">  val_atr_7:String  </TD></TR>
+				<TR><TD PORT="val_atr_8" COLSPAN="3" BGCOLOR="#FFF59D" ALIGN="LEFT">  val_atr_8:String  </TD></TR>
+				<TR><TD PORT="val_atr_9" COLSPAN="3" BGCOLOR="#FFF59D" ALIGN="LEFT">  val_atr_9:String  </TD></TR>
+				<TR><TD PORT="nro_calle" COLSPAN="3" BGCOLOR="#FFF59D" ALIGN="LEFT">  nro_calle:String  </TD></TR>
+				<TR><TD PORT="ult_act" COLSPAN="3" BGCOLOR="#FFF59D" ALIGN="LEFT">  ult_act:String  </TD></TR>
+				<TR><TD PORT="usu_act" COLSPAN="3" BGCOLOR="#FFF59D" ALIGN="LEFT">  usu_act:String  </TD></TR>
+				<TR><TD PORT="situacion" COLSPAN="3" BGCOLOR="#FFF59D" ALIGN="LEFT">  situacion:String  </TD></TR>
+				<TR><TD PORT="usu_sit" COLSPAN="3" BGCOLOR="#FFF59D" ALIGN="LEFT">  usu_sit:String  </TD></TR>
+				<TR><TD PORT="fec_sit" COLSPAN="3" BGCOLOR="#FFF59D" ALIGN="LEFT">  fec_sit:String  </TD></TR>
+				<TR><TD PORT="cortable" COLSPAN="3" BGCOLOR="#FFF59D" ALIGN="LEFT">  cortable:String  </TD></TR>
+				<TR><TD PORT="lec_obl" COLSPAN="3" BGCOLOR="#FFF59D" ALIGN="LEFT">  lec_obl:String  </TD></TR>
+				<TR><TD PORT="rep_obl" COLSPAN="3" BGCOLOR="#FFF59D" ALIGN="LEFT">  rep_obl:String  </TD></TR>
+				<TR><TD PORT="telefono" COLSPAN="3" BGCOLOR="#FFF59D" ALIGN="LEFT">  telefono:String  </TD></TR>
+				<TR><TD PORT="val_atr_10" COLSPAN="3" BGCOLOR="#FFF59D" ALIGN="LEFT">  val_atr_10:String  </TD></TR>
+				<TR><TD PORT="val_atr_11" COLSPAN="3" BGCOLOR="#FFF59D" ALIGN="LEFT">  val_atr_11:String  </TD></TR>
+				<TR><TD PORT="val_atr_12" COLSPAN="3" BGCOLOR="#FFF59D" ALIGN="LEFT">  val_atr_12:String  </TD></TR>
+				<TR><TD PORT="val_atr_13" COLSPAN="3" BGCOLOR="#FFF59D" ALIGN="LEFT">  val_atr_13:String  </TD></TR>
+				<TR><TD PORT="val_atr_14" COLSPAN="3" BGCOLOR="#FFF59D" ALIGN="LEFT">  val_atr_14:String  </TD></TR>
+				<TR><TD PORT="val_atr_15" COLSPAN="3" BGCOLOR="#FFF59D" ALIGN="LEFT">  val_atr_15:String  </TD></TR>
+				<TR><TD PORT="val_atr_16" COLSPAN="3" BGCOLOR="#FFF59D" ALIGN="LEFT">  val_atr_16:String  </TD></TR>
+				<TR><TD PORT="val_atr_17" COLSPAN="3" BGCOLOR="#FFF59D" ALIGN="LEFT">  val_atr_17:String  </TD></TR>
+				<TR><TD PORT="val_atr_18" COLSPAN="3" BGCOLOR="#FFF59D" ALIGN="LEFT">  val_atr_18:String  </TD></TR>
+				<TR><TD PORT="val_atr_19" COLSPAN="3" BGCOLOR="#FFF59D" ALIGN="LEFT">  val_atr_19:String  </TD></TR>
+				<TR><TD PORT="val_atr_20" COLSPAN="3" BGCOLOR="#FFF59D" ALIGN="LEFT">  val_atr_20:String  </TD></TR>
+				<TR><TD PORT="val_atr_21" COLSPAN="3" BGCOLOR="#FFF59D" ALIGN="LEFT">  val_atr_21:String  </TD></TR>
+				<TR><TD PORT="val_atr_22" COLSPAN="3" BGCOLOR="#FFF59D" ALIGN="LEFT">  val_atr_22:String  </TD></TR>
+				<TR><TD PORT="val_atr_23" COLSPAN="3" BGCOLOR="#FFF59D" ALIGN="LEFT">  val_atr_23:String  </TD></TR>
+				<TR><TD PORT="val_atr_24" COLSPAN="3" BGCOLOR="#FFF59D" ALIGN="LEFT">  val_atr_24:String  </TD></TR>
+				<TR><TD PORT="val_atr_25" COLSPAN="3" BGCOLOR="#FFF59D" ALIGN="LEFT">  val_atr_25:String  </TD></TR>
+				<TR><TD PORT="val_atr_26" COLSPAN="3" BGCOLOR="#FFF59D" ALIGN="LEFT">  val_atr_26:String  </TD></TR>
+				<TR><TD PORT="val_atr_27" COLSPAN="3" BGCOLOR="#FFF59D" ALIGN="LEFT">  val_atr_27:String  </TD></TR>
+				<TR><TD PORT="val_atr_28" COLSPAN="3" BGCOLOR="#FFF59D" ALIGN="LEFT">  val_atr_28:String  </TD></TR>
+				<TR><TD PORT="val_atr_29" COLSPAN="3" BGCOLOR="#FFF59D" ALIGN="LEFT">  val_atr_29:String  </TD></TR>
+									</TABLE>>
+									URL="com.cclip.model.geo.cadastre.aacc.AaccUnidadBack.html"
+									tooltip="com.cclip.model.geo.cadastre.aacc.AaccUnidadBack"
+							];
+
+							//com.cclip.model.geo.cadastre.aacc.AaccInmueble
+							AaccInmueble [
+								label=<
+									<TABLE BORDER="0" CELLBORDER="0" CELLSPACING="0" BGCOLOR="#ffffff">
+				<TR><TD COLSPAN="3" BGCOLOR="#FFF176" ALIGN="CENTER"><B>com.cclip.model.geo.cadastre.aacc.AaccInmueble</B></TD></TR>
+
+				<TR><TD PORT="id" COLSPAN="3" BGCOLOR="#FFF59D" ALIGN="LEFT">  id:String  </TD></TR>
+				<TR><TD PORT="erased" COLSPAN="3" BGCOLOR="#FFF59D" ALIGN="LEFT">  erased:Boolean  </TD></TR>
+				<TR><TD PORT="auditDateCreate" COLSPAN="3" BGCOLOR="#FFF59D" ALIGN="LEFT">  auditDateCreate:Timestamp  </TD></TR>
+				<TR><TD PORT="auditUserCreate" COLSPAN="3" BGCOLOR="#FFF59D" ALIGN="LEFT">  auditUserCreate:String  </TD></TR>
+				<TR><TD PORT="auditDateUpdate" COLSPAN="3" BGCOLOR="#FFF59D" ALIGN="LEFT">  auditDateUpdate:Timestamp  </TD></TR>
+				<TR><TD PORT="auditUserUpdate" COLSPAN="3" BGCOLOR="#FFF59D" ALIGN="LEFT">  auditUserUpdate:String  </TD></TR>
+				<TR><TD PORT="auditVersion" COLSPAN="3" BGCOLOR="#FFF59D" ALIGN="LEFT">  auditVersion:Long  </TD></TR>
+				<TR><TD PORT="distrito" COLSPAN="3" BGCOLOR="#FFF59D" ALIGN="LEFT">  distrito:String  </TD></TR>
+				<TR><TD PORT="cuenta" COLSPAN="3" BGCOLOR="#FFF59D" ALIGN="LEFT">  cuenta:String  </TD></TR>
+				<TR><TD PORT="dv" COLSPAN="3" BGCOLOR="#FFF59D" ALIGN="LEFT">  dv:String  </TD></TR>
+				<TR><TD PORT="fecha_alta" COLSPAN="3" BGCOLOR="#FFF59D" ALIGN="LEFT">  fecha_alta:String  </TD></TR>
+				<TR><TD PORT="tipo_inmueble" COLSPAN="3" BGCOLOR="#FFF59D" ALIGN="LEFT">  tipo_inmueble:String  </TD></TR>
+				<TR><TD PORT="locali" COLSPAN="3" BGCOLOR="#FFF59D" ALIGN="LEFT">  locali:String  </TD></TR>
+				<TR><TD PORT="cod_pos" COLSPAN="3" BGCOLOR="#FFF59D" ALIGN="LEFT">  cod_pos:String  </TD></TR>
+				<TR><TD PORT="nro_calle" COLSPAN="3" BGCOLOR="#FFF59D" ALIGN="LEFT">  nro_calle:String  </TD></TR>
+				<TR><TD PORT="calle" COLSPAN="3" BGCOLOR="#FFF59D" ALIGN="LEFT">  calle:String  </TD></TR>
+				<TR><TD PORT="numero" COLSPAN="3" BGCOLOR="#FFF59D" ALIGN="LEFT">  numero:String  </TD></TR>
+				<TR><TD PORT="dat_complem" COLSPAN="3" BGCOLOR="#FFF59D" ALIGN="LEFT">  dat_complem:String  </TD></TR>
+				<TR><TD PORT="seccion" COLSPAN="3" BGCOLOR="#FFF59D" ALIGN="LEFT">  seccion:String  </TD></TR>
+				<TR><TD PORT="manzana" COLSPAN="3" BGCOLOR="#FFF59D" ALIGN="LEFT">  manzana:String  </TD></TR>
+				<TR><TD PORT="parcela" COLSPAN="3" BGCOLOR="#FFF59D" ALIGN="LEFT">  parcela:String  </TD></TR>
+				<TR><TD PORT="cant_unidades" COLSPAN="3" BGCOLOR="#FFF59D" ALIGN="LEFT">  cant_unidades:String  </TD></TR>
+				<TR><TD PORT="cod_ser_uf" COLSPAN="3" BGCOLOR="#FFF59D" ALIGN="LEFT">  cod_ser_uf:String  </TD></TR>
+				<TR><TD PORT="fecha_baja" COLSPAN="3" BGCOLOR="#FFF59D" ALIGN="LEFT">  fecha_baja:String  </TD></TR>
+				<TR><TD PORT="motivo_baja" COLSPAN="3" BGCOLOR="#FFF59D" ALIGN="LEFT">  motivo_baja:String  </TD></TR>
+				<TR><TD PORT="descrip_baja" COLSPAN="3" BGCOLOR="#FFF59D" ALIGN="LEFT">  descrip_baja:String  </TD></TR>
+				<TR><TD PORT="sup_terreno" COLSPAN="3" BGCOLOR="#FFF59D" ALIGN="LEFT">  sup_terreno:String  </TD></TR>
+				<TR><TD PORT="sup_cubierta_pro" COLSPAN="3" BGCOLOR="#FFF59D" ALIGN="LEFT">  sup_cubierta_pro:String  </TD></TR>
+				<TR><TD PORT="sup_scubierta_pro" COLSPAN="3" BGCOLOR="#FFF59D" ALIGN="LEFT">  sup_scubierta_pro:String  </TD></TR>
+				<TR><TD PORT="sup_cubierta_com" COLSPAN="3" BGCOLOR="#FFF59D" ALIGN="LEFT">  sup_cubierta_com:String  </TD></TR>
+				<TR><TD PORT="sup_scubierta_com" COLSPAN="3" BGCOLOR="#FFF59D" ALIGN="LEFT">  sup_scubierta_com:String  </TD></TR>
+				<TR><TD PORT="sup_cubierta_amp" COLSPAN="3" BGCOLOR="#FFF59D" ALIGN="LEFT">  sup_cubierta_amp:String  </TD></TR>
+				<TR><TD PORT="sup_scubierta_amp" COLSPAN="3" BGCOLOR="#FFF59D" ALIGN="LEFT">  sup_scubierta_amp:String  </TD></TR>
+				<TR><TD PORT="regularizado" COLSPAN="3" BGCOLOR="#FFF59D" ALIGN="LEFT">  regularizado:String  </TD></TR>
+				<TR><TD PORT="plancheta" COLSPAN="3" BGCOLOR="#FFF59D" ALIGN="LEFT">  plancheta:String  </TD></TR>
+				<TR><TD PORT="subplancheta" COLSPAN="3" BGCOLOR="#FFF59D" ALIGN="LEFT">  subplancheta:String  </TD></TR>
+				<TR><TD PORT="subtipo_inmueble" COLSPAN="3" BGCOLOR="#FFF59D" ALIGN="LEFT">  subtipo_inmueble:String  </TD></TR>
+				<TR><TD PORT="estado" COLSPAN="3" BGCOLOR="#FFF59D" ALIGN="LEFT">  estado:String  </TD></TR>
+									</TABLE>>
+									URL="com.cclip.model.geo.cadastre.aacc.AaccInmueble.html"
+									tooltip="com.cclip.model.geo.cadastre.aacc.AaccInmueble"
+							];
+
+							//com.cclip.model.geo.cadastre.aacc.AaccInmuebleBack
+							AaccInmuebleBack [
+								label=<
+									<TABLE BORDER="0" CELLBORDER="0" CELLSPACING="0" BGCOLOR="#ffffff">
+				<TR><TD COLSPAN="3" BGCOLOR="#FFF176" ALIGN="CENTER"><B>com.cclip.model.geo.cadastre.aacc.AaccInmuebleBack</B></TD></TR>
+
+				<TR><TD PORT="id" COLSPAN="3" BGCOLOR="#FFF59D" ALIGN="LEFT">  id:String  </TD></TR>
+				<TR><TD PORT="erased" COLSPAN="3" BGCOLOR="#FFF59D" ALIGN="LEFT">  erased:Boolean  </TD></TR>
+				<TR><TD PORT="auditDateCreate" COLSPAN="3" BGCOLOR="#FFF59D" ALIGN="LEFT">  auditDateCreate:Timestamp  </TD></TR>
+				<TR><TD PORT="auditUserCreate" COLSPAN="3" BGCOLOR="#FFF59D" ALIGN="LEFT">  auditUserCreate:String  </TD></TR>
+				<TR><TD PORT="auditDateUpdate" COLSPAN="3" BGCOLOR="#FFF59D" ALIGN="LEFT">  auditDateUpdate:Timestamp  </TD></TR>
+				<TR><TD PORT="auditUserUpdate" COLSPAN="3" BGCOLOR="#FFF59D" ALIGN="LEFT">  auditUserUpdate:String  </TD></TR>
+				<TR><TD PORT="auditVersion" COLSPAN="3" BGCOLOR="#FFF59D" ALIGN="LEFT">  auditVersion:Long  </TD></TR>
+				<TR><TD PORT="distrito" COLSPAN="3" BGCOLOR="#FFF59D" ALIGN="LEFT">  distrito:String  </TD></TR>
+				<TR><TD PORT="cuenta" COLSPAN="3" BGCOLOR="#FFF59D" ALIGN="LEFT">  cuenta:String  </TD></TR>
+				<TR><TD PORT="dv" COLSPAN="3" BGCOLOR="#FFF59D" ALIGN="LEFT">  dv:String  </TD></TR>
+				<TR><TD PORT="fecha_alta" COLSPAN="3" BGCOLOR="#FFF59D" ALIGN="LEFT">  fecha_alta:String  </TD></TR>
+				<TR><TD PORT="tipo_inmueble" COLSPAN="3" BGCOLOR="#FFF59D" ALIGN="LEFT">  tipo_inmueble:String  </TD></TR>
+				<TR><TD PORT="locali" COLSPAN="3" BGCOLOR="#FFF59D" ALIGN="LEFT">  locali:String  </TD></TR>
+				<TR><TD PORT="cod_pos" COLSPAN="3" BGCOLOR="#FFF59D" ALIGN="LEFT">  cod_pos:String  </TD></TR>
+				<TR><TD PORT="nro_calle" COLSPAN="3" BGCOLOR="#FFF59D" ALIGN="LEFT">  nro_calle:String  </TD></TR>
+				<TR><TD PORT="calle" COLSPAN="3" BGCOLOR="#FFF59D" ALIGN="LEFT">  calle:String  </TD></TR>
+				<TR><TD PORT="numero" COLSPAN="3" BGCOLOR="#FFF59D" ALIGN="LEFT">  numero:String  </TD></TR>
+				<TR><TD PORT="dat_complem" COLSPAN="3" BGCOLOR="#FFF59D" ALIGN="LEFT">  dat_complem:String  </TD></TR>
+				<TR><TD PORT="seccion" COLSPAN="3" BGCOLOR="#FFF59D" ALIGN="LEFT">  seccion:String  </TD></TR>
+				<TR><TD PORT="manzana" COLSPAN="3" BGCOLOR="#FFF59D" ALIGN="LEFT">  manzana:String  </TD></TR>
+				<TR><TD PORT="parcela" COLSPAN="3" BGCOLOR="#FFF59D" ALIGN="LEFT">  parcela:String  </TD></TR>
+				<TR><TD PORT="cant_unidades" COLSPAN="3" BGCOLOR="#FFF59D" ALIGN="LEFT">  cant_unidades:String  </TD></TR>
+				<TR><TD PORT="cod_ser_uf" COLSPAN="3" BGCOLOR="#FFF59D" ALIGN="LEFT">  cod_ser_uf:String  </TD></TR>
+				<TR><TD PORT="fecha_baja" COLSPAN="3" BGCOLOR="#FFF59D" ALIGN="LEFT">  fecha_baja:String  </TD></TR>
+				<TR><TD PORT="motivo_baja" COLSPAN="3" BGCOLOR="#FFF59D" ALIGN="LEFT">  motivo_baja:String  </TD></TR>
+				<TR><TD PORT="descrip_baja" COLSPAN="3" BGCOLOR="#FFF59D" ALIGN="LEFT">  descrip_baja:String  </TD></TR>
+				<TR><TD PORT="sup_terreno" COLSPAN="3" BGCOLOR="#FFF59D" ALIGN="LEFT">  sup_terreno:String  </TD></TR>
+				<TR><TD PORT="sup_cubierta_pro" COLSPAN="3" BGCOLOR="#FFF59D" ALIGN="LEFT">  sup_cubierta_pro:String  </TD></TR>
+				<TR><TD PORT="sup_scubierta_pro" COLSPAN="3" BGCOLOR="#FFF59D" ALIGN="LEFT">  sup_scubierta_pro:String  </TD></TR>
+				<TR><TD PORT="sup_cubierta_com" COLSPAN="3" BGCOLOR="#FFF59D" ALIGN="LEFT">  sup_cubierta_com:String  </TD></TR>
+				<TR><TD PORT="sup_scubierta_com" COLSPAN="3" BGCOLOR="#FFF59D" ALIGN="LEFT">  sup_scubierta_com:String  </TD></TR>
+				<TR><TD PORT="sup_cubierta_amp" COLSPAN="3" BGCOLOR="#FFF59D" ALIGN="LEFT">  sup_cubierta_amp:String  </TD></TR>
+				<TR><TD PORT="sup_scubierta_amp" COLSPAN="3" BGCOLOR="#FFF59D" ALIGN="LEFT">  sup_scubierta_amp:String  </TD></TR>
+				<TR><TD PORT="regularizado" COLSPAN="3" BGCOLOR="#FFF59D" ALIGN="LEFT">  regularizado:String  </TD></TR>
+				<TR><TD PORT="plancheta" COLSPAN="3" BGCOLOR="#FFF59D" ALIGN="LEFT">  plancheta:String  </TD></TR>
+				<TR><TD PORT="subplancheta" COLSPAN="3" BGCOLOR="#FFF59D" ALIGN="LEFT">  subplancheta:String  </TD></TR>
+				<TR><TD PORT="subtipo_inmueble" COLSPAN="3" BGCOLOR="#FFF59D" ALIGN="LEFT">  subtipo_inmueble:String  </TD></TR>
+				<TR><TD PORT="estado" COLSPAN="3" BGCOLOR="#FFF59D" ALIGN="LEFT">  estado:String  </TD></TR>
+									</TABLE>>
+									URL="com.cclip.model.geo.cadastre.aacc.AaccInmuebleBack.html"
+									tooltip="com.cclip.model.geo.cadastre.aacc.AaccInmuebleBack"
+							];
+
+							//com.cclip.model.geo.cadastre.aacc.AaccSubcuenta
+							AaccSubcuenta [
+								label=<
+									<TABLE BORDER="0" CELLBORDER="0" CELLSPACING="0" BGCOLOR="#ffffff">
+				<TR><TD COLSPAN="3" BGCOLOR="#FFF176" ALIGN="CENTER"><B>com.cclip.model.geo.cadastre.aacc.AaccSubcuenta</B></TD></TR>
+
+				<TR><TD PORT="id" COLSPAN="3" BGCOLOR="#FFF59D" ALIGN="LEFT">  id:String  </TD></TR>
+				<TR><TD PORT="erased" COLSPAN="3" BGCOLOR="#FFF59D" ALIGN="LEFT">  erased:Boolean  </TD></TR>
+				<TR><TD PORT="auditDateCreate" COLSPAN="3" BGCOLOR="#FFF59D" ALIGN="LEFT">  auditDateCreate:Timestamp  </TD></TR>
+				<TR><TD PORT="auditUserCreate" COLSPAN="3" BGCOLOR="#FFF59D" ALIGN="LEFT">  auditUserCreate:String  </TD></TR>
+				<TR><TD PORT="auditDateUpdate" COLSPAN="3" BGCOLOR="#FFF59D" ALIGN="LEFT">  auditDateUpdate:Timestamp  </TD></TR>
+				<TR><TD PORT="auditUserUpdate" COLSPAN="3" BGCOLOR="#FFF59D" ALIGN="LEFT">  auditUserUpdate:String  </TD></TR>
+				<TR><TD PORT="auditVersion" COLSPAN="3" BGCOLOR="#FFF59D" ALIGN="LEFT">  auditVersion:Long  </TD></TR>
+				<TR><TD PORT="distrito" COLSPAN="3" BGCOLOR="#FFF59D" ALIGN="LEFT">  distrito:String  </TD></TR>
+				<TR><TD PORT="cuenta" COLSPAN="3" BGCOLOR="#FFF59D" ALIGN="LEFT">  cuenta:String  </TD></TR>
+				<TR><TD PORT="subcuenta" COLSPAN="3" BGCOLOR="#FFF59D" ALIGN="LEFT">  subcuenta:String  </TD></TR>
+				<TR><TD PORT="dv" COLSPAN="3" BGCOLOR="#FFF59D" ALIGN="LEFT">  dv:String  </TD></TR>
+				<TR><TD PORT="fecha_alta" COLSPAN="3" BGCOLOR="#FFF59D" ALIGN="LEFT">  fecha_alta:String  </TD></TR>
+				<TR><TD PORT="tipo_subcta" COLSPAN="3" BGCOLOR="#FFF59D" ALIGN="LEFT">  tipo_subcta:String  </TD></TR>
+				<TR><TD PORT="sub_tipo" COLSPAN="3" BGCOLOR="#FFF59D" ALIGN="LEFT">  sub_tipo:String  </TD></TR>
+				<TR><TD PORT="factura" COLSPAN="3" BGCOLOR="#FFF59D" ALIGN="LEFT">  factura:String  </TD></TR>
+				<TR><TD PORT="titular" COLSPAN="3" BGCOLOR="#FFF59D" ALIGN="LEFT">  titular:String  </TD></TR>
+				<TR><TD PORT="tpo_doc" COLSPAN="3" BGCOLOR="#FFF59D" ALIGN="LEFT">  tpo_doc:String  </TD></TR>
+				<TR><TD PORT="nro_doc" COLSPAN="3" BGCOLOR="#FFF59D" ALIGN="LEFT">  nro_doc:String  </TD></TR>
+				<TR><TD PORT="tomo" COLSPAN="3" BGCOLOR="#FFF59D" ALIGN="LEFT">  tomo:String  </TD></TR>
+				<TR><TD PORT="folio" COLSPAN="3" BGCOLOR="#FFF59D" ALIGN="LEFT">  folio:String  </TD></TR>
+				<TR><TD PORT="numero" COLSPAN="3" BGCOLOR="#FFF59D" ALIGN="LEFT">  numero:String  </TD></TR>
+				<TR><TD PORT="anio" COLSPAN="3" BGCOLOR="#FFF59D" ALIGN="LEFT">  anio:String  </TD></TR>
+				<TR><TD PORT="piso" COLSPAN="3" BGCOLOR="#FFF59D" ALIGN="LEFT">  piso:String  </TD></TR>
+				<TR><TD PORT="depto" COLSPAN="3" BGCOLOR="#FFF59D" ALIGN="LEFT">  depto:String  </TD></TR>
+				<TR><TD PORT="subparcela" COLSPAN="3" BGCOLOR="#FFF59D" ALIGN="LEFT">  subparcela:String  </TD></TR>
+				<TR><TD PORT="porc_particip" COLSPAN="3" BGCOLOR="#FFF59D" ALIGN="LEFT">  porc_particip:String  </TD></TR>
+				<TR><TD PORT="medido" COLSPAN="3" BGCOLOR="#FFF59D" ALIGN="LEFT">  medido:String  </TD></TR>
+				<TR><TD PORT="medido_vig_d" COLSPAN="3" BGCOLOR="#FFF59D" ALIGN="LEFT">  medido_vig_d:String  </TD></TR>
+				<TR><TD PORT="actividad" COLSPAN="3" BGCOLOR="#FFF59D" ALIGN="LEFT">  actividad:String  </TD></TR>
+				<TR><TD PORT="tbm" COLSPAN="3" BGCOLOR="#FFF59D" ALIGN="LEFT">  tbm:String  </TD></TR>
+				<TR><TD PORT="ibm" COLSPAN="3" BGCOLOR="#FFF59D" ALIGN="LEFT">  ibm:String  </TD></TR>
+				<TR><TD PORT="base_libre" COLSPAN="3" BGCOLOR="#FFF59D" ALIGN="LEFT">  base_libre:String  </TD></TR>
+				<TR><TD PORT="prom_const" COLSPAN="3" BGCOLOR="#FFF59D" ALIGN="LEFT">  prom_const:String  </TD></TR>
+				<TR><TD PORT="unidad" COLSPAN="3" BGCOLOR="#FFF59D" ALIGN="LEFT">  unidad:String  </TD></TR>
+				<TR><TD PORT="cat_tar" COLSPAN="3" BGCOLOR="#FFF59D" ALIGN="LEFT">  cat_tar:String  </TD></TR>
+				<TR><TD PORT="frec_fac" COLSPAN="3" BGCOLOR="#FFF59D" ALIGN="LEFT">  frec_fac:String  </TD></TR>
+				<TR><TD PORT="orden" COLSPAN="3" BGCOLOR="#FFF59D" ALIGN="LEFT">  orden:String  </TD></TR>
+				<TR><TD PORT="frec_fac_desde" COLSPAN="3" BGCOLOR="#FFF59D" ALIGN="LEFT">  frec_fac_desde:String  </TD></TR>
+				<TR><TD PORT="jubilado" COLSPAN="3" BGCOLOR="#FFF59D" ALIGN="LEFT">  jubilado:String  </TD></TR>
+				<TR><TD PORT="jubilado_desde" COLSPAN="3" BGCOLOR="#FFF59D" ALIGN="LEFT">  jubilado_desde:String  </TD></TR>
+				<TR><TD PORT="otro_desc_1" COLSPAN="3" BGCOLOR="#FFF59D" ALIGN="LEFT">  otro_desc_1:String  </TD></TR>
+				<TR><TD PORT="otro_desc_1_desde" COLSPAN="3" BGCOLOR="#FFF59D" ALIGN="LEFT">  otro_desc_1_desde:String  </TD></TR>
+				<TR><TD PORT="otro_desc_1_hasta" COLSPAN="3" BGCOLOR="#FFF59D" ALIGN="LEFT">  otro_desc_1_hasta:String  </TD></TR>
+				<TR><TD PORT="otro_desc_2" COLSPAN="3" BGCOLOR="#FFF59D" ALIGN="LEFT">  otro_desc_2:String  </TD></TR>
+				<TR><TD PORT="otro_desc_2_desde" COLSPAN="3" BGCOLOR="#FFF59D" ALIGN="LEFT">  otro_desc_2_desde:String  </TD></TR>
+				<TR><TD PORT="otro_desc_2_hasta" COLSPAN="3" BGCOLOR="#FFF59D" ALIGN="LEFT">  otro_desc_2_hasta:String  </TD></TR>
+				<TR><TD PORT="construccion" COLSPAN="3" BGCOLOR="#FFF59D" ALIGN="LEFT">  construccion:String  </TD></TR>
+				<TR><TD PORT="independiente" COLSPAN="3" BGCOLOR="#FFF59D" ALIGN="LEFT">  independiente:String  </TD></TR>
+									</TABLE>>
+									URL="com.cclip.model.geo.cadastre.aacc.AaccSubcuenta.html"
+									tooltip="com.cclip.model.geo.cadastre.aacc.AaccSubcuenta"
+							];
+
+							//com.cclip.model.geo.cadastre.aacc.AaccSubcuentaBack
+							AaccSubcuentaBack [
+								label=<
+									<TABLE BORDER="0" CELLBORDER="0" CELLSPACING="0" BGCOLOR="#ffffff">
+				<TR><TD COLSPAN="3" BGCOLOR="#FFF176" ALIGN="CENTER"><B>com.cclip.model.geo.cadastre.aacc.AaccSubcuentaBack</B></TD></TR>
+
+				<TR><TD PORT="id" COLSPAN="3" BGCOLOR="#FFF59D" ALIGN="LEFT">  id:String  </TD></TR>
+				<TR><TD PORT="erased" COLSPAN="3" BGCOLOR="#FFF59D" ALIGN="LEFT">  erased:Boolean  </TD></TR>
+				<TR><TD PORT="auditDateCreate" COLSPAN="3" BGCOLOR="#FFF59D" ALIGN="LEFT">  auditDateCreate:Timestamp  </TD></TR>
+				<TR><TD PORT="auditUserCreate" COLSPAN="3" BGCOLOR="#FFF59D" ALIGN="LEFT">  auditUserCreate:String  </TD></TR>
+				<TR><TD PORT="auditDateUpdate" COLSPAN="3" BGCOLOR="#FFF59D" ALIGN="LEFT">  auditDateUpdate:Timestamp  </TD></TR>
+				<TR><TD PORT="auditUserUpdate" COLSPAN="3" BGCOLOR="#FFF59D" ALIGN="LEFT">  auditUserUpdate:String  </TD></TR>
+				<TR><TD PORT="auditVersion" COLSPAN="3" BGCOLOR="#FFF59D" ALIGN="LEFT">  auditVersion:Long  </TD></TR>
+				<TR><TD PORT="distrito" COLSPAN="3" BGCOLOR="#FFF59D" ALIGN="LEFT">  distrito:String  </TD></TR>
+				<TR><TD PORT="cuenta" COLSPAN="3" BGCOLOR="#FFF59D" ALIGN="LEFT">  cuenta:String  </TD></TR>
+				<TR><TD PORT="subcuenta" COLSPAN="3" BGCOLOR="#FFF59D" ALIGN="LEFT">  subcuenta:String  </TD></TR>
+				<TR><TD PORT="dv" COLSPAN="3" BGCOLOR="#FFF59D" ALIGN="LEFT">  dv:String  </TD></TR>
+				<TR><TD PORT="fecha_alta" COLSPAN="3" BGCOLOR="#FFF59D" ALIGN="LEFT">  fecha_alta:String  </TD></TR>
+				<TR><TD PORT="tipo_subcta" COLSPAN="3" BGCOLOR="#FFF59D" ALIGN="LEFT">  tipo_subcta:String  </TD></TR>
+				<TR><TD PORT="sub_tipo" COLSPAN="3" BGCOLOR="#FFF59D" ALIGN="LEFT">  sub_tipo:String  </TD></TR>
+				<TR><TD PORT="factura" COLSPAN="3" BGCOLOR="#FFF59D" ALIGN="LEFT">  factura:String  </TD></TR>
+				<TR><TD PORT="titular" COLSPAN="3" BGCOLOR="#FFF59D" ALIGN="LEFT">  titular:String  </TD></TR>
+				<TR><TD PORT="tpo_doc" COLSPAN="3" BGCOLOR="#FFF59D" ALIGN="LEFT">  tpo_doc:String  </TD></TR>
+				<TR><TD PORT="nro_doc" COLSPAN="3" BGCOLOR="#FFF59D" ALIGN="LEFT">  nro_doc:String  </TD></TR>
+				<TR><TD PORT="tomo" COLSPAN="3" BGCOLOR="#FFF59D" ALIGN="LEFT">  tomo:String  </TD></TR>
+				<TR><TD PORT="folio" COLSPAN="3" BGCOLOR="#FFF59D" ALIGN="LEFT">  folio:String  </TD></TR>
+				<TR><TD PORT="numero" COLSPAN="3" BGCOLOR="#FFF59D" ALIGN="LEFT">  numero:String  </TD></TR>
+				<TR><TD PORT="anio" COLSPAN="3" BGCOLOR="#FFF59D" ALIGN="LEFT">  anio:String  </TD></TR>
+				<TR><TD PORT="piso" COLSPAN="3" BGCOLOR="#FFF59D" ALIGN="LEFT">  piso:String  </TD></TR>
+				<TR><TD PORT="depto" COLSPAN="3" BGCOLOR="#FFF59D" ALIGN="LEFT">  depto:String  </TD></TR>
+				<TR><TD PORT="subparcela" COLSPAN="3" BGCOLOR="#FFF59D" ALIGN="LEFT">  subparcela:String  </TD></TR>
+				<TR><TD PORT="porc_particip" COLSPAN="3" BGCOLOR="#FFF59D" ALIGN="LEFT">  porc_particip:String  </TD></TR>
+				<TR><TD PORT="medido" COLSPAN="3" BGCOLOR="#FFF59D" ALIGN="LEFT">  medido:String  </TD></TR>
+				<TR><TD PORT="medido_vig_d" COLSPAN="3" BGCOLOR="#FFF59D" ALIGN="LEFT">  medido_vig_d:String  </TD></TR>
+				<TR><TD PORT="actividad" COLSPAN="3" BGCOLOR="#FFF59D" ALIGN="LEFT">  actividad:String  </TD></TR>
+				<TR><TD PORT="tbm" COLSPAN="3" BGCOLOR="#FFF59D" ALIGN="LEFT">  tbm:String  </TD></TR>
+				<TR><TD PORT="ibm" COLSPAN="3" BGCOLOR="#FFF59D" ALIGN="LEFT">  ibm:String  </TD></TR>
+				<TR><TD PORT="base_libre" COLSPAN="3" BGCOLOR="#FFF59D" ALIGN="LEFT">  base_libre:String  </TD></TR>
+				<TR><TD PORT="prom_const" COLSPAN="3" BGCOLOR="#FFF59D" ALIGN="LEFT">  prom_const:String  </TD></TR>
+				<TR><TD PORT="unidad" COLSPAN="3" BGCOLOR="#FFF59D" ALIGN="LEFT">  unidad:String  </TD></TR>
+				<TR><TD PORT="cat_tar" COLSPAN="3" BGCOLOR="#FFF59D" ALIGN="LEFT">  cat_tar:String  </TD></TR>
+				<TR><TD PORT="frec_fac" COLSPAN="3" BGCOLOR="#FFF59D" ALIGN="LEFT">  frec_fac:String  </TD></TR>
+				<TR><TD PORT="orden" COLSPAN="3" BGCOLOR="#FFF59D" ALIGN="LEFT">  orden:String  </TD></TR>
+				<TR><TD PORT="frec_fac_desde" COLSPAN="3" BGCOLOR="#FFF59D" ALIGN="LEFT">  frec_fac_desde:String  </TD></TR>
+				<TR><TD PORT="jubilado" COLSPAN="3" BGCOLOR="#FFF59D" ALIGN="LEFT">  jubilado:String  </TD></TR>
+				<TR><TD PORT="jubilado_desde" COLSPAN="3" BGCOLOR="#FFF59D" ALIGN="LEFT">  jubilado_desde:String  </TD></TR>
+				<TR><TD PORT="otro_desc_1" COLSPAN="3" BGCOLOR="#FFF59D" ALIGN="LEFT">  otro_desc_1:String  </TD></TR>
+				<TR><TD PORT="otro_desc_1_desde" COLSPAN="3" BGCOLOR="#FFF59D" ALIGN="LEFT">  otro_desc_1_desde:String  </TD></TR>
+				<TR><TD PORT="otro_desc_1_hasta" COLSPAN="3" BGCOLOR="#FFF59D" ALIGN="LEFT">  otro_desc_1_hasta:String  </TD></TR>
+				<TR><TD PORT="otro_desc_2" COLSPAN="3" BGCOLOR="#FFF59D" ALIGN="LEFT">  otro_desc_2:String  </TD></TR>
+				<TR><TD PORT="otro_desc_2_desde" COLSPAN="3" BGCOLOR="#FFF59D" ALIGN="LEFT">  otro_desc_2_desde:String  </TD></TR>
+				<TR><TD PORT="otro_desc_2_hasta" COLSPAN="3" BGCOLOR="#FFF59D" ALIGN="LEFT">  otro_desc_2_hasta:String  </TD></TR>
+				<TR><TD PORT="construccion" COLSPAN="3" BGCOLOR="#FFF59D" ALIGN="LEFT">  construccion:String  </TD></TR>
+				<TR><TD PORT="independiente" COLSPAN="3" BGCOLOR="#FFF59D" ALIGN="LEFT">  independiente:String  </TD></TR>
+									</TABLE>>
+									URL="com.cclip.model.geo.cadastre.aacc.AaccSubcuentaBack.html"
+									tooltip="com.cclip.model.geo.cadastre.aacc.AaccSubcuentaBack"
+							];
+
+							//com.cclip.model.geo.cadastre.aacc.AaccSuperficie
+							AaccSuperficie [
+								label=<
+									<TABLE BORDER="0" CELLBORDER="0" CELLSPACING="0" BGCOLOR="#ffffff">
+				<TR><TD COLSPAN="3" BGCOLOR="#FFF176" ALIGN="CENTER"><B>com.cclip.model.geo.cadastre.aacc.AaccSuperficie</B></TD></TR>
+
+				<TR><TD PORT="id" COLSPAN="3" BGCOLOR="#FFF59D" ALIGN="LEFT">  id:String  </TD></TR>
+				<TR><TD PORT="erased" COLSPAN="3" BGCOLOR="#FFF59D" ALIGN="LEFT">  erased:Boolean  </TD></TR>
+				<TR><TD PORT="auditDateCreate" COLSPAN="3" BGCOLOR="#FFF59D" ALIGN="LEFT">  auditDateCreate:Timestamp  </TD></TR>
+				<TR><TD PORT="auditUserCreate" COLSPAN="3" BGCOLOR="#FFF59D" ALIGN="LEFT">  auditUserCreate:String  </TD></TR>
+				<TR><TD PORT="auditDateUpdate" COLSPAN="3" BGCOLOR="#FFF59D" ALIGN="LEFT">  auditDateUpdate:Timestamp  </TD></TR>
+				<TR><TD PORT="auditUserUpdate" COLSPAN="3" BGCOLOR="#FFF59D" ALIGN="LEFT">  auditUserUpdate:String  </TD></TR>
+				<TR><TD PORT="auditVersion" COLSPAN="3" BGCOLOR="#FFF59D" ALIGN="LEFT">  auditVersion:Long  </TD></TR>
+				<TR><TD PORT="distrito" COLSPAN="3" BGCOLOR="#FFF59D" ALIGN="LEFT">  distrito:String  </TD></TR>
+				<TR><TD PORT="cuenta" COLSPAN="3" BGCOLOR="#FFF59D" ALIGN="LEFT">  cuenta:String  </TD></TR>
+				<TR><TD PORT="subcuenta" COLSPAN="3" BGCOLOR="#FFF59D" ALIGN="LEFT">  subcuenta:String  </TD></TR>
+				<TR><TD PORT="dv" COLSPAN="3" BGCOLOR="#FFF59D" ALIGN="LEFT">  dv:String  </TD></TR>
+				<TR><TD PORT="nro_sec" COLSPAN="3" BGCOLOR="#FFF59D" ALIGN="LEFT">  nro_sec:String  </TD></TR>
+				<TR><TD PORT="tipo_tar_sup" COLSPAN="3" BGCOLOR="#FFF59D" ALIGN="LEFT">  tipo_tar_sup:String  </TD></TR>
+				<TR><TD PORT="sup_cub_com" COLSPAN="3" BGCOLOR="#FFF59D" ALIGN="LEFT">  sup_cub_com:String  </TD></TR>
+				<TR><TD PORT="sup_scub_com" COLSPAN="3" BGCOLOR="#FFF59D" ALIGN="LEFT">  sup_scub_com:String  </TD></TR>
+				<TR><TD PORT="sup_cub_propia" COLSPAN="3" BGCOLOR="#FFF59D" ALIGN="LEFT">  sup_cub_propia:String  </TD></TR>
+				<TR><TD PORT="sup_scub_propia" COLSPAN="3" BGCOLOR="#FFF59D" ALIGN="LEFT">  sup_scub_propia:String  </TD></TR>
+				<TR><TD PORT="sup_cub_amp" COLSPAN="3" BGCOLOR="#FFF59D" ALIGN="LEFT">  sup_cub_amp:String  </TD></TR>
+				<TR><TD PORT="sup_scub_amp" COLSPAN="3" BGCOLOR="#FFF59D" ALIGN="LEFT">  sup_scub_amp:String  </TD></TR>
+				<TR><TD PORT="tipo_const" COLSPAN="3" BGCOLOR="#FFF59D" ALIGN="LEFT">  tipo_const:String  </TD></TR>
+				<TR><TD PORT="destino_const" COLSPAN="3" BGCOLOR="#FFF59D" ALIGN="LEFT">  destino_const:String  </TD></TR>
+				<TR><TD PORT="anio_const" COLSPAN="3" BGCOLOR="#FFF59D" ALIGN="LEFT">  anio_const:String  </TD></TR>
+									</TABLE>>
+									URL="com.cclip.model.geo.cadastre.aacc.AaccSuperficie.html"
+									tooltip="com.cclip.model.geo.cadastre.aacc.AaccSuperficie"
+							];
+
+							//com.cclip.model.geo.cadastre.aacc.AaccSuperficieBack
+							AaccSuperficieBack [
+								label=<
+									<TABLE BORDER="0" CELLBORDER="0" CELLSPACING="0" BGCOLOR="#ffffff">
+				<TR><TD COLSPAN="3" BGCOLOR="#FFF176" ALIGN="CENTER"><B>com.cclip.model.geo.cadastre.aacc.AaccSuperficieBack</B></TD></TR>
+
+				<TR><TD PORT="id" COLSPAN="3" BGCOLOR="#FFF59D" ALIGN="LEFT">  id:String  </TD></TR>
+				<TR><TD PORT="erased" COLSPAN="3" BGCOLOR="#FFF59D" ALIGN="LEFT">  erased:Boolean  </TD></TR>
+				<TR><TD PORT="auditDateCreate" COLSPAN="3" BGCOLOR="#FFF59D" ALIGN="LEFT">  auditDateCreate:Timestamp  </TD></TR>
+				<TR><TD PORT="auditUserCreate" COLSPAN="3" BGCOLOR="#FFF59D" ALIGN="LEFT">  auditUserCreate:String  </TD></TR>
+				<TR><TD PORT="auditDateUpdate" COLSPAN="3" BGCOLOR="#FFF59D" ALIGN="LEFT">  auditDateUpdate:Timestamp  </TD></TR>
+				<TR><TD PORT="auditUserUpdate" COLSPAN="3" BGCOLOR="#FFF59D" ALIGN="LEFT">  auditUserUpdate:String  </TD></TR>
+				<TR><TD PORT="auditVersion" COLSPAN="3" BGCOLOR="#FFF59D" ALIGN="LEFT">  auditVersion:Long  </TD></TR>
+				<TR><TD PORT="distrito" COLSPAN="3" BGCOLOR="#FFF59D" ALIGN="LEFT">  distrito:String  </TD></TR>
+				<TR><TD PORT="cuenta" COLSPAN="3" BGCOLOR="#FFF59D" ALIGN="LEFT">  cuenta:String  </TD></TR>
+				<TR><TD PORT="subcuenta" COLSPAN="3" BGCOLOR="#FFF59D" ALIGN="LEFT">  subcuenta:String  </TD></TR>
+				<TR><TD PORT="dv" COLSPAN="3" BGCOLOR="#FFF59D" ALIGN="LEFT">  dv:String  </TD></TR>
+				<TR><TD PORT="nro_sec" COLSPAN="3" BGCOLOR="#FFF59D" ALIGN="LEFT">  nro_sec:String  </TD></TR>
+				<TR><TD PORT="tipo_tar_sup" COLSPAN="3" BGCOLOR="#FFF59D" ALIGN="LEFT">  tipo_tar_sup:String  </TD></TR>
+				<TR><TD PORT="sup_cub_com" COLSPAN="3" BGCOLOR="#FFF59D" ALIGN="LEFT">  sup_cub_com:String  </TD></TR>
+				<TR><TD PORT="sup_scub_com" COLSPAN="3" BGCOLOR="#FFF59D" ALIGN="LEFT">  sup_scub_com:String  </TD></TR>
+				<TR><TD PORT="sup_cub_propia" COLSPAN="3" BGCOLOR="#FFF59D" ALIGN="LEFT">  sup_cub_propia:String  </TD></TR>
+				<TR><TD PORT="sup_scub_propia" COLSPAN="3" BGCOLOR="#FFF59D" ALIGN="LEFT">  sup_scub_propia:String  </TD></TR>
+				<TR><TD PORT="sup_cub_amp" COLSPAN="3" BGCOLOR="#FFF59D" ALIGN="LEFT">  sup_cub_amp:String  </TD></TR>
+				<TR><TD PORT="sup_scub_amp" COLSPAN="3" BGCOLOR="#FFF59D" ALIGN="LEFT">  sup_scub_amp:String  </TD></TR>
+				<TR><TD PORT="tipo_const" COLSPAN="3" BGCOLOR="#FFF59D" ALIGN="LEFT">  tipo_const:String  </TD></TR>
+				<TR><TD PORT="destino_const" COLSPAN="3" BGCOLOR="#FFF59D" ALIGN="LEFT">  destino_const:String  </TD></TR>
+				<TR><TD PORT="anio_const" COLSPAN="3" BGCOLOR="#FFF59D" ALIGN="LEFT">  anio_const:String  </TD></TR>
+									</TABLE>>
+									URL="com.cclip.model.geo.cadastre.aacc.AaccSuperficieBack.html"
+									tooltip="com.cclip.model.geo.cadastre.aacc.AaccSuperficieBack"
+							];
+
+							//com.cclip.model.geo.cadastre.aacc.AaccDatosPostales
+							AaccDatosPostales [
+								label=<
+									<TABLE BORDER="0" CELLBORDER="0" CELLSPACING="0" BGCOLOR="#ffffff">
+				<TR><TD COLSPAN="3" BGCOLOR="#FFF176" ALIGN="CENTER"><B>com.cclip.model.geo.cadastre.aacc.AaccDatosPostales</B></TD></TR>
+
+				<TR><TD PORT="id" COLSPAN="3" BGCOLOR="#FFF59D" ALIGN="LEFT">  id:String  </TD></TR>
+				<TR><TD PORT="erased" COLSPAN="3" BGCOLOR="#FFF59D" ALIGN="LEFT">  erased:Boolean  </TD></TR>
+				<TR><TD PORT="auditDateCreate" COLSPAN="3" BGCOLOR="#FFF59D" ALIGN="LEFT">  auditDateCreate:Timestamp  </TD></TR>
+				<TR><TD PORT="auditUserCreate" COLSPAN="3" BGCOLOR="#FFF59D" ALIGN="LEFT">  auditUserCreate:String  </TD></TR>
+				<TR><TD PORT="auditDateUpdate" COLSPAN="3" BGCOLOR="#FFF59D" ALIGN="LEFT">  auditDateUpdate:Timestamp  </TD></TR>
+				<TR><TD PORT="auditUserUpdate" COLSPAN="3" BGCOLOR="#FFF59D" ALIGN="LEFT">  auditUserUpdate:String  </TD></TR>
+				<TR><TD PORT="auditVersion" COLSPAN="3" BGCOLOR="#FFF59D" ALIGN="LEFT">  auditVersion:Long  </TD></TR>
+				<TR><TD PORT="unidad" COLSPAN="3" BGCOLOR="#FFF59D" ALIGN="LEFT">  unidad:String  </TD></TR>
+				<TR><TD PORT="unidad_alt" COLSPAN="3" BGCOLOR="#FFF59D" ALIGN="LEFT">  unidad_alt:String  </TD></TR>
+				<TR><TD PORT="usuario" COLSPAN="3" BGCOLOR="#FFF59D" ALIGN="LEFT">  usuario:String  </TD></TR>
+				<TR><TD PORT="cliente" COLSPAN="3" BGCOLOR="#FFF59D" ALIGN="LEFT">  cliente:String  </TD></TR>
+				<TR><TD PORT="dat_complem" COLSPAN="3" BGCOLOR="#FFF59D" ALIGN="LEFT">  dat_complem:String  </TD></TR>
+				<TR><TD PORT="calle" COLSPAN="3" BGCOLOR="#FFF59D" ALIGN="LEFT">  calle:String  </TD></TR>
+				<TR><TD PORT="numero" COLSPAN="3" BGCOLOR="#FFF59D" ALIGN="LEFT">  numero:String  </TD></TR>
+				<TR><TD PORT="piso" COLSPAN="3" BGCOLOR="#FFF59D" ALIGN="LEFT">  piso:String  </TD></TR>
+				<TR><TD PORT="depto" COLSPAN="3" BGCOLOR="#FFF59D" ALIGN="LEFT">  depto:String  </TD></TR>
+				<TR><TD PORT="cod_locali" COLSPAN="3" BGCOLOR="#FFF59D" ALIGN="LEFT">  cod_locali:String  </TD></TR>
+				<TR><TD PORT="locali" COLSPAN="3" BGCOLOR="#FFF59D" ALIGN="LEFT">  locali:String  </TD></TR>
+				<TR><TD PORT="cod_pos" COLSPAN="3" BGCOLOR="#FFF59D" ALIGN="LEFT">  cod_pos:String  </TD></TR>
+				<TR><TD PORT="telefono" COLSPAN="3" BGCOLOR="#FFF59D" ALIGN="LEFT">  telefono:String  </TD></TR>
+				<TR><TD PORT="nro_calle" COLSPAN="3" BGCOLOR="#FFF59D" ALIGN="LEFT">  nro_calle:String  </TD></TR>
+				<TR><TD PORT="provin" COLSPAN="3" BGCOLOR="#FFF59D" ALIGN="LEFT">  provin:String  </TD></TR>
+				<TR><TD PORT="desc_prov" COLSPAN="3" BGCOLOR="#FFF59D" ALIGN="LEFT">  desc_prov:String  </TD></TR>
+				<TR><TD PORT="tiene_clie" COLSPAN="3" BGCOLOR="#FFF59D" ALIGN="LEFT">  tiene_clie:String  </TD></TR>
+				<TR><TD PORT="reparto" COLSPAN="3" BGCOLOR="#FFF59D" ALIGN="LEFT">  reparto:String  </TD></TR>
+				<TR><TD PORT="ruta_dis" COLSPAN="3" BGCOLOR="#FFF59D" ALIGN="LEFT">  ruta_dis:String  </TD></TR>
+									</TABLE>>
+									URL="com.cclip.model.geo.cadastre.aacc.AaccDatosPostales.html"
+									tooltip="com.cclip.model.geo.cadastre.aacc.AaccDatosPostales"
+							];
+
+							//com.cclip.model.geo.cadastre.aacc.AaccDatosPostalesBack
+							AaccDatosPostalesBack [
+								label=<
+									<TABLE BORDER="0" CELLBORDER="0" CELLSPACING="0" BGCOLOR="#ffffff">
+				<TR><TD COLSPAN="3" BGCOLOR="#FFF176" ALIGN="CENTER"><B>com.cclip.model.geo.cadastre.aacc.AaccDatosPostalesBack</B></TD></TR>
+
+				<TR><TD PORT="id" COLSPAN="3" BGCOLOR="#FFF59D" ALIGN="LEFT">  id:String  </TD></TR>
+				<TR><TD PORT="erased" COLSPAN="3" BGCOLOR="#FFF59D" ALIGN="LEFT">  erased:Boolean  </TD></TR>
+				<TR><TD PORT="auditDateCreate" COLSPAN="3" BGCOLOR="#FFF59D" ALIGN="LEFT">  auditDateCreate:Timestamp  </TD></TR>
+				<TR><TD PORT="auditUserCreate" COLSPAN="3" BGCOLOR="#FFF59D" ALIGN="LEFT">  auditUserCreate:String  </TD></TR>
+				<TR><TD PORT="auditDateUpdate" COLSPAN="3" BGCOLOR="#FFF59D" ALIGN="LEFT">  auditDateUpdate:Timestamp  </TD></TR>
+				<TR><TD PORT="auditUserUpdate" COLSPAN="3" BGCOLOR="#FFF59D" ALIGN="LEFT">  auditUserUpdate:String  </TD></TR>
+				<TR><TD PORT="auditVersion" COLSPAN="3" BGCOLOR="#FFF59D" ALIGN="LEFT">  auditVersion:Long  </TD></TR>
+				<TR><TD PORT="unidad" COLSPAN="3" BGCOLOR="#FFF59D" ALIGN="LEFT">  unidad:String  </TD></TR>
+				<TR><TD PORT="unidad_alt" COLSPAN="3" BGCOLOR="#FFF59D" ALIGN="LEFT">  unidad_alt:String  </TD></TR>
+				<TR><TD PORT="usuario" COLSPAN="3" BGCOLOR="#FFF59D" ALIGN="LEFT">  usuario:String  </TD></TR>
+				<TR><TD PORT="cliente" COLSPAN="3" BGCOLOR="#FFF59D" ALIGN="LEFT">  cliente:String  </TD></TR>
+				<TR><TD PORT="dat_complem" COLSPAN="3" BGCOLOR="#FFF59D" ALIGN="LEFT">  dat_complem:String  </TD></TR>
+				<TR><TD PORT="calle" COLSPAN="3" BGCOLOR="#FFF59D" ALIGN="LEFT">  calle:String  </TD></TR>
+				<TR><TD PORT="numero" COLSPAN="3" BGCOLOR="#FFF59D" ALIGN="LEFT">  numero:String  </TD></TR>
+				<TR><TD PORT="piso" COLSPAN="3" BGCOLOR="#FFF59D" ALIGN="LEFT">  piso:String  </TD></TR>
+				<TR><TD PORT="depto" COLSPAN="3" BGCOLOR="#FFF59D" ALIGN="LEFT">  depto:String  </TD></TR>
+				<TR><TD PORT="cod_locali" COLSPAN="3" BGCOLOR="#FFF59D" ALIGN="LEFT">  cod_locali:String  </TD></TR>
+				<TR><TD PORT="locali" COLSPAN="3" BGCOLOR="#FFF59D" ALIGN="LEFT">  locali:String  </TD></TR>
+				<TR><TD PORT="cod_pos" COLSPAN="3" BGCOLOR="#FFF59D" ALIGN="LEFT">  cod_pos:String  </TD></TR>
+				<TR><TD PORT="telefono" COLSPAN="3" BGCOLOR="#FFF59D" ALIGN="LEFT">  telefono:String  </TD></TR>
+				<TR><TD PORT="nro_calle" COLSPAN="3" BGCOLOR="#FFF59D" ALIGN="LEFT">  nro_calle:String  </TD></TR>
+				<TR><TD PORT="provin" COLSPAN="3" BGCOLOR="#FFF59D" ALIGN="LEFT">  provin:String  </TD></TR>
+				<TR><TD PORT="desc_prov" COLSPAN="3" BGCOLOR="#FFF59D" ALIGN="LEFT">  desc_prov:String  </TD></TR>
+				<TR><TD PORT="tiene_clie" COLSPAN="3" BGCOLOR="#FFF59D" ALIGN="LEFT">  tiene_clie:String  </TD></TR>
+				<TR><TD PORT="reparto" COLSPAN="3" BGCOLOR="#FFF59D" ALIGN="LEFT">  reparto:String  </TD></TR>
+				<TR><TD PORT="ruta_dis" COLSPAN="3" BGCOLOR="#FFF59D" ALIGN="LEFT">  ruta_dis:String  </TD></TR>
+									</TABLE>>
+									URL="com.cclip.model.geo.cadastre.aacc.AaccDatosPostalesBack.html"
+									tooltip="com.cclip.model.geo.cadastre.aacc.AaccDatosPostalesBack"
+							];
+
+							//com.cclip.model.geo.cadastre.block.CadastreConstructiveType
+							CadastreConstructiveType [
+								label=<
+									<TABLE BORDER="0" CELLBORDER="0" CELLSPACING="0" BGCOLOR="#ffffff">
+				<TR><TD COLSPAN="3" BGCOLOR="#FFF176" ALIGN="CENTER"><B>com.cclip.model.geo.cadastre.block.CadastreConstructiveType</B></TD></TR>
+
+				<TR><TD PORT="id" COLSPAN="3" BGCOLOR="#FFF59D" ALIGN="LEFT">  id:String  </TD></TR>
+				<TR><TD PORT="erased" COLSPAN="3" BGCOLOR="#FFF59D" ALIGN="LEFT">  erased:Boolean  </TD></TR>
+				<TR><TD PORT="code" COLSPAN="3" BGCOLOR="#FFF59D" ALIGN="LEFT">  code:String  </TD></TR>
+				<TR><TD PORT="name" COLSPAN="3" BGCOLOR="#FFF59D" ALIGN="LEFT">  name:String  </TD></TR>
+				<TR><TD PORT="comment" COLSPAN="3" BGCOLOR="#FFF59D" ALIGN="LEFT">  comment:String  </TD></TR>
+									</TABLE>>
+									URL="com.cclip.model.geo.cadastre.block.CadastreConstructiveType.html"
+									tooltip="com.cclip.model.geo.cadastre.block.CadastreConstructiveType"
+							];
+
+							//com.cclip.model.geo.cadastre.block.CadastreDestinationType
+							CadastreDestinationType [
+								label=<
+									<TABLE BORDER="0" CELLBORDER="0" CELLSPACING="0" BGCOLOR="#ffffff">
+				<TR><TD COLSPAN="3" BGCOLOR="#FFF176" ALIGN="CENTER"><B>com.cclip.model.geo.cadastre.block.CadastreDestinationType</B></TD></TR>
+
+				<TR><TD PORT="id" COLSPAN="3" BGCOLOR="#FFF59D" ALIGN="LEFT">  id:String  </TD></TR>
+				<TR><TD PORT="erased" COLSPAN="3" BGCOLOR="#FFF59D" ALIGN="LEFT">  erased:Boolean  </TD></TR>
+				<TR><TD PORT="code" COLSPAN="3" BGCOLOR="#FFF59D" ALIGN="LEFT">  code:String  </TD></TR>
+				<TR><TD PORT="name" COLSPAN="3" BGCOLOR="#FFF59D" ALIGN="LEFT">  name:String  </TD></TR>
+				<TR><TD PORT="comment" COLSPAN="3" BGCOLOR="#FFF59D" ALIGN="LEFT">  comment:String  </TD></TR>
+									</TABLE>>
+									URL="com.cclip.model.geo.cadastre.block.CadastreDestinationType.html"
+									tooltip="com.cclip.model.geo.cadastre.block.CadastreDestinationType"
+							];
+
+							//com.cclip.model.geo.cadastre.block.CadastreBlock
+							CadastreBlock [
+								label=<
+									<TABLE BORDER="0" CELLBORDER="0" CELLSPACING="0" BGCOLOR="#ffffff">
+				<TR><TD COLSPAN="3" BGCOLOR="#FFF176" ALIGN="CENTER"><B>com.cclip.model.geo.cadastre.block.CadastreBlock</B></TD></TR>
+
+				<TR><TD PORT="id" COLSPAN="3" BGCOLOR="#FFF59D" ALIGN="LEFT">  id:String  </TD></TR>
+				<TR><TD PORT="erased" COLSPAN="3" BGCOLOR="#FFF59D" ALIGN="LEFT">  erased:Boolean  </TD></TR>
+				<TR><TD PORT="yearBuilding" COLSPAN="3" BGCOLOR="#FFF59D" ALIGN="LEFT">  yearBuilding:Integer  </TD></TR>
+				<TR><TD PORT="monthBuilding" COLSPAN="3" BGCOLOR="#FFF59D" ALIGN="LEFT">  monthBuilding:Integer  </TD></TR>
+				<TR><TD PORT="m2Covered" COLSPAN="3" BGCOLOR="#FFF59D" ALIGN="LEFT">  m2Covered:Double  </TD></TR>
+				<TR><TD PORT="demolition" COLSPAN="3" BGCOLOR="#FFF59D" ALIGN="LEFT">  demolition:Boolean  </TD></TR>
+				<TR><TD PORT="comment" COLSPAN="3" BGCOLOR="#FFF59D" ALIGN="LEFT">  comment:String  </TD></TR>
+				<TR><TD PORT="facade" COLSPAN="3" BGCOLOR="#FFF59D" ALIGN="LEFT">  facade:String  </TD></TR>
+				<TR><TD PORT="roofStructure" COLSPAN="3" BGCOLOR="#FFF59D" ALIGN="LEFT">  roofStructure:String  </TD></TR>
+				<TR><TD PORT="homes" COLSPAN="3" BGCOLOR="#FFF59D" ALIGN="LEFT">  homes:String  </TD></TR>
+				<TR><TD PORT="interiorWalls" COLSPAN="3" BGCOLOR="#FFF59D" ALIGN="LEFT">  interiorWalls:String  </TD></TR>
+				<TR><TD PORT="ceiling" COLSPAN="3" BGCOLOR="#FFF59D" ALIGN="LEFT">  ceiling:String  </TD></TR>
+				<TR><TD PORT="kitchen" COLSPAN="3" BGCOLOR="#FFF59D" ALIGN="LEFT">  kitchen:String  </TD></TR>
+				<TR><TD PORT="toilets" COLSPAN="3" BGCOLOR="#FFF59D" ALIGN="LEFT">  toilets:String  </TD></TR>
+				<TR><TD PORT="entranceHall" COLSPAN="3" BGCOLOR="#FFF59D" ALIGN="LEFT">  entranceHall:String  </TD></TR>
+				<TR><TD PORT="facilities" COLSPAN="3" BGCOLOR="#FFF59D" ALIGN="LEFT">  facilities:String  </TD></TR>
+				<TR><TD PORT="carpentry" COLSPAN="3" BGCOLOR="#FFF59D" ALIGN="LEFT">  carpentry:String  </TD></TR>
+				<TR><TD PORT="coverStructure" COLSPAN="3" BGCOLOR="#FFF59D" ALIGN="LEFT">  coverStructure:String  </TD></TR>
+				<TR><TD PORT="ornamentation" COLSPAN="3" BGCOLOR="#FFF59D" ALIGN="LEFT">  ornamentation:String  </TD></TR>
+				<TR><TD PORT="stainedGlassLighting" COLSPAN="3" BGCOLOR="#FFF59D" ALIGN="LEFT">  stainedGlassLighting:String  </TD></TR>
+				<TR><TD PORT="buffetDining" COLSPAN="3" BGCOLOR="#FFF59D" ALIGN="LEFT">  buffetDining:String  </TD></TR>
+				<TR><TD PORT="points" COLSPAN="3" BGCOLOR="#FFF59D" ALIGN="LEFT">  points:Integer  </TD></TR>
+				<TR><TD PORT="apc" COLSPAN="3" BGCOLOR="#FFF59D" ALIGN="LEFT">  apc:String  </TD></TR>
+				<TR><TD PORT="rate" COLSPAN="3" BGCOLOR="#FFF59D" ALIGN="LEFT">  rate:String  </TD></TR>
+				<TR><TD PORT="auditDateCreate" COLSPAN="3" BGCOLOR="#FFF59D" ALIGN="LEFT">  auditDateCreate:Timestamp  </TD></TR>
+				<TR><TD PORT="auditUserCreate" COLSPAN="3" BGCOLOR="#FFF59D" ALIGN="LEFT">  auditUserCreate:String  </TD></TR>
+				<TR><TD PORT="auditDateUpdate" COLSPAN="3" BGCOLOR="#FFF59D" ALIGN="LEFT">  auditDateUpdate:Timestamp  </TD></TR>
+				<TR><TD PORT="auditUserUpdate" COLSPAN="3" BGCOLOR="#FFF59D" ALIGN="LEFT">  auditUserUpdate:String  </TD></TR>
+				<TR><TD PORT="auditVersion" COLSPAN="3" BGCOLOR="#FFF59D" ALIGN="LEFT">  auditVersion:Long  </TD></TR>
+				<TR><TD PORT="auditVersionCodeLabel" COLSPAN="3" BGCOLOR="#FFF59D" ALIGN="LEFT">  auditVersionCodeLabel:String  </TD></TR>
+				<TR><TD PORT="auditVersionLabel" COLSPAN="3" BGCOLOR="#FFF59D" ALIGN="LEFT">  auditVersionLabel:String  </TD></TR>
+				<TR><TD PORT="cadastreActivityType" COLSPAN="3" BGCOLOR="#FFF59D" ALIGN="LEFT">  cadastreActivityType : <B>CadastreActivityType</B>  </TD></TR>
+				<TR><TD PORT="cadastre" COLSPAN="3" BGCOLOR="#FFF59D" ALIGN="LEFT">  cadastre : <B>Cadastre</B>  </TD></TR>
+				<TR><TD PORT="cadastreConstructiveType" COLSPAN="3" BGCOLOR="#FFF59D" ALIGN="LEFT">  cadastreConstructiveType : <B>CadastreConstructiveType</B>  </TD></TR>
+				<TR><TD PORT="cadastreDestinationType" COLSPAN="3" BGCOLOR="#FFF59D" ALIGN="LEFT">  cadastreDestinationType : <B>CadastreDestinationType</B>  </TD></TR>
+									</TABLE>>
+									URL="com.cclip.model.geo.cadastre.block.CadastreBlock.html"
+									tooltip="com.cclip.model.geo.cadastre.block.CadastreBlock"
+							];
+
+							//com.cclip.model.geo.cadastre.subdivision.CadastreSubDivisionType
+							CadastreSubDivisionType [
+								label=<
+									<TABLE BORDER="0" CELLBORDER="0" CELLSPACING="0" BGCOLOR="#ffffff">
+				<TR><TD COLSPAN="3" BGCOLOR="#FFF176" ALIGN="CENTER"><B>com.cclip.model.geo.cadastre.subdivision.CadastreSubDivisionType</B></TD></TR>
+
+				<TR><TD PORT="id" COLSPAN="3" BGCOLOR="#FFF59D" ALIGN="LEFT">  id:String  </TD></TR>
+				<TR><TD PORT="erased" COLSPAN="3" BGCOLOR="#FFF59D" ALIGN="LEFT">  erased:Boolean  </TD></TR>
+				<TR><TD PORT="code" COLSPAN="3" BGCOLOR="#FFF59D" ALIGN="LEFT">  code:String  </TD></TR>
+				<TR><TD PORT="name" COLSPAN="3" BGCOLOR="#FFF59D" ALIGN="LEFT">  name:String  </TD></TR>
+				<TR><TD PORT="comment" COLSPAN="3" BGCOLOR="#FFF59D" ALIGN="LEFT">  comment:String  </TD></TR>
+									</TABLE>>
+									URL="com.cclip.model.geo.cadastre.subdivision.CadastreSubDivisionType.html"
+									tooltip="com.cclip.model.geo.cadastre.subdivision.CadastreSubDivisionType"
+							];
+
+							//com.cclip.model.geo.cadastre.subdivision.CadastreSubDivision
+							CadastreSubDivision [
+								label=<
+									<TABLE BORDER="0" CELLBORDER="0" CELLSPACING="0" BGCOLOR="#ffffff">
+				<TR><TD COLSPAN="3" BGCOLOR="#FFF176" ALIGN="CENTER"><B>com.cclip.model.geo.cadastre.subdivision.CadastreSubDivision</B></TD></TR>
+
+				<TR><TD PORT="id" COLSPAN="3" BGCOLOR="#FFF59D" ALIGN="LEFT">  id:String  </TD></TR>
+				<TR><TD PORT="erased" COLSPAN="3" BGCOLOR="#FFF59D" ALIGN="LEFT">  erased:Boolean  </TD></TR>
+				<TR><TD PORT="fact" COLSPAN="3" BGCOLOR="#FFF59D" ALIGN="LEFT">  fact:Boolean  </TD></TR>
+				<TR><TD PORT="code" COLSPAN="3" BGCOLOR="#FFF59D" ALIGN="LEFT">  code:String  </TD></TR>
+				<TR><TD PORT="ctaCli" COLSPAN="3" BGCOLOR="#FFF59D" ALIGN="LEFT">  ctaCli:String  </TD></TR>
+				<TR><TD PORT="subCtaCli" COLSPAN="3" BGCOLOR="#FFF59D" ALIGN="LEFT">  subCtaCli:String  </TD></TR>
+				<TR><TD PORT="dv" COLSPAN="3" BGCOLOR="#FFF59D" ALIGN="LEFT">  dv:String  </TD></TR>
+				<TR><TD PORT="userWaterService" COLSPAN="3" BGCOLOR="#FFF59D" ALIGN="LEFT">  userWaterService:String  </TD></TR>
+				<TR><TD PORT="userWaterServiceDni" COLSPAN="3" BGCOLOR="#FFF59D" ALIGN="LEFT">  userWaterServiceDni:String  </TD></TR>
+				<TR><TD PORT="userWaterServiceCuit" COLSPAN="3" BGCOLOR="#FFF59D" ALIGN="LEFT">  userWaterServiceCuit:String  </TD></TR>
+				<TR><TD PORT="waterMeter" COLSPAN="3" BGCOLOR="#FFF59D" ALIGN="LEFT">  waterMeter:Boolean  </TD></TR>
+				<TR><TD PORT="inmLocality" COLSPAN="3" BGCOLOR="#FFF59D" ALIGN="LEFT">  inmLocality:String  </TD></TR>
+				<TR><TD PORT="inmNeighbourhoodComment" COLSPAN="3" BGCOLOR="#FFF59D" ALIGN="LEFT">  inmNeighbourhoodComment:String  </TD></TR>
+				<TR><TD PORT="inmStreet" COLSPAN="3" BGCOLOR="#FFF59D" ALIGN="LEFT">  inmStreet:String  </TD></TR>
+				<TR><TD PORT="inmStreetNumber" COLSPAN="3" BGCOLOR="#FFF59D" ALIGN="LEFT">  inmStreetNumber:String  </TD></TR>
+				<TR><TD PORT="inmStreetNumberEstimated" COLSPAN="3" BGCOLOR="#FFF59D" ALIGN="LEFT">  inmStreetNumberEstimated:Boolean  </TD></TR>
+				<TR><TD PORT="inmBuildingFloor" COLSPAN="3" BGCOLOR="#FFF59D" ALIGN="LEFT">  inmBuildingFloor:String  </TD></TR>
+				<TR><TD PORT="inmBuildingRoom" COLSPAN="3" BGCOLOR="#FFF59D" ALIGN="LEFT">  inmBuildingRoom:String  </TD></TR>
+				<TR><TD PORT="inmBuilding" COLSPAN="3" BGCOLOR="#FFF59D" ALIGN="LEFT">  inmBuilding:String  </TD></TR>
+				<TR><TD PORT="inmPostalCode" COLSPAN="3" BGCOLOR="#FFF59D" ALIGN="LEFT">  inmPostalCode:String  </TD></TR>
+				<TR><TD PORT="inmCommentAddress" COLSPAN="3" BGCOLOR="#FFF59D" ALIGN="LEFT">  inmCommentAddress:String  </TD></TR>
+				<TR><TD PORT="inmLat" COLSPAN="3" BGCOLOR="#FFF59D" ALIGN="LEFT">  inmLat:Double  </TD></TR>
+				<TR><TD PORT="inmLng" COLSPAN="3" BGCOLOR="#FFF59D" ALIGN="LEFT">  inmLng:Double  </TD></TR>
+				<TR><TD PORT="m2Covered" COLSPAN="3" BGCOLOR="#FFF59D" ALIGN="LEFT">  m2Covered:Double  </TD></TR>
+				<TR><TD PORT="m2CoveredShared" COLSPAN="3" BGCOLOR="#FFF59D" ALIGN="LEFT">  m2CoveredShared:Double  </TD></TR>
+				<TR><TD PORT="m2CoveredExpanded" COLSPAN="3" BGCOLOR="#FFF59D" ALIGN="LEFT">  m2CoveredExpanded:Double  </TD></TR>
+				<TR><TD PORT="m2Percent" COLSPAN="3" BGCOLOR="#FFF59D" ALIGN="LEFT">  m2Percent:Double  </TD></TR>
+				<TR><TD PORT="comment" COLSPAN="3" BGCOLOR="#FFF59D" ALIGN="LEFT">  comment:String  </TD></TR>
+				<TR><TD PORT="userPostalCountryCode" COLSPAN="3" BGCOLOR="#FFF59D" ALIGN="LEFT">  userPostalCountryCode:String  </TD></TR>
+				<TR><TD PORT="userPostalCountry" COLSPAN="3" BGCOLOR="#FFF59D" ALIGN="LEFT">  userPostalCountry:String  </TD></TR>
+				<TR><TD PORT="userPostalAdminAreaLevel1Code" COLSPAN="3" BGCOLOR="#FFF59D" ALIGN="LEFT">  userPostalAdminAreaLevel1Code:String  </TD></TR>
+				<TR><TD PORT="userPostalAdminAreaLevel1" COLSPAN="3" BGCOLOR="#FFF59D" ALIGN="LEFT">  userPostalAdminAreaLevel1:String  </TD></TR>
+				<TR><TD PORT="userPostalAdminAreaLevel2" COLSPAN="3" BGCOLOR="#FFF59D" ALIGN="LEFT">  userPostalAdminAreaLevel2:String  </TD></TR>
+				<TR><TD PORT="userPostalLocality" COLSPAN="3" BGCOLOR="#FFF59D" ALIGN="LEFT">  userPostalLocality:String  </TD></TR>
+				<TR><TD PORT="userPostalNeighbourhood" COLSPAN="3" BGCOLOR="#FFF59D" ALIGN="LEFT">  userPostalNeighbourhood:String  </TD></TR>
+				<TR><TD PORT="userPostalStreet" COLSPAN="3" BGCOLOR="#FFF59D" ALIGN="LEFT">  userPostalStreet:String  </TD></TR>
+				<TR><TD PORT="userPostalStreetNumber" COLSPAN="3" BGCOLOR="#FFF59D" ALIGN="LEFT">  userPostalStreetNumber:String  </TD></TR>
+				<TR><TD PORT="userPostalBuildingFloor" COLSPAN="3" BGCOLOR="#FFF59D" ALIGN="LEFT">  userPostalBuildingFloor:String  </TD></TR>
+				<TR><TD PORT="userPostalBuildingRoom" COLSPAN="3" BGCOLOR="#FFF59D" ALIGN="LEFT">  userPostalBuildingRoom:String  </TD></TR>
+				<TR><TD PORT="userPostalBuilding" COLSPAN="3" BGCOLOR="#FFF59D" ALIGN="LEFT">  userPostalBuilding:String  </TD></TR>
+				<TR><TD PORT="userPostalPostalCode" COLSPAN="3" BGCOLOR="#FFF59D" ALIGN="LEFT">  userPostalPostalCode:String  </TD></TR>
+				<TR><TD PORT="userPostalCommentAddress" COLSPAN="3" BGCOLOR="#FFF59D" ALIGN="LEFT">  userPostalCommentAddress:String  </TD></TR>
+				<TR><TD PORT="userPostalLat" COLSPAN="3" BGCOLOR="#FFF59D" ALIGN="LEFT">  userPostalLat:Double  </TD></TR>
+				<TR><TD PORT="userPostalLng" COLSPAN="3" BGCOLOR="#FFF59D" ALIGN="LEFT">  userPostalLng:Double  </TD></TR>
+				<TR><TD PORT="userPhone" COLSPAN="3" BGCOLOR="#FFF59D" ALIGN="LEFT">  userPhone:String  </TD></TR>
+				<TR><TD PORT="auditDateCreate" COLSPAN="3" BGCOLOR="#FFF59D" ALIGN="LEFT">  auditDateCreate:Timestamp  </TD></TR>
+				<TR><TD PORT="auditUserCreate" COLSPAN="3" BGCOLOR="#FFF59D" ALIGN="LEFT">  auditUserCreate:String  </TD></TR>
+				<TR><TD PORT="auditDateUpdate" COLSPAN="3" BGCOLOR="#FFF59D" ALIGN="LEFT">  auditDateUpdate:Timestamp  </TD></TR>
+				<TR><TD PORT="auditUserUpdate" COLSPAN="3" BGCOLOR="#FFF59D" ALIGN="LEFT">  auditUserUpdate:String  </TD></TR>
+				<TR><TD PORT="auditVersion" COLSPAN="3" BGCOLOR="#FFF59D" ALIGN="LEFT">  auditVersion:Long  </TD></TR>
+				<TR><TD PORT="auditVersionCodeLabel" COLSPAN="3" BGCOLOR="#FFF59D" ALIGN="LEFT">  auditVersionCodeLabel:String  </TD></TR>
+				<TR><TD PORT="auditVersionLabel" COLSPAN="3" BGCOLOR="#FFF59D" ALIGN="LEFT">  auditVersionLabel:String  </TD></TR>
+				<TR><TD PORT="userIva" COLSPAN="3" BGCOLOR="#FFF59D" ALIGN="LEFT">  userIva : <B>Iva</B>  </TD></TR>
+				<TR><TD PORT="userWaterSituation" COLSPAN="3" BGCOLOR="#FFF59D" ALIGN="LEFT">  userWaterSituation : <B>UserWaterSituation</B>  </TD></TR>
+				<TR><TD PORT="uf" COLSPAN="3" BGCOLOR="#FFF59D" ALIGN="LEFT">  uf : <B>Uf</B>  </TD></TR>
+				<TR><TD PORT="cadastreActivityType" COLSPAN="3" BGCOLOR="#FFF59D" ALIGN="LEFT">  cadastreActivityType : <B>CadastreActivityType</B>  </TD></TR>
+				<TR><TD PORT="cityArea" COLSPAN="3" BGCOLOR="#FFF59D" ALIGN="LEFT">  cityArea : <B>CityArea</B>  </TD></TR>
+				<TR><TD PORT="cadastre" COLSPAN="3" BGCOLOR="#FFF59D" ALIGN="LEFT">  cadastre : <B>Cadastre</B>  </TD></TR>
+				<TR><TD PORT="cadastreSubDivisionType" COLSPAN="3" BGCOLOR="#FFF59D" ALIGN="LEFT">  cadastreSubDivisionType : <B>CadastreSubDivisionType</B>  </TD></TR>
+									</TABLE>>
+									URL="com.cclip.model.geo.cadastre.subdivision.CadastreSubDivision.html"
+									tooltip="com.cclip.model.geo.cadastre.subdivision.CadastreSubDivision"
+							];
+
+					//com.cclip.model.schedule.Schedule
+					Schedule [
+						label=<
+							<TABLE BORDER="0" CELLBORDER="0" CELLSPACING="0" BGCOLOR="#ffffff">
+				<TR><TD COLSPAN="3" BGCOLOR="#FFF176" ALIGN="CENTER"><B>com.cclip.model.schedule.Schedule</B></TD></TR>
+
+				<TR><TD PORT="id" COLSPAN="3" BGCOLOR="#FFF59D" ALIGN="LEFT">  id:String  </TD></TR>
+				<TR><TD PORT="erased" COLSPAN="3" BGCOLOR="#FFF59D" ALIGN="LEFT">  erased:Boolean  </TD></TR>
+				<TR><TD PORT="year" COLSPAN="3" BGCOLOR="#FFF59D" ALIGN="LEFT">  year:Integer  </TD></TR>
+				<TR><TD PORT="dateFrom" COLSPAN="3" BGCOLOR="#FFF59D" ALIGN="LEFT">  dateFrom:Date  </TD></TR>
+				<TR><TD PORT="dateTo" COLSPAN="3" BGCOLOR="#FFF59D" ALIGN="LEFT">  dateTo:Date  </TD></TR>
+				<TR><TD PORT="comment" COLSPAN="3" BGCOLOR="#FFF59D" ALIGN="LEFT">  comment:String  </TD></TR>
+				<TR><TD PORT="scheduleBatch" COLSPAN="3" BGCOLOR="#FFF59D" ALIGN="LEFT">  scheduleBatchList : <B>ScheduleBatch[]</B>  </TD></TR>
+				<TR><TD PORT="scheduleScanning" COLSPAN="3" BGCOLOR="#FFF59D" ALIGN="LEFT">  scheduleScanningList : <B>ScheduleScanning[]</B>  </TD></TR>
+				<TR><TD PORT="scheduleCensus" COLSPAN="3" BGCOLOR="#FFF59D" ALIGN="LEFT">  scheduleCensusList : <B>ScheduleCensus[]</B>  </TD></TR>
+				<TR><TD PORT="cadastreInsDel" COLSPAN="3" BGCOLOR="#FFF59D" ALIGN="LEFT">  cadastreInsDelList : <B>CadastreInsDel[]</B>  </TD></TR>
+							</TABLE>>
+							URL="com.cclip.model.schedule.Schedule.html"
+							tooltip="com.cclip.model.schedule.Schedule"
+					];
+
+					//com.cclip.model.schedule.ScheduleBatch
+					ScheduleBatch [
+						label=<
+							<TABLE BORDER="0" CELLBORDER="0" CELLSPACING="0" BGCOLOR="#ffffff">
+				<TR><TD COLSPAN="3" BGCOLOR="#FFF176" ALIGN="CENTER"><B>com.cclip.model.schedule.ScheduleBatch</B></TD></TR>
+
+				<TR><TD PORT="id" COLSPAN="3" BGCOLOR="#FFF59D" ALIGN="LEFT">  id:String  </TD></TR>
+				<TR><TD PORT="erased" COLSPAN="3" BGCOLOR="#FFF59D" ALIGN="LEFT">  erased:Boolean  </TD></TR>
+				<TR><TD PORT="plannedDelivered" COLSPAN="3" BGCOLOR="#FFF59D" ALIGN="LEFT">  plannedDelivered:Date  </TD></TR>
+				<TR><TD PORT="createDate" COLSPAN="3" BGCOLOR="#FFF59D" ALIGN="LEFT">  createDate:Date  </TD></TR>
+				<TR><TD PORT="close" COLSPAN="3" BGCOLOR="#FFF59D" ALIGN="LEFT">  close:Date  </TD></TR>
+				<TR><TD PORT="delivered" COLSPAN="3" BGCOLOR="#FFF59D" ALIGN="LEFT">  delivered:Date  </TD></TR>
+				<TR><TD PORT="comment" COLSPAN="3" BGCOLOR="#FFF59D" ALIGN="LEFT">  comment:String  </TD></TR>
+				<TR><TD PORT="code" COLSPAN="3" BGCOLOR="#FFF59D" ALIGN="LEFT">  code:String  </TD></TR>
+				<TR><TD PORT="schedule" COLSPAN="3" BGCOLOR="#FFF59D" ALIGN="LEFT">  schedule : <B>Schedule</B>  </TD></TR>
+							</TABLE>>
+							URL="com.cclip.model.schedule.ScheduleBatch.html"
+							tooltip="com.cclip.model.schedule.ScheduleBatch"
+					];
+
+						//com.cclip.model.schedule.scanning.ScheduleScanning
+						ScheduleScanning [
+							label=<
+								<TABLE BORDER="0" CELLBORDER="0" CELLSPACING="0" BGCOLOR="#ffffff">
+				<TR><TD COLSPAN="3" BGCOLOR="#FFF176" ALIGN="CENTER"><B>com.cclip.model.schedule.scanning.ScheduleScanning</B></TD></TR>
+
+				<TR><TD PORT="id" COLSPAN="3" BGCOLOR="#FFF59D" ALIGN="LEFT">  id:String  </TD></TR>
+				<TR><TD PORT="erased" COLSPAN="3" BGCOLOR="#FFF59D" ALIGN="LEFT">  erased:Boolean  </TD></TR>
+				<TR><TD PORT="cadastralCode" COLSPAN="3" BGCOLOR="#FFF59D" ALIGN="LEFT">  cadastralCode:String  </TD></TR>
+				<TR><TD PORT="numberScanning" COLSPAN="3" BGCOLOR="#FFF59D" ALIGN="LEFT">  numberScanning:Integer  </TD></TR>
+				<TR><TD PORT="comment" COLSPAN="3" BGCOLOR="#FFF59D" ALIGN="LEFT">  comment:String  </TD></TR>
+				<TR><TD PORT="plannedDelivered" COLSPAN="3" BGCOLOR="#FFF59D" ALIGN="LEFT">  plannedDelivered:Date  </TD></TR>
+				<TR><TD PORT="createDate" COLSPAN="3" BGCOLOR="#FFF59D" ALIGN="LEFT">  createDate:Date  </TD></TR>
+				<TR><TD PORT="scanning" COLSPAN="3" BGCOLOR="#FFF59D" ALIGN="LEFT">  scanning:Date  </TD></TR>
+				<TR><TD PORT="recorded" COLSPAN="3" BGCOLOR="#FFF59D" ALIGN="LEFT">  recorded:Date  </TD></TR>
+				<TR><TD PORT="schedule" COLSPAN="3" BGCOLOR="#FFF59D" ALIGN="LEFT">  schedule : <B>Schedule</B>  </TD></TR>
+				<TR><TD PORT="censusTaker" COLSPAN="3" BGCOLOR="#FFF59D" ALIGN="LEFT">  censusTaker : <B>CensusTaker</B>  </TD></TR>
+				<TR><TD PORT="scheduleScanningItem" COLSPAN="3" BGCOLOR="#FFF59D" ALIGN="LEFT">  scheduleScanningItemList : <B>ScheduleScanningItem[]</B>  </TD></TR>
+								</TABLE>>
+								URL="com.cclip.model.schedule.scanning.ScheduleScanning.html"
+								tooltip="com.cclip.model.schedule.scanning.ScheduleScanning"
+						];
+
+						//com.cclip.model.schedule.scanning.ScheduleScanningResult
+						ScheduleScanningResult [
+							label=<
+								<TABLE BORDER="0" CELLBORDER="0" CELLSPACING="0" BGCOLOR="#ffffff">
+				<TR><TD COLSPAN="3" BGCOLOR="#FFF176" ALIGN="CENTER"><B>com.cclip.model.schedule.scanning.ScheduleScanningResult</B></TD></TR>
+
+				<TR><TD PORT="id" COLSPAN="3" BGCOLOR="#FFF59D" ALIGN="LEFT">  id:String  </TD></TR>
+				<TR><TD PORT="erased" COLSPAN="3" BGCOLOR="#FFF59D" ALIGN="LEFT">  erased:Boolean  </TD></TR>
+				<TR><TD PORT="code" COLSPAN="3" BGCOLOR="#FFF59D" ALIGN="LEFT">  code:String  </TD></TR>
+				<TR><TD PORT="name" COLSPAN="3" BGCOLOR="#FFF59D" ALIGN="LEFT">  name:String  </TD></TR>
+				<TR><TD PORT="comment" COLSPAN="3" BGCOLOR="#FFF59D" ALIGN="LEFT">  comment:String  </TD></TR>
+								</TABLE>>
+								URL="com.cclip.model.schedule.scanning.ScheduleScanningResult.html"
+								tooltip="com.cclip.model.schedule.scanning.ScheduleScanningResult"
+						];
+
+						//com.cclip.model.schedule.scanning.ScheduleScanningItem
+						ScheduleScanningItem [
+							label=<
+								<TABLE BORDER="0" CELLBORDER="0" CELLSPACING="0" BGCOLOR="#ffffff">
+				<TR><TD COLSPAN="3" BGCOLOR="#FFF176" ALIGN="CENTER"><B>com.cclip.model.schedule.scanning.ScheduleScanningItem</B></TD></TR>
+
+				<TR><TD PORT="id" COLSPAN="3" BGCOLOR="#FFF59D" ALIGN="LEFT">  id:String  </TD></TR>
+				<TR><TD PORT="erased" COLSPAN="3" BGCOLOR="#FFF59D" ALIGN="LEFT">  erased:Boolean  </TD></TR>
+				<TR><TD PORT="m2Construction" COLSPAN="3" BGCOLOR="#FFF59D" ALIGN="LEFT">  m2Construction:Double  </TD></TR>
+				<TR><TD PORT="progressConstruction" COLSPAN="3" BGCOLOR="#FFF59D" ALIGN="LEFT">  progressConstruction:Double  </TD></TR>
+				<TR><TD PORT="comment" COLSPAN="3" BGCOLOR="#FFF59D" ALIGN="LEFT">  comment:String  </TD></TR>
+				<TR><TD PORT="cadastre" COLSPAN="3" BGCOLOR="#FFF59D" ALIGN="LEFT">  cadastre : <B>Cadastre</B>  </TD></TR>
+				<TR><TD PORT="scheduleScanningResult" COLSPAN="3" BGCOLOR="#FFF59D" ALIGN="LEFT">  scheduleScanningResult : <B>ScheduleScanningResult</B>  </TD></TR>
+				<TR><TD PORT="scheduleScanning" COLSPAN="3" BGCOLOR="#FFF59D" ALIGN="LEFT">  scheduleScanning : <B>ScheduleScanning</B>  </TD></TR>
+								</TABLE>>
+								URL="com.cclip.model.schedule.scanning.ScheduleScanningItem.html"
+								tooltip="com.cclip.model.schedule.scanning.ScheduleScanningItem"
+						];
+
+						//com.cclip.model.schedule.census.ScheduleCensusResult
+						ScheduleCensusResult [
+							label=<
+								<TABLE BORDER="0" CELLBORDER="0" CELLSPACING="0" BGCOLOR="#ffffff">
+				<TR><TD COLSPAN="3" BGCOLOR="#FFF176" ALIGN="CENTER"><B>com.cclip.model.schedule.census.ScheduleCensusResult</B></TD></TR>
+
+				<TR><TD PORT="id" COLSPAN="3" BGCOLOR="#FFF59D" ALIGN="LEFT">  id:String  </TD></TR>
+				<TR><TD PORT="erased" COLSPAN="3" BGCOLOR="#FFF59D" ALIGN="LEFT">  erased:Boolean  </TD></TR>
+				<TR><TD PORT="code" COLSPAN="3" BGCOLOR="#FFF59D" ALIGN="LEFT">  code:String  </TD></TR>
+				<TR><TD PORT="name" COLSPAN="3" BGCOLOR="#FFF59D" ALIGN="LEFT">  name:String  </TD></TR>
+				<TR><TD PORT="comment" COLSPAN="3" BGCOLOR="#FFF59D" ALIGN="LEFT">  comment:String  </TD></TR>
+				<TR><TD PORT="scheduleCensus" COLSPAN="3" BGCOLOR="#FFF59D" ALIGN="LEFT">  scheduleCensusList : <B>ScheduleCensus[]</B>  </TD></TR>
+								</TABLE>>
+								URL="com.cclip.model.schedule.census.ScheduleCensusResult.html"
+								tooltip="com.cclip.model.schedule.census.ScheduleCensusResult"
+						];
+
+						//com.cclip.model.schedule.census.ScheduleCensus
+						ScheduleCensus [
+							label=<
+								<TABLE BORDER="0" CELLBORDER="0" CELLSPACING="0" BGCOLOR="#ffffff">
+				<TR><TD COLSPAN="3" BGCOLOR="#FFF176" ALIGN="CENTER"><B>com.cclip.model.schedule.census.ScheduleCensus</B></TD></TR>
+
+				<TR><TD PORT="id" COLSPAN="3" BGCOLOR="#FFF59D" ALIGN="LEFT">  id:String  </TD></TR>
+				<TR><TD PORT="erased" COLSPAN="3" BGCOLOR="#FFF59D" ALIGN="LEFT">  erased:Boolean  </TD></TR>
+				<TR><TD PORT="censused" COLSPAN="3" BGCOLOR="#FFF59D" ALIGN="LEFT">  censused:Date  </TD></TR>
+				<TR><TD PORT="recorded" COLSPAN="3" BGCOLOR="#FFF59D" ALIGN="LEFT">  recorded:Date  </TD></TR>
+				<TR><TD PORT="m2ShedsGeneral" COLSPAN="3" BGCOLOR="#FFF59D" ALIGN="LEFT">  m2ShedsGeneral:Double  </TD></TR>
+				<TR><TD PORT="m2GeneralBuilding" COLSPAN="3" BGCOLOR="#FFF59D" ALIGN="LEFT">  m2GeneralBuilding:Double  </TD></TR>
+				<TR><TD PORT="m2BuildingsPublicEntertainment" COLSPAN="3" BGCOLOR="#FFF59D" ALIGN="LEFT">  m2BuildingsPublicEntertainment:Double  </TD></TR>
+				<TR><TD PORT="m2ProgressConstruction" COLSPAN="3" BGCOLOR="#FFF59D" ALIGN="LEFT">  m2ProgressConstruction:Double  </TD></TR>
+				<TR><TD PORT="dniCensused" COLSPAN="3" BGCOLOR="#FFF59D" ALIGN="LEFT">  dniCensused:String  </TD></TR>
+				<TR><TD PORT="nameCensused" COLSPAN="3" BGCOLOR="#FFF59D" ALIGN="LEFT">  nameCensused:String  </TD></TR>
+				<TR><TD PORT="lastNameCensused" COLSPAN="3" BGCOLOR="#FFF59D" ALIGN="LEFT">  lastNameCensused:String  </TD></TR>
+				<TR><TD PORT="signatureCensused" COLSPAN="3" BGCOLOR="#FFF59D" ALIGN="LEFT">  signatureCensused:Boolean  </TD></TR>
+				<TR><TD PORT="comment" COLSPAN="3" BGCOLOR="#FFF59D" ALIGN="LEFT">  comment:String  </TD></TR>
+				<TR><TD PORT="schedule" COLSPAN="3" BGCOLOR="#FFF59D" ALIGN="LEFT">  schedule : <B>Schedule</B>  </TD></TR>
+				<TR><TD PORT="cadastre" COLSPAN="3" BGCOLOR="#FFF59D" ALIGN="LEFT">  cadastre : <B>Cadastre</B>  </TD></TR>
+				<TR><TD PORT="censusTaker" COLSPAN="3" BGCOLOR="#FFF59D" ALIGN="LEFT">  censusTaker : <B>CensusTaker</B>  </TD></TR>
+				<TR><TD PORT="scheduleBatch" COLSPAN="3" BGCOLOR="#FFF59D" ALIGN="LEFT">  scheduleBatch : <B>ScheduleBatch</B>  </TD></TR>
+				<TR><TD PORT="cadastreActivityType" COLSPAN="3" BGCOLOR="#FFF59D" ALIGN="LEFT">  cadastreActivityType : <B>CadastreActivityType</B>  </TD></TR>
+				<TR><TD PORT="scheduleCensusResult" COLSPAN="3" BGCOLOR="#FFF59D" ALIGN="LEFT">  scheduleCensusResult : <B>ScheduleCensusResult</B>  </TD></TR>
+								</TABLE>>
+								URL="com.cclip.model.schedule.census.ScheduleCensus.html"
+								tooltip="com.cclip.model.schedule.census.ScheduleCensus"
+						];
+
+						//com.cclip.model.schedule.census.CadastreInsDel
+						CadastreInsDel [
+							label=<
+								<TABLE BORDER="0" CELLBORDER="0" CELLSPACING="0" BGCOLOR="#ffffff">
+				<TR><TD COLSPAN="3" BGCOLOR="#FFF176" ALIGN="CENTER"><B>com.cclip.model.schedule.census.CadastreInsDel</B></TD></TR>
+
+				<TR><TD PORT="id" COLSPAN="3" BGCOLOR="#FFF59D" ALIGN="LEFT">  id:String  </TD></TR>
+				<TR><TD PORT="erased" COLSPAN="3" BGCOLOR="#FFF59D" ALIGN="LEFT">  erased:Boolean  </TD></TR>
+				<TR><TD PORT="censused" COLSPAN="3" BGCOLOR="#FFF59D" ALIGN="LEFT">  censused:Date  </TD></TR>
+				<TR><TD PORT="delivered" COLSPAN="3" BGCOLOR="#FFF59D" ALIGN="LEFT">  delivered:Date  </TD></TR>
+				<TR><TD PORT="partition" COLSPAN="3" BGCOLOR="#FFF59D" ALIGN="LEFT">  partition:Boolean  </TD></TR>
+				<TR><TD PORT="comment" COLSPAN="3" BGCOLOR="#FFF59D" ALIGN="LEFT">  comment:String  </TD></TR>
+				<TR><TD PORT="schedule" COLSPAN="3" BGCOLOR="#FFF59D" ALIGN="LEFT">  schedule : <B>Schedule</B>  </TD></TR>
+				<TR><TD PORT="censusTaker" COLSPAN="3" BGCOLOR="#FFF59D" ALIGN="LEFT">  censusTaker : <B>CensusTaker</B>  </TD></TR>
+				<TR><TD PORT="scheduleBatch" COLSPAN="3" BGCOLOR="#FFF59D" ALIGN="LEFT">  scheduleBatch : <B>ScheduleBatch</B>  </TD></TR>
+								</TABLE>>
+								URL="com.cclip.model.schedule.census.CadastreInsDel.html"
+								tooltip="com.cclip.model.schedule.census.CadastreInsDel"
+						];
+
+						//com.cclip.model.schedule.census.CadastreInsDel extends com.cclip.model.geo.cadastre.Cadastre
+						"Cadastre" -> "CadastreInsDel" [dir=back,arrowtail=empty, color="#F9A825"];
+
+					//com.cclip.model.person.Person
+					Person [
+						label=<
+							<TABLE BORDER="0" CELLBORDER="0" CELLSPACING="0" BGCOLOR="#ffffff">
+				<TR><TD COLSPAN="3" BGCOLOR="#FFF176" ALIGN="CENTER"><B>com.cclip.model.person.Person</B></TD></TR>
+
+				<TR><TD PORT="id" COLSPAN="3" BGCOLOR="#FFF59D" ALIGN="LEFT">  id:String  </TD></TR>
+				<TR><TD PORT="erased" COLSPAN="3" BGCOLOR="#FFF59D" ALIGN="LEFT">  erased:Boolean  </TD></TR>
+				<TR><TD PORT="cuil" COLSPAN="3" BGCOLOR="#FFF59D" ALIGN="LEFT">  cuil:String  </TD></TR>
+				<TR><TD PORT="dni" COLSPAN="3" BGCOLOR="#FFF59D" ALIGN="LEFT">  dni:String  </TD></TR>
+				<TR><TD PORT="givenName" COLSPAN="3" BGCOLOR="#FFF59D" ALIGN="LEFT">  givenName:String  </TD></TR>
+				<TR><TD PORT="middleName" COLSPAN="3" BGCOLOR="#FFF59D" ALIGN="LEFT">  middleName:String  </TD></TR>
+				<TR><TD PORT="familyName" COLSPAN="3" BGCOLOR="#FFF59D" ALIGN="LEFT">  familyName:String  </TD></TR>
+				<TR><TD PORT="masculine" COLSPAN="3" BGCOLOR="#FFF59D" ALIGN="LEFT">  masculine:Boolean  </TD></TR>
+				<TR><TD PORT="comment" COLSPAN="3" BGCOLOR="#FFF59D" ALIGN="LEFT">  comment:String  </TD></TR>
+							</TABLE>>
+							URL="com.cclip.model.person.Person.html"
+							tooltip="com.cclip.model.person.Person"
+					];
+
+					//com.cclip.model.person.UserSystem
+					UserSystem [
+						label=<
+							<TABLE BORDER="0" CELLBORDER="0" CELLSPACING="0" BGCOLOR="#ffffff">
+				<TR><TD COLSPAN="3" BGCOLOR="#FFF176" ALIGN="CENTER"><B>com.cclip.model.person.UserSystem</B></TD></TR>
+
+				<TR><TD PORT="id" COLSPAN="3" BGCOLOR="#FFF59D" ALIGN="LEFT">  id:String  </TD></TR>
+				<TR><TD PORT="erased" COLSPAN="3" BGCOLOR="#FFF59D" ALIGN="LEFT">  erased:Boolean  </TD></TR>
+				<TR><TD PORT="pass" COLSPAN="3" BGCOLOR="#FFF59D" ALIGN="LEFT">  pass:String  </TD></TR>
+				<TR><TD PORT="email" COLSPAN="3" BGCOLOR="#FFF59D" ALIGN="LEFT">  email:String  </TD></TR>
+				<TR><TD PORT="comment" COLSPAN="3" BGCOLOR="#FFF59D" ALIGN="LEFT">  comment:String  </TD></TR>
+							</TABLE>>
+							URL="com.cclip.model.person.UserSystem.html"
+							tooltip="com.cclip.model.person.UserSystem"
+					];
+
+					//com.cclip.model.person.UserSystem extends com.cclip.model.person.Person
+					"Person" -> "UserSystem" [dir=back,arrowtail=empty, color="#F9A825"];
+
+					//com.cclip.model.person.CensusTaker
+					CensusTaker [
+						label=<
+							<TABLE BORDER="0" CELLBORDER="0" CELLSPACING="0" BGCOLOR="#ffffff">
+				<TR><TD COLSPAN="3" BGCOLOR="#FFF176" ALIGN="CENTER"><B>com.cclip.model.person.CensusTaker</B></TD></TR>
+
+				<TR><TD PORT="id" COLSPAN="3" BGCOLOR="#FFF59D" ALIGN="LEFT">  id:String  </TD></TR>
+				<TR><TD PORT="erased" COLSPAN="3" BGCOLOR="#FFF59D" ALIGN="LEFT">  erased:Boolean  </TD></TR>
+				<TR><TD PORT="code" COLSPAN="3" BGCOLOR="#FFF59D" ALIGN="LEFT">  code:String  </TD></TR>
+				<TR><TD PORT="comment" COLSPAN="3" BGCOLOR="#FFF59D" ALIGN="LEFT">  comment:String  </TD></TR>
+				<TR><TD PORT="scheduleScanning" COLSPAN="3" BGCOLOR="#FFF59D" ALIGN="LEFT">  scheduleScanningList : <B>ScheduleScanning[]</B>  </TD></TR>
+				<TR><TD PORT="scheduleCensus" COLSPAN="3" BGCOLOR="#FFF59D" ALIGN="LEFT">  scheduleCensusList : <B>ScheduleCensus[]</B>  </TD></TR>
+				<TR><TD PORT="cadastreInsDel" COLSPAN="3" BGCOLOR="#FFF59D" ALIGN="LEFT">  cadastreInsDelList : <B>CadastreInsDel[]</B>  </TD></TR>
+							</TABLE>>
+							URL="com.cclip.model.person.CensusTaker.html"
+							tooltip="com.cclip.model.person.CensusTaker"
+					];
+
+					//com.cclip.model.person.CensusTaker extends com.cclip.model.person.Person
+					"Person" -> "CensusTaker" [dir=back,arrowtail=empty, color="#F9A825"];
+
+					//com.cclip.model.person.Uf
+					Uf [
+						label=<
+							<TABLE BORDER="0" CELLBORDER="0" CELLSPACING="0" BGCOLOR="#ffffff">
+				<TR><TD COLSPAN="3" BGCOLOR="#FFF176" ALIGN="CENTER"><B>com.cclip.model.person.Uf</B></TD></TR>
+
+				<TR><TD PORT="id" COLSPAN="3" BGCOLOR="#FFF59D" ALIGN="LEFT">  id:String  </TD></TR>
+				<TR><TD PORT="erased" COLSPAN="3" BGCOLOR="#FFF59D" ALIGN="LEFT">  erased:Boolean  </TD></TR>
+				<TR><TD PORT="uf" COLSPAN="3" BGCOLOR="#FFF59D" ALIGN="LEFT">  uf:String  </TD></TR>
+				<TR><TD PORT="name" COLSPAN="3" BGCOLOR="#FFF59D" ALIGN="LEFT">  name:String  </TD></TR>
+				<TR><TD PORT="dni" COLSPAN="3" BGCOLOR="#FFF59D" ALIGN="LEFT">  dni:String  </TD></TR>
+				<TR><TD PORT="cuit" COLSPAN="3" BGCOLOR="#FFF59D" ALIGN="LEFT">  cuit:String  </TD></TR>
+				<TR><TD PORT="phone" COLSPAN="3" BGCOLOR="#FFF59D" ALIGN="LEFT">  phone:String  </TD></TR>
+				<TR><TD PORT="comment" COLSPAN="3" BGCOLOR="#FFF59D" ALIGN="LEFT">  comment:String  </TD></TR>
+				<TR><TD PORT="countryCode" COLSPAN="3" BGCOLOR="#FFF59D" ALIGN="LEFT">  countryCode:String  </TD></TR>
+				<TR><TD PORT="country" COLSPAN="3" BGCOLOR="#FFF59D" ALIGN="LEFT">  country:String  </TD></TR>
+				<TR><TD PORT="adminAreaLevel1Code" COLSPAN="3" BGCOLOR="#FFF59D" ALIGN="LEFT">  adminAreaLevel1Code:String  </TD></TR>
+				<TR><TD PORT="adminAreaLevel1" COLSPAN="3" BGCOLOR="#FFF59D" ALIGN="LEFT">  adminAreaLevel1:String  </TD></TR>
+				<TR><TD PORT="adminAreaLevel2" COLSPAN="3" BGCOLOR="#FFF59D" ALIGN="LEFT">  adminAreaLevel2:String  </TD></TR>
+				<TR><TD PORT="locality" COLSPAN="3" BGCOLOR="#FFF59D" ALIGN="LEFT">  locality:String  </TD></TR>
+				<TR><TD PORT="street" COLSPAN="3" BGCOLOR="#FFF59D" ALIGN="LEFT">  street:String  </TD></TR>
+				<TR><TD PORT="streetNumber" COLSPAN="3" BGCOLOR="#FFF59D" ALIGN="LEFT">  streetNumber:String  </TD></TR>
+				<TR><TD PORT="buildingFloor" COLSPAN="3" BGCOLOR="#FFF59D" ALIGN="LEFT">  buildingFloor:String  </TD></TR>
+				<TR><TD PORT="buildingRoom" COLSPAN="3" BGCOLOR="#FFF59D" ALIGN="LEFT">  buildingRoom:String  </TD></TR>
+				<TR><TD PORT="building" COLSPAN="3" BGCOLOR="#FFF59D" ALIGN="LEFT">  building:String  </TD></TR>
+				<TR><TD PORT="commentAddress" COLSPAN="3" BGCOLOR="#FFF59D" ALIGN="LEFT">  commentAddress:String  </TD></TR>
+				<TR><TD PORT="lat" COLSPAN="3" BGCOLOR="#FFF59D" ALIGN="LEFT">  lat:Double  </TD></TR>
+				<TR><TD PORT="lng" COLSPAN="3" BGCOLOR="#FFF59D" ALIGN="LEFT">  lng:Double  </TD></TR>
+				<TR><TD PORT="auditDateCreate" COLSPAN="3" BGCOLOR="#FFF59D" ALIGN="LEFT">  auditDateCreate:Timestamp  </TD></TR>
+				<TR><TD PORT="auditUserCreate" COLSPAN="3" BGCOLOR="#FFF59D" ALIGN="LEFT">  auditUserCreate:String  </TD></TR>
+				<TR><TD PORT="auditDateUpdate" COLSPAN="3" BGCOLOR="#FFF59D" ALIGN="LEFT">  auditDateUpdate:Timestamp  </TD></TR>
+				<TR><TD PORT="auditUserUpdate" COLSPAN="3" BGCOLOR="#FFF59D" ALIGN="LEFT">  auditUserUpdate:String  </TD></TR>
+				<TR><TD PORT="auditVersion" COLSPAN="3" BGCOLOR="#FFF59D" ALIGN="LEFT">  auditVersion:Long  </TD></TR>
+				<TR><TD PORT="auditVersionCodeLabel" COLSPAN="3" BGCOLOR="#FFF59D" ALIGN="LEFT">  auditVersionCodeLabel:String  </TD></TR>
+				<TR><TD PORT="auditVersionLabel" COLSPAN="3" BGCOLOR="#FFF59D" ALIGN="LEFT">  auditVersionLabel:String  </TD></TR>
+				<TR><TD PORT="iva" COLSPAN="3" BGCOLOR="#FFF59D" ALIGN="LEFT">  iva : <B>Iva</B>  </TD></TR>
+				<TR><TD PORT="cadastreSubDivision" COLSPAN="3" BGCOLOR="#FFF59D" ALIGN="LEFT">  cadastreSubDivisionList : <B>CadastreSubDivision[]</B>  </TD></TR>
+				<TR><TD PORT="neighbourhood" COLSPAN="3" BGCOLOR="#FFF59D" ALIGN="LEFT">  neighbourhood : <B>Neighbourhood</B>  </TD></TR>
+							</TABLE>>
+							URL="com.cclip.model.person.Uf.html"
+							tooltip="com.cclip.model.person.Uf"
+					];
+
+					//com.cclip.model.person.Iva
+					Iva [
+						label=<
+							<TABLE BORDER="0" CELLBORDER="0" CELLSPACING="0" BGCOLOR="#ffffff">
+				<TR><TD COLSPAN="3" BGCOLOR="#FFF176" ALIGN="CENTER"><B>com.cclip.model.person.Iva</B></TD></TR>
+
+				<TR><TD PORT="id" COLSPAN="3" BGCOLOR="#FFF59D" ALIGN="LEFT">  id:String  </TD></TR>
+				<TR><TD PORT="erased" COLSPAN="3" BGCOLOR="#FFF59D" ALIGN="LEFT">  erased:Boolean  </TD></TR>
+				<TR><TD PORT="code" COLSPAN="3" BGCOLOR="#FFF59D" ALIGN="LEFT">  code:String  </TD></TR>
+				<TR><TD PORT="name" COLSPAN="3" BGCOLOR="#FFF59D" ALIGN="LEFT">  name:String  </TD></TR>
+				<TR><TD PORT="comment" COLSPAN="3" BGCOLOR="#FFF59D" ALIGN="LEFT">  comment:String  </TD></TR>
+							</TABLE>>
+							URL="com.cclip.model.person.Iva.html"
+							tooltip="com.cclip.model.person.Iva"
+					];
+	"Uf":"iva":w -> "Iva":"uf":e [arrowhead=none, dir=back, arrowtail=none, arrowhead=none, headlabel = "1", taillabel = "0", fontsize="8", color="#F9A825"];
+	"Cadastre":"userIva":w -> "Iva":"cadastre":e [arrowhead=none, dir=back, arrowtail=none, arrowhead=none, headlabel = "1", taillabel = "0", fontsize="8", color="#F9A825"];
+	"CadastreSubDivision":"userIva":w -> "Iva":"cadastreSubDivision":e [arrowhead=none, dir=back, arrowtail=none, arrowhead=none, headlabel = "1", taillabel = "0", fontsize="8", color="#F9A825"];
+	"Cadastre":"userWaterSituation":w -> "UserWaterSituation":"cadastre":e [arrowhead=none, dir=back, arrowtail=none, arrowhead=none, headlabel = "1", taillabel = "0", fontsize="8", color="#F9A825"];
+	"CadastreSubDivision":"userWaterSituation":w -> "UserWaterSituation":"cadastreSubDivision":e [arrowhead=none, dir=back, arrowtail=none, arrowhead=none, headlabel = "1", taillabel = "0", fontsize="8", color="#F9A825"];
+	"Cadastre":"uf":w -> "Uf":"cadastre":e [arrowhead=none, dir=back, arrowtail=none, arrowhead=none, headlabel = "1", taillabel = "*", fontsize="8", color="#F9A825"];
+	"CadastreSubDivision":"uf":w -> "Uf":"cadastreSubDivision":e [arrowhead=none, dir=back, arrowtail=none, arrowhead=none, headlabel = "1", taillabel = "*", fontsize="8", color="#F9A825"];
+	"CadastreBlock":"cadastreActivityType":w -> "CadastreActivityType":"cadastreBlock":e [arrowhead=none, dir=back, arrowtail=none, arrowhead=none, headlabel = "1", taillabel = "0", fontsize="8", color="#F9A825"];
+	"CadastreSubDivision":"cadastreActivityType":w -> "CadastreActivityType":"cadastreSubDivision":e [arrowhead=none, dir=back, arrowtail=none, arrowhead=none, headlabel = "1", taillabel = "0", fontsize="8", color="#F9A825"];
+	"Cadastre":"cityArea":w -> "CityArea":"cadastre":e [arrowhead=none, dir=back, arrowtail=none, arrowhead=none, headlabel = "1", taillabel = "0", fontsize="8", color="#F9A825"];
+	"CadastreSubDivision":"cityArea":w -> "CityArea":"cadastreSubDivision":e [arrowhead=none, dir=back, arrowtail=none, arrowhead=none, headlabel = "1", taillabel = "0", fontsize="8", color="#F9A825"];
+	"ScheduleBatch":"schedule":w -> "Schedule":"scheduleBatch":e [arrowhead=none, dir=back, arrowtail=none, arrowhead=none, headlabel = "1", taillabel = "*", fontsize="8", color="#F9A825"];
+	"ScheduleScanning":"schedule":w -> "Schedule":"scheduleScanning":e [arrowhead=none, dir=back, arrowtail=none, arrowhead=none, headlabel = "1", taillabel = "*", fontsize="8", color="#F9A825"];
+	"CadastreBlock":"cadastre":w -> "Cadastre":"cadastreBlock":e [arrowhead=none, dir=back, arrowtail=none, arrowhead=none, headlabel = "1", taillabel = "*", fontsize="8", color="#F9A825"];
+	"CadastreSubDivision":"cadastre":w -> "Cadastre":"cadastreSubDivision":e [arrowhead=none, dir=back, arrowtail=none, arrowhead=none, headlabel = "1", taillabel = "*", fontsize="8", color="#F9A825"];
+	"ScheduleScanningItem":"cadastre":w -> "Cadastre":"scheduleScanningItem":e [arrowhead=none, dir=back, arrowtail=none, arrowhead=none, headlabel = "1", taillabel = "*", fontsize="8", color="#F9A825"];
+	"ScheduleScanningItem":"scheduleScanningResult":w -> "ScheduleScanningResult":"scheduleScanningItem":e [arrowhead=none, dir=back, arrowtail=none, arrowhead=none, headlabel = "1", taillabel = "0", fontsize="8", color="#F9A825"];
+	"ScheduleScanning":"censusTaker":w -> "CensusTaker":"scheduleScanning":e [arrowhead=none, dir=back, arrowtail=none, arrowhead=none, headlabel = "1", taillabel = "*", fontsize="8", color="#F9A825"];
+	"ScheduleScanningItem":"scheduleScanning":w -> "ScheduleScanning":"scheduleScanningItem":e [arrowhead=none, dir=back, arrowtail=none, arrowhead=none, headlabel = "1", taillabel = "*", fontsize="8", color="#F9A825"];
+	"Cadastre":"cadastreType":w -> "CadastreType":"cadastre":e [arrowhead=none, dir=back, arrowtail=none, arrowhead=none, headlabel = "1", taillabel = "0", fontsize="8", color="#F9A825"];
+	"Cadastre":"cadastreSituation":w -> "CadastreSituation":"cadastre":e [arrowhead=none, dir=back, arrowtail=none, arrowhead=none, headlabel = "1", taillabel = "0", fontsize="8", color="#F9A825"];
+	"Cadastre":"inmNeighbourhood":w -> "Neighbourhood":"cadastre":e [arrowhead=none, dir=back, arrowtail=none, arrowhead=none, headlabel = "1", taillabel = "0", fontsize="8", color="#F9A825"];
+	"CadastreBlock":"cadastreConstructiveType":w -> "CadastreConstructiveType":"cadastreBlock":e [arrowhead=none, dir=back, arrowtail=none, arrowhead=none, headlabel = "1", taillabel = "0", fontsize="8", color="#F9A825"];
+	"CadastreBlock":"cadastreDestinationType":w -> "CadastreDestinationType":"cadastreBlock":e [arrowhead=none, dir=back, arrowtail=none, arrowhead=none, headlabel = "1", taillabel = "0", fontsize="8", color="#F9A825"];
+	"CadastreSubDivision":"cadastreSubDivisionType":w -> "CadastreSubDivisionType":"cadastreSubDivision":e [arrowhead=none, dir=back, arrowtail=none, arrowhead=none, headlabel = "1", taillabel = "0", fontsize="8", color="#F9A825"];
+	"ScheduleCensus":"schedule":w -> "Schedule":"scheduleCensus":e [arrowhead=none, dir=back, arrowtail=none, arrowhead=none, headlabel = "1", taillabel = "*", fontsize="8", color="#F9A825"];
+	"ScheduleCensus":"cadastre":w -> "Cadastre":"scheduleCensus":e [arrowhead=none, dir=back, arrowtail=none, arrowhead=none, headlabel = "1", taillabel = "*", fontsize="8", color="#F9A825"];
+	"ScheduleCensus":"censusTaker":w -> "CensusTaker":"scheduleCensus":e [arrowhead=none, dir=back, arrowtail=none, arrowhead=none, headlabel = "1", taillabel = "*", fontsize="8", color="#F9A825"];
+	"ScheduleCensus":"scheduleBatch":w -> "ScheduleBatch":"scheduleCensus":e [arrowhead=none, dir=back, arrowtail=none, arrowhead=none, headlabel = "1", taillabel = "*", fontsize="8", color="#F9A825"];
+	"ScheduleCensus":"cadastreActivityType":w -> "CadastreActivityType":"scheduleCensus":e [arrowhead=none, dir=back, arrowtail=none, arrowhead=none, headlabel = "1", taillabel = "0", fontsize="8", color="#F9A825"];
+	"ScheduleCensus":"scheduleCensusResult":w -> "ScheduleCensusResult":"scheduleCensus":e [arrowhead=none, dir=back, arrowtail=none, arrowhead=none, headlabel = "1", taillabel = "*", fontsize="8", color="#F9A825"];
+	"CadastreInsDel":"schedule":w -> "Schedule":"cadastreInsDel":e [arrowhead=none, dir=back, arrowtail=none, arrowhead=none, headlabel = "1", taillabel = "*", fontsize="8", color="#F9A825"];
+	"CadastreInsDel":"censusTaker":w -> "CensusTaker":"cadastreInsDel":e [arrowhead=none, dir=back, arrowtail=none, arrowhead=none, headlabel = "1", taillabel = "*", fontsize="8", color="#F9A825"];
+	"CadastreInsDel":"scheduleBatch":w -> "ScheduleBatch":"cadastreInsDel":e [arrowhead=none, dir=back, arrowtail=none, arrowhead=none, headlabel = "1", taillabel = "*", fontsize="8", color="#F9A825"];
+	"Cadastre":"cadastreInsDel":w -> "CadastreInsDel":"cadastre":e [arrowhead=none, dir=back, arrowtail=none, arrowhead=none, headlabel = "1", taillabel = "*", fontsize="8", color="#F9A825"];
+	"Uf":"neighbourhood":w -> "Neighbourhood":"uf":e [arrowhead=none, dir=back, arrowtail=none, arrowhead=none, headlabel = "1", taillabel = "0", fontsize="8", color="#F9A825"];
+}

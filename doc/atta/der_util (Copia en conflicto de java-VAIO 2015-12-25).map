@@ -1,0 +1,13 @@
+<map id="G" name="G">
+<area shape="rect" id="node1" href="com.cclip.model.ConfSystem.html" title="com.cclip.model.ConfSystem" alt="" coords="5,678,297,783"/>
+<area shape="rect" id="node2" href="com.cclip.model.geo.cadastre.aacc.AaccUnidad.html" title="com.cclip.model.geo.cadastre.aacc.AaccUnidad" alt="" coords="315,6,576,1455"/>
+<area shape="rect" id="node3" href="com.cclip.model.geo.cadastre.aacc.AaccUnidadBack.html" title="com.cclip.model.geo.cadastre.aacc.AaccUnidadBack" alt="" coords="593,6,855,1455"/>
+<area shape="rect" id="node4" href="com.cclip.model.geo.cadastre.aacc.AaccInmueble.html" title="com.cclip.model.geo.cadastre.aacc.AaccInmueble" alt="" coords="872,361,1133,1101"/>
+<area shape="rect" id="node5" href="com.cclip.model.geo.cadastre.aacc.AaccInmuebleBack.html" title="com.cclip.model.geo.cadastre.aacc.AaccInmuebleBack" alt="" coords="1151,361,1412,1101"/>
+<area shape="rect" id="node6" href="com.cclip.model.geo.cadastre.aacc.AaccSubcuenta.html" title="com.cclip.model.geo.cadastre.aacc.AaccSubcuenta" alt="" coords="1429,267,1691,1194"/>
+<area shape="rect" id="node7" href="com.cclip.model.geo.cadastre.aacc.AaccSubcuentaBack.html" title="com.cclip.model.geo.cadastre.aacc.AaccSubcuentaBack" alt="" coords="1708,267,1969,1194"/>
+<area shape="rect" id="node8" href="com.cclip.model.geo.cadastre.aacc.AaccSuperficie.html" title="com.cclip.model.geo.cadastre.aacc.AaccSuperficie" alt="" coords="1987,510,2248,951"/>
+<area shape="rect" id="node9" href="com.cclip.model.geo.cadastre.aacc.AaccSuperficieBack.html" title="com.cclip.model.geo.cadastre.aacc.AaccSuperficieBack" alt="" coords="2265,510,2527,951"/>
+<area shape="rect" id="node10" href="com.cclip.model.geo.cadastre.aacc.AaccDatosPostales.html" title="com.cclip.model.geo.cadastre.aacc.AaccDatosPostales" alt="" coords="2544,473,2805,989"/>
+<area shape="rect" id="node11" href="com.cclip.model.geo.cadastre.aacc.AaccDatosPostalesBack.html" title="com.cclip.model.geo.cadastre.aacc.AaccDatosPostalesBack" alt="" coords="2823,473,3084,989"/>
+</map>

@@ -1,0 +1,129 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<beans xmlns='http://www.springframework.org/schema/beans'
+	xmlns:xsi='http://www.w3.org/2001/XMLSchema-instance' xmlns:aop='http://www.springframework.org/schema/aop'
+	xmlns:tx='http://www.springframework.org/schema/tx'
+	xsi:schemaLocation='
+	http://www.springframework.org/schema/beans
+	http://www.springframework.org/schema/beans/spring-beans-3.0.xsd
+	http://www.springframework.org/schema/tx 
+	http://www.springframework.org/schema/tx/spring-tx.xsd
+	http://www.springframework.org/schema/aop 
+	http://www.springframework.org/schema/aop/spring-aop.xsd'>
+
+
+	<bean id='userSystem' class='com.cclip.model.person.UserSystem'>
+		<!-- <property name='id' value='2cc8fe12-6290-4948-83e3-2c6ecc697209' /> -->
+		<!-- <property name='dni' value='27656133' /> -->
+		<!-- <property name='cuil' value='20276561333' /> -->
+		<!-- <property name='givenName' value='Diego' /> -->
+		<!-- <property name='familyName' value='Mansilla' /> -->
+	</bean>
+
+	<!-- <bean id='confSystem' class='com.cclip.model.ConfSystem'> -->
+	<!-- <property name='urlFiles' value='/home/java/jaspe/cclip/lino_files' 
+		/> -->
+
+	<!-- <property name='urlUnlDbIceFrom' -->
+	<!-- value='/home/java/jaspe/cclip/migracion/ejemplos_import_aacc/ejemplo_bases_congeladas' 
+		/> -->
+	<!-- <property name='urlUnlNovFrom' -->
+	<!-- value='/home/java/jaspe/cclip/migracion/ejemplos_import_aacc/ejemplo_novedades' 
+		/> -->
+	<!-- <property name='urlUnlTo' -->
+	<!-- value='/home/java/jaspe/cclip/carpeta_salida_unl_lino/' /> -->
+
+
+	<!-- <property name='urlDistritalesFrom' -->
+	<!-- value='/home/java/jaspe/cclip/Relevamiento Pesado/parcelarios y mapas/parcelarios_mapas/distritos' 
+		/> -->
+
+	<!-- <property name='urlPlanchetasFrom' -->
+	<!-- value='/home/java/jaspe/cclip/Relevamiento Pesado/parcelarios y mapas/parcelarios_mapas/manzanas' 
+		/> -->
+
+	<!-- </bean> -->
+
+	<bean id='linoProperties' class='com.cclip.util.LinoProperties'>
+
+	</bean>
+
+	<bean id='dataSourceWrapper' class='org.utiljdbc.DataSourceWrapper'>
+		<constructor-arg ref='linoProperties' />
+	</bean>
+
+	<bean id='utilJdbc' class='org.utiljdbc.UtilJdbc' scope='prototype'>
+		<property name='verbose' value='true' />
+	</bean>
+
+
+	<bean id='customCadastreDao' class='com.cclip.dao.geo.cadastre.CustomCadastreDao'>
+		<property name='UtilJdbc' ref='utilJdbc' />
+	</bean>
+
+
+
+	<bean id='customScheduleScanningDao'
+		class='com.cclip.dao.schedule.scanning.CustomScheduleScanningDao'>
+		<property name='UtilJdbc' ref='utilJdbc' />
+	</bean>
+
+	<bean id='customScheduleScanningBo' class='com.cclip.bo.schedule.scanning.CustomScheduleScanningBo'>
+		<property name='dataSourceWrapper' ref='dataSourceWrapper' />
+		<property name='dao1' ref='customScheduleScanningDao' />
+		<property name='dao2' ref='customScheduleScanningItemDao' />
+		<property name='dao3' ref='customCadastreDao' />
+		<property name='linoProperties' ref='linoProperties' />
+	</bean>
+
+
+
+	<bean id='customScheduleScanningItemDao'
+		class='com.cclip.dao.schedule.scanning.CustomScheduleScanningItemDao'>
+		<property name='UtilJdbc' ref='utilJdbc' />
+		<property name='dao1' ref='customScheduleCensusDao' />
+	</bean>
+
+	<bean id='customScheduleScanningItemBo'
+		class='com.cclip.bo.schedule.scanning.CustomScheduleScanningItemBo'>
+		<property name='dataSourceWrapper' ref='dataSourceWrapper' />
+		<property name='dao1' ref='customScheduleScanningItemDao' />
+	</bean>
+
+	<bean id='scheduleScanningResultTotalDao'
+		class='com.cclip.dao.schedule.scanning.ScheduleScanningResultTotalDao'>
+		<property name='UtilJdbc' ref='utilJdbc' />
+	</bean>
+
+	<bean id='scheduleScanningResultTotalBo'
+		class='com.cclip.bo.schedule.scanning.ScheduleScanningResultTotalBo'>
+		<property name='dataSourceWrapper' ref='dataSourceWrapper' />
+		<property name='dao' ref='scheduleScanningResultTotalDao' />
+	</bean>
+
+	<bean id='customScheduleCensusDao' class='com.cclip.dao.schedule.census.CustomScheduleCensusDao'>
+		<property name='UtilJdbc' ref='utilJdbc' />
+		<property name='dao2' ref='ufDao' />
+	</bean>
+
+
+	<bean id='customScheduleScanningResultBo'
+		class='com.cclip.bo.schedule.scanning.CustomScheduleScanningResultBo'>
+		<property name='dataSourceWrapper' ref='dataSourceWrapper' />
+		<property name='dao' ref='scheduleScanningResultDao' />
+	</bean>
+
+
+
+
+	<bean id='unlDao' class='com.cclip.dao.geo.cadastre.aacc.UnlDao'>
+		<property name='UtilJdbc' ref='utilJdbc' />
+	</bean>
+
+	<bean id='unlBo' class='com.cclip.bo.geo.cadastre.aacc.UnlBo'>
+		<property name='dataSourceWrapper' ref='dataSourceWrapper' />
+		<property name='dao' ref='unlDao' />
+	</bean>
+
+
+
+</beans>

@@ -1,0 +1,668 @@
+digraph G {
+
+	graph [
+		label="Modelo de Datos Simplificado de Cclip Censo y Barrido (Basado en Entity Relationship Diagram)"
+		rankdir="RL"
+		bgcolor="#FFFFFF"
+		labeljust="l"
+		nodesep="0.18"
+		ranksep="0.46"
+		fontname="Helvetica"
+		fontsize="8"
+	];
+	node [
+		fontname="Helvetica"
+		fontsize="9"
+		shape="plaintext"
+		
+	];
+	edge [
+		arrowsize="0.5"
+	];
+
+					//com.cclip.model.geo.CityArea
+					city_area [
+						label=<
+							<TABLE BORDER="0" CELLBORDER="0" CELLSPACING="0" BGCOLOR="#ffffff">
+				<TR><TD COLSPAN="3" BGCOLOR="#90CAF9" ALIGN="CENTER"><B>city_area</B></TD></TR>
+
+				<TR><TD PORT="id" COLSPAN="3" BGCOLOR="#E3F2FD" ALIGN="LEFT"><B>  id</B> : varchar <B>pk  not null</B> </TD></TR>
+				<TR><TD PORT="erased" COLSPAN="3" BGCOLOR="#E3F2FD" ALIGN="LEFT">  <B>erased</B> : boolean <B>not null</B>   </TD></TR>
+				<TR><TD PORT="code" COLSPAN="3" BGCOLOR="#E3F2FD" ALIGN="LEFT">  <B>code</B> : varchar <B>unique</B>  <B>not null</B>   </TD></TR>
+				<TR><TD PORT="name" COLSPAN="3" BGCOLOR="#E3F2FD" ALIGN="LEFT">  <B>name</B> : varchar <B>not null</B>   </TD></TR>
+				<TR><TD PORT="comment" COLSPAN="3" BGCOLOR="#E3F2FD" ALIGN="LEFT">  comment : varchar  </TD></TR>
+							</TABLE>>
+							URL="com.cclip.model.geo.CityArea.html"
+							tooltip="com.cclip.model.geo.CityArea"
+					];
+
+					//com.cclip.model.geo.Neighbourhood
+					neighbourhood [
+						label=<
+							<TABLE BORDER="0" CELLBORDER="0" CELLSPACING="0" BGCOLOR="#ffffff">
+				<TR><TD COLSPAN="3" BGCOLOR="#90CAF9" ALIGN="CENTER"><B>neighbourhood</B></TD></TR>
+
+				<TR><TD PORT="id" COLSPAN="3" BGCOLOR="#E3F2FD" ALIGN="LEFT"><B>  id</B> : varchar <B>pk  not null</B> </TD></TR>
+				<TR><TD PORT="erased" COLSPAN="3" BGCOLOR="#E3F2FD" ALIGN="LEFT">  <B>erased</B> : boolean <B>not null</B>   </TD></TR>
+				<TR><TD PORT="code" COLSPAN="3" BGCOLOR="#E3F2FD" ALIGN="LEFT">  <B>code</B> : varchar <B>unique</B>  <B>not null</B>   </TD></TR>
+				<TR><TD PORT="name" COLSPAN="3" BGCOLOR="#E3F2FD" ALIGN="LEFT">  <B>name</B> : varchar <B>not null</B>   </TD></TR>
+				<TR><TD PORT="comment" COLSPAN="3" BGCOLOR="#E3F2FD" ALIGN="LEFT">  comment : varchar  </TD></TR>
+							</TABLE>>
+							URL="com.cclip.model.geo.Neighbourhood.html"
+							tooltip="com.cclip.model.geo.Neighbourhood"
+					];
+
+						//com.cclip.model.geo.cadastre.CadastreType
+						cadastre_type [
+							label=<
+								<TABLE BORDER="0" CELLBORDER="0" CELLSPACING="0" BGCOLOR="#ffffff">
+				<TR><TD COLSPAN="3" BGCOLOR="#90CAF9" ALIGN="CENTER"><B>cadastre_type</B></TD></TR>
+
+				<TR><TD PORT="id" COLSPAN="3" BGCOLOR="#E3F2FD" ALIGN="LEFT"><B>  id</B> : varchar <B>pk  not null</B> </TD></TR>
+				<TR><TD PORT="erased" COLSPAN="3" BGCOLOR="#E3F2FD" ALIGN="LEFT">  <B>erased</B> : boolean <B>not null</B>   </TD></TR>
+				<TR><TD PORT="code" COLSPAN="3" BGCOLOR="#E3F2FD" ALIGN="LEFT">  <B>code</B> : varchar <B>unique</B>  <B>not null</B>   </TD></TR>
+				<TR><TD PORT="name" COLSPAN="3" BGCOLOR="#E3F2FD" ALIGN="LEFT">  <B>name</B> : varchar <B>not null</B>   </TD></TR>
+				<TR><TD PORT="comment" COLSPAN="3" BGCOLOR="#E3F2FD" ALIGN="LEFT">  comment : varchar  </TD></TR>
+								</TABLE>>
+								URL="com.cclip.model.geo.cadastre.CadastreType.html"
+								tooltip="com.cclip.model.geo.cadastre.CadastreType"
+						];
+
+						//com.cclip.model.geo.cadastre.CadastreSituation
+						cadastre_situation [
+							label=<
+								<TABLE BORDER="0" CELLBORDER="0" CELLSPACING="0" BGCOLOR="#ffffff">
+				<TR><TD COLSPAN="3" BGCOLOR="#90CAF9" ALIGN="CENTER"><B>cadastre_situation</B></TD></TR>
+
+				<TR><TD PORT="id" COLSPAN="3" BGCOLOR="#E3F2FD" ALIGN="LEFT"><B>  id</B> : varchar <B>pk  not null</B> </TD></TR>
+				<TR><TD PORT="erased" COLSPAN="3" BGCOLOR="#E3F2FD" ALIGN="LEFT">  <B>erased</B> : boolean <B>not null</B>   </TD></TR>
+				<TR><TD PORT="code" COLSPAN="3" BGCOLOR="#E3F2FD" ALIGN="LEFT">  <B>code</B> : varchar <B>unique</B>  <B>not null</B>   </TD></TR>
+				<TR><TD PORT="name" COLSPAN="3" BGCOLOR="#E3F2FD" ALIGN="LEFT">  <B>name</B> : varchar <B>not null</B>   </TD></TR>
+				<TR><TD PORT="comment" COLSPAN="3" BGCOLOR="#E3F2FD" ALIGN="LEFT">  comment : varchar  </TD></TR>
+								</TABLE>>
+								URL="com.cclip.model.geo.cadastre.CadastreSituation.html"
+								tooltip="com.cclip.model.geo.cadastre.CadastreSituation"
+						];
+
+						//com.cclip.model.geo.cadastre.UserWaterSituation
+						user_water_situation [
+							label=<
+								<TABLE BORDER="0" CELLBORDER="0" CELLSPACING="0" BGCOLOR="#ffffff">
+				<TR><TD COLSPAN="3" BGCOLOR="#90CAF9" ALIGN="CENTER"><B>user_water_situation</B></TD></TR>
+
+				<TR><TD PORT="id" COLSPAN="3" BGCOLOR="#E3F2FD" ALIGN="LEFT"><B>  id</B> : varchar <B>pk  not null</B> </TD></TR>
+				<TR><TD PORT="erased" COLSPAN="3" BGCOLOR="#E3F2FD" ALIGN="LEFT">  <B>erased</B> : boolean <B>not null</B>   </TD></TR>
+				<TR><TD PORT="code" COLSPAN="3" BGCOLOR="#E3F2FD" ALIGN="LEFT">  <B>code</B> : varchar <B>unique</B>  <B>not null</B>   </TD></TR>
+				<TR><TD PORT="name" COLSPAN="3" BGCOLOR="#E3F2FD" ALIGN="LEFT">  <B>name</B> : varchar <B>not null</B>   </TD></TR>
+				<TR><TD PORT="comment" COLSPAN="3" BGCOLOR="#E3F2FD" ALIGN="LEFT">  comment : varchar  </TD></TR>
+								</TABLE>>
+								URL="com.cclip.model.geo.cadastre.UserWaterSituation.html"
+								tooltip="com.cclip.model.geo.cadastre.UserWaterSituation"
+						];
+
+						//com.cclip.model.geo.cadastre.Cadastre
+						cadastre [
+							label=<
+								<TABLE BORDER="0" CELLBORDER="0" CELLSPACING="0" BGCOLOR="#ffffff">
+				<TR><TD COLSPAN="3" BGCOLOR="#90CAF9" ALIGN="CENTER"><B>cadastre</B></TD></TR>
+
+				<TR><TD PORT="id" COLSPAN="3" BGCOLOR="#E3F2FD" ALIGN="LEFT"><B>  id</B> : varchar <B>pk  not null</B> </TD></TR>
+				<TR><TD PORT="erased" COLSPAN="3" BGCOLOR="#E3F2FD" ALIGN="LEFT">  <B>erased</B> : boolean <B>not null</B>   </TD></TR>
+				<TR><TD PORT="date_create" COLSPAN="3" BGCOLOR="#E3F2FD" ALIGN="LEFT">  date_create : timestamp  </TD></TR>
+				<TR><TD PORT="date_delete" COLSPAN="3" BGCOLOR="#E3F2FD" ALIGN="LEFT">  date_delete : timestamp  </TD></TR>
+				<TR><TD PORT="cadastral_code" COLSPAN="3" BGCOLOR="#E3F2FD" ALIGN="LEFT">  <B>cadastral_code</B> : varchar <B>unique</B>  <B>not null</B>   </TD></TR>
+				<TR><TD PORT="m2" COLSPAN="3" BGCOLOR="#E3F2FD" ALIGN="LEFT">  m2 : double precision  </TD></TR>
+				<TR><TD PORT="m2_covered" COLSPAN="3" BGCOLOR="#E3F2FD" ALIGN="LEFT">  m2_covered : double precision  </TD></TR>
+				<TR><TD PORT="cta_cli" COLSPAN="3" BGCOLOR="#E3F2FD" ALIGN="LEFT">  cta_cli : varchar  </TD></TR>
+				<TR><TD PORT="sub_cta_cli" COLSPAN="3" BGCOLOR="#E3F2FD" ALIGN="LEFT">  sub_cta_cli : varchar  </TD></TR>
+				<TR><TD PORT="dv" COLSPAN="3" BGCOLOR="#E3F2FD" ALIGN="LEFT">  dv : varchar  </TD></TR>
+				<TR><TD PORT="user_water_service" COLSPAN="3" BGCOLOR="#E3F2FD" ALIGN="LEFT">  user_water_service : varchar  </TD></TR>
+				<TR><TD PORT="user_water_service_dni" COLSPAN="3" BGCOLOR="#E3F2FD" ALIGN="LEFT">  user_water_service_dni : varchar  </TD></TR>
+				<TR><TD PORT="user_water_service_cuit" COLSPAN="3" BGCOLOR="#E3F2FD" ALIGN="LEFT">  user_water_service_cuit : varchar  </TD></TR>
+				<TR><TD PORT="water_meter" COLSPAN="3" BGCOLOR="#E3F2FD" ALIGN="LEFT">  water_meter : boolean  </TD></TR>
+				<TR><TD PORT="comment" COLSPAN="3" BGCOLOR="#E3F2FD" ALIGN="LEFT">  comment : varchar  </TD></TR>
+				<TR><TD PORT="inm_locality" COLSPAN="3" BGCOLOR="#E3F2FD" ALIGN="LEFT">  inm_locality : varchar  </TD></TR>
+				<TR><TD PORT="inm_neighbourhood_comment" COLSPAN="3" BGCOLOR="#E3F2FD" ALIGN="LEFT">  inm_neighbourhood_comment : varchar  </TD></TR>
+				<TR><TD PORT="inm_street" COLSPAN="3" BGCOLOR="#E3F2FD" ALIGN="LEFT">  inm_street : varchar  </TD></TR>
+				<TR><TD PORT="inm_street_number" COLSPAN="3" BGCOLOR="#E3F2FD" ALIGN="LEFT">  inm_street_number : varchar  </TD></TR>
+				<TR><TD PORT="inm_street_number_estimated" COLSPAN="3" BGCOLOR="#E3F2FD" ALIGN="LEFT">  inm_street_number_estimated : boolean  </TD></TR>
+				<TR><TD PORT="inm_building_floor" COLSPAN="3" BGCOLOR="#E3F2FD" ALIGN="LEFT">  inm_building_floor : varchar  </TD></TR>
+				<TR><TD PORT="inm_building_room" COLSPAN="3" BGCOLOR="#E3F2FD" ALIGN="LEFT">  inm_building_room : varchar  </TD></TR>
+				<TR><TD PORT="inm_building" COLSPAN="3" BGCOLOR="#E3F2FD" ALIGN="LEFT">  inm_building : varchar  </TD></TR>
+				<TR><TD PORT="inm_postal_code" COLSPAN="3" BGCOLOR="#E3F2FD" ALIGN="LEFT">  inm_postal_code : varchar  </TD></TR>
+				<TR><TD PORT="inm_comment_address" COLSPAN="3" BGCOLOR="#E3F2FD" ALIGN="LEFT">  inm_comment_address : varchar  </TD></TR>
+				<TR><TD PORT="inm_lat" COLSPAN="3" BGCOLOR="#E3F2FD" ALIGN="LEFT">  inm_lat : double precision  </TD></TR>
+				<TR><TD PORT="inm_lng" COLSPAN="3" BGCOLOR="#E3F2FD" ALIGN="LEFT">  inm_lng : double precision  </TD></TR>
+				<TR><TD PORT="user_postal_country_code" COLSPAN="3" BGCOLOR="#E3F2FD" ALIGN="LEFT">  user_postal_country_code : varchar  </TD></TR>
+				<TR><TD PORT="user_postal_country" COLSPAN="3" BGCOLOR="#E3F2FD" ALIGN="LEFT">  user_postal_country : varchar  </TD></TR>
+				<TR><TD PORT="user_postal_admin_area_level1_code" COLSPAN="3" BGCOLOR="#E3F2FD" ALIGN="LEFT">  user_postal_admin_area_level1_code : varchar  </TD></TR>
+				<TR><TD PORT="user_postal_admin_area_level1" COLSPAN="3" BGCOLOR="#E3F2FD" ALIGN="LEFT">  user_postal_admin_area_level1 : varchar  </TD></TR>
+				<TR><TD PORT="user_postal_admin_area_level2" COLSPAN="3" BGCOLOR="#E3F2FD" ALIGN="LEFT">  user_postal_admin_area_level2 : varchar  </TD></TR>
+				<TR><TD PORT="user_postal_locality" COLSPAN="3" BGCOLOR="#E3F2FD" ALIGN="LEFT">  user_postal_locality : varchar  </TD></TR>
+				<TR><TD PORT="user_postal_neighbourhood" COLSPAN="3" BGCOLOR="#E3F2FD" ALIGN="LEFT">  user_postal_neighbourhood : varchar  </TD></TR>
+				<TR><TD PORT="user_postal_street" COLSPAN="3" BGCOLOR="#E3F2FD" ALIGN="LEFT">  user_postal_street : varchar  </TD></TR>
+				<TR><TD PORT="user_postal_street_number" COLSPAN="3" BGCOLOR="#E3F2FD" ALIGN="LEFT">  user_postal_street_number : varchar  </TD></TR>
+				<TR><TD PORT="user_postal_building_floor" COLSPAN="3" BGCOLOR="#E3F2FD" ALIGN="LEFT">  user_postal_building_floor : varchar  </TD></TR>
+				<TR><TD PORT="user_postal_building_room" COLSPAN="3" BGCOLOR="#E3F2FD" ALIGN="LEFT">  user_postal_building_room : varchar  </TD></TR>
+				<TR><TD PORT="user_postal_building" COLSPAN="3" BGCOLOR="#E3F2FD" ALIGN="LEFT">  user_postal_building : varchar  </TD></TR>
+				<TR><TD PORT="user_postal_postal_code" COLSPAN="3" BGCOLOR="#E3F2FD" ALIGN="LEFT">  user_postal_postal_code : varchar  </TD></TR>
+				<TR><TD PORT="user_postal_comment_address" COLSPAN="3" BGCOLOR="#E3F2FD" ALIGN="LEFT">  user_postal_comment_address : varchar  </TD></TR>
+				<TR><TD PORT="user_postal_lat" COLSPAN="3" BGCOLOR="#E3F2FD" ALIGN="LEFT">  user_postal_lat : double precision  </TD></TR>
+				<TR><TD PORT="user_postal_lng" COLSPAN="3" BGCOLOR="#E3F2FD" ALIGN="LEFT">  user_postal_lng : double precision  </TD></TR>
+				<TR><TD PORT="user_phone" COLSPAN="3" BGCOLOR="#E3F2FD" ALIGN="LEFT">  user_phone : varchar  </TD></TR>
+				<TR><TD PORT="code_reason_low" COLSPAN="3" BGCOLOR="#E3F2FD" ALIGN="LEFT">  code_reason_low : varchar  </TD></TR>
+				<TR><TD PORT="reason_low" COLSPAN="3" BGCOLOR="#E3F2FD" ALIGN="LEFT">  reason_low : varchar  </TD></TR>
+				<TR><TD PORT="audit_date_create" COLSPAN="3" BGCOLOR="#E3F2FD" ALIGN="LEFT">  <B>audit_date_create</B> : timestamp <B>not null</B>   </TD></TR>
+				<TR><TD PORT="audit_user_create" COLSPAN="3" BGCOLOR="#E3F2FD" ALIGN="LEFT">  <B>audit_user_create</B> : varchar <B>not null</B>   </TD></TR>
+				<TR><TD PORT="audit_date_update" COLSPAN="3" BGCOLOR="#E3F2FD" ALIGN="LEFT">  <B>audit_date_update</B> : timestamp <B>not null</B>   </TD></TR>
+				<TR><TD PORT="audit_user_update" COLSPAN="3" BGCOLOR="#E3F2FD" ALIGN="LEFT">  <B>audit_user_update</B> : varchar <B>not null</B>   </TD></TR>
+				<TR><TD PORT="audit_version" COLSPAN="3" BGCOLOR="#E3F2FD" ALIGN="LEFT">  <B>audit_version</B> : bigint <B>not null</B>   </TD></TR>
+				<TR><TD PORT="audit_version_code_label" COLSPAN="3" BGCOLOR="#E3F2FD" ALIGN="LEFT">  audit_version_code_label : varchar  </TD></TR>
+				<TR><TD PORT="audit_version_label" COLSPAN="3" BGCOLOR="#E3F2FD" ALIGN="LEFT">  audit_version_label : varchar  </TD></TR>
+				<TR><TD PORT="user_iva_id" COLSPAN="3" BGCOLOR="#E3F2FD" ALIGN="LEFT">  <B>user_iva_id</B> : varchar <B>fk</B>  </TD></TR>
+				<TR><TD PORT="user_water_situation_id" COLSPAN="3" BGCOLOR="#E3F2FD" ALIGN="LEFT">  <B>user_water_situation_id</B> : varchar <B>fk</B>  </TD></TR>
+				<TR><TD PORT="uf_id" COLSPAN="3" BGCOLOR="#E3F2FD" ALIGN="LEFT">  <B>uf_id</B> : varchar <B>fk</B>  </TD></TR>
+				<TR><TD PORT="city_area_id" COLSPAN="3" BGCOLOR="#E3F2FD" ALIGN="LEFT">  <B>city_area_id</B> : varchar <B>fk</B>  </TD></TR>
+				<TR><TD PORT="cadastre_type_id" COLSPAN="3" BGCOLOR="#E3F2FD" ALIGN="LEFT">  <B>cadastre_type_id</B> : varchar <B>fk</B>  </TD></TR>
+				<TR><TD PORT="cadastre_situation_id" COLSPAN="3" BGCOLOR="#E3F2FD" ALIGN="LEFT">  <B>cadastre_situation_id</B> : varchar <B>fk</B>  </TD></TR>
+				<TR><TD PORT="inm_neighbourhood_id" COLSPAN="3" BGCOLOR="#E3F2FD" ALIGN="LEFT">  <B>inm_neighbourhood_id</B> : varchar <B>fk</B>  </TD></TR>
+				<TR><TD PORT="cadastre_ins_del_id" COLSPAN="3" BGCOLOR="#E3F2FD" ALIGN="LEFT">  <B>cadastre_ins_del_id</B> : varchar <B>fk</B>  </TD></TR>
+								</TABLE>>
+								URL="com.cclip.model.geo.cadastre.Cadastre.html"
+								tooltip="com.cclip.model.geo.cadastre.Cadastre"
+						];
+
+						//com.cclip.model.geo.cadastre.CadastreActivityType
+						cadastre_activity_type [
+							label=<
+								<TABLE BORDER="0" CELLBORDER="0" CELLSPACING="0" BGCOLOR="#ffffff">
+				<TR><TD COLSPAN="3" BGCOLOR="#90CAF9" ALIGN="CENTER"><B>cadastre_activity_type</B></TD></TR>
+
+				<TR><TD PORT="id" COLSPAN="3" BGCOLOR="#E3F2FD" ALIGN="LEFT"><B>  id</B> : varchar <B>pk  not null</B> </TD></TR>
+				<TR><TD PORT="erased" COLSPAN="3" BGCOLOR="#E3F2FD" ALIGN="LEFT">  <B>erased</B> : boolean <B>not null</B>   </TD></TR>
+				<TR><TD PORT="code" COLSPAN="3" BGCOLOR="#E3F2FD" ALIGN="LEFT">  <B>code</B> : varchar <B>unique</B>  <B>not null</B>   </TD></TR>
+				<TR><TD PORT="name" COLSPAN="3" BGCOLOR="#E3F2FD" ALIGN="LEFT">  <B>name</B> : varchar <B>not null</B>   </TD></TR>
+				<TR><TD PORT="comment" COLSPAN="3" BGCOLOR="#E3F2FD" ALIGN="LEFT">  comment : varchar  </TD></TR>
+								</TABLE>>
+								URL="com.cclip.model.geo.cadastre.CadastreActivityType.html"
+								tooltip="com.cclip.model.geo.cadastre.CadastreActivityType"
+						];
+
+							//com.cclip.model.geo.cadastre.block.CadastreConstructiveType
+							cadastre_constructive_type [
+								label=<
+									<TABLE BORDER="0" CELLBORDER="0" CELLSPACING="0" BGCOLOR="#ffffff">
+				<TR><TD COLSPAN="3" BGCOLOR="#90CAF9" ALIGN="CENTER"><B>cadastre_constructive_type</B></TD></TR>
+
+				<TR><TD PORT="id" COLSPAN="3" BGCOLOR="#E3F2FD" ALIGN="LEFT"><B>  id</B> : varchar <B>pk  not null</B> </TD></TR>
+				<TR><TD PORT="erased" COLSPAN="3" BGCOLOR="#E3F2FD" ALIGN="LEFT">  <B>erased</B> : boolean <B>not null</B>   </TD></TR>
+				<TR><TD PORT="code" COLSPAN="3" BGCOLOR="#E3F2FD" ALIGN="LEFT">  <B>code</B> : varchar <B>unique</B>  <B>not null</B>   </TD></TR>
+				<TR><TD PORT="name" COLSPAN="3" BGCOLOR="#E3F2FD" ALIGN="LEFT">  <B>name</B> : varchar <B>not null</B>   </TD></TR>
+				<TR><TD PORT="comment" COLSPAN="3" BGCOLOR="#E3F2FD" ALIGN="LEFT">  comment : varchar  </TD></TR>
+									</TABLE>>
+									URL="com.cclip.model.geo.cadastre.block.CadastreConstructiveType.html"
+									tooltip="com.cclip.model.geo.cadastre.block.CadastreConstructiveType"
+							];
+
+							//com.cclip.model.geo.cadastre.block.CadastreDestinationType
+							cadastre_destination_type [
+								label=<
+									<TABLE BORDER="0" CELLBORDER="0" CELLSPACING="0" BGCOLOR="#ffffff">
+				<TR><TD COLSPAN="3" BGCOLOR="#90CAF9" ALIGN="CENTER"><B>cadastre_destination_type</B></TD></TR>
+
+				<TR><TD PORT="id" COLSPAN="3" BGCOLOR="#E3F2FD" ALIGN="LEFT"><B>  id</B> : varchar <B>pk  not null</B> </TD></TR>
+				<TR><TD PORT="erased" COLSPAN="3" BGCOLOR="#E3F2FD" ALIGN="LEFT">  <B>erased</B> : boolean <B>not null</B>   </TD></TR>
+				<TR><TD PORT="code" COLSPAN="3" BGCOLOR="#E3F2FD" ALIGN="LEFT">  <B>code</B> : varchar <B>unique</B>  <B>not null</B>   </TD></TR>
+				<TR><TD PORT="name" COLSPAN="3" BGCOLOR="#E3F2FD" ALIGN="LEFT">  <B>name</B> : varchar <B>not null</B>   </TD></TR>
+				<TR><TD PORT="comment" COLSPAN="3" BGCOLOR="#E3F2FD" ALIGN="LEFT">  comment : varchar  </TD></TR>
+									</TABLE>>
+									URL="com.cclip.model.geo.cadastre.block.CadastreDestinationType.html"
+									tooltip="com.cclip.model.geo.cadastre.block.CadastreDestinationType"
+							];
+
+							//com.cclip.model.geo.cadastre.block.CadastreBlock
+							cadastre_block [
+								label=<
+									<TABLE BORDER="0" CELLBORDER="0" CELLSPACING="0" BGCOLOR="#ffffff">
+				<TR><TD COLSPAN="3" BGCOLOR="#90CAF9" ALIGN="CENTER"><B>cadastre_block</B></TD></TR>
+
+				<TR><TD PORT="id" COLSPAN="3" BGCOLOR="#E3F2FD" ALIGN="LEFT"><B>  id</B> : varchar <B>pk  not null</B> </TD></TR>
+				<TR><TD PORT="erased" COLSPAN="3" BGCOLOR="#E3F2FD" ALIGN="LEFT">  <B>erased</B> : boolean <B>not null</B>   </TD></TR>
+				<TR><TD PORT="year_building" COLSPAN="3" BGCOLOR="#E3F2FD" ALIGN="LEFT">  <B>year_building</B> : integer <B>not null</B>   </TD></TR>
+				<TR><TD PORT="month_building" COLSPAN="3" BGCOLOR="#E3F2FD" ALIGN="LEFT">  month_building : integer  </TD></TR>
+				<TR><TD PORT="m2_covered" COLSPAN="3" BGCOLOR="#E3F2FD" ALIGN="LEFT">  m2_covered : double precision  </TD></TR>
+				<TR><TD PORT="demolition" COLSPAN="3" BGCOLOR="#E3F2FD" ALIGN="LEFT">  demolition : boolean  </TD></TR>
+				<TR><TD PORT="comment" COLSPAN="3" BGCOLOR="#E3F2FD" ALIGN="LEFT">  comment : varchar  </TD></TR>
+				<TR><TD PORT="facade" COLSPAN="3" BGCOLOR="#E3F2FD" ALIGN="LEFT">  facade : varchar  </TD></TR>
+				<TR><TD PORT="roof_structure" COLSPAN="3" BGCOLOR="#E3F2FD" ALIGN="LEFT">  roof_structure : varchar  </TD></TR>
+				<TR><TD PORT="homes" COLSPAN="3" BGCOLOR="#E3F2FD" ALIGN="LEFT">  homes : varchar  </TD></TR>
+				<TR><TD PORT="interior_walls" COLSPAN="3" BGCOLOR="#E3F2FD" ALIGN="LEFT">  interior_walls : varchar  </TD></TR>
+				<TR><TD PORT="ceiling" COLSPAN="3" BGCOLOR="#E3F2FD" ALIGN="LEFT">  ceiling : varchar  </TD></TR>
+				<TR><TD PORT="kitchen" COLSPAN="3" BGCOLOR="#E3F2FD" ALIGN="LEFT">  kitchen : varchar  </TD></TR>
+				<TR><TD PORT="toilets" COLSPAN="3" BGCOLOR="#E3F2FD" ALIGN="LEFT">  toilets : varchar  </TD></TR>
+				<TR><TD PORT="entrance_hall" COLSPAN="3" BGCOLOR="#E3F2FD" ALIGN="LEFT">  entrance_hall : varchar  </TD></TR>
+				<TR><TD PORT="facilities" COLSPAN="3" BGCOLOR="#E3F2FD" ALIGN="LEFT">  facilities : varchar  </TD></TR>
+				<TR><TD PORT="carpentry" COLSPAN="3" BGCOLOR="#E3F2FD" ALIGN="LEFT">  carpentry : varchar  </TD></TR>
+				<TR><TD PORT="cover_structure" COLSPAN="3" BGCOLOR="#E3F2FD" ALIGN="LEFT">  cover_structure : varchar  </TD></TR>
+				<TR><TD PORT="ornamentation" COLSPAN="3" BGCOLOR="#E3F2FD" ALIGN="LEFT">  ornamentation : varchar  </TD></TR>
+				<TR><TD PORT="stained_glass_lighting" COLSPAN="3" BGCOLOR="#E3F2FD" ALIGN="LEFT">  stained_glass_lighting : varchar  </TD></TR>
+				<TR><TD PORT="buffet_dining" COLSPAN="3" BGCOLOR="#E3F2FD" ALIGN="LEFT">  buffet_dining : varchar  </TD></TR>
+				<TR><TD PORT="points" COLSPAN="3" BGCOLOR="#E3F2FD" ALIGN="LEFT">  points : integer  </TD></TR>
+				<TR><TD PORT="apc" COLSPAN="3" BGCOLOR="#E3F2FD" ALIGN="LEFT">  apc : varchar  </TD></TR>
+				<TR><TD PORT="rate" COLSPAN="3" BGCOLOR="#E3F2FD" ALIGN="LEFT">  rate : varchar  </TD></TR>
+				<TR><TD PORT="audit_date_create" COLSPAN="3" BGCOLOR="#E3F2FD" ALIGN="LEFT">  <B>audit_date_create</B> : timestamp <B>not null</B>   </TD></TR>
+				<TR><TD PORT="audit_user_create" COLSPAN="3" BGCOLOR="#E3F2FD" ALIGN="LEFT">  <B>audit_user_create</B> : varchar <B>not null</B>   </TD></TR>
+				<TR><TD PORT="audit_date_update" COLSPAN="3" BGCOLOR="#E3F2FD" ALIGN="LEFT">  <B>audit_date_update</B> : timestamp <B>not null</B>   </TD></TR>
+				<TR><TD PORT="audit_user_update" COLSPAN="3" BGCOLOR="#E3F2FD" ALIGN="LEFT">  <B>audit_user_update</B> : varchar <B>not null</B>   </TD></TR>
+				<TR><TD PORT="audit_version" COLSPAN="3" BGCOLOR="#E3F2FD" ALIGN="LEFT">  <B>audit_version</B> : bigint <B>not null</B>   </TD></TR>
+				<TR><TD PORT="audit_version_code_label" COLSPAN="3" BGCOLOR="#E3F2FD" ALIGN="LEFT">  audit_version_code_label : varchar  </TD></TR>
+				<TR><TD PORT="audit_version_label" COLSPAN="3" BGCOLOR="#E3F2FD" ALIGN="LEFT">  audit_version_label : varchar  </TD></TR>
+				<TR><TD PORT="cadastre_activity_type_id" COLSPAN="3" BGCOLOR="#E3F2FD" ALIGN="LEFT">  <B>cadastre_activity_type_id</B> : varchar <B>fk</B>  </TD></TR>
+				<TR><TD PORT="cadastre_id" COLSPAN="3" BGCOLOR="#E3F2FD" ALIGN="LEFT">  <B>cadastre_id</B> : varchar <B>fk</B> <B>not null</B>   </TD></TR>
+				<TR><TD PORT="cadastre_constructive_type_id" COLSPAN="3" BGCOLOR="#E3F2FD" ALIGN="LEFT">  <B>cadastre_constructive_type_id</B> : varchar <B>fk</B>  </TD></TR>
+				<TR><TD PORT="cadastre_destination_type_id" COLSPAN="3" BGCOLOR="#E3F2FD" ALIGN="LEFT">  <B>cadastre_destination_type_id</B> : varchar <B>fk</B>  </TD></TR>
+									</TABLE>>
+									URL="com.cclip.model.geo.cadastre.block.CadastreBlock.html"
+									tooltip="com.cclip.model.geo.cadastre.block.CadastreBlock"
+							];
+
+							//com.cclip.model.geo.cadastre.subdivision.CadastreSubDivisionType
+							cadastre_sub_division_type [
+								label=<
+									<TABLE BORDER="0" CELLBORDER="0" CELLSPACING="0" BGCOLOR="#ffffff">
+				<TR><TD COLSPAN="3" BGCOLOR="#90CAF9" ALIGN="CENTER"><B>cadastre_sub_division_type</B></TD></TR>
+
+				<TR><TD PORT="id" COLSPAN="3" BGCOLOR="#E3F2FD" ALIGN="LEFT"><B>  id</B> : varchar <B>pk  not null</B> </TD></TR>
+				<TR><TD PORT="erased" COLSPAN="3" BGCOLOR="#E3F2FD" ALIGN="LEFT">  <B>erased</B> : boolean <B>not null</B>   </TD></TR>
+				<TR><TD PORT="code" COLSPAN="3" BGCOLOR="#E3F2FD" ALIGN="LEFT">  <B>code</B> : varchar <B>unique</B>  <B>not null</B>   </TD></TR>
+				<TR><TD PORT="name" COLSPAN="3" BGCOLOR="#E3F2FD" ALIGN="LEFT">  <B>name</B> : varchar <B>not null</B>   </TD></TR>
+				<TR><TD PORT="comment" COLSPAN="3" BGCOLOR="#E3F2FD" ALIGN="LEFT">  comment : varchar  </TD></TR>
+									</TABLE>>
+									URL="com.cclip.model.geo.cadastre.subdivision.CadastreSubDivisionType.html"
+									tooltip="com.cclip.model.geo.cadastre.subdivision.CadastreSubDivisionType"
+							];
+
+							//com.cclip.model.geo.cadastre.subdivision.CadastreSubDivision
+							cadastre_sub_division [
+								label=<
+									<TABLE BORDER="0" CELLBORDER="0" CELLSPACING="0" BGCOLOR="#ffffff">
+				<TR><TD COLSPAN="3" BGCOLOR="#90CAF9" ALIGN="CENTER"><B>cadastre_sub_division</B></TD></TR>
+
+				<TR><TD PORT="id" COLSPAN="3" BGCOLOR="#E3F2FD" ALIGN="LEFT"><B>  id</B> : varchar <B>pk  not null</B> </TD></TR>
+				<TR><TD PORT="erased" COLSPAN="3" BGCOLOR="#E3F2FD" ALIGN="LEFT">  <B>erased</B> : boolean <B>not null</B>   </TD></TR>
+				<TR><TD PORT="fact" COLSPAN="3" BGCOLOR="#E3F2FD" ALIGN="LEFT">  <B>fact</B> : boolean <B>not null</B>   </TD></TR>
+				<TR><TD PORT="code" COLSPAN="3" BGCOLOR="#E3F2FD" ALIGN="LEFT">  <B>code</B> : varchar <B>not null</B>   </TD></TR>
+				<TR><TD PORT="cta_cli" COLSPAN="3" BGCOLOR="#E3F2FD" ALIGN="LEFT">  cta_cli : varchar  </TD></TR>
+				<TR><TD PORT="sub_cta_cli" COLSPAN="3" BGCOLOR="#E3F2FD" ALIGN="LEFT">  sub_cta_cli : varchar  </TD></TR>
+				<TR><TD PORT="dv" COLSPAN="3" BGCOLOR="#E3F2FD" ALIGN="LEFT">  dv : varchar  </TD></TR>
+				<TR><TD PORT="user_water_service" COLSPAN="3" BGCOLOR="#E3F2FD" ALIGN="LEFT">  user_water_service : varchar  </TD></TR>
+				<TR><TD PORT="user_water_service_dni" COLSPAN="3" BGCOLOR="#E3F2FD" ALIGN="LEFT">  user_water_service_dni : varchar  </TD></TR>
+				<TR><TD PORT="user_water_service_cuit" COLSPAN="3" BGCOLOR="#E3F2FD" ALIGN="LEFT">  user_water_service_cuit : varchar  </TD></TR>
+				<TR><TD PORT="water_meter" COLSPAN="3" BGCOLOR="#E3F2FD" ALIGN="LEFT">  water_meter : boolean  </TD></TR>
+				<TR><TD PORT="inm_locality" COLSPAN="3" BGCOLOR="#E3F2FD" ALIGN="LEFT">  inm_locality : varchar  </TD></TR>
+				<TR><TD PORT="inm_neighbourhood_comment" COLSPAN="3" BGCOLOR="#E3F2FD" ALIGN="LEFT">  inm_neighbourhood_comment : varchar  </TD></TR>
+				<TR><TD PORT="inm_street" COLSPAN="3" BGCOLOR="#E3F2FD" ALIGN="LEFT">  inm_street : varchar  </TD></TR>
+				<TR><TD PORT="inm_street_number" COLSPAN="3" BGCOLOR="#E3F2FD" ALIGN="LEFT">  inm_street_number : varchar  </TD></TR>
+				<TR><TD PORT="inm_street_number_estimated" COLSPAN="3" BGCOLOR="#E3F2FD" ALIGN="LEFT">  inm_street_number_estimated : boolean  </TD></TR>
+				<TR><TD PORT="inm_building_floor" COLSPAN="3" BGCOLOR="#E3F2FD" ALIGN="LEFT">  inm_building_floor : varchar  </TD></TR>
+				<TR><TD PORT="inm_building_room" COLSPAN="3" BGCOLOR="#E3F2FD" ALIGN="LEFT">  inm_building_room : varchar  </TD></TR>
+				<TR><TD PORT="inm_building" COLSPAN="3" BGCOLOR="#E3F2FD" ALIGN="LEFT">  inm_building : varchar  </TD></TR>
+				<TR><TD PORT="inm_postal_code" COLSPAN="3" BGCOLOR="#E3F2FD" ALIGN="LEFT">  inm_postal_code : varchar  </TD></TR>
+				<TR><TD PORT="inm_comment_address" COLSPAN="3" BGCOLOR="#E3F2FD" ALIGN="LEFT">  inm_comment_address : varchar  </TD></TR>
+				<TR><TD PORT="inm_lat" COLSPAN="3" BGCOLOR="#E3F2FD" ALIGN="LEFT">  inm_lat : double precision  </TD></TR>
+				<TR><TD PORT="inm_lng" COLSPAN="3" BGCOLOR="#E3F2FD" ALIGN="LEFT">  inm_lng : double precision  </TD></TR>
+				<TR><TD PORT="m2_covered" COLSPAN="3" BGCOLOR="#E3F2FD" ALIGN="LEFT">  m2_covered : double precision  </TD></TR>
+				<TR><TD PORT="m2_covered_shared" COLSPAN="3" BGCOLOR="#E3F2FD" ALIGN="LEFT">  m2_covered_shared : double precision  </TD></TR>
+				<TR><TD PORT="m2_covered_expanded" COLSPAN="3" BGCOLOR="#E3F2FD" ALIGN="LEFT">  m2_covered_expanded : double precision  </TD></TR>
+				<TR><TD PORT="m2_percent" COLSPAN="3" BGCOLOR="#E3F2FD" ALIGN="LEFT">  m2_percent : double precision  </TD></TR>
+				<TR><TD PORT="comment" COLSPAN="3" BGCOLOR="#E3F2FD" ALIGN="LEFT">  comment : varchar  </TD></TR>
+				<TR><TD PORT="user_postal_country_code" COLSPAN="3" BGCOLOR="#E3F2FD" ALIGN="LEFT">  user_postal_country_code : varchar  </TD></TR>
+				<TR><TD PORT="user_postal_country" COLSPAN="3" BGCOLOR="#E3F2FD" ALIGN="LEFT">  user_postal_country : varchar  </TD></TR>
+				<TR><TD PORT="user_postal_admin_area_level1_code" COLSPAN="3" BGCOLOR="#E3F2FD" ALIGN="LEFT">  user_postal_admin_area_level1_code : varchar  </TD></TR>
+				<TR><TD PORT="user_postal_admin_area_level1" COLSPAN="3" BGCOLOR="#E3F2FD" ALIGN="LEFT">  user_postal_admin_area_level1 : varchar  </TD></TR>
+				<TR><TD PORT="user_postal_admin_area_level2" COLSPAN="3" BGCOLOR="#E3F2FD" ALIGN="LEFT">  user_postal_admin_area_level2 : varchar  </TD></TR>
+				<TR><TD PORT="user_postal_locality" COLSPAN="3" BGCOLOR="#E3F2FD" ALIGN="LEFT">  user_postal_locality : varchar  </TD></TR>
+				<TR><TD PORT="user_postal_neighbourhood" COLSPAN="3" BGCOLOR="#E3F2FD" ALIGN="LEFT">  user_postal_neighbourhood : varchar  </TD></TR>
+				<TR><TD PORT="user_postal_street" COLSPAN="3" BGCOLOR="#E3F2FD" ALIGN="LEFT">  user_postal_street : varchar  </TD></TR>
+				<TR><TD PORT="user_postal_street_number" COLSPAN="3" BGCOLOR="#E3F2FD" ALIGN="LEFT">  user_postal_street_number : varchar  </TD></TR>
+				<TR><TD PORT="user_postal_building_floor" COLSPAN="3" BGCOLOR="#E3F2FD" ALIGN="LEFT">  user_postal_building_floor : varchar  </TD></TR>
+				<TR><TD PORT="user_postal_building_room" COLSPAN="3" BGCOLOR="#E3F2FD" ALIGN="LEFT">  user_postal_building_room : varchar  </TD></TR>
+				<TR><TD PORT="user_postal_building" COLSPAN="3" BGCOLOR="#E3F2FD" ALIGN="LEFT">  user_postal_building : varchar  </TD></TR>
+				<TR><TD PORT="user_postal_postal_code" COLSPAN="3" BGCOLOR="#E3F2FD" ALIGN="LEFT">  user_postal_postal_code : varchar  </TD></TR>
+				<TR><TD PORT="user_postal_comment_address" COLSPAN="3" BGCOLOR="#E3F2FD" ALIGN="LEFT">  user_postal_comment_address : varchar  </TD></TR>
+				<TR><TD PORT="user_postal_lat" COLSPAN="3" BGCOLOR="#E3F2FD" ALIGN="LEFT">  user_postal_lat : double precision  </TD></TR>
+				<TR><TD PORT="user_postal_lng" COLSPAN="3" BGCOLOR="#E3F2FD" ALIGN="LEFT">  user_postal_lng : double precision  </TD></TR>
+				<TR><TD PORT="user_phone" COLSPAN="3" BGCOLOR="#E3F2FD" ALIGN="LEFT">  user_phone : varchar  </TD></TR>
+				<TR><TD PORT="audit_date_create" COLSPAN="3" BGCOLOR="#E3F2FD" ALIGN="LEFT">  <B>audit_date_create</B> : timestamp <B>not null</B>   </TD></TR>
+				<TR><TD PORT="audit_user_create" COLSPAN="3" BGCOLOR="#E3F2FD" ALIGN="LEFT">  <B>audit_user_create</B> : varchar <B>not null</B>   </TD></TR>
+				<TR><TD PORT="audit_date_update" COLSPAN="3" BGCOLOR="#E3F2FD" ALIGN="LEFT">  <B>audit_date_update</B> : timestamp <B>not null</B>   </TD></TR>
+				<TR><TD PORT="audit_user_update" COLSPAN="3" BGCOLOR="#E3F2FD" ALIGN="LEFT">  <B>audit_user_update</B> : varchar <B>not null</B>   </TD></TR>
+				<TR><TD PORT="audit_version" COLSPAN="3" BGCOLOR="#E3F2FD" ALIGN="LEFT">  <B>audit_version</B> : bigint <B>not null</B>   </TD></TR>
+				<TR><TD PORT="audit_version_code_label" COLSPAN="3" BGCOLOR="#E3F2FD" ALIGN="LEFT">  audit_version_code_label : varchar  </TD></TR>
+				<TR><TD PORT="audit_version_label" COLSPAN="3" BGCOLOR="#E3F2FD" ALIGN="LEFT">  audit_version_label : varchar  </TD></TR>
+				<TR><TD PORT="user_iva_id" COLSPAN="3" BGCOLOR="#E3F2FD" ALIGN="LEFT">  <B>user_iva_id</B> : varchar <B>fk</B>  </TD></TR>
+				<TR><TD PORT="user_water_situation_id" COLSPAN="3" BGCOLOR="#E3F2FD" ALIGN="LEFT">  <B>user_water_situation_id</B> : varchar <B>fk</B>  </TD></TR>
+				<TR><TD PORT="uf_id" COLSPAN="3" BGCOLOR="#E3F2FD" ALIGN="LEFT">  <B>uf_id</B> : varchar <B>fk</B>  </TD></TR>
+				<TR><TD PORT="cadastre_activity_type_id" COLSPAN="3" BGCOLOR="#E3F2FD" ALIGN="LEFT">  <B>cadastre_activity_type_id</B> : varchar <B>fk</B>  </TD></TR>
+				<TR><TD PORT="city_area_id" COLSPAN="3" BGCOLOR="#E3F2FD" ALIGN="LEFT">  <B>city_area_id</B> : varchar <B>fk</B>  </TD></TR>
+				<TR><TD PORT="cadastre_id" COLSPAN="3" BGCOLOR="#E3F2FD" ALIGN="LEFT">  <B>cadastre_id</B> : varchar <B>fk</B> <B>not null</B>   </TD></TR>
+				<TR><TD PORT="cadastre_sub_division_type_id" COLSPAN="3" BGCOLOR="#E3F2FD" ALIGN="LEFT">  <B>cadastre_sub_division_type_id</B> : varchar <B>fk</B>  </TD></TR>
+									</TABLE>>
+									URL="com.cclip.model.geo.cadastre.subdivision.CadastreSubDivision.html"
+									tooltip="com.cclip.model.geo.cadastre.subdivision.CadastreSubDivision"
+							];
+
+					//com.cclip.model.schedule.Schedule
+					schedule [
+						label=<
+							<TABLE BORDER="0" CELLBORDER="0" CELLSPACING="0" BGCOLOR="#ffffff">
+				<TR><TD COLSPAN="3" BGCOLOR="#90CAF9" ALIGN="CENTER"><B>schedule</B></TD></TR>
+
+				<TR><TD PORT="id" COLSPAN="3" BGCOLOR="#E3F2FD" ALIGN="LEFT"><B>  id</B> : varchar <B>pk  not null</B> </TD></TR>
+				<TR><TD PORT="erased" COLSPAN="3" BGCOLOR="#E3F2FD" ALIGN="LEFT">  <B>erased</B> : boolean <B>not null</B>   </TD></TR>
+				<TR><TD PORT="year" COLSPAN="3" BGCOLOR="#E3F2FD" ALIGN="LEFT">  <B>year</B> : integer <B>unique</B>  <B>not null</B>   </TD></TR>
+				<TR><TD PORT="date_from" COLSPAN="3" BGCOLOR="#E3F2FD" ALIGN="LEFT">  <B>date_from</B> : date <B>not null</B>   </TD></TR>
+				<TR><TD PORT="date_to" COLSPAN="3" BGCOLOR="#E3F2FD" ALIGN="LEFT">  <B>date_to</B> : date <B>not null</B>   </TD></TR>
+				<TR><TD PORT="comment" COLSPAN="3" BGCOLOR="#E3F2FD" ALIGN="LEFT">  comment : varchar  </TD></TR>
+							</TABLE>>
+							URL="com.cclip.model.schedule.Schedule.html"
+							tooltip="com.cclip.model.schedule.Schedule"
+					];
+
+					//com.cclip.model.schedule.ScheduleBatch
+					schedule_batch [
+						label=<
+							<TABLE BORDER="0" CELLBORDER="0" CELLSPACING="0" BGCOLOR="#ffffff">
+				<TR><TD COLSPAN="3" BGCOLOR="#90CAF9" ALIGN="CENTER"><B>schedule_batch</B></TD></TR>
+
+				<TR><TD PORT="id" COLSPAN="3" BGCOLOR="#E3F2FD" ALIGN="LEFT"><B>  id</B> : varchar <B>pk  not null</B> </TD></TR>
+				<TR><TD PORT="erased" COLSPAN="3" BGCOLOR="#E3F2FD" ALIGN="LEFT">  <B>erased</B> : boolean <B>not null</B>   </TD></TR>
+				<TR><TD PORT="planned_delivered" COLSPAN="3" BGCOLOR="#E3F2FD" ALIGN="LEFT">  <B>planned_delivered</B> : date <B>not null</B>   </TD></TR>
+				<TR><TD PORT="create_date" COLSPAN="3" BGCOLOR="#E3F2FD" ALIGN="LEFT">  <B>create_date</B> : date <B>not null</B>   </TD></TR>
+				<TR><TD PORT="close" COLSPAN="3" BGCOLOR="#E3F2FD" ALIGN="LEFT">  close : date  </TD></TR>
+				<TR><TD PORT="delivered" COLSPAN="3" BGCOLOR="#E3F2FD" ALIGN="LEFT">  delivered : date  </TD></TR>
+				<TR><TD PORT="comment" COLSPAN="3" BGCOLOR="#E3F2FD" ALIGN="LEFT">  comment : varchar  </TD></TR>
+				<TR><TD PORT="code" COLSPAN="3" BGCOLOR="#E3F2FD" ALIGN="LEFT">  <B>code</B> : varchar <B>not null</B>   </TD></TR>
+				<TR><TD PORT="schedule_id" COLSPAN="3" BGCOLOR="#E3F2FD" ALIGN="LEFT">  <B>schedule_id</B> : varchar <B>fk</B> <B>not null</B>   </TD></TR>
+							</TABLE>>
+							URL="com.cclip.model.schedule.ScheduleBatch.html"
+							tooltip="com.cclip.model.schedule.ScheduleBatch"
+					];
+
+						//com.cclip.model.schedule.scanning.ScheduleScanning
+						schedule_scanning [
+							label=<
+								<TABLE BORDER="0" CELLBORDER="0" CELLSPACING="0" BGCOLOR="#ffffff">
+				<TR><TD COLSPAN="3" BGCOLOR="#90CAF9" ALIGN="CENTER"><B>schedule_scanning</B></TD></TR>
+
+				<TR><TD PORT="id" COLSPAN="3" BGCOLOR="#E3F2FD" ALIGN="LEFT"><B>  id</B> : varchar <B>pk  not null</B> </TD></TR>
+				<TR><TD PORT="erased" COLSPAN="3" BGCOLOR="#E3F2FD" ALIGN="LEFT">  <B>erased</B> : boolean <B>not null</B>   </TD></TR>
+				<TR><TD PORT="cadastral_code" COLSPAN="3" BGCOLOR="#E3F2FD" ALIGN="LEFT">  <B>cadastral_code</B> : varchar <B>not null</B>   </TD></TR>
+				<TR><TD PORT="number_scanning" COLSPAN="3" BGCOLOR="#E3F2FD" ALIGN="LEFT">  <B>number_scanning</B> : integer <B>not null</B>   </TD></TR>
+				<TR><TD PORT="comment" COLSPAN="3" BGCOLOR="#E3F2FD" ALIGN="LEFT">  comment : varchar  </TD></TR>
+				<TR><TD PORT="planned_delivered" COLSPAN="3" BGCOLOR="#E3F2FD" ALIGN="LEFT">  planned_delivered : date  </TD></TR>
+				<TR><TD PORT="create_date" COLSPAN="3" BGCOLOR="#E3F2FD" ALIGN="LEFT">  <B>create_date</B> : date <B>not null</B>   </TD></TR>
+				<TR><TD PORT="scanning" COLSPAN="3" BGCOLOR="#E3F2FD" ALIGN="LEFT">  scanning : date  </TD></TR>
+				<TR><TD PORT="recorded" COLSPAN="3" BGCOLOR="#E3F2FD" ALIGN="LEFT">  recorded : date  </TD></TR>
+				<TR><TD PORT="schedule_id" COLSPAN="3" BGCOLOR="#E3F2FD" ALIGN="LEFT">  <B>schedule_id</B> : varchar <B>fk</B> <B>not null</B>   </TD></TR>
+				<TR><TD PORT="census_taker_id" COLSPAN="3" BGCOLOR="#E3F2FD" ALIGN="LEFT">  <B>census_taker_id</B> : varchar <B>fk</B> <B>not null</B>   </TD></TR>
+								</TABLE>>
+								URL="com.cclip.model.schedule.scanning.ScheduleScanning.html"
+								tooltip="com.cclip.model.schedule.scanning.ScheduleScanning"
+						];
+
+						//com.cclip.model.schedule.scanning.ScheduleScanningResult
+						schedule_scanning_result [
+							label=<
+								<TABLE BORDER="0" CELLBORDER="0" CELLSPACING="0" BGCOLOR="#ffffff">
+				<TR><TD COLSPAN="3" BGCOLOR="#90CAF9" ALIGN="CENTER"><B>schedule_scanning_result</B></TD></TR>
+
+				<TR><TD PORT="id" COLSPAN="3" BGCOLOR="#E3F2FD" ALIGN="LEFT"><B>  id</B> : varchar <B>pk  not null</B> </TD></TR>
+				<TR><TD PORT="erased" COLSPAN="3" BGCOLOR="#E3F2FD" ALIGN="LEFT">  <B>erased</B> : boolean <B>not null</B>   </TD></TR>
+				<TR><TD PORT="code" COLSPAN="3" BGCOLOR="#E3F2FD" ALIGN="LEFT">  <B>code</B> : varchar <B>unique</B>  <B>not null</B>   </TD></TR>
+				<TR><TD PORT="name" COLSPAN="3" BGCOLOR="#E3F2FD" ALIGN="LEFT">  <B>name</B> : varchar <B>not null</B>   </TD></TR>
+				<TR><TD PORT="comment" COLSPAN="3" BGCOLOR="#E3F2FD" ALIGN="LEFT">  comment : varchar  </TD></TR>
+								</TABLE>>
+								URL="com.cclip.model.schedule.scanning.ScheduleScanningResult.html"
+								tooltip="com.cclip.model.schedule.scanning.ScheduleScanningResult"
+						];
+
+						//com.cclip.model.schedule.scanning.ScheduleScanningItem
+						schedule_scanning_item [
+							label=<
+								<TABLE BORDER="0" CELLBORDER="0" CELLSPACING="0" BGCOLOR="#ffffff">
+				<TR><TD COLSPAN="3" BGCOLOR="#90CAF9" ALIGN="CENTER"><B>schedule_scanning_item</B></TD></TR>
+
+				<TR><TD PORT="id" COLSPAN="3" BGCOLOR="#E3F2FD" ALIGN="LEFT"><B>  id</B> : varchar <B>pk  not null</B> </TD></TR>
+				<TR><TD PORT="erased" COLSPAN="3" BGCOLOR="#E3F2FD" ALIGN="LEFT">  <B>erased</B> : boolean <B>not null</B>   </TD></TR>
+				<TR><TD PORT="m2_construction" COLSPAN="3" BGCOLOR="#E3F2FD" ALIGN="LEFT">  m2_construction : double precision  </TD></TR>
+				<TR><TD PORT="progress_construction" COLSPAN="3" BGCOLOR="#E3F2FD" ALIGN="LEFT">  progress_construction : double precision  </TD></TR>
+				<TR><TD PORT="comment" COLSPAN="3" BGCOLOR="#E3F2FD" ALIGN="LEFT">  comment : varchar  </TD></TR>
+				<TR><TD PORT="cadastre_id" COLSPAN="3" BGCOLOR="#E3F2FD" ALIGN="LEFT">  <B>cadastre_id</B> : varchar <B>fk</B> <B>not null</B>   </TD></TR>
+				<TR><TD PORT="schedule_scanning_result_id" COLSPAN="3" BGCOLOR="#E3F2FD" ALIGN="LEFT">  <B>schedule_scanning_result_id</B> : varchar <B>fk</B>  </TD></TR>
+				<TR><TD PORT="schedule_scanning_id" COLSPAN="3" BGCOLOR="#E3F2FD" ALIGN="LEFT">  <B>schedule_scanning_id</B> : varchar <B>fk</B> <B>not null</B>   </TD></TR>
+								</TABLE>>
+								URL="com.cclip.model.schedule.scanning.ScheduleScanningItem.html"
+								tooltip="com.cclip.model.schedule.scanning.ScheduleScanningItem"
+						];
+
+						//com.cclip.model.schedule.census.ScheduleCensusResult
+						schedule_census_result [
+							label=<
+								<TABLE BORDER="0" CELLBORDER="0" CELLSPACING="0" BGCOLOR="#ffffff">
+				<TR><TD COLSPAN="3" BGCOLOR="#90CAF9" ALIGN="CENTER"><B>schedule_census_result</B></TD></TR>
+
+				<TR><TD PORT="id" COLSPAN="3" BGCOLOR="#E3F2FD" ALIGN="LEFT"><B>  id</B> : varchar <B>pk  not null</B> </TD></TR>
+				<TR><TD PORT="erased" COLSPAN="3" BGCOLOR="#E3F2FD" ALIGN="LEFT">  <B>erased</B> : boolean <B>not null</B>   </TD></TR>
+				<TR><TD PORT="code" COLSPAN="3" BGCOLOR="#E3F2FD" ALIGN="LEFT">  <B>code</B> : varchar <B>unique</B>  <B>not null</B>   </TD></TR>
+				<TR><TD PORT="name" COLSPAN="3" BGCOLOR="#E3F2FD" ALIGN="LEFT">  <B>name</B> : varchar <B>not null</B>   </TD></TR>
+				<TR><TD PORT="comment" COLSPAN="3" BGCOLOR="#E3F2FD" ALIGN="LEFT">  comment : varchar  </TD></TR>
+								</TABLE>>
+								URL="com.cclip.model.schedule.census.ScheduleCensusResult.html"
+								tooltip="com.cclip.model.schedule.census.ScheduleCensusResult"
+						];
+
+						//com.cclip.model.schedule.census.ScheduleCensus
+						schedule_census [
+							label=<
+								<TABLE BORDER="0" CELLBORDER="0" CELLSPACING="0" BGCOLOR="#ffffff">
+				<TR><TD COLSPAN="3" BGCOLOR="#90CAF9" ALIGN="CENTER"><B>schedule_census</B></TD></TR>
+
+				<TR><TD PORT="id" COLSPAN="3" BGCOLOR="#E3F2FD" ALIGN="LEFT"><B>  id</B> : varchar <B>pk  not null</B> </TD></TR>
+				<TR><TD PORT="erased" COLSPAN="3" BGCOLOR="#E3F2FD" ALIGN="LEFT">  <B>erased</B> : boolean <B>not null</B>   </TD></TR>
+				<TR><TD PORT="censused" COLSPAN="3" BGCOLOR="#E3F2FD" ALIGN="LEFT">  censused : date  </TD></TR>
+				<TR><TD PORT="recorded" COLSPAN="3" BGCOLOR="#E3F2FD" ALIGN="LEFT">  recorded : date  </TD></TR>
+				<TR><TD PORT="m2_sheds_general" COLSPAN="3" BGCOLOR="#E3F2FD" ALIGN="LEFT">  m2_sheds_general : double precision  </TD></TR>
+				<TR><TD PORT="m2_general_building" COLSPAN="3" BGCOLOR="#E3F2FD" ALIGN="LEFT">  m2_general_building : double precision  </TD></TR>
+				<TR><TD PORT="m2_buildings_public_entertainment" COLSPAN="3" BGCOLOR="#E3F2FD" ALIGN="LEFT">  m2_buildings_public_entertainment : double precision  </TD></TR>
+				<TR><TD PORT="m2_progress_construction" COLSPAN="3" BGCOLOR="#E3F2FD" ALIGN="LEFT">  m2_progress_construction : double precision  </TD></TR>
+				<TR><TD PORT="dni_censused" COLSPAN="3" BGCOLOR="#E3F2FD" ALIGN="LEFT">  dni_censused : varchar  </TD></TR>
+				<TR><TD PORT="name_censused" COLSPAN="3" BGCOLOR="#E3F2FD" ALIGN="LEFT">  name_censused : varchar  </TD></TR>
+				<TR><TD PORT="last_name_censused" COLSPAN="3" BGCOLOR="#E3F2FD" ALIGN="LEFT">  last_name_censused : varchar  </TD></TR>
+				<TR><TD PORT="signature_censused" COLSPAN="3" BGCOLOR="#E3F2FD" ALIGN="LEFT">  signature_censused : boolean  </TD></TR>
+				<TR><TD PORT="comment" COLSPAN="3" BGCOLOR="#E3F2FD" ALIGN="LEFT">  comment : varchar  </TD></TR>
+				<TR><TD PORT="schedule_id" COLSPAN="3" BGCOLOR="#E3F2FD" ALIGN="LEFT">  <B>schedule_id</B> : varchar <B>fk</B> <B>not null</B>   </TD></TR>
+				<TR><TD PORT="cadastre_id" COLSPAN="3" BGCOLOR="#E3F2FD" ALIGN="LEFT">  <B>cadastre_id</B> : varchar <B>fk</B> <B>not null</B>   </TD></TR>
+				<TR><TD PORT="census_taker_id" COLSPAN="3" BGCOLOR="#E3F2FD" ALIGN="LEFT">  <B>census_taker_id</B> : varchar <B>fk</B> <B>not null</B>   </TD></TR>
+				<TR><TD PORT="schedule_batch_id" COLSPAN="3" BGCOLOR="#E3F2FD" ALIGN="LEFT">  <B>schedule_batch_id</B> : varchar <B>fk</B>  </TD></TR>
+				<TR><TD PORT="cadastre_activity_type_id" COLSPAN="3" BGCOLOR="#E3F2FD" ALIGN="LEFT">  <B>cadastre_activity_type_id</B> : varchar <B>fk</B>  </TD></TR>
+				<TR><TD PORT="schedule_census_result_id" COLSPAN="3" BGCOLOR="#E3F2FD" ALIGN="LEFT">  <B>schedule_census_result_id</B> : varchar <B>fk</B> <B>not null</B>   </TD></TR>
+								</TABLE>>
+								URL="com.cclip.model.schedule.census.ScheduleCensus.html"
+								tooltip="com.cclip.model.schedule.census.ScheduleCensus"
+						];
+
+						//com.cclip.model.schedule.census.CadastreInsDel
+						cadastre_ins_del [
+							label=<
+								<TABLE BORDER="0" CELLBORDER="0" CELLSPACING="0" BGCOLOR="#ffffff">
+				<TR><TD COLSPAN="3" BGCOLOR="#90CAF9" ALIGN="CENTER"><B>cadastre_ins_del</B></TD></TR>
+
+				<TR><TD PORT="id" COLSPAN="3" BGCOLOR="#E3F2FD" ALIGN="LEFT"><B>  id</B> : varchar <B>pk fk not null</B> </TD></TR>
+				<TR><TD PORT="erased" COLSPAN="3" BGCOLOR="#E3F2FD" ALIGN="LEFT">  <B>erased</B> : boolean <B>not null</B>   </TD></TR>
+				<TR><TD PORT="censused" COLSPAN="3" BGCOLOR="#E3F2FD" ALIGN="LEFT">  <B>censused</B> : date <B>not null</B>   </TD></TR>
+				<TR><TD PORT="delivered" COLSPAN="3" BGCOLOR="#E3F2FD" ALIGN="LEFT">  delivered : date  </TD></TR>
+				<TR><TD PORT="partition" COLSPAN="3" BGCOLOR="#E3F2FD" ALIGN="LEFT">  partition : boolean  </TD></TR>
+				<TR><TD PORT="comment" COLSPAN="3" BGCOLOR="#E3F2FD" ALIGN="LEFT">  comment : varchar  </TD></TR>
+				<TR><TD PORT="schedule_id" COLSPAN="3" BGCOLOR="#E3F2FD" ALIGN="LEFT">  <B>schedule_id</B> : varchar <B>fk</B> <B>not null</B>   </TD></TR>
+				<TR><TD PORT="census_taker_id" COLSPAN="3" BGCOLOR="#E3F2FD" ALIGN="LEFT">  <B>census_taker_id</B> : varchar <B>fk</B> <B>not null</B>   </TD></TR>
+				<TR><TD PORT="schedule_batch_id" COLSPAN="3" BGCOLOR="#E3F2FD" ALIGN="LEFT">  <B>schedule_batch_id</B> : varchar <B>fk</B>  </TD></TR>
+								</TABLE>>
+								URL="com.cclip.model.schedule.census.CadastreInsDel.html"
+								tooltip="com.cclip.model.schedule.census.CadastreInsDel"
+						];
+
+						//com.cclip.model.schedule.census.CadastreInsDel extends com.cclip.model.geo.cadastre.Cadastre
+	"cadastre_ins_del":"id":w -> "cadastre":"id":e [arrowhead=none, dir=back, arrowtail=crowodot, arrowhead=none, headlabel = "1", taillabel = "N", fontsize="8", color="#BBDEFB"];
+
+					//com.cclip.model.person.Person
+					person [
+						label=<
+							<TABLE BORDER="0" CELLBORDER="0" CELLSPACING="0" BGCOLOR="#ffffff">
+				<TR><TD COLSPAN="3" BGCOLOR="#90CAF9" ALIGN="CENTER"><B>person</B></TD></TR>
+
+				<TR><TD PORT="id" COLSPAN="3" BGCOLOR="#E3F2FD" ALIGN="LEFT"><B>  id</B> : varchar <B>pk  not null</B> </TD></TR>
+				<TR><TD PORT="erased" COLSPAN="3" BGCOLOR="#E3F2FD" ALIGN="LEFT">  <B>erased</B> : boolean <B>not null</B>   </TD></TR>
+				<TR><TD PORT="cuil" COLSPAN="3" BGCOLOR="#E3F2FD" ALIGN="LEFT">  <B>cuil</B> : varchar <B>unique</B>  <B>not null</B>   </TD></TR>
+				<TR><TD PORT="dni" COLSPAN="3" BGCOLOR="#E3F2FD" ALIGN="LEFT">  <B>dni</B> : varchar <B>unique</B>  <B>not null</B>   </TD></TR>
+				<TR><TD PORT="given_name" COLSPAN="3" BGCOLOR="#E3F2FD" ALIGN="LEFT">  <B>given_name</B> : varchar <B>not null</B>   </TD></TR>
+				<TR><TD PORT="middle_name" COLSPAN="3" BGCOLOR="#E3F2FD" ALIGN="LEFT">  middle_name : varchar  </TD></TR>
+				<TR><TD PORT="family_name" COLSPAN="3" BGCOLOR="#E3F2FD" ALIGN="LEFT">  <B>family_name</B> : varchar <B>not null</B>   </TD></TR>
+				<TR><TD PORT="masculine" COLSPAN="3" BGCOLOR="#E3F2FD" ALIGN="LEFT">  <B>masculine</B> : boolean <B>not null</B>   </TD></TR>
+				<TR><TD PORT="comment" COLSPAN="3" BGCOLOR="#E3F2FD" ALIGN="LEFT">  comment : varchar  </TD></TR>
+							</TABLE>>
+							URL="com.cclip.model.person.Person.html"
+							tooltip="com.cclip.model.person.Person"
+					];
+
+					//com.cclip.model.person.UserSystem
+					user_system [
+						label=<
+							<TABLE BORDER="0" CELLBORDER="0" CELLSPACING="0" BGCOLOR="#ffffff">
+				<TR><TD COLSPAN="3" BGCOLOR="#90CAF9" ALIGN="CENTER"><B>user_system</B></TD></TR>
+
+				<TR><TD PORT="id" COLSPAN="3" BGCOLOR="#E3F2FD" ALIGN="LEFT"><B>  id</B> : varchar <B>pk fk not null</B> </TD></TR>
+				<TR><TD PORT="erased" COLSPAN="3" BGCOLOR="#E3F2FD" ALIGN="LEFT">  <B>erased</B> : boolean <B>not null</B>   </TD></TR>
+				<TR><TD PORT="pass" COLSPAN="3" BGCOLOR="#E3F2FD" ALIGN="LEFT">  <B>pass</B> : varchar <B>not null</B>   </TD></TR>
+				<TR><TD PORT="email" COLSPAN="3" BGCOLOR="#E3F2FD" ALIGN="LEFT">  <B>email</B> : varchar <B>unique</B>  <B>not null</B>   </TD></TR>
+				<TR><TD PORT="comment" COLSPAN="3" BGCOLOR="#E3F2FD" ALIGN="LEFT">  comment : varchar  </TD></TR>
+							</TABLE>>
+							URL="com.cclip.model.person.UserSystem.html"
+							tooltip="com.cclip.model.person.UserSystem"
+					];
+
+					//com.cclip.model.person.UserSystem extends com.cclip.model.person.Person
+	"user_system":"id":w -> "person":"id":e [arrowhead=none, dir=back, arrowtail=crowodot, arrowhead=none, headlabel = "1", taillabel = "N", fontsize="8", color="#BBDEFB"];
+
+					//com.cclip.model.person.CensusTaker
+					census_taker [
+						label=<
+							<TABLE BORDER="0" CELLBORDER="0" CELLSPACING="0" BGCOLOR="#ffffff">
+				<TR><TD COLSPAN="3" BGCOLOR="#90CAF9" ALIGN="CENTER"><B>census_taker</B></TD></TR>
+
+				<TR><TD PORT="id" COLSPAN="3" BGCOLOR="#E3F2FD" ALIGN="LEFT"><B>  id</B> : varchar <B>pk fk not null</B> </TD></TR>
+				<TR><TD PORT="erased" COLSPAN="3" BGCOLOR="#E3F2FD" ALIGN="LEFT">  <B>erased</B> : boolean <B>not null</B>   </TD></TR>
+				<TR><TD PORT="code" COLSPAN="3" BGCOLOR="#E3F2FD" ALIGN="LEFT">  <B>code</B> : varchar <B>unique</B>  <B>not null</B>   </TD></TR>
+				<TR><TD PORT="comment" COLSPAN="3" BGCOLOR="#E3F2FD" ALIGN="LEFT">  comment : varchar  </TD></TR>
+							</TABLE>>
+							URL="com.cclip.model.person.CensusTaker.html"
+							tooltip="com.cclip.model.person.CensusTaker"
+					];
+
+					//com.cclip.model.person.CensusTaker extends com.cclip.model.person.Person
+	"census_taker":"id":w -> "person":"id":e [arrowhead=none, dir=back, arrowtail=crowodot, arrowhead=none, headlabel = "1", taillabel = "N", fontsize="8", color="#BBDEFB"];
+
+					//com.cclip.model.person.Uf
+					uf [
+						label=<
+							<TABLE BORDER="0" CELLBORDER="0" CELLSPACING="0" BGCOLOR="#ffffff">
+				<TR><TD COLSPAN="3" BGCOLOR="#90CAF9" ALIGN="CENTER"><B>uf</B></TD></TR>
+
+				<TR><TD PORT="id" COLSPAN="3" BGCOLOR="#E3F2FD" ALIGN="LEFT"><B>  id</B> : varchar <B>pk  not null</B> </TD></TR>
+				<TR><TD PORT="erased" COLSPAN="3" BGCOLOR="#E3F2FD" ALIGN="LEFT">  <B>erased</B> : boolean <B>not null</B>   </TD></TR>
+				<TR><TD PORT="uf" COLSPAN="3" BGCOLOR="#E3F2FD" ALIGN="LEFT">  <B>uf</B> : varchar <B>unique</B>  <B>not null</B>   </TD></TR>
+				<TR><TD PORT="name" COLSPAN="3" BGCOLOR="#E3F2FD" ALIGN="LEFT">  <B>name</B> : varchar <B>not null</B>   </TD></TR>
+				<TR><TD PORT="dni" COLSPAN="3" BGCOLOR="#E3F2FD" ALIGN="LEFT">  dni : varchar  </TD></TR>
+				<TR><TD PORT="cuit" COLSPAN="3" BGCOLOR="#E3F2FD" ALIGN="LEFT">  cuit : varchar  </TD></TR>
+				<TR><TD PORT="phone" COLSPAN="3" BGCOLOR="#E3F2FD" ALIGN="LEFT">  phone : varchar  </TD></TR>
+				<TR><TD PORT="comment" COLSPAN="3" BGCOLOR="#E3F2FD" ALIGN="LEFT">  comment : varchar  </TD></TR>
+				<TR><TD PORT="country_code" COLSPAN="3" BGCOLOR="#E3F2FD" ALIGN="LEFT">  country_code : varchar  </TD></TR>
+				<TR><TD PORT="country" COLSPAN="3" BGCOLOR="#E3F2FD" ALIGN="LEFT">  country : varchar  </TD></TR>
+				<TR><TD PORT="admin_area_level1_code" COLSPAN="3" BGCOLOR="#E3F2FD" ALIGN="LEFT">  admin_area_level1_code : varchar  </TD></TR>
+				<TR><TD PORT="admin_area_level1" COLSPAN="3" BGCOLOR="#E3F2FD" ALIGN="LEFT">  admin_area_level1 : varchar  </TD></TR>
+				<TR><TD PORT="admin_area_level2" COLSPAN="3" BGCOLOR="#E3F2FD" ALIGN="LEFT">  admin_area_level2 : varchar  </TD></TR>
+				<TR><TD PORT="locality" COLSPAN="3" BGCOLOR="#E3F2FD" ALIGN="LEFT">  locality : varchar  </TD></TR>
+				<TR><TD PORT="street" COLSPAN="3" BGCOLOR="#E3F2FD" ALIGN="LEFT">  street : varchar  </TD></TR>
+				<TR><TD PORT="street_number" COLSPAN="3" BGCOLOR="#E3F2FD" ALIGN="LEFT">  street_number : varchar  </TD></TR>
+				<TR><TD PORT="building_floor" COLSPAN="3" BGCOLOR="#E3F2FD" ALIGN="LEFT">  building_floor : varchar  </TD></TR>
+				<TR><TD PORT="building_room" COLSPAN="3" BGCOLOR="#E3F2FD" ALIGN="LEFT">  building_room : varchar  </TD></TR>
+				<TR><TD PORT="building" COLSPAN="3" BGCOLOR="#E3F2FD" ALIGN="LEFT">  building : varchar  </TD></TR>
+				<TR><TD PORT="comment_address" COLSPAN="3" BGCOLOR="#E3F2FD" ALIGN="LEFT">  comment_address : varchar  </TD></TR>
+				<TR><TD PORT="lat" COLSPAN="3" BGCOLOR="#E3F2FD" ALIGN="LEFT">  lat : double precision  </TD></TR>
+				<TR><TD PORT="lng" COLSPAN="3" BGCOLOR="#E3F2FD" ALIGN="LEFT">  lng : double precision  </TD></TR>
+				<TR><TD PORT="audit_date_create" COLSPAN="3" BGCOLOR="#E3F2FD" ALIGN="LEFT">  <B>audit_date_create</B> : timestamp <B>not null</B>   </TD></TR>
+				<TR><TD PORT="audit_user_create" COLSPAN="3" BGCOLOR="#E3F2FD" ALIGN="LEFT">  <B>audit_user_create</B> : varchar <B>not null</B>   </TD></TR>
+				<TR><TD PORT="audit_date_update" COLSPAN="3" BGCOLOR="#E3F2FD" ALIGN="LEFT">  <B>audit_date_update</B> : timestamp <B>not null</B>   </TD></TR>
+				<TR><TD PORT="audit_user_update" COLSPAN="3" BGCOLOR="#E3F2FD" ALIGN="LEFT">  <B>audit_user_update</B> : varchar <B>not null</B>   </TD></TR>
+				<TR><TD PORT="audit_version" COLSPAN="3" BGCOLOR="#E3F2FD" ALIGN="LEFT">  <B>audit_version</B> : bigint <B>not null</B>   </TD></TR>
+				<TR><TD PORT="audit_version_code_label" COLSPAN="3" BGCOLOR="#E3F2FD" ALIGN="LEFT">  audit_version_code_label : varchar  </TD></TR>
+				<TR><TD PORT="audit_version_label" COLSPAN="3" BGCOLOR="#E3F2FD" ALIGN="LEFT">  audit_version_label : varchar  </TD></TR>
+				<TR><TD PORT="iva_id" COLSPAN="3" BGCOLOR="#E3F2FD" ALIGN="LEFT">  <B>iva_id</B> : varchar <B>fk</B>  </TD></TR>
+				<TR><TD PORT="neighbourhood_id" COLSPAN="3" BGCOLOR="#E3F2FD" ALIGN="LEFT">  <B>neighbourhood_id</B> : varchar <B>fk</B>  </TD></TR>
+							</TABLE>>
+							URL="com.cclip.model.person.Uf.html"
+							tooltip="com.cclip.model.person.Uf"
+					];
+
+					//com.cclip.model.person.Iva
+					iva [
+						label=<
+							<TABLE BORDER="0" CELLBORDER="0" CELLSPACING="0" BGCOLOR="#ffffff">
+				<TR><TD COLSPAN="3" BGCOLOR="#90CAF9" ALIGN="CENTER"><B>iva</B></TD></TR>
+
+				<TR><TD PORT="id" COLSPAN="3" BGCOLOR="#E3F2FD" ALIGN="LEFT"><B>  id</B> : varchar <B>pk  not null</B> </TD></TR>
+				<TR><TD PORT="erased" COLSPAN="3" BGCOLOR="#E3F2FD" ALIGN="LEFT">  <B>erased</B> : boolean <B>not null</B>   </TD></TR>
+				<TR><TD PORT="code" COLSPAN="3" BGCOLOR="#E3F2FD" ALIGN="LEFT">  <B>code</B> : varchar <B>unique</B>  <B>not null</B>   </TD></TR>
+				<TR><TD PORT="name" COLSPAN="3" BGCOLOR="#E3F2FD" ALIGN="LEFT">  <B>name</B> : varchar <B>not null</B>   </TD></TR>
+				<TR><TD PORT="comment" COLSPAN="3" BGCOLOR="#E3F2FD" ALIGN="LEFT">  comment : varchar  </TD></TR>
+							</TABLE>>
+							URL="com.cclip.model.person.Iva.html"
+							tooltip="com.cclip.model.person.Iva"
+					];
+	"uf":"iva_id":w -> "iva":"id":e [arrowhead=none, dir=back, arrowtail=crowodot, arrowhead=none, headlabel = "1", taillabel = "N", fontsize="8", color="#BBDEFB"];
+	"cadastre":"user_iva_id":w -> "iva":"id":e [arrowhead=none, dir=back, arrowtail=crowodot, arrowhead=none, headlabel = "1", taillabel = "N", fontsize="8", color="#BBDEFB"];
+	"cadastre_sub_division":"user_iva_id":w -> "iva":"id":e [arrowhead=none, dir=back, arrowtail=crowodot, arrowhead=none, headlabel = "1", taillabel = "N", fontsize="8", color="#BBDEFB"];
+	"cadastre":"user_water_situation_id":w -> "user_water_situation":"id":e [arrowhead=none, dir=back, arrowtail=crowodot, arrowhead=none, headlabel = "1", taillabel = "N", fontsize="8", color="#BBDEFB"];
+	"cadastre_sub_division":"user_water_situation_id":w -> "user_water_situation":"id":e [arrowhead=none, dir=back, arrowtail=crowodot, arrowhead=none, headlabel = "1", taillabel = "N", fontsize="8", color="#BBDEFB"];
+	"cadastre":"uf_id":w -> "uf":"id":e [arrowhead=none, dir=back, arrowtail=crowodot, arrowhead=none, headlabel = "1", taillabel = "N", fontsize="8", color="#BBDEFB"];
+	"cadastre_sub_division":"uf_id":w -> "uf":"id":e [arrowhead=none, dir=back, arrowtail=crowodot, arrowhead=none, headlabel = "1", taillabel = "N", fontsize="8", color="#BBDEFB"];
+	"cadastre_block":"cadastre_activity_type_id":w -> "cadastre_activity_type":"id":e [arrowhead=none, dir=back, arrowtail=crowodot, arrowhead=none, headlabel = "1", taillabel = "N", fontsize="8", color="#BBDEFB"];
+	"cadastre_sub_division":"cadastre_activity_type_id":w -> "cadastre_activity_type":"id":e [arrowhead=none, dir=back, arrowtail=crowodot, arrowhead=none, headlabel = "1", taillabel = "N", fontsize="8", color="#BBDEFB"];
+	"cadastre":"city_area_id":w -> "city_area":"id":e [arrowhead=none, dir=back, arrowtail=crowodot, arrowhead=none, headlabel = "1", taillabel = "N", fontsize="8", color="#BBDEFB"];
+	"cadastre_sub_division":"city_area_id":w -> "city_area":"id":e [arrowhead=none, dir=back, arrowtail=crowodot, arrowhead=none, headlabel = "1", taillabel = "N", fontsize="8", color="#BBDEFB"];
+	"schedule_batch":"schedule_id":w -> "schedule":"id":e [arrowhead=none, dir=back, arrowtail=crowodot, arrowhead=none, headlabel = "1", taillabel = "N", fontsize="8", color="#BBDEFB"];
+	"schedule_scanning":"schedule_id":w -> "schedule":"id":e [arrowhead=none, dir=back, arrowtail=crowodot, arrowhead=none, headlabel = "1", taillabel = "N", fontsize="8", color="#BBDEFB"];
+	"cadastre_block":"cadastre_id":w -> "cadastre":"id":e [arrowhead=none, dir=back, arrowtail=crowodot, arrowhead=none, headlabel = "1", taillabel = "N", fontsize="8", color="#BBDEFB"];
+	"cadastre_sub_division":"cadastre_id":w -> "cadastre":"id":e [arrowhead=none, dir=back, arrowtail=crowodot, arrowhead=none, headlabel = "1", taillabel = "N", fontsize="8", color="#BBDEFB"];
+	"schedule_scanning_item":"cadastre_id":w -> "cadastre":"id":e [arrowhead=none, dir=back, arrowtail=crowodot, arrowhead=none, headlabel = "1", taillabel = "N", fontsize="8", color="#BBDEFB"];
+	"schedule_scanning_item":"schedule_scanning_result_id":w -> "schedule_scanning_result":"id":e [arrowhead=none, dir=back, arrowtail=crowodot, arrowhead=none, headlabel = "1", taillabel = "N", fontsize="8", color="#BBDEFB"];
+	"schedule_scanning":"census_taker_id":w -> "census_taker":"id":e [arrowhead=none, dir=back, arrowtail=crowodot, arrowhead=none, headlabel = "1", taillabel = "N", fontsize="8", color="#BBDEFB"];
+	"schedule_scanning_item":"schedule_scanning_id":w -> "schedule_scanning":"id":e [arrowhead=none, dir=back, arrowtail=crowodot, arrowhead=none, headlabel = "1", taillabel = "N", fontsize="8", color="#BBDEFB"];
+	"cadastre":"cadastre_type_id":w -> "cadastre_type":"id":e [arrowhead=none, dir=back, arrowtail=crowodot, arrowhead=none, headlabel = "1", taillabel = "N", fontsize="8", color="#BBDEFB"];
+	"cadastre":"cadastre_situation_id":w -> "cadastre_situation":"id":e [arrowhead=none, dir=back, arrowtail=crowodot, arrowhead=none, headlabel = "1", taillabel = "N", fontsize="8", color="#BBDEFB"];
+	"cadastre":"inm_neighbourhood_id":w -> "neighbourhood":"id":e [arrowhead=none, dir=back, arrowtail=crowodot, arrowhead=none, headlabel = "1", taillabel = "N", fontsize="8", color="#BBDEFB"];
+	"cadastre_block":"cadastre_constructive_type_id":w -> "cadastre_constructive_type":"id":e [arrowhead=none, dir=back, arrowtail=crowodot, arrowhead=none, headlabel = "1", taillabel = "N", fontsize="8", color="#BBDEFB"];
+	"cadastre_block":"cadastre_destination_type_id":w -> "cadastre_destination_type":"id":e [arrowhead=none, dir=back, arrowtail=crowodot, arrowhead=none, headlabel = "1", taillabel = "N", fontsize="8", color="#BBDEFB"];
+	"cadastre_sub_division":"cadastre_sub_division_type_id":w -> "cadastre_sub_division_type":"id":e [arrowhead=none, dir=back, arrowtail=crowodot, arrowhead=none, headlabel = "1", taillabel = "N", fontsize="8", color="#BBDEFB"];
+	"schedule_census":"schedule_id":w -> "schedule":"id":e [arrowhead=none, dir=back, arrowtail=crowodot, arrowhead=none, headlabel = "1", taillabel = "N", fontsize="8", color="#BBDEFB"];
+	"schedule_census":"cadastre_id":w -> "cadastre":"id":e [arrowhead=none, dir=back, arrowtail=crowodot, arrowhead=none, headlabel = "1", taillabel = "N", fontsize="8", color="#BBDEFB"];
+	"schedule_census":"census_taker_id":w -> "census_taker":"id":e [arrowhead=none, dir=back, arrowtail=crowodot, arrowhead=none, headlabel = "1", taillabel = "N", fontsize="8", color="#BBDEFB"];
+	"schedule_census":"schedule_batch_id":w -> "schedule_batch":"id":e [arrowhead=none, dir=back, arrowtail=crowodot, arrowhead=none, headlabel = "1", taillabel = "N", fontsize="8", color="#BBDEFB"];
+	"schedule_census":"cadastre_activity_type_id":w -> "cadastre_activity_type":"id":e [arrowhead=none, dir=back, arrowtail=crowodot, arrowhead=none, headlabel = "1", taillabel = "N", fontsize="8", color="#BBDEFB"];
+	"schedule_census":"schedule_census_result_id":w -> "schedule_census_result":"id":e [arrowhead=none, dir=back, arrowtail=crowodot, arrowhead=none, headlabel = "1", taillabel = "N", fontsize="8", color="#BBDEFB"];
+	"cadastre_ins_del":"schedule_id":w -> "schedule":"id":e [arrowhead=none, dir=back, arrowtail=crowodot, arrowhead=none, headlabel = "1", taillabel = "N", fontsize="8", color="#BBDEFB"];
+	"cadastre_ins_del":"census_taker_id":w -> "census_taker":"id":e [arrowhead=none, dir=back, arrowtail=crowodot, arrowhead=none, headlabel = "1", taillabel = "N", fontsize="8", color="#BBDEFB"];
+	"cadastre_ins_del":"schedule_batch_id":w -> "schedule_batch":"id":e [arrowhead=none, dir=back, arrowtail=crowodot, arrowhead=none, headlabel = "1", taillabel = "N", fontsize="8", color="#BBDEFB"];
+	"cadastre":"cadastre_ins_del_id":w -> "cadastre_ins_del":"id":e [arrowhead=none, dir=back, arrowtail=crowodot, arrowhead=none, headlabel = "1", taillabel = "N", fontsize="8", color="#BBDEFB"];
+	"uf":"neighbourhood_id":w -> "neighbourhood":"id":e [arrowhead=none, dir=back, arrowtail=crowodot, arrowhead=none, headlabel = "1", taillabel = "N", fontsize="8", color="#BBDEFB"];
+}

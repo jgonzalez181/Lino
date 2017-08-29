@@ -1,0 +1,27 @@
+<map id="G" name="G">
+<area shape="rect" id="node1" href="com.cclip.model.geo.CityArea.html" title="com.cclip.model.geo.CityArea" alt="" coords="209,156,292,204"/>
+<area shape="rect" id="node2" href="com.cclip.model.geo.Neighbourhood.html" title="com.cclip.model.geo.Neighbourhood" alt="" coords="193,221,308,269"/>
+<area shape="rect" id="node3" href="com.cclip.model.geo.cadastre.CadastreType.html" title="com.cclip.model.geo.cadastre.CadastreType" alt="" coords="193,649,308,697"/>
+<area shape="rect" id="node4" href="com.cclip.model.geo.cadastre.CadastreSituation.html" title="com.cclip.model.geo.cadastre.CadastreSituation" alt="" coords="181,584,320,632"/>
+<area shape="rect" id="node5" href="com.cclip.model.geo.cadastre.UserWaterSituation.html" title="com.cclip.model.geo.cadastre.UserWaterSituation" alt="" coords="175,496,326,544"/>
+<area shape="rect" id="node6" href="com.cclip.model.geo.cadastre.Cadastre.html" title="com.cclip.model.geo.cadastre.Cadastre" alt="" coords="425,649,508,697"/>
+<area shape="rect" id="node20" href="com.cclip.model.schedule.census.CadastreInsDel.html" title="com.cclip.model.schedule.census.CadastreInsDel" alt="" coords="629,1321,760,1369"/>
+<area shape="rect" id="node24" href="com.cclip.model.person.Uf.html" title="com.cclip.model.person.Uf" alt="" coords="215,763,287,811"/>
+<area shape="rect" id="node25" href="com.cclip.model.person.Iva.html" title="com.cclip.model.person.Iva" alt="" coords="59,763,131,811"/>
+<area shape="rect" id="node7" href="com.cclip.model.geo.cadastre.CadastreActivityType.html" title="com.cclip.model.geo.cadastre.CadastreActivityType" alt="" coords="385,584,548,632"/>
+<area shape="rect" id="node8" href="com.cclip.model.geo.cadastre.block.CadastreConstructiveType.html" title="com.cclip.model.geo.cadastre.block.CadastreConstructiveType" alt="" coords="371,412,562,460"/>
+<area shape="rect" id="node9" href="com.cclip.model.geo.cadastre.block.CadastreDestinationType.html" title="com.cclip.model.geo.cadastre.block.CadastreDestinationType" alt="" coords="375,347,558,395"/>
+<area shape="rect" id="node10" href="com.cclip.model.geo.cadastre.block.CadastreBlock.html" title="com.cclip.model.geo.cadastre.block.CadastreBlock" alt="" coords="635,412,754,460"/>
+<area shape="rect" id="node11" href="com.cclip.model.geo.cadastre.subdivision.CadastreSubDivisionType.html" title="com.cclip.model.geo.cadastre.subdivision.CadastreSubDivisionType" alt="" coords="371,515,562,563"/>
+<area shape="rect" id="node12" href="com.cclip.model.geo.cadastre.subdivision.CadastreSubDivision.html" title="com.cclip.model.geo.cadastre.subdivision.CadastreSubDivision" alt="" coords="615,515,774,563"/>
+<area shape="rect" id="node13" href="com.cclip.model.schedule.Schedule.html" title="com.cclip.model.schedule.Schedule" alt="" coords="209,1232,292,1280"/>
+<area shape="rect" id="node14" href="com.cclip.model.schedule.ScheduleBatch.html" title="com.cclip.model.schedule.ScheduleBatch" alt="" coords="405,1164,528,1212"/>
+<area shape="rect" id="node15" href="com.cclip.model.schedule.scanning.ScheduleScanning.html" title="com.cclip.model.schedule.scanning.ScheduleScanning" alt="" coords="395,1095,538,1143"/>
+<area shape="rect" id="node23" href="com.cclip.model.person.CensusTaker.html" title="com.cclip.model.person.CensusTaker" alt="" coords="195,893,306,941"/>
+<area shape="rect" id="node16" href="com.cclip.model.schedule.scanning.ScheduleScanningResult.html" title="com.cclip.model.schedule.scanning.ScheduleScanningResult" alt="" coords="375,1029,558,1077"/>
+<area shape="rect" id="node17" href="com.cclip.model.schedule.scanning.ScheduleScanningItem.html" title="com.cclip.model.schedule.scanning.ScheduleScanningItem" alt="" coords="607,1029,782,1077"/>
+<area shape="rect" id="node18" href="com.cclip.model.schedule.census.ScheduleCensusResult.html" title="com.cclip.model.schedule.census.ScheduleCensusResult" alt="" coords="381,1256,552,1304"/>
+<area shape="rect" id="node19" href="com.cclip.model.schedule.census.ScheduleCensus.html" title="com.cclip.model.schedule.census.ScheduleCensus" alt="" coords="629,1256,760,1304"/>
+<area shape="rect" id="node21" href="com.cclip.model.person.Person.html" title="com.cclip.model.person.Person" alt="" coords="59,861,131,909"/>
+<area shape="rect" id="node22" href="com.cclip.model.person.UserSystem.html" title="com.cclip.model.person.UserSystem" alt="" coords="197,828,304,876"/>
+</map>

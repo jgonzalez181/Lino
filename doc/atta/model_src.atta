@@ -1,0 +1,11077 @@
+Cclip Censo y Barrido (
+
+
+	class com.cclip.model.geo.CityArea #8DB4E3 #C5D9F1 {
+
+
+		id : String, 
+
+		erased : Boolean = false, 
+
+		name : String, 
+
+		comment : String
+	};
+
+	class com.cclip.model.geo.Neighbourhood #8DB4E3 #C5D9F1 {
+
+
+		id : String, 
+
+		erased : Boolean = false, 
+
+		name : String, 
+
+		comment : String
+	};
+
+	class com.cclip.model.geo.cadastre.CadastreType #FAC090 #FCD5B4 {
+
+
+		id : String, 
+
+		erased : Boolean = false, 
+
+		name : String, 
+
+		comment : String
+	};
+
+	class com.cclip.model.geo.cadastre.WaterMeterType #FAC090 #FCD5B4 {
+
+
+		id : String, 
+
+		erased : Boolean = false, 
+
+		code : String, 
+
+		name : String, 
+
+		comment : String
+	};
+
+	class com.cclip.model.geo.cadastre.CadastreSituation #FAC090 #FCD5B4 {
+
+
+		id : String, 
+
+		erased : Boolean = false, 
+
+		name : String, 
+
+		comment : String
+	};
+
+	class com.cclip.model.geo.cadastre.UserWaterSituation #8DB4E3 #C5D9F1 {
+
+
+		id : String, 
+
+		erased : Boolean = false, 
+
+		name : String, 
+
+		comment : String
+	};
+
+	class com.cclip.model.geo.cadastre.Cadastre #FAC090 #FCD5B4 {
+
+
+		id : String, 
+
+		erased : Boolean = false, 
+
+		dateCreate : Timestamp, 
+
+		dateDelete : Timestamp, 
+
+		cadastralCode : String, 
+
+		m2 : Double, 
+
+		m2Covered : Double, 
+
+		ctaCli : String, 
+
+		subCtaCli : String, 
+
+		dv : String, 
+
+		userWaterService : String, 
+
+		userWaterServiceDni : String, 
+
+		userWaterServiceCuit : String, 
+
+		waterMeter : Boolean, 
+
+		comment : String, 
+
+		inmLocality : String, 
+
+		inmNeighbourhoodComment : String, 
+
+		inmStreet : String, 
+
+		inmStreetNumber : String, 
+
+		inmStreetNumberEstimated : Boolean, 
+
+		inmBuildingFloor : String, 
+
+		inmBuildingRoom : String, 
+
+		inmBuilding : String, 
+
+		inmPostalCode : String, 
+
+		inmCommentAddress : String, 
+
+		inmLat : Double, 
+
+		inmLng : Double, 
+
+		userPostalCountryCode : String, 
+
+		userPostalCountry : String, 
+
+		userPostalAdminAreaLevel1Code : String, 
+
+		userPostalAdminAreaLevel1 : String, 
+
+		userPostalAdminAreaLevel2 : String, 
+
+		userPostalLocality : String, 
+
+		userPostalNeighbourhood : String, 
+
+		userPostalStreet : String, 
+
+		userPostalStreetNumber : String, 
+
+		userPostalBuildingFloor : String, 
+
+		userPostalBuildingRoom : String, 
+
+		userPostalBuilding : String, 
+
+		userPostalPostalCode : String, 
+
+		userPostalCommentAddress : String, 
+
+		userPostalLat : Double, 
+
+		userPostalLng : Double, 
+
+		userPhone : String, 
+
+		codeReasonLow : String, 
+
+		reasonLow : String, 
+
+		cantPh : Integer, 
+
+		dateScanning2 : Date, 
+
+		dateScanning1 : Date, 
+
+		dateScanning0 : Date, 
+
+		auditDateCreate : Timestamp, 
+
+		auditUserCreate : String, 
+
+		auditDateUpdate : Timestamp, 
+
+		auditUserUpdate : String, 
+
+		auditVersion : Long, 
+
+		auditVersionCodeLabel : String, 
+
+		auditVersionLabel : String, 
+
+		fact : Boolean = false, 
+
+		m2CoveredShared : Double, 
+
+		m2CoveredExpanded : Double, 
+
+		m2Percent : Double, 
+
+		yearBuilding : Integer, 
+
+		progressConstructionPrev : Double, 
+
+		userIva : Iva ,
+
+		userWaterSituation : UserWaterSituation ,
+
+		uf : Uf ,
+
+		cityArea : CityArea ,
+
+		cadastreType : CadastreType ,
+
+		cadastreSituation : CadastreSituation ,
+
+		inmNeighbourhood : Neighbourhood ,
+
+		cadastreSubDivisionType : CadastreSubDivisionType ,
+
+		scheduleScanningResult2 : ScheduleScanningResult ,
+
+		scheduleScanningResult1 : ScheduleScanningResult ,
+
+		scheduleScanningResult0 : ScheduleScanningResult ,
+
+		cadastreActivityType : CadastreActivityType ,
+
+		waterMeterType : WaterMeterType ,
+
+		cadastreConstructiveType : CadastreConstructiveType 
+	};
+
+	class com.cclip.model.geo.cadastre.CadastreCensus #D99795 #E6B9B8 {
+
+
+		id : String, 
+
+		erased : Boolean = false, 
+
+		dateCreate : Timestamp, 
+
+		dateDelete : Timestamp, 
+
+		cadastralCode : String, 
+
+		m2 : Double, 
+
+		m2Covered : Double, 
+
+		ctaCli : String, 
+
+		subCtaCli : String, 
+
+		dv : String, 
+
+		userWaterService : String, 
+
+		userWaterServiceDni : String, 
+
+		userWaterServiceCuit : String, 
+
+		waterMeter : Boolean, 
+
+		comment : String, 
+
+		inmLocality : String, 
+
+		inmNeighbourhoodComment : String, 
+
+		inmStreet : String, 
+
+		inmStreetNumber : String, 
+
+		inmStreetNumberEstimated : Boolean, 
+
+		inmBuildingFloor : String, 
+
+		inmBuildingRoom : String, 
+
+		inmBuilding : String, 
+
+		inmPostalCode : String, 
+
+		inmCommentAddress : String, 
+
+		inmLat : Double, 
+
+		inmLng : Double, 
+
+		userPostalCountryCode : String, 
+
+		userPostalCountry : String, 
+
+		userPostalAdminAreaLevel1Code : String, 
+
+		userPostalAdminAreaLevel1 : String, 
+
+		userPostalAdminAreaLevel2 : String, 
+
+		userPostalLocality : String, 
+
+		userPostalNeighbourhood : String, 
+
+		userPostalStreet : String, 
+
+		userPostalStreetNumber : String, 
+
+		userPostalBuildingFloor : String, 
+
+		userPostalBuildingRoom : String, 
+
+		userPostalBuilding : String, 
+
+		userPostalPostalCode : String, 
+
+		userPostalCommentAddress : String, 
+
+		userPostalLat : Double, 
+
+		userPostalLng : Double, 
+
+		userPhone : String, 
+
+		codeReasonLow : String, 
+
+		reasonLow : String, 
+
+		cantPh : Integer, 
+
+		dateScanning2 : Date, 
+
+		dateScanning1 : Date, 
+
+		dateScanning0 : Date, 
+
+		auditDateCreate : Timestamp, 
+
+		auditUserCreate : String, 
+
+		auditDateUpdate : Timestamp, 
+
+		auditUserUpdate : String, 
+
+		auditVersion : Long, 
+
+		auditVersionCodeLabel : String, 
+
+		auditVersionLabel : String, 
+
+		fact : Boolean = false, 
+
+		m2CoveredShared : Double, 
+
+		m2CoveredExpanded : Double, 
+
+		m2Percent : Double, 
+
+		yearBuilding : Integer, 
+
+		progressConstructionPrev : Double, 
+
+		userIva : Iva ,
+
+		userWaterSituation : UserWaterSituation ,
+
+		ufCensus : UfCensus ,
+
+		cityArea : CityArea ,
+
+		cadastreType : CadastreType ,
+
+		cadastreSituation : CadastreSituation ,
+
+		inmNeighbourhood : Neighbourhood ,
+
+		cadastreSubDivisionType : CadastreSubDivisionType ,
+
+		scheduleScanningResult2 : ScheduleScanningResult ,
+
+		scheduleScanningResult1 : ScheduleScanningResult ,
+
+		scheduleScanningResult0 : ScheduleScanningResult ,
+
+		cadastreActivityType : CadastreActivityType ,
+
+		waterMeterType : WaterMeterType ,
+
+		cadastreConstructiveType : CadastreConstructiveType 
+	};
+
+	class com.cclip.model.geo.cadastre.CadastreActivityType #8DB4E3 #C5D9F1 {
+
+
+		id : String, 
+
+		erased : Boolean = false, 
+
+		name : String, 
+
+		comment : String
+	};
+
+	class com.cclip.model.geo.cadastre.aacc.AaccUnidad #8DB4E3 #C5D9F1 {
+
+
+		id : String, 
+
+		erased : Boolean = false, 
+
+		auditDateCreate : Timestamp, 
+
+		auditUserCreate : String, 
+
+		c1 : String, 
+
+		c2 : String, 
+
+		c3 : String, 
+
+		c4 : String, 
+
+		c5 : String, 
+
+		c6 : String, 
+
+		c7 : String, 
+
+		c8 : String, 
+
+		c9 : String, 
+
+		c10 : String, 
+
+		c11 : String, 
+
+		c12 : String, 
+
+		c13 : String, 
+
+		c14 : String, 
+
+		c15 : String, 
+
+		c16 : String, 
+
+		c17 : String, 
+
+		c18 : String, 
+
+		c19 : String, 
+
+		c20 : String, 
+
+		c21 : String, 
+
+		c22 : String, 
+
+		c23 : String, 
+
+		c24 : String, 
+
+		c25 : String, 
+
+		c26 : String, 
+
+		c27 : String, 
+
+		c28 : String, 
+
+		c29 : String, 
+
+		c30 : String, 
+
+		c31 : String, 
+
+		c32 : String, 
+
+		c33 : String, 
+
+		c34 : String, 
+
+		c35 : String, 
+
+		c36 : String, 
+
+		c37 : String, 
+
+		c38 : String, 
+
+		c39 : String, 
+
+		c40 : String, 
+
+		c41 : String, 
+
+		c42 : String, 
+
+		c43 : String, 
+
+		c44 : String, 
+
+		c45 : String, 
+
+		c46 : String, 
+
+		c47 : String, 
+
+		c48 : String, 
+
+		c49 : String, 
+
+		c50 : String, 
+
+		c51 : String, 
+
+		c52 : String, 
+
+		c53 : String, 
+
+		c54 : String, 
+
+		c55 : String, 
+
+		c56 : String, 
+
+		c57 : String, 
+
+		c58 : String, 
+
+		c59 : String, 
+
+		c60 : String, 
+
+		c61 : String, 
+
+		c62 : String, 
+
+		c63 : String, 
+
+		c64 : String, 
+
+		c65 : String, 
+
+		c66 : String, 
+
+		c67 : String, 
+
+		c68 : String, 
+
+		c69 : String, 
+
+		c70 : String, 
+
+		c71 : String, 
+
+		c72 : String, 
+
+		c73 : String, 
+
+		c74 : String, 
+
+		c75 : String, 
+
+		c76 : String, 
+
+		c77 : String, 
+
+		c78 : String, 
+
+		c79 : String, 
+
+		c80 : String, 
+
+		c81 : String, 
+
+		c82 : String, 
+
+		c83 : String, 
+
+		c84 : String, 
+
+		c85 : String, 
+
+		c86 : String, 
+
+		c87 : String, 
+
+		c88 : String, 
+
+		c89 : String, 
+
+		c90 : String, 
+
+		c91 : String, 
+
+		c92 : String, 
+
+		c93 : String, 
+
+		c94 : String, 
+
+		c95 : String, 
+
+		c96 : String, 
+
+		c97 : String, 
+
+		c98 : String, 
+
+		c99 : String, 
+
+		c100 : String, 
+
+		c101 : String, 
+
+		c102 : String, 
+
+		c103 : String, 
+
+		c104 : String, 
+
+		c105 : String, 
+
+		c106 : String, 
+
+		c107 : String, 
+
+		c108 : String, 
+
+		c109 : String, 
+
+		c110 : String, 
+
+		c111 : String, 
+
+		c112 : String, 
+
+		c113 : String, 
+
+		c114 : String, 
+
+		c115 : String, 
+
+		c116 : String, 
+
+		c117 : String, 
+
+		c118 : String, 
+
+		c119 : String, 
+
+		c120 : String, 
+
+		c121 : String, 
+
+		c122 : String, 
+
+		c123 : String, 
+
+		c124 : String, 
+
+		c125 : String, 
+
+		c126 : String, 
+
+		c127 : String, 
+
+		c128 : String, 
+
+		c129 : String, 
+
+		c130 : String, 
+
+		c131 : String, 
+
+		c132 : String, 
+
+		c133 : String, 
+
+		c134 : String, 
+
+		c135 : String, 
+
+		c136 : String, 
+
+		c137 : String, 
+
+		c138 : String, 
+
+		c139 : String, 
+
+		c140 : String, 
+
+		c141 : String, 
+
+		c142 : String, 
+
+		c143 : String, 
+
+		c144 : String, 
+
+		c145 : String, 
+
+		c146 : String, 
+
+		c147 : String, 
+
+		c148 : String, 
+
+		c149 : String, 
+
+		c150 : String, 
+
+		c151 : String, 
+
+		c152 : String, 
+
+		c153 : String, 
+
+		c154 : String, 
+
+		c155 : String, 
+
+		c156 : String, 
+
+		c157 : String, 
+
+		c158 : String, 
+
+		c159 : String, 
+
+		c160 : String, 
+
+		c161 : String, 
+
+		c162 : String, 
+
+		c163 : String, 
+
+		c164 : String, 
+
+		c165 : String, 
+
+		c166 : String, 
+
+		c167 : String, 
+
+		c168 : String, 
+
+		c169 : String, 
+
+		c170 : String, 
+
+		c171 : String, 
+
+		c172 : String, 
+
+		c173 : String, 
+
+		c174 : String, 
+
+		c175 : String, 
+
+		c176 : String, 
+
+		c177 : String, 
+
+		c178 : String, 
+
+		c179 : String, 
+
+		c180 : String, 
+
+		c181 : String, 
+
+		c182 : String, 
+
+		c183 : String, 
+
+		c184 : String, 
+
+		c185 : String, 
+
+		c186 : String, 
+
+		c187 : String, 
+
+		c188 : String, 
+
+		c189 : String, 
+
+		c190 : String, 
+
+		c191 : String, 
+
+		c192 : String, 
+
+		c193 : String, 
+
+		c194 : String, 
+
+		c195 : String, 
+
+		c196 : String, 
+
+		c197 : String, 
+
+		c198 : String, 
+
+		c199 : String, 
+
+		c200 : String, 
+
+		c201 : String, 
+
+		c202 : String, 
+
+		c203 : String, 
+
+		c204 : String, 
+
+		c205 : String, 
+
+		c206 : String, 
+
+		c207 : String, 
+
+		c208 : String, 
+
+		c209 : String, 
+
+		c210 : String, 
+
+		c211 : String, 
+
+		c212 : String, 
+
+		c213 : String, 
+
+		c214 : String, 
+
+		c215 : String, 
+
+		c216 : String, 
+
+		c217 : String, 
+
+		c218 : String, 
+
+		c219 : String, 
+
+		c220 : String, 
+
+		c221 : String, 
+
+		c222 : String, 
+
+		c223 : String, 
+
+		c224 : String, 
+
+		c225 : String, 
+
+		c226 : String, 
+
+		c227 : String, 
+
+		c228 : String, 
+
+		c229 : String, 
+
+		c230 : String, 
+
+		c231 : String, 
+
+		c232 : String, 
+
+		c233 : String, 
+
+		c234 : String, 
+
+		c235 : String, 
+
+		c236 : String, 
+
+		c237 : String, 
+
+		c238 : String, 
+
+		c239 : String, 
+
+		c240 : String, 
+
+		c241 : String, 
+
+		c242 : String, 
+
+		c243 : String, 
+
+		c244 : String, 
+
+		c245 : String, 
+
+		c246 : String, 
+
+		c247 : String, 
+
+		c248 : String, 
+
+		c249 : String, 
+
+		c250 : String, 
+
+		c251 : String, 
+
+		c252 : String, 
+
+		c253 : String, 
+
+		c254 : String, 
+
+		c255 : String, 
+
+		c256 : String, 
+
+		c257 : String, 
+
+		c258 : String, 
+
+		c259 : String, 
+
+		c260 : String, 
+
+		c261 : String, 
+
+		c262 : String, 
+
+		c263 : String, 
+
+		c264 : String, 
+
+		c265 : String, 
+
+		c266 : String, 
+
+		c267 : String, 
+
+		c268 : String, 
+
+		c269 : String, 
+
+		c270 : String, 
+
+		c271 : String, 
+
+		c272 : String, 
+
+		c273 : String, 
+
+		c274 : String, 
+
+		c275 : String, 
+
+		c276 : String, 
+
+		c277 : String, 
+
+		c278 : String, 
+
+		c279 : String, 
+
+		c280 : String, 
+
+		c281 : String, 
+
+		c282 : String, 
+
+		c283 : String, 
+
+		c284 : String, 
+
+		c285 : String, 
+
+		c286 : String, 
+
+		c287 : String, 
+
+		c288 : String, 
+
+		c289 : String, 
+
+		c290 : String, 
+
+		c291 : String, 
+
+		c292 : String, 
+
+		c293 : String, 
+
+		c294 : String, 
+
+		c295 : String, 
+
+		c296 : String, 
+
+		c297 : String, 
+
+		c298 : String, 
+
+		c299 : String, 
+
+		c300 : String, 
+
+		c301 : String, 
+
+		c302 : String, 
+
+		c303 : String, 
+
+		c304 : String, 
+
+		c305 : String, 
+
+		c306 : String, 
+
+		c307 : String, 
+
+		c308 : String, 
+
+		c309 : String, 
+
+		c310 : String, 
+
+		c311 : String, 
+
+		c312 : String, 
+
+		c313 : String, 
+
+		c314 : String, 
+
+		c315 : String, 
+
+		c316 : String, 
+
+		c317 : String, 
+
+		c318 : String, 
+
+		c319 : String, 
+
+		c320 : String, 
+
+		c321 : String, 
+
+		c322 : String, 
+
+		c323 : String, 
+
+		c324 : String, 
+
+		c325 : String, 
+
+		c326 : String, 
+
+		c327 : String, 
+
+		c328 : String, 
+
+		c329 : String, 
+
+		c330 : String, 
+
+		c331 : String, 
+
+		c332 : String, 
+
+		c333 : String, 
+
+		c334 : String, 
+
+		c335 : String, 
+
+		c336 : String, 
+
+		c337 : String, 
+
+		c338 : String, 
+
+		c339 : String, 
+
+		c340 : String, 
+
+		c341 : String, 
+
+		c342 : String, 
+
+		c343 : String, 
+
+		c344 : String, 
+
+		c345 : String, 
+
+		c346 : String, 
+
+		c347 : String, 
+
+		c348 : String, 
+
+		c349 : String, 
+
+		c350 : String, 
+
+		c351 : String, 
+
+		c352 : String, 
+
+		c353 : String, 
+
+		c354 : String, 
+
+		c355 : String, 
+
+		c356 : String, 
+
+		c357 : String, 
+
+		c358 : String, 
+
+		c359 : String, 
+
+		c360 : String, 
+
+		c361 : String, 
+
+		c362 : String, 
+
+		c363 : String, 
+
+		c364 : String, 
+
+		c365 : String, 
+
+		c366 : String, 
+
+		c367 : String, 
+
+		c368 : String, 
+
+		c369 : String, 
+
+		c370 : String, 
+
+		c371 : String, 
+
+		c372 : String, 
+
+		c373 : String, 
+
+		c374 : String, 
+
+		c375 : String, 
+
+		c376 : String, 
+
+		c377 : String, 
+
+		c378 : String, 
+
+		c379 : String, 
+
+		c380 : String, 
+
+		c381 : String, 
+
+		c382 : String, 
+
+		c383 : String, 
+
+		c384 : String, 
+
+		c385 : String, 
+
+		c386 : String, 
+
+		c387 : String, 
+
+		c388 : String, 
+
+		c389 : String, 
+
+		c390 : String, 
+
+		c391 : String, 
+
+		c392 : String, 
+
+		c393 : String, 
+
+		c394 : String, 
+
+		c395 : String, 
+
+		c396 : String, 
+
+		c397 : String, 
+
+		c398 : String, 
+
+		c399 : String, 
+
+		c400 : String, 
+
+		c401 : String, 
+
+		c402 : String, 
+
+		c403 : String, 
+
+		c404 : String, 
+
+		c405 : String, 
+
+		c406 : String, 
+
+		c407 : String, 
+
+		c408 : String, 
+
+		c409 : String, 
+
+		c410 : String, 
+
+		c411 : String, 
+
+		c412 : String, 
+
+		c413 : String, 
+
+		c414 : String, 
+
+		c415 : String, 
+
+		c416 : String, 
+
+		c417 : String, 
+
+		c418 : String, 
+
+		c419 : String, 
+
+		c420 : String, 
+
+		c421 : String, 
+
+		c422 : String, 
+
+		c423 : String, 
+
+		c424 : String, 
+
+		c425 : String, 
+
+		c426 : String, 
+
+		c427 : String, 
+
+		c428 : String, 
+
+		c429 : String, 
+
+		c430 : String, 
+
+		c431 : String, 
+
+		c432 : String, 
+
+		c433 : String, 
+
+		c434 : String, 
+
+		c435 : String, 
+
+		c436 : String, 
+
+		c437 : String, 
+
+		c438 : String, 
+
+		c439 : String, 
+
+		c440 : String, 
+
+		c441 : String, 
+
+		c442 : String, 
+
+		c443 : String, 
+
+		c444 : String, 
+
+		c445 : String, 
+
+		c446 : String, 
+
+		c447 : String, 
+
+		c448 : String, 
+
+		c449 : String, 
+
+		c450 : String, 
+
+		c451 : String, 
+
+		c452 : String, 
+
+		c453 : String, 
+
+		c454 : String, 
+
+		c455 : String, 
+
+		c456 : String, 
+
+		c457 : String, 
+
+		c458 : String, 
+
+		c459 : String, 
+
+		c460 : String, 
+
+		c461 : String, 
+
+		c462 : String, 
+
+		c463 : String, 
+
+		c464 : String, 
+
+		c465 : String, 
+
+		c466 : String, 
+
+		c467 : String, 
+
+		c468 : String, 
+
+		c469 : String, 
+
+		c470 : String, 
+
+		c471 : String, 
+
+		c472 : String, 
+
+		c473 : String, 
+
+		c474 : String, 
+
+		c475 : String, 
+
+		c476 : String, 
+
+		c477 : String, 
+
+		c478 : String, 
+
+		c479 : String, 
+
+		c480 : String, 
+
+		c481 : String, 
+
+		c482 : String, 
+
+		c483 : String, 
+
+		c484 : String, 
+
+		c485 : String, 
+
+		c486 : String, 
+
+		c487 : String, 
+
+		c488 : String, 
+
+		c489 : String, 
+
+		c490 : String, 
+
+		c491 : String, 
+
+		c492 : String, 
+
+		c493 : String, 
+
+		c494 : String, 
+
+		c495 : String, 
+
+		c496 : String, 
+
+		c497 : String, 
+
+		c498 : String, 
+
+		c499 : String, 
+
+		c500 : String
+	};
+
+	class com.cclip.model.geo.cadastre.aacc.AaccInmueble #8DB4E3 #C5D9F1 {
+
+
+		id : String, 
+
+		erased : Boolean = false, 
+
+		auditDateCreate : Timestamp, 
+
+		auditUserCreate : String, 
+
+		c1 : String, 
+
+		c2 : String, 
+
+		c3 : String, 
+
+		c4 : String, 
+
+		c5 : String, 
+
+		c6 : String, 
+
+		c7 : String, 
+
+		c8 : String, 
+
+		c9 : String, 
+
+		c10 : String, 
+
+		c11 : String, 
+
+		c12 : String, 
+
+		c13 : String, 
+
+		c14 : String, 
+
+		c15 : String, 
+
+		c16 : String, 
+
+		c17 : String, 
+
+		c18 : String, 
+
+		c19 : String, 
+
+		c20 : String, 
+
+		c21 : String, 
+
+		c22 : String, 
+
+		c23 : String, 
+
+		c24 : String, 
+
+		c25 : String, 
+
+		c26 : String, 
+
+		c27 : String, 
+
+		c28 : String, 
+
+		c29 : String, 
+
+		c30 : String, 
+
+		c31 : String, 
+
+		c32 : String, 
+
+		c33 : String, 
+
+		c34 : String, 
+
+		c35 : String, 
+
+		c36 : String, 
+
+		c37 : String, 
+
+		c38 : String, 
+
+		c39 : String, 
+
+		c40 : String, 
+
+		c41 : String, 
+
+		c42 : String, 
+
+		c43 : String, 
+
+		c44 : String, 
+
+		c45 : String, 
+
+		c46 : String, 
+
+		c47 : String, 
+
+		c48 : String, 
+
+		c49 : String, 
+
+		c50 : String, 
+
+		c51 : String, 
+
+		c52 : String, 
+
+		c53 : String, 
+
+		c54 : String, 
+
+		c55 : String, 
+
+		c56 : String, 
+
+		c57 : String, 
+
+		c58 : String, 
+
+		c59 : String, 
+
+		c60 : String, 
+
+		c61 : String, 
+
+		c62 : String, 
+
+		c63 : String, 
+
+		c64 : String, 
+
+		c65 : String, 
+
+		c66 : String, 
+
+		c67 : String, 
+
+		c68 : String, 
+
+		c69 : String, 
+
+		c70 : String, 
+
+		c71 : String, 
+
+		c72 : String, 
+
+		c73 : String, 
+
+		c74 : String, 
+
+		c75 : String, 
+
+		c76 : String, 
+
+		c77 : String, 
+
+		c78 : String, 
+
+		c79 : String, 
+
+		c80 : String, 
+
+		c81 : String, 
+
+		c82 : String, 
+
+		c83 : String, 
+
+		c84 : String, 
+
+		c85 : String, 
+
+		c86 : String, 
+
+		c87 : String, 
+
+		c88 : String, 
+
+		c89 : String, 
+
+		c90 : String, 
+
+		c91 : String, 
+
+		c92 : String, 
+
+		c93 : String, 
+
+		c94 : String, 
+
+		c95 : String, 
+
+		c96 : String, 
+
+		c97 : String, 
+
+		c98 : String, 
+
+		c99 : String, 
+
+		c100 : String, 
+
+		c101 : String, 
+
+		c102 : String, 
+
+		c103 : String, 
+
+		c104 : String, 
+
+		c105 : String, 
+
+		c106 : String, 
+
+		c107 : String, 
+
+		c108 : String, 
+
+		c109 : String, 
+
+		c110 : String, 
+
+		c111 : String, 
+
+		c112 : String, 
+
+		c113 : String, 
+
+		c114 : String, 
+
+		c115 : String, 
+
+		c116 : String, 
+
+		c117 : String, 
+
+		c118 : String, 
+
+		c119 : String, 
+
+		c120 : String, 
+
+		c121 : String, 
+
+		c122 : String, 
+
+		c123 : String, 
+
+		c124 : String, 
+
+		c125 : String, 
+
+		c126 : String, 
+
+		c127 : String, 
+
+		c128 : String, 
+
+		c129 : String, 
+
+		c130 : String, 
+
+		c131 : String, 
+
+		c132 : String, 
+
+		c133 : String, 
+
+		c134 : String, 
+
+		c135 : String, 
+
+		c136 : String, 
+
+		c137 : String, 
+
+		c138 : String, 
+
+		c139 : String, 
+
+		c140 : String, 
+
+		c141 : String, 
+
+		c142 : String, 
+
+		c143 : String, 
+
+		c144 : String, 
+
+		c145 : String, 
+
+		c146 : String, 
+
+		c147 : String, 
+
+		c148 : String, 
+
+		c149 : String, 
+
+		c150 : String, 
+
+		c151 : String, 
+
+		c152 : String, 
+
+		c153 : String, 
+
+		c154 : String, 
+
+		c155 : String, 
+
+		c156 : String, 
+
+		c157 : String, 
+
+		c158 : String, 
+
+		c159 : String, 
+
+		c160 : String, 
+
+		c161 : String, 
+
+		c162 : String, 
+
+		c163 : String, 
+
+		c164 : String, 
+
+		c165 : String, 
+
+		c166 : String, 
+
+		c167 : String, 
+
+		c168 : String, 
+
+		c169 : String, 
+
+		c170 : String, 
+
+		c171 : String, 
+
+		c172 : String, 
+
+		c173 : String, 
+
+		c174 : String, 
+
+		c175 : String, 
+
+		c176 : String, 
+
+		c177 : String, 
+
+		c178 : String, 
+
+		c179 : String, 
+
+		c180 : String, 
+
+		c181 : String, 
+
+		c182 : String, 
+
+		c183 : String, 
+
+		c184 : String, 
+
+		c185 : String, 
+
+		c186 : String, 
+
+		c187 : String, 
+
+		c188 : String, 
+
+		c189 : String, 
+
+		c190 : String, 
+
+		c191 : String, 
+
+		c192 : String, 
+
+		c193 : String, 
+
+		c194 : String, 
+
+		c195 : String, 
+
+		c196 : String, 
+
+		c197 : String, 
+
+		c198 : String, 
+
+		c199 : String, 
+
+		c200 : String, 
+
+		c201 : String, 
+
+		c202 : String, 
+
+		c203 : String, 
+
+		c204 : String, 
+
+		c205 : String, 
+
+		c206 : String, 
+
+		c207 : String, 
+
+		c208 : String, 
+
+		c209 : String, 
+
+		c210 : String, 
+
+		c211 : String, 
+
+		c212 : String, 
+
+		c213 : String, 
+
+		c214 : String, 
+
+		c215 : String, 
+
+		c216 : String, 
+
+		c217 : String, 
+
+		c218 : String, 
+
+		c219 : String, 
+
+		c220 : String, 
+
+		c221 : String, 
+
+		c222 : String, 
+
+		c223 : String, 
+
+		c224 : String, 
+
+		c225 : String, 
+
+		c226 : String, 
+
+		c227 : String, 
+
+		c228 : String, 
+
+		c229 : String, 
+
+		c230 : String, 
+
+		c231 : String, 
+
+		c232 : String, 
+
+		c233 : String, 
+
+		c234 : String, 
+
+		c235 : String, 
+
+		c236 : String, 
+
+		c237 : String, 
+
+		c238 : String, 
+
+		c239 : String, 
+
+		c240 : String, 
+
+		c241 : String, 
+
+		c242 : String, 
+
+		c243 : String, 
+
+		c244 : String, 
+
+		c245 : String, 
+
+		c246 : String, 
+
+		c247 : String, 
+
+		c248 : String, 
+
+		c249 : String, 
+
+		c250 : String, 
+
+		c251 : String, 
+
+		c252 : String, 
+
+		c253 : String, 
+
+		c254 : String, 
+
+		c255 : String, 
+
+		c256 : String, 
+
+		c257 : String, 
+
+		c258 : String, 
+
+		c259 : String, 
+
+		c260 : String, 
+
+		c261 : String, 
+
+		c262 : String, 
+
+		c263 : String, 
+
+		c264 : String, 
+
+		c265 : String, 
+
+		c266 : String, 
+
+		c267 : String, 
+
+		c268 : String, 
+
+		c269 : String, 
+
+		c270 : String, 
+
+		c271 : String, 
+
+		c272 : String, 
+
+		c273 : String, 
+
+		c274 : String, 
+
+		c275 : String, 
+
+		c276 : String, 
+
+		c277 : String, 
+
+		c278 : String, 
+
+		c279 : String, 
+
+		c280 : String, 
+
+		c281 : String, 
+
+		c282 : String, 
+
+		c283 : String, 
+
+		c284 : String, 
+
+		c285 : String, 
+
+		c286 : String, 
+
+		c287 : String, 
+
+		c288 : String, 
+
+		c289 : String, 
+
+		c290 : String, 
+
+		c291 : String, 
+
+		c292 : String, 
+
+		c293 : String, 
+
+		c294 : String, 
+
+		c295 : String, 
+
+		c296 : String, 
+
+		c297 : String, 
+
+		c298 : String, 
+
+		c299 : String, 
+
+		c300 : String, 
+
+		c301 : String, 
+
+		c302 : String, 
+
+		c303 : String, 
+
+		c304 : String, 
+
+		c305 : String, 
+
+		c306 : String, 
+
+		c307 : String, 
+
+		c308 : String, 
+
+		c309 : String, 
+
+		c310 : String, 
+
+		c311 : String, 
+
+		c312 : String, 
+
+		c313 : String, 
+
+		c314 : String, 
+
+		c315 : String, 
+
+		c316 : String, 
+
+		c317 : String, 
+
+		c318 : String, 
+
+		c319 : String, 
+
+		c320 : String, 
+
+		c321 : String, 
+
+		c322 : String, 
+
+		c323 : String, 
+
+		c324 : String, 
+
+		c325 : String, 
+
+		c326 : String, 
+
+		c327 : String, 
+
+		c328 : String, 
+
+		c329 : String, 
+
+		c330 : String, 
+
+		c331 : String, 
+
+		c332 : String, 
+
+		c333 : String, 
+
+		c334 : String, 
+
+		c335 : String, 
+
+		c336 : String, 
+
+		c337 : String, 
+
+		c338 : String, 
+
+		c339 : String, 
+
+		c340 : String, 
+
+		c341 : String, 
+
+		c342 : String, 
+
+		c343 : String, 
+
+		c344 : String, 
+
+		c345 : String, 
+
+		c346 : String, 
+
+		c347 : String, 
+
+		c348 : String, 
+
+		c349 : String, 
+
+		c350 : String, 
+
+		c351 : String, 
+
+		c352 : String, 
+
+		c353 : String, 
+
+		c354 : String, 
+
+		c355 : String, 
+
+		c356 : String, 
+
+		c357 : String, 
+
+		c358 : String, 
+
+		c359 : String, 
+
+		c360 : String, 
+
+		c361 : String, 
+
+		c362 : String, 
+
+		c363 : String, 
+
+		c364 : String, 
+
+		c365 : String, 
+
+		c366 : String, 
+
+		c367 : String, 
+
+		c368 : String, 
+
+		c369 : String, 
+
+		c370 : String, 
+
+		c371 : String, 
+
+		c372 : String, 
+
+		c373 : String, 
+
+		c374 : String, 
+
+		c375 : String, 
+
+		c376 : String, 
+
+		c377 : String, 
+
+		c378 : String, 
+
+		c379 : String, 
+
+		c380 : String, 
+
+		c381 : String, 
+
+		c382 : String, 
+
+		c383 : String, 
+
+		c384 : String, 
+
+		c385 : String, 
+
+		c386 : String, 
+
+		c387 : String, 
+
+		c388 : String, 
+
+		c389 : String, 
+
+		c390 : String, 
+
+		c391 : String, 
+
+		c392 : String, 
+
+		c393 : String, 
+
+		c394 : String, 
+
+		c395 : String, 
+
+		c396 : String, 
+
+		c397 : String, 
+
+		c398 : String, 
+
+		c399 : String, 
+
+		c400 : String, 
+
+		c401 : String, 
+
+		c402 : String, 
+
+		c403 : String, 
+
+		c404 : String, 
+
+		c405 : String, 
+
+		c406 : String, 
+
+		c407 : String, 
+
+		c408 : String, 
+
+		c409 : String, 
+
+		c410 : String, 
+
+		c411 : String, 
+
+		c412 : String, 
+
+		c413 : String, 
+
+		c414 : String, 
+
+		c415 : String, 
+
+		c416 : String, 
+
+		c417 : String, 
+
+		c418 : String, 
+
+		c419 : String, 
+
+		c420 : String, 
+
+		c421 : String, 
+
+		c422 : String, 
+
+		c423 : String, 
+
+		c424 : String, 
+
+		c425 : String, 
+
+		c426 : String, 
+
+		c427 : String, 
+
+		c428 : String, 
+
+		c429 : String, 
+
+		c430 : String, 
+
+		c431 : String, 
+
+		c432 : String, 
+
+		c433 : String, 
+
+		c434 : String, 
+
+		c435 : String, 
+
+		c436 : String, 
+
+		c437 : String, 
+
+		c438 : String, 
+
+		c439 : String, 
+
+		c440 : String, 
+
+		c441 : String, 
+
+		c442 : String, 
+
+		c443 : String, 
+
+		c444 : String, 
+
+		c445 : String, 
+
+		c446 : String, 
+
+		c447 : String, 
+
+		c448 : String, 
+
+		c449 : String, 
+
+		c450 : String, 
+
+		c451 : String, 
+
+		c452 : String, 
+
+		c453 : String, 
+
+		c454 : String, 
+
+		c455 : String, 
+
+		c456 : String, 
+
+		c457 : String, 
+
+		c458 : String, 
+
+		c459 : String, 
+
+		c460 : String, 
+
+		c461 : String, 
+
+		c462 : String, 
+
+		c463 : String, 
+
+		c464 : String, 
+
+		c465 : String, 
+
+		c466 : String, 
+
+		c467 : String, 
+
+		c468 : String, 
+
+		c469 : String, 
+
+		c470 : String, 
+
+		c471 : String, 
+
+		c472 : String, 
+
+		c473 : String, 
+
+		c474 : String, 
+
+		c475 : String, 
+
+		c476 : String, 
+
+		c477 : String, 
+
+		c478 : String, 
+
+		c479 : String, 
+
+		c480 : String, 
+
+		c481 : String, 
+
+		c482 : String, 
+
+		c483 : String, 
+
+		c484 : String, 
+
+		c485 : String, 
+
+		c486 : String, 
+
+		c487 : String, 
+
+		c488 : String, 
+
+		c489 : String, 
+
+		c490 : String, 
+
+		c491 : String, 
+
+		c492 : String, 
+
+		c493 : String, 
+
+		c494 : String, 
+
+		c495 : String, 
+
+		c496 : String, 
+
+		c497 : String, 
+
+		c498 : String, 
+
+		c499 : String, 
+
+		c500 : String
+	};
+
+	class com.cclip.model.geo.cadastre.aacc.AaccSubcuenta #8DB4E3 #C5D9F1 {
+
+
+		id : String, 
+
+		erased : Boolean = false, 
+
+		auditDateCreate : Timestamp, 
+
+		auditUserCreate : String, 
+
+		c1 : String, 
+
+		c2 : String, 
+
+		c3 : String, 
+
+		c4 : String, 
+
+		c5 : String, 
+
+		c6 : String, 
+
+		c7 : String, 
+
+		c8 : String, 
+
+		c9 : String, 
+
+		c10 : String, 
+
+		c11 : String, 
+
+		c12 : String, 
+
+		c13 : String, 
+
+		c14 : String, 
+
+		c15 : String, 
+
+		c16 : String, 
+
+		c17 : String, 
+
+		c18 : String, 
+
+		c19 : String, 
+
+		c20 : String, 
+
+		c21 : String, 
+
+		c22 : String, 
+
+		c23 : String, 
+
+		c24 : String, 
+
+		c25 : String, 
+
+		c26 : String, 
+
+		c27 : String, 
+
+		c28 : String, 
+
+		c29 : String, 
+
+		c30 : String, 
+
+		c31 : String, 
+
+		c32 : String, 
+
+		c33 : String, 
+
+		c34 : String, 
+
+		c35 : String, 
+
+		c36 : String, 
+
+		c37 : String, 
+
+		c38 : String, 
+
+		c39 : String, 
+
+		c40 : String, 
+
+		c41 : String, 
+
+		c42 : String, 
+
+		c43 : String, 
+
+		c44 : String, 
+
+		c45 : String, 
+
+		c46 : String, 
+
+		c47 : String, 
+
+		c48 : String, 
+
+		c49 : String, 
+
+		c50 : String, 
+
+		c51 : String, 
+
+		c52 : String, 
+
+		c53 : String, 
+
+		c54 : String, 
+
+		c55 : String, 
+
+		c56 : String, 
+
+		c57 : String, 
+
+		c58 : String, 
+
+		c59 : String, 
+
+		c60 : String, 
+
+		c61 : String, 
+
+		c62 : String, 
+
+		c63 : String, 
+
+		c64 : String, 
+
+		c65 : String, 
+
+		c66 : String, 
+
+		c67 : String, 
+
+		c68 : String, 
+
+		c69 : String, 
+
+		c70 : String, 
+
+		c71 : String, 
+
+		c72 : String, 
+
+		c73 : String, 
+
+		c74 : String, 
+
+		c75 : String, 
+
+		c76 : String, 
+
+		c77 : String, 
+
+		c78 : String, 
+
+		c79 : String, 
+
+		c80 : String, 
+
+		c81 : String, 
+
+		c82 : String, 
+
+		c83 : String, 
+
+		c84 : String, 
+
+		c85 : String, 
+
+		c86 : String, 
+
+		c87 : String, 
+
+		c88 : String, 
+
+		c89 : String, 
+
+		c90 : String, 
+
+		c91 : String, 
+
+		c92 : String, 
+
+		c93 : String, 
+
+		c94 : String, 
+
+		c95 : String, 
+
+		c96 : String, 
+
+		c97 : String, 
+
+		c98 : String, 
+
+		c99 : String, 
+
+		c100 : String, 
+
+		c101 : String, 
+
+		c102 : String, 
+
+		c103 : String, 
+
+		c104 : String, 
+
+		c105 : String, 
+
+		c106 : String, 
+
+		c107 : String, 
+
+		c108 : String, 
+
+		c109 : String, 
+
+		c110 : String, 
+
+		c111 : String, 
+
+		c112 : String, 
+
+		c113 : String, 
+
+		c114 : String, 
+
+		c115 : String, 
+
+		c116 : String, 
+
+		c117 : String, 
+
+		c118 : String, 
+
+		c119 : String, 
+
+		c120 : String, 
+
+		c121 : String, 
+
+		c122 : String, 
+
+		c123 : String, 
+
+		c124 : String, 
+
+		c125 : String, 
+
+		c126 : String, 
+
+		c127 : String, 
+
+		c128 : String, 
+
+		c129 : String, 
+
+		c130 : String, 
+
+		c131 : String, 
+
+		c132 : String, 
+
+		c133 : String, 
+
+		c134 : String, 
+
+		c135 : String, 
+
+		c136 : String, 
+
+		c137 : String, 
+
+		c138 : String, 
+
+		c139 : String, 
+
+		c140 : String, 
+
+		c141 : String, 
+
+		c142 : String, 
+
+		c143 : String, 
+
+		c144 : String, 
+
+		c145 : String, 
+
+		c146 : String, 
+
+		c147 : String, 
+
+		c148 : String, 
+
+		c149 : String, 
+
+		c150 : String, 
+
+		c151 : String, 
+
+		c152 : String, 
+
+		c153 : String, 
+
+		c154 : String, 
+
+		c155 : String, 
+
+		c156 : String, 
+
+		c157 : String, 
+
+		c158 : String, 
+
+		c159 : String, 
+
+		c160 : String, 
+
+		c161 : String, 
+
+		c162 : String, 
+
+		c163 : String, 
+
+		c164 : String, 
+
+		c165 : String, 
+
+		c166 : String, 
+
+		c167 : String, 
+
+		c168 : String, 
+
+		c169 : String, 
+
+		c170 : String, 
+
+		c171 : String, 
+
+		c172 : String, 
+
+		c173 : String, 
+
+		c174 : String, 
+
+		c175 : String, 
+
+		c176 : String, 
+
+		c177 : String, 
+
+		c178 : String, 
+
+		c179 : String, 
+
+		c180 : String, 
+
+		c181 : String, 
+
+		c182 : String, 
+
+		c183 : String, 
+
+		c184 : String, 
+
+		c185 : String, 
+
+		c186 : String, 
+
+		c187 : String, 
+
+		c188 : String, 
+
+		c189 : String, 
+
+		c190 : String, 
+
+		c191 : String, 
+
+		c192 : String, 
+
+		c193 : String, 
+
+		c194 : String, 
+
+		c195 : String, 
+
+		c196 : String, 
+
+		c197 : String, 
+
+		c198 : String, 
+
+		c199 : String, 
+
+		c200 : String, 
+
+		c201 : String, 
+
+		c202 : String, 
+
+		c203 : String, 
+
+		c204 : String, 
+
+		c205 : String, 
+
+		c206 : String, 
+
+		c207 : String, 
+
+		c208 : String, 
+
+		c209 : String, 
+
+		c210 : String, 
+
+		c211 : String, 
+
+		c212 : String, 
+
+		c213 : String, 
+
+		c214 : String, 
+
+		c215 : String, 
+
+		c216 : String, 
+
+		c217 : String, 
+
+		c218 : String, 
+
+		c219 : String, 
+
+		c220 : String, 
+
+		c221 : String, 
+
+		c222 : String, 
+
+		c223 : String, 
+
+		c224 : String, 
+
+		c225 : String, 
+
+		c226 : String, 
+
+		c227 : String, 
+
+		c228 : String, 
+
+		c229 : String, 
+
+		c230 : String, 
+
+		c231 : String, 
+
+		c232 : String, 
+
+		c233 : String, 
+
+		c234 : String, 
+
+		c235 : String, 
+
+		c236 : String, 
+
+		c237 : String, 
+
+		c238 : String, 
+
+		c239 : String, 
+
+		c240 : String, 
+
+		c241 : String, 
+
+		c242 : String, 
+
+		c243 : String, 
+
+		c244 : String, 
+
+		c245 : String, 
+
+		c246 : String, 
+
+		c247 : String, 
+
+		c248 : String, 
+
+		c249 : String, 
+
+		c250 : String, 
+
+		c251 : String, 
+
+		c252 : String, 
+
+		c253 : String, 
+
+		c254 : String, 
+
+		c255 : String, 
+
+		c256 : String, 
+
+		c257 : String, 
+
+		c258 : String, 
+
+		c259 : String, 
+
+		c260 : String, 
+
+		c261 : String, 
+
+		c262 : String, 
+
+		c263 : String, 
+
+		c264 : String, 
+
+		c265 : String, 
+
+		c266 : String, 
+
+		c267 : String, 
+
+		c268 : String, 
+
+		c269 : String, 
+
+		c270 : String, 
+
+		c271 : String, 
+
+		c272 : String, 
+
+		c273 : String, 
+
+		c274 : String, 
+
+		c275 : String, 
+
+		c276 : String, 
+
+		c277 : String, 
+
+		c278 : String, 
+
+		c279 : String, 
+
+		c280 : String, 
+
+		c281 : String, 
+
+		c282 : String, 
+
+		c283 : String, 
+
+		c284 : String, 
+
+		c285 : String, 
+
+		c286 : String, 
+
+		c287 : String, 
+
+		c288 : String, 
+
+		c289 : String, 
+
+		c290 : String, 
+
+		c291 : String, 
+
+		c292 : String, 
+
+		c293 : String, 
+
+		c294 : String, 
+
+		c295 : String, 
+
+		c296 : String, 
+
+		c297 : String, 
+
+		c298 : String, 
+
+		c299 : String, 
+
+		c300 : String, 
+
+		c301 : String, 
+
+		c302 : String, 
+
+		c303 : String, 
+
+		c304 : String, 
+
+		c305 : String, 
+
+		c306 : String, 
+
+		c307 : String, 
+
+		c308 : String, 
+
+		c309 : String, 
+
+		c310 : String, 
+
+		c311 : String, 
+
+		c312 : String, 
+
+		c313 : String, 
+
+		c314 : String, 
+
+		c315 : String, 
+
+		c316 : String, 
+
+		c317 : String, 
+
+		c318 : String, 
+
+		c319 : String, 
+
+		c320 : String, 
+
+		c321 : String, 
+
+		c322 : String, 
+
+		c323 : String, 
+
+		c324 : String, 
+
+		c325 : String, 
+
+		c326 : String, 
+
+		c327 : String, 
+
+		c328 : String, 
+
+		c329 : String, 
+
+		c330 : String, 
+
+		c331 : String, 
+
+		c332 : String, 
+
+		c333 : String, 
+
+		c334 : String, 
+
+		c335 : String, 
+
+		c336 : String, 
+
+		c337 : String, 
+
+		c338 : String, 
+
+		c339 : String, 
+
+		c340 : String, 
+
+		c341 : String, 
+
+		c342 : String, 
+
+		c343 : String, 
+
+		c344 : String, 
+
+		c345 : String, 
+
+		c346 : String, 
+
+		c347 : String, 
+
+		c348 : String, 
+
+		c349 : String, 
+
+		c350 : String, 
+
+		c351 : String, 
+
+		c352 : String, 
+
+		c353 : String, 
+
+		c354 : String, 
+
+		c355 : String, 
+
+		c356 : String, 
+
+		c357 : String, 
+
+		c358 : String, 
+
+		c359 : String, 
+
+		c360 : String, 
+
+		c361 : String, 
+
+		c362 : String, 
+
+		c363 : String, 
+
+		c364 : String, 
+
+		c365 : String, 
+
+		c366 : String, 
+
+		c367 : String, 
+
+		c368 : String, 
+
+		c369 : String, 
+
+		c370 : String, 
+
+		c371 : String, 
+
+		c372 : String, 
+
+		c373 : String, 
+
+		c374 : String, 
+
+		c375 : String, 
+
+		c376 : String, 
+
+		c377 : String, 
+
+		c378 : String, 
+
+		c379 : String, 
+
+		c380 : String, 
+
+		c381 : String, 
+
+		c382 : String, 
+
+		c383 : String, 
+
+		c384 : String, 
+
+		c385 : String, 
+
+		c386 : String, 
+
+		c387 : String, 
+
+		c388 : String, 
+
+		c389 : String, 
+
+		c390 : String, 
+
+		c391 : String, 
+
+		c392 : String, 
+
+		c393 : String, 
+
+		c394 : String, 
+
+		c395 : String, 
+
+		c396 : String, 
+
+		c397 : String, 
+
+		c398 : String, 
+
+		c399 : String, 
+
+		c400 : String, 
+
+		c401 : String, 
+
+		c402 : String, 
+
+		c403 : String, 
+
+		c404 : String, 
+
+		c405 : String, 
+
+		c406 : String, 
+
+		c407 : String, 
+
+		c408 : String, 
+
+		c409 : String, 
+
+		c410 : String, 
+
+		c411 : String, 
+
+		c412 : String, 
+
+		c413 : String, 
+
+		c414 : String, 
+
+		c415 : String, 
+
+		c416 : String, 
+
+		c417 : String, 
+
+		c418 : String, 
+
+		c419 : String, 
+
+		c420 : String, 
+
+		c421 : String, 
+
+		c422 : String, 
+
+		c423 : String, 
+
+		c424 : String, 
+
+		c425 : String, 
+
+		c426 : String, 
+
+		c427 : String, 
+
+		c428 : String, 
+
+		c429 : String, 
+
+		c430 : String, 
+
+		c431 : String, 
+
+		c432 : String, 
+
+		c433 : String, 
+
+		c434 : String, 
+
+		c435 : String, 
+
+		c436 : String, 
+
+		c437 : String, 
+
+		c438 : String, 
+
+		c439 : String, 
+
+		c440 : String, 
+
+		c441 : String, 
+
+		c442 : String, 
+
+		c443 : String, 
+
+		c444 : String, 
+
+		c445 : String, 
+
+		c446 : String, 
+
+		c447 : String, 
+
+		c448 : String, 
+
+		c449 : String, 
+
+		c450 : String, 
+
+		c451 : String, 
+
+		c452 : String, 
+
+		c453 : String, 
+
+		c454 : String, 
+
+		c455 : String, 
+
+		c456 : String, 
+
+		c457 : String, 
+
+		c458 : String, 
+
+		c459 : String, 
+
+		c460 : String, 
+
+		c461 : String, 
+
+		c462 : String, 
+
+		c463 : String, 
+
+		c464 : String, 
+
+		c465 : String, 
+
+		c466 : String, 
+
+		c467 : String, 
+
+		c468 : String, 
+
+		c469 : String, 
+
+		c470 : String, 
+
+		c471 : String, 
+
+		c472 : String, 
+
+		c473 : String, 
+
+		c474 : String, 
+
+		c475 : String, 
+
+		c476 : String, 
+
+		c477 : String, 
+
+		c478 : String, 
+
+		c479 : String, 
+
+		c480 : String, 
+
+		c481 : String, 
+
+		c482 : String, 
+
+		c483 : String, 
+
+		c484 : String, 
+
+		c485 : String, 
+
+		c486 : String, 
+
+		c487 : String, 
+
+		c488 : String, 
+
+		c489 : String, 
+
+		c490 : String, 
+
+		c491 : String, 
+
+		c492 : String, 
+
+		c493 : String, 
+
+		c494 : String, 
+
+		c495 : String, 
+
+		c496 : String, 
+
+		c497 : String, 
+
+		c498 : String, 
+
+		c499 : String, 
+
+		c500 : String
+	};
+
+	class com.cclip.model.geo.cadastre.aacc.AaccSuperficie #8DB4E3 #C5D9F1 {
+
+
+		id : String, 
+
+		erased : Boolean = false, 
+
+		auditDateCreate : Timestamp, 
+
+		auditUserCreate : String, 
+
+		c1 : String, 
+
+		c2 : String, 
+
+		c3 : String, 
+
+		c4 : String, 
+
+		c5 : String, 
+
+		c6 : String, 
+
+		c7 : String, 
+
+		c8 : String, 
+
+		c9 : String, 
+
+		c10 : String, 
+
+		c11 : String, 
+
+		c12 : String, 
+
+		c13 : String, 
+
+		c14 : String, 
+
+		c15 : String, 
+
+		c16 : String, 
+
+		c17 : String, 
+
+		c18 : String, 
+
+		c19 : String, 
+
+		c20 : String, 
+
+		c21 : String, 
+
+		c22 : String, 
+
+		c23 : String, 
+
+		c24 : String, 
+
+		c25 : String, 
+
+		c26 : String, 
+
+		c27 : String, 
+
+		c28 : String, 
+
+		c29 : String, 
+
+		c30 : String, 
+
+		c31 : String, 
+
+		c32 : String, 
+
+		c33 : String, 
+
+		c34 : String, 
+
+		c35 : String, 
+
+		c36 : String, 
+
+		c37 : String, 
+
+		c38 : String, 
+
+		c39 : String, 
+
+		c40 : String, 
+
+		c41 : String, 
+
+		c42 : String, 
+
+		c43 : String, 
+
+		c44 : String, 
+
+		c45 : String, 
+
+		c46 : String, 
+
+		c47 : String, 
+
+		c48 : String, 
+
+		c49 : String, 
+
+		c50 : String, 
+
+		c51 : String, 
+
+		c52 : String, 
+
+		c53 : String, 
+
+		c54 : String, 
+
+		c55 : String, 
+
+		c56 : String, 
+
+		c57 : String, 
+
+		c58 : String, 
+
+		c59 : String, 
+
+		c60 : String, 
+
+		c61 : String, 
+
+		c62 : String, 
+
+		c63 : String, 
+
+		c64 : String, 
+
+		c65 : String, 
+
+		c66 : String, 
+
+		c67 : String, 
+
+		c68 : String, 
+
+		c69 : String, 
+
+		c70 : String, 
+
+		c71 : String, 
+
+		c72 : String, 
+
+		c73 : String, 
+
+		c74 : String, 
+
+		c75 : String, 
+
+		c76 : String, 
+
+		c77 : String, 
+
+		c78 : String, 
+
+		c79 : String, 
+
+		c80 : String, 
+
+		c81 : String, 
+
+		c82 : String, 
+
+		c83 : String, 
+
+		c84 : String, 
+
+		c85 : String, 
+
+		c86 : String, 
+
+		c87 : String, 
+
+		c88 : String, 
+
+		c89 : String, 
+
+		c90 : String, 
+
+		c91 : String, 
+
+		c92 : String, 
+
+		c93 : String, 
+
+		c94 : String, 
+
+		c95 : String, 
+
+		c96 : String, 
+
+		c97 : String, 
+
+		c98 : String, 
+
+		c99 : String, 
+
+		c100 : String, 
+
+		c101 : String, 
+
+		c102 : String, 
+
+		c103 : String, 
+
+		c104 : String, 
+
+		c105 : String, 
+
+		c106 : String, 
+
+		c107 : String, 
+
+		c108 : String, 
+
+		c109 : String, 
+
+		c110 : String, 
+
+		c111 : String, 
+
+		c112 : String, 
+
+		c113 : String, 
+
+		c114 : String, 
+
+		c115 : String, 
+
+		c116 : String, 
+
+		c117 : String, 
+
+		c118 : String, 
+
+		c119 : String, 
+
+		c120 : String, 
+
+		c121 : String, 
+
+		c122 : String, 
+
+		c123 : String, 
+
+		c124 : String, 
+
+		c125 : String, 
+
+		c126 : String, 
+
+		c127 : String, 
+
+		c128 : String, 
+
+		c129 : String, 
+
+		c130 : String, 
+
+		c131 : String, 
+
+		c132 : String, 
+
+		c133 : String, 
+
+		c134 : String, 
+
+		c135 : String, 
+
+		c136 : String, 
+
+		c137 : String, 
+
+		c138 : String, 
+
+		c139 : String, 
+
+		c140 : String, 
+
+		c141 : String, 
+
+		c142 : String, 
+
+		c143 : String, 
+
+		c144 : String, 
+
+		c145 : String, 
+
+		c146 : String, 
+
+		c147 : String, 
+
+		c148 : String, 
+
+		c149 : String, 
+
+		c150 : String, 
+
+		c151 : String, 
+
+		c152 : String, 
+
+		c153 : String, 
+
+		c154 : String, 
+
+		c155 : String, 
+
+		c156 : String, 
+
+		c157 : String, 
+
+		c158 : String, 
+
+		c159 : String, 
+
+		c160 : String, 
+
+		c161 : String, 
+
+		c162 : String, 
+
+		c163 : String, 
+
+		c164 : String, 
+
+		c165 : String, 
+
+		c166 : String, 
+
+		c167 : String, 
+
+		c168 : String, 
+
+		c169 : String, 
+
+		c170 : String, 
+
+		c171 : String, 
+
+		c172 : String, 
+
+		c173 : String, 
+
+		c174 : String, 
+
+		c175 : String, 
+
+		c176 : String, 
+
+		c177 : String, 
+
+		c178 : String, 
+
+		c179 : String, 
+
+		c180 : String, 
+
+		c181 : String, 
+
+		c182 : String, 
+
+		c183 : String, 
+
+		c184 : String, 
+
+		c185 : String, 
+
+		c186 : String, 
+
+		c187 : String, 
+
+		c188 : String, 
+
+		c189 : String, 
+
+		c190 : String, 
+
+		c191 : String, 
+
+		c192 : String, 
+
+		c193 : String, 
+
+		c194 : String, 
+
+		c195 : String, 
+
+		c196 : String, 
+
+		c197 : String, 
+
+		c198 : String, 
+
+		c199 : String, 
+
+		c200 : String, 
+
+		c201 : String, 
+
+		c202 : String, 
+
+		c203 : String, 
+
+		c204 : String, 
+
+		c205 : String, 
+
+		c206 : String, 
+
+		c207 : String, 
+
+		c208 : String, 
+
+		c209 : String, 
+
+		c210 : String, 
+
+		c211 : String, 
+
+		c212 : String, 
+
+		c213 : String, 
+
+		c214 : String, 
+
+		c215 : String, 
+
+		c216 : String, 
+
+		c217 : String, 
+
+		c218 : String, 
+
+		c219 : String, 
+
+		c220 : String, 
+
+		c221 : String, 
+
+		c222 : String, 
+
+		c223 : String, 
+
+		c224 : String, 
+
+		c225 : String, 
+
+		c226 : String, 
+
+		c227 : String, 
+
+		c228 : String, 
+
+		c229 : String, 
+
+		c230 : String, 
+
+		c231 : String, 
+
+		c232 : String, 
+
+		c233 : String, 
+
+		c234 : String, 
+
+		c235 : String, 
+
+		c236 : String, 
+
+		c237 : String, 
+
+		c238 : String, 
+
+		c239 : String, 
+
+		c240 : String, 
+
+		c241 : String, 
+
+		c242 : String, 
+
+		c243 : String, 
+
+		c244 : String, 
+
+		c245 : String, 
+
+		c246 : String, 
+
+		c247 : String, 
+
+		c248 : String, 
+
+		c249 : String, 
+
+		c250 : String, 
+
+		c251 : String, 
+
+		c252 : String, 
+
+		c253 : String, 
+
+		c254 : String, 
+
+		c255 : String, 
+
+		c256 : String, 
+
+		c257 : String, 
+
+		c258 : String, 
+
+		c259 : String, 
+
+		c260 : String, 
+
+		c261 : String, 
+
+		c262 : String, 
+
+		c263 : String, 
+
+		c264 : String, 
+
+		c265 : String, 
+
+		c266 : String, 
+
+		c267 : String, 
+
+		c268 : String, 
+
+		c269 : String, 
+
+		c270 : String, 
+
+		c271 : String, 
+
+		c272 : String, 
+
+		c273 : String, 
+
+		c274 : String, 
+
+		c275 : String, 
+
+		c276 : String, 
+
+		c277 : String, 
+
+		c278 : String, 
+
+		c279 : String, 
+
+		c280 : String, 
+
+		c281 : String, 
+
+		c282 : String, 
+
+		c283 : String, 
+
+		c284 : String, 
+
+		c285 : String, 
+
+		c286 : String, 
+
+		c287 : String, 
+
+		c288 : String, 
+
+		c289 : String, 
+
+		c290 : String, 
+
+		c291 : String, 
+
+		c292 : String, 
+
+		c293 : String, 
+
+		c294 : String, 
+
+		c295 : String, 
+
+		c296 : String, 
+
+		c297 : String, 
+
+		c298 : String, 
+
+		c299 : String, 
+
+		c300 : String, 
+
+		c301 : String, 
+
+		c302 : String, 
+
+		c303 : String, 
+
+		c304 : String, 
+
+		c305 : String, 
+
+		c306 : String, 
+
+		c307 : String, 
+
+		c308 : String, 
+
+		c309 : String, 
+
+		c310 : String, 
+
+		c311 : String, 
+
+		c312 : String, 
+
+		c313 : String, 
+
+		c314 : String, 
+
+		c315 : String, 
+
+		c316 : String, 
+
+		c317 : String, 
+
+		c318 : String, 
+
+		c319 : String, 
+
+		c320 : String, 
+
+		c321 : String, 
+
+		c322 : String, 
+
+		c323 : String, 
+
+		c324 : String, 
+
+		c325 : String, 
+
+		c326 : String, 
+
+		c327 : String, 
+
+		c328 : String, 
+
+		c329 : String, 
+
+		c330 : String, 
+
+		c331 : String, 
+
+		c332 : String, 
+
+		c333 : String, 
+
+		c334 : String, 
+
+		c335 : String, 
+
+		c336 : String, 
+
+		c337 : String, 
+
+		c338 : String, 
+
+		c339 : String, 
+
+		c340 : String, 
+
+		c341 : String, 
+
+		c342 : String, 
+
+		c343 : String, 
+
+		c344 : String, 
+
+		c345 : String, 
+
+		c346 : String, 
+
+		c347 : String, 
+
+		c348 : String, 
+
+		c349 : String, 
+
+		c350 : String, 
+
+		c351 : String, 
+
+		c352 : String, 
+
+		c353 : String, 
+
+		c354 : String, 
+
+		c355 : String, 
+
+		c356 : String, 
+
+		c357 : String, 
+
+		c358 : String, 
+
+		c359 : String, 
+
+		c360 : String, 
+
+		c361 : String, 
+
+		c362 : String, 
+
+		c363 : String, 
+
+		c364 : String, 
+
+		c365 : String, 
+
+		c366 : String, 
+
+		c367 : String, 
+
+		c368 : String, 
+
+		c369 : String, 
+
+		c370 : String, 
+
+		c371 : String, 
+
+		c372 : String, 
+
+		c373 : String, 
+
+		c374 : String, 
+
+		c375 : String, 
+
+		c376 : String, 
+
+		c377 : String, 
+
+		c378 : String, 
+
+		c379 : String, 
+
+		c380 : String, 
+
+		c381 : String, 
+
+		c382 : String, 
+
+		c383 : String, 
+
+		c384 : String, 
+
+		c385 : String, 
+
+		c386 : String, 
+
+		c387 : String, 
+
+		c388 : String, 
+
+		c389 : String, 
+
+		c390 : String, 
+
+		c391 : String, 
+
+		c392 : String, 
+
+		c393 : String, 
+
+		c394 : String, 
+
+		c395 : String, 
+
+		c396 : String, 
+
+		c397 : String, 
+
+		c398 : String, 
+
+		c399 : String, 
+
+		c400 : String, 
+
+		c401 : String, 
+
+		c402 : String, 
+
+		c403 : String, 
+
+		c404 : String, 
+
+		c405 : String, 
+
+		c406 : String, 
+
+		c407 : String, 
+
+		c408 : String, 
+
+		c409 : String, 
+
+		c410 : String, 
+
+		c411 : String, 
+
+		c412 : String, 
+
+		c413 : String, 
+
+		c414 : String, 
+
+		c415 : String, 
+
+		c416 : String, 
+
+		c417 : String, 
+
+		c418 : String, 
+
+		c419 : String, 
+
+		c420 : String, 
+
+		c421 : String, 
+
+		c422 : String, 
+
+		c423 : String, 
+
+		c424 : String, 
+
+		c425 : String, 
+
+		c426 : String, 
+
+		c427 : String, 
+
+		c428 : String, 
+
+		c429 : String, 
+
+		c430 : String, 
+
+		c431 : String, 
+
+		c432 : String, 
+
+		c433 : String, 
+
+		c434 : String, 
+
+		c435 : String, 
+
+		c436 : String, 
+
+		c437 : String, 
+
+		c438 : String, 
+
+		c439 : String, 
+
+		c440 : String, 
+
+		c441 : String, 
+
+		c442 : String, 
+
+		c443 : String, 
+
+		c444 : String, 
+
+		c445 : String, 
+
+		c446 : String, 
+
+		c447 : String, 
+
+		c448 : String, 
+
+		c449 : String, 
+
+		c450 : String, 
+
+		c451 : String, 
+
+		c452 : String, 
+
+		c453 : String, 
+
+		c454 : String, 
+
+		c455 : String, 
+
+		c456 : String, 
+
+		c457 : String, 
+
+		c458 : String, 
+
+		c459 : String, 
+
+		c460 : String, 
+
+		c461 : String, 
+
+		c462 : String, 
+
+		c463 : String, 
+
+		c464 : String, 
+
+		c465 : String, 
+
+		c466 : String, 
+
+		c467 : String, 
+
+		c468 : String, 
+
+		c469 : String, 
+
+		c470 : String, 
+
+		c471 : String, 
+
+		c472 : String, 
+
+		c473 : String, 
+
+		c474 : String, 
+
+		c475 : String, 
+
+		c476 : String, 
+
+		c477 : String, 
+
+		c478 : String, 
+
+		c479 : String, 
+
+		c480 : String, 
+
+		c481 : String, 
+
+		c482 : String, 
+
+		c483 : String, 
+
+		c484 : String, 
+
+		c485 : String, 
+
+		c486 : String, 
+
+		c487 : String, 
+
+		c488 : String, 
+
+		c489 : String, 
+
+		c490 : String, 
+
+		c491 : String, 
+
+		c492 : String, 
+
+		c493 : String, 
+
+		c494 : String, 
+
+		c495 : String, 
+
+		c496 : String, 
+
+		c497 : String, 
+
+		c498 : String, 
+
+		c499 : String, 
+
+		c500 : String
+	};
+
+	class com.cclip.model.geo.cadastre.aacc.AaccDatosPostales #8DB4E3 #C5D9F1 {
+
+
+		id : String, 
+
+		erased : Boolean = false, 
+
+		auditDateCreate : Timestamp, 
+
+		auditUserCreate : String, 
+
+		c1 : String, 
+
+		c2 : String, 
+
+		c3 : String, 
+
+		c4 : String, 
+
+		c5 : String, 
+
+		c6 : String, 
+
+		c7 : String, 
+
+		c8 : String, 
+
+		c9 : String, 
+
+		c10 : String, 
+
+		c11 : String, 
+
+		c12 : String, 
+
+		c13 : String, 
+
+		c14 : String, 
+
+		c15 : String, 
+
+		c16 : String, 
+
+		c17 : String, 
+
+		c18 : String, 
+
+		c19 : String, 
+
+		c20 : String, 
+
+		c21 : String, 
+
+		c22 : String, 
+
+		c23 : String, 
+
+		c24 : String, 
+
+		c25 : String, 
+
+		c26 : String, 
+
+		c27 : String, 
+
+		c28 : String, 
+
+		c29 : String, 
+
+		c30 : String, 
+
+		c31 : String, 
+
+		c32 : String, 
+
+		c33 : String, 
+
+		c34 : String, 
+
+		c35 : String, 
+
+		c36 : String, 
+
+		c37 : String, 
+
+		c38 : String, 
+
+		c39 : String, 
+
+		c40 : String, 
+
+		c41 : String, 
+
+		c42 : String, 
+
+		c43 : String, 
+
+		c44 : String, 
+
+		c45 : String, 
+
+		c46 : String, 
+
+		c47 : String, 
+
+		c48 : String, 
+
+		c49 : String, 
+
+		c50 : String, 
+
+		c51 : String, 
+
+		c52 : String, 
+
+		c53 : String, 
+
+		c54 : String, 
+
+		c55 : String, 
+
+		c56 : String, 
+
+		c57 : String, 
+
+		c58 : String, 
+
+		c59 : String, 
+
+		c60 : String, 
+
+		c61 : String, 
+
+		c62 : String, 
+
+		c63 : String, 
+
+		c64 : String, 
+
+		c65 : String, 
+
+		c66 : String, 
+
+		c67 : String, 
+
+		c68 : String, 
+
+		c69 : String, 
+
+		c70 : String, 
+
+		c71 : String, 
+
+		c72 : String, 
+
+		c73 : String, 
+
+		c74 : String, 
+
+		c75 : String, 
+
+		c76 : String, 
+
+		c77 : String, 
+
+		c78 : String, 
+
+		c79 : String, 
+
+		c80 : String, 
+
+		c81 : String, 
+
+		c82 : String, 
+
+		c83 : String, 
+
+		c84 : String, 
+
+		c85 : String, 
+
+		c86 : String, 
+
+		c87 : String, 
+
+		c88 : String, 
+
+		c89 : String, 
+
+		c90 : String, 
+
+		c91 : String, 
+
+		c92 : String, 
+
+		c93 : String, 
+
+		c94 : String, 
+
+		c95 : String, 
+
+		c96 : String, 
+
+		c97 : String, 
+
+		c98 : String, 
+
+		c99 : String, 
+
+		c100 : String, 
+
+		c101 : String, 
+
+		c102 : String, 
+
+		c103 : String, 
+
+		c104 : String, 
+
+		c105 : String, 
+
+		c106 : String, 
+
+		c107 : String, 
+
+		c108 : String, 
+
+		c109 : String, 
+
+		c110 : String, 
+
+		c111 : String, 
+
+		c112 : String, 
+
+		c113 : String, 
+
+		c114 : String, 
+
+		c115 : String, 
+
+		c116 : String, 
+
+		c117 : String, 
+
+		c118 : String, 
+
+		c119 : String, 
+
+		c120 : String, 
+
+		c121 : String, 
+
+		c122 : String, 
+
+		c123 : String, 
+
+		c124 : String, 
+
+		c125 : String, 
+
+		c126 : String, 
+
+		c127 : String, 
+
+		c128 : String, 
+
+		c129 : String, 
+
+		c130 : String, 
+
+		c131 : String, 
+
+		c132 : String, 
+
+		c133 : String, 
+
+		c134 : String, 
+
+		c135 : String, 
+
+		c136 : String, 
+
+		c137 : String, 
+
+		c138 : String, 
+
+		c139 : String, 
+
+		c140 : String, 
+
+		c141 : String, 
+
+		c142 : String, 
+
+		c143 : String, 
+
+		c144 : String, 
+
+		c145 : String, 
+
+		c146 : String, 
+
+		c147 : String, 
+
+		c148 : String, 
+
+		c149 : String, 
+
+		c150 : String, 
+
+		c151 : String, 
+
+		c152 : String, 
+
+		c153 : String, 
+
+		c154 : String, 
+
+		c155 : String, 
+
+		c156 : String, 
+
+		c157 : String, 
+
+		c158 : String, 
+
+		c159 : String, 
+
+		c160 : String, 
+
+		c161 : String, 
+
+		c162 : String, 
+
+		c163 : String, 
+
+		c164 : String, 
+
+		c165 : String, 
+
+		c166 : String, 
+
+		c167 : String, 
+
+		c168 : String, 
+
+		c169 : String, 
+
+		c170 : String, 
+
+		c171 : String, 
+
+		c172 : String, 
+
+		c173 : String, 
+
+		c174 : String, 
+
+		c175 : String, 
+
+		c176 : String, 
+
+		c177 : String, 
+
+		c178 : String, 
+
+		c179 : String, 
+
+		c180 : String, 
+
+		c181 : String, 
+
+		c182 : String, 
+
+		c183 : String, 
+
+		c184 : String, 
+
+		c185 : String, 
+
+		c186 : String, 
+
+		c187 : String, 
+
+		c188 : String, 
+
+		c189 : String, 
+
+		c190 : String, 
+
+		c191 : String, 
+
+		c192 : String, 
+
+		c193 : String, 
+
+		c194 : String, 
+
+		c195 : String, 
+
+		c196 : String, 
+
+		c197 : String, 
+
+		c198 : String, 
+
+		c199 : String, 
+
+		c200 : String, 
+
+		c201 : String, 
+
+		c202 : String, 
+
+		c203 : String, 
+
+		c204 : String, 
+
+		c205 : String, 
+
+		c206 : String, 
+
+		c207 : String, 
+
+		c208 : String, 
+
+		c209 : String, 
+
+		c210 : String, 
+
+		c211 : String, 
+
+		c212 : String, 
+
+		c213 : String, 
+
+		c214 : String, 
+
+		c215 : String, 
+
+		c216 : String, 
+
+		c217 : String, 
+
+		c218 : String, 
+
+		c219 : String, 
+
+		c220 : String, 
+
+		c221 : String, 
+
+		c222 : String, 
+
+		c223 : String, 
+
+		c224 : String, 
+
+		c225 : String, 
+
+		c226 : String, 
+
+		c227 : String, 
+
+		c228 : String, 
+
+		c229 : String, 
+
+		c230 : String, 
+
+		c231 : String, 
+
+		c232 : String, 
+
+		c233 : String, 
+
+		c234 : String, 
+
+		c235 : String, 
+
+		c236 : String, 
+
+		c237 : String, 
+
+		c238 : String, 
+
+		c239 : String, 
+
+		c240 : String, 
+
+		c241 : String, 
+
+		c242 : String, 
+
+		c243 : String, 
+
+		c244 : String, 
+
+		c245 : String, 
+
+		c246 : String, 
+
+		c247 : String, 
+
+		c248 : String, 
+
+		c249 : String, 
+
+		c250 : String, 
+
+		c251 : String, 
+
+		c252 : String, 
+
+		c253 : String, 
+
+		c254 : String, 
+
+		c255 : String, 
+
+		c256 : String, 
+
+		c257 : String, 
+
+		c258 : String, 
+
+		c259 : String, 
+
+		c260 : String, 
+
+		c261 : String, 
+
+		c262 : String, 
+
+		c263 : String, 
+
+		c264 : String, 
+
+		c265 : String, 
+
+		c266 : String, 
+
+		c267 : String, 
+
+		c268 : String, 
+
+		c269 : String, 
+
+		c270 : String, 
+
+		c271 : String, 
+
+		c272 : String, 
+
+		c273 : String, 
+
+		c274 : String, 
+
+		c275 : String, 
+
+		c276 : String, 
+
+		c277 : String, 
+
+		c278 : String, 
+
+		c279 : String, 
+
+		c280 : String, 
+
+		c281 : String, 
+
+		c282 : String, 
+
+		c283 : String, 
+
+		c284 : String, 
+
+		c285 : String, 
+
+		c286 : String, 
+
+		c287 : String, 
+
+		c288 : String, 
+
+		c289 : String, 
+
+		c290 : String, 
+
+		c291 : String, 
+
+		c292 : String, 
+
+		c293 : String, 
+
+		c294 : String, 
+
+		c295 : String, 
+
+		c296 : String, 
+
+		c297 : String, 
+
+		c298 : String, 
+
+		c299 : String, 
+
+		c300 : String, 
+
+		c301 : String, 
+
+		c302 : String, 
+
+		c303 : String, 
+
+		c304 : String, 
+
+		c305 : String, 
+
+		c306 : String, 
+
+		c307 : String, 
+
+		c308 : String, 
+
+		c309 : String, 
+
+		c310 : String, 
+
+		c311 : String, 
+
+		c312 : String, 
+
+		c313 : String, 
+
+		c314 : String, 
+
+		c315 : String, 
+
+		c316 : String, 
+
+		c317 : String, 
+
+		c318 : String, 
+
+		c319 : String, 
+
+		c320 : String, 
+
+		c321 : String, 
+
+		c322 : String, 
+
+		c323 : String, 
+
+		c324 : String, 
+
+		c325 : String, 
+
+		c326 : String, 
+
+		c327 : String, 
+
+		c328 : String, 
+
+		c329 : String, 
+
+		c330 : String, 
+
+		c331 : String, 
+
+		c332 : String, 
+
+		c333 : String, 
+
+		c334 : String, 
+
+		c335 : String, 
+
+		c336 : String, 
+
+		c337 : String, 
+
+		c338 : String, 
+
+		c339 : String, 
+
+		c340 : String, 
+
+		c341 : String, 
+
+		c342 : String, 
+
+		c343 : String, 
+
+		c344 : String, 
+
+		c345 : String, 
+
+		c346 : String, 
+
+		c347 : String, 
+
+		c348 : String, 
+
+		c349 : String, 
+
+		c350 : String, 
+
+		c351 : String, 
+
+		c352 : String, 
+
+		c353 : String, 
+
+		c354 : String, 
+
+		c355 : String, 
+
+		c356 : String, 
+
+		c357 : String, 
+
+		c358 : String, 
+
+		c359 : String, 
+
+		c360 : String, 
+
+		c361 : String, 
+
+		c362 : String, 
+
+		c363 : String, 
+
+		c364 : String, 
+
+		c365 : String, 
+
+		c366 : String, 
+
+		c367 : String, 
+
+		c368 : String, 
+
+		c369 : String, 
+
+		c370 : String, 
+
+		c371 : String, 
+
+		c372 : String, 
+
+		c373 : String, 
+
+		c374 : String, 
+
+		c375 : String, 
+
+		c376 : String, 
+
+		c377 : String, 
+
+		c378 : String, 
+
+		c379 : String, 
+
+		c380 : String, 
+
+		c381 : String, 
+
+		c382 : String, 
+
+		c383 : String, 
+
+		c384 : String, 
+
+		c385 : String, 
+
+		c386 : String, 
+
+		c387 : String, 
+
+		c388 : String, 
+
+		c389 : String, 
+
+		c390 : String, 
+
+		c391 : String, 
+
+		c392 : String, 
+
+		c393 : String, 
+
+		c394 : String, 
+
+		c395 : String, 
+
+		c396 : String, 
+
+		c397 : String, 
+
+		c398 : String, 
+
+		c399 : String, 
+
+		c400 : String, 
+
+		c401 : String, 
+
+		c402 : String, 
+
+		c403 : String, 
+
+		c404 : String, 
+
+		c405 : String, 
+
+		c406 : String, 
+
+		c407 : String, 
+
+		c408 : String, 
+
+		c409 : String, 
+
+		c410 : String, 
+
+		c411 : String, 
+
+		c412 : String, 
+
+		c413 : String, 
+
+		c414 : String, 
+
+		c415 : String, 
+
+		c416 : String, 
+
+		c417 : String, 
+
+		c418 : String, 
+
+		c419 : String, 
+
+		c420 : String, 
+
+		c421 : String, 
+
+		c422 : String, 
+
+		c423 : String, 
+
+		c424 : String, 
+
+		c425 : String, 
+
+		c426 : String, 
+
+		c427 : String, 
+
+		c428 : String, 
+
+		c429 : String, 
+
+		c430 : String, 
+
+		c431 : String, 
+
+		c432 : String, 
+
+		c433 : String, 
+
+		c434 : String, 
+
+		c435 : String, 
+
+		c436 : String, 
+
+		c437 : String, 
+
+		c438 : String, 
+
+		c439 : String, 
+
+		c440 : String, 
+
+		c441 : String, 
+
+		c442 : String, 
+
+		c443 : String, 
+
+		c444 : String, 
+
+		c445 : String, 
+
+		c446 : String, 
+
+		c447 : String, 
+
+		c448 : String, 
+
+		c449 : String, 
+
+		c450 : String, 
+
+		c451 : String, 
+
+		c452 : String, 
+
+		c453 : String, 
+
+		c454 : String, 
+
+		c455 : String, 
+
+		c456 : String, 
+
+		c457 : String, 
+
+		c458 : String, 
+
+		c459 : String, 
+
+		c460 : String, 
+
+		c461 : String, 
+
+		c462 : String, 
+
+		c463 : String, 
+
+		c464 : String, 
+
+		c465 : String, 
+
+		c466 : String, 
+
+		c467 : String, 
+
+		c468 : String, 
+
+		c469 : String, 
+
+		c470 : String, 
+
+		c471 : String, 
+
+		c472 : String, 
+
+		c473 : String, 
+
+		c474 : String, 
+
+		c475 : String, 
+
+		c476 : String, 
+
+		c477 : String, 
+
+		c478 : String, 
+
+		c479 : String, 
+
+		c480 : String, 
+
+		c481 : String, 
+
+		c482 : String, 
+
+		c483 : String, 
+
+		c484 : String, 
+
+		c485 : String, 
+
+		c486 : String, 
+
+		c487 : String, 
+
+		c488 : String, 
+
+		c489 : String, 
+
+		c490 : String, 
+
+		c491 : String, 
+
+		c492 : String, 
+
+		c493 : String, 
+
+		c494 : String, 
+
+		c495 : String, 
+
+		c496 : String, 
+
+		c497 : String, 
+
+		c498 : String, 
+
+		c499 : String, 
+
+		c500 : String
+	};
+
+	class com.cclip.model.geo.cadastre.aacc.AaccUnidadNov #8DB4E3 #C5D9F1 {
+
+
+		id : String, 
+
+		erased : Boolean = false, 
+
+		auditDateCreate : Timestamp, 
+
+		auditUserCreate : String, 
+
+		c1 : String, 
+
+		c2 : String, 
+
+		c3 : String, 
+
+		c4 : String, 
+
+		c5 : String, 
+
+		c6 : String, 
+
+		c7 : String, 
+
+		c8 : String, 
+
+		c9 : String, 
+
+		c10 : String, 
+
+		c11 : String, 
+
+		c12 : String, 
+
+		c13 : String, 
+
+		c14 : String, 
+
+		c15 : String, 
+
+		c16 : String, 
+
+		c17 : String, 
+
+		c18 : String, 
+
+		c19 : String, 
+
+		c20 : String, 
+
+		c21 : String, 
+
+		c22 : String, 
+
+		c23 : String, 
+
+		c24 : String, 
+
+		c25 : String, 
+
+		c26 : String, 
+
+		c27 : String, 
+
+		c28 : String, 
+
+		c29 : String, 
+
+		c30 : String, 
+
+		c31 : String, 
+
+		c32 : String, 
+
+		c33 : String, 
+
+		c34 : String, 
+
+		c35 : String, 
+
+		c36 : String, 
+
+		c37 : String, 
+
+		c38 : String, 
+
+		c39 : String, 
+
+		c40 : String, 
+
+		c41 : String, 
+
+		c42 : String, 
+
+		c43 : String, 
+
+		c44 : String, 
+
+		c45 : String, 
+
+		c46 : String, 
+
+		c47 : String, 
+
+		c48 : String, 
+
+		c49 : String, 
+
+		c50 : String, 
+
+		c51 : String, 
+
+		c52 : String, 
+
+		c53 : String, 
+
+		c54 : String, 
+
+		c55 : String, 
+
+		c56 : String, 
+
+		c57 : String, 
+
+		c58 : String, 
+
+		c59 : String, 
+
+		c60 : String, 
+
+		c61 : String, 
+
+		c62 : String, 
+
+		c63 : String, 
+
+		c64 : String, 
+
+		c65 : String, 
+
+		c66 : String, 
+
+		c67 : String, 
+
+		c68 : String, 
+
+		c69 : String, 
+
+		c70 : String, 
+
+		c71 : String, 
+
+		c72 : String, 
+
+		c73 : String, 
+
+		c74 : String, 
+
+		c75 : String, 
+
+		c76 : String, 
+
+		c77 : String, 
+
+		c78 : String, 
+
+		c79 : String, 
+
+		c80 : String, 
+
+		c81 : String, 
+
+		c82 : String, 
+
+		c83 : String, 
+
+		c84 : String, 
+
+		c85 : String, 
+
+		c86 : String, 
+
+		c87 : String, 
+
+		c88 : String, 
+
+		c89 : String, 
+
+		c90 : String, 
+
+		c91 : String, 
+
+		c92 : String, 
+
+		c93 : String, 
+
+		c94 : String, 
+
+		c95 : String, 
+
+		c96 : String, 
+
+		c97 : String, 
+
+		c98 : String, 
+
+		c99 : String, 
+
+		c100 : String, 
+
+		c101 : String, 
+
+		c102 : String, 
+
+		c103 : String, 
+
+		c104 : String, 
+
+		c105 : String, 
+
+		c106 : String, 
+
+		c107 : String, 
+
+		c108 : String, 
+
+		c109 : String, 
+
+		c110 : String, 
+
+		c111 : String, 
+
+		c112 : String, 
+
+		c113 : String, 
+
+		c114 : String, 
+
+		c115 : String, 
+
+		c116 : String, 
+
+		c117 : String, 
+
+		c118 : String, 
+
+		c119 : String, 
+
+		c120 : String, 
+
+		c121 : String, 
+
+		c122 : String, 
+
+		c123 : String, 
+
+		c124 : String, 
+
+		c125 : String, 
+
+		c126 : String, 
+
+		c127 : String, 
+
+		c128 : String, 
+
+		c129 : String, 
+
+		c130 : String, 
+
+		c131 : String, 
+
+		c132 : String, 
+
+		c133 : String, 
+
+		c134 : String, 
+
+		c135 : String, 
+
+		c136 : String, 
+
+		c137 : String, 
+
+		c138 : String, 
+
+		c139 : String, 
+
+		c140 : String, 
+
+		c141 : String, 
+
+		c142 : String, 
+
+		c143 : String, 
+
+		c144 : String, 
+
+		c145 : String, 
+
+		c146 : String, 
+
+		c147 : String, 
+
+		c148 : String, 
+
+		c149 : String, 
+
+		c150 : String, 
+
+		c151 : String, 
+
+		c152 : String, 
+
+		c153 : String, 
+
+		c154 : String, 
+
+		c155 : String, 
+
+		c156 : String, 
+
+		c157 : String, 
+
+		c158 : String, 
+
+		c159 : String, 
+
+		c160 : String, 
+
+		c161 : String, 
+
+		c162 : String, 
+
+		c163 : String, 
+
+		c164 : String, 
+
+		c165 : String, 
+
+		c166 : String, 
+
+		c167 : String, 
+
+		c168 : String, 
+
+		c169 : String, 
+
+		c170 : String, 
+
+		c171 : String, 
+
+		c172 : String, 
+
+		c173 : String, 
+
+		c174 : String, 
+
+		c175 : String, 
+
+		c176 : String, 
+
+		c177 : String, 
+
+		c178 : String, 
+
+		c179 : String, 
+
+		c180 : String, 
+
+		c181 : String, 
+
+		c182 : String, 
+
+		c183 : String, 
+
+		c184 : String, 
+
+		c185 : String, 
+
+		c186 : String, 
+
+		c187 : String, 
+
+		c188 : String, 
+
+		c189 : String, 
+
+		c190 : String, 
+
+		c191 : String, 
+
+		c192 : String, 
+
+		c193 : String, 
+
+		c194 : String, 
+
+		c195 : String, 
+
+		c196 : String, 
+
+		c197 : String, 
+
+		c198 : String, 
+
+		c199 : String, 
+
+		c200 : String, 
+
+		c201 : String, 
+
+		c202 : String, 
+
+		c203 : String, 
+
+		c204 : String, 
+
+		c205 : String, 
+
+		c206 : String, 
+
+		c207 : String, 
+
+		c208 : String, 
+
+		c209 : String, 
+
+		c210 : String, 
+
+		c211 : String, 
+
+		c212 : String, 
+
+		c213 : String, 
+
+		c214 : String, 
+
+		c215 : String, 
+
+		c216 : String, 
+
+		c217 : String, 
+
+		c218 : String, 
+
+		c219 : String, 
+
+		c220 : String, 
+
+		c221 : String, 
+
+		c222 : String, 
+
+		c223 : String, 
+
+		c224 : String, 
+
+		c225 : String, 
+
+		c226 : String, 
+
+		c227 : String, 
+
+		c228 : String, 
+
+		c229 : String, 
+
+		c230 : String, 
+
+		c231 : String, 
+
+		c232 : String, 
+
+		c233 : String, 
+
+		c234 : String, 
+
+		c235 : String, 
+
+		c236 : String, 
+
+		c237 : String, 
+
+		c238 : String, 
+
+		c239 : String, 
+
+		c240 : String, 
+
+		c241 : String, 
+
+		c242 : String, 
+
+		c243 : String, 
+
+		c244 : String, 
+
+		c245 : String, 
+
+		c246 : String, 
+
+		c247 : String, 
+
+		c248 : String, 
+
+		c249 : String, 
+
+		c250 : String, 
+
+		c251 : String, 
+
+		c252 : String, 
+
+		c253 : String, 
+
+		c254 : String, 
+
+		c255 : String, 
+
+		c256 : String, 
+
+		c257 : String, 
+
+		c258 : String, 
+
+		c259 : String, 
+
+		c260 : String, 
+
+		c261 : String, 
+
+		c262 : String, 
+
+		c263 : String, 
+
+		c264 : String, 
+
+		c265 : String, 
+
+		c266 : String, 
+
+		c267 : String, 
+
+		c268 : String, 
+
+		c269 : String, 
+
+		c270 : String, 
+
+		c271 : String, 
+
+		c272 : String, 
+
+		c273 : String, 
+
+		c274 : String, 
+
+		c275 : String, 
+
+		c276 : String, 
+
+		c277 : String, 
+
+		c278 : String, 
+
+		c279 : String, 
+
+		c280 : String, 
+
+		c281 : String, 
+
+		c282 : String, 
+
+		c283 : String, 
+
+		c284 : String, 
+
+		c285 : String, 
+
+		c286 : String, 
+
+		c287 : String, 
+
+		c288 : String, 
+
+		c289 : String, 
+
+		c290 : String, 
+
+		c291 : String, 
+
+		c292 : String, 
+
+		c293 : String, 
+
+		c294 : String, 
+
+		c295 : String, 
+
+		c296 : String, 
+
+		c297 : String, 
+
+		c298 : String, 
+
+		c299 : String, 
+
+		c300 : String, 
+
+		c301 : String, 
+
+		c302 : String, 
+
+		c303 : String, 
+
+		c304 : String, 
+
+		c305 : String, 
+
+		c306 : String, 
+
+		c307 : String, 
+
+		c308 : String, 
+
+		c309 : String, 
+
+		c310 : String, 
+
+		c311 : String, 
+
+		c312 : String, 
+
+		c313 : String, 
+
+		c314 : String, 
+
+		c315 : String, 
+
+		c316 : String, 
+
+		c317 : String, 
+
+		c318 : String, 
+
+		c319 : String, 
+
+		c320 : String, 
+
+		c321 : String, 
+
+		c322 : String, 
+
+		c323 : String, 
+
+		c324 : String, 
+
+		c325 : String, 
+
+		c326 : String, 
+
+		c327 : String, 
+
+		c328 : String, 
+
+		c329 : String, 
+
+		c330 : String, 
+
+		c331 : String, 
+
+		c332 : String, 
+
+		c333 : String, 
+
+		c334 : String, 
+
+		c335 : String, 
+
+		c336 : String, 
+
+		c337 : String, 
+
+		c338 : String, 
+
+		c339 : String, 
+
+		c340 : String, 
+
+		c341 : String, 
+
+		c342 : String, 
+
+		c343 : String, 
+
+		c344 : String, 
+
+		c345 : String, 
+
+		c346 : String, 
+
+		c347 : String, 
+
+		c348 : String, 
+
+		c349 : String, 
+
+		c350 : String, 
+
+		c351 : String, 
+
+		c352 : String, 
+
+		c353 : String, 
+
+		c354 : String, 
+
+		c355 : String, 
+
+		c356 : String, 
+
+		c357 : String, 
+
+		c358 : String, 
+
+		c359 : String, 
+
+		c360 : String, 
+
+		c361 : String, 
+
+		c362 : String, 
+
+		c363 : String, 
+
+		c364 : String, 
+
+		c365 : String, 
+
+		c366 : String, 
+
+		c367 : String, 
+
+		c368 : String, 
+
+		c369 : String, 
+
+		c370 : String, 
+
+		c371 : String, 
+
+		c372 : String, 
+
+		c373 : String, 
+
+		c374 : String, 
+
+		c375 : String, 
+
+		c376 : String, 
+
+		c377 : String, 
+
+		c378 : String, 
+
+		c379 : String, 
+
+		c380 : String, 
+
+		c381 : String, 
+
+		c382 : String, 
+
+		c383 : String, 
+
+		c384 : String, 
+
+		c385 : String, 
+
+		c386 : String, 
+
+		c387 : String, 
+
+		c388 : String, 
+
+		c389 : String, 
+
+		c390 : String, 
+
+		c391 : String, 
+
+		c392 : String, 
+
+		c393 : String, 
+
+		c394 : String, 
+
+		c395 : String, 
+
+		c396 : String, 
+
+		c397 : String, 
+
+		c398 : String, 
+
+		c399 : String, 
+
+		c400 : String, 
+
+		c401 : String, 
+
+		c402 : String, 
+
+		c403 : String, 
+
+		c404 : String, 
+
+		c405 : String, 
+
+		c406 : String, 
+
+		c407 : String, 
+
+		c408 : String, 
+
+		c409 : String, 
+
+		c410 : String, 
+
+		c411 : String, 
+
+		c412 : String, 
+
+		c413 : String, 
+
+		c414 : String, 
+
+		c415 : String, 
+
+		c416 : String, 
+
+		c417 : String, 
+
+		c418 : String, 
+
+		c419 : String, 
+
+		c420 : String, 
+
+		c421 : String, 
+
+		c422 : String, 
+
+		c423 : String, 
+
+		c424 : String, 
+
+		c425 : String, 
+
+		c426 : String, 
+
+		c427 : String, 
+
+		c428 : String, 
+
+		c429 : String, 
+
+		c430 : String, 
+
+		c431 : String, 
+
+		c432 : String, 
+
+		c433 : String, 
+
+		c434 : String, 
+
+		c435 : String, 
+
+		c436 : String, 
+
+		c437 : String, 
+
+		c438 : String, 
+
+		c439 : String, 
+
+		c440 : String, 
+
+		c441 : String, 
+
+		c442 : String, 
+
+		c443 : String, 
+
+		c444 : String, 
+
+		c445 : String, 
+
+		c446 : String, 
+
+		c447 : String, 
+
+		c448 : String, 
+
+		c449 : String, 
+
+		c450 : String, 
+
+		c451 : String, 
+
+		c452 : String, 
+
+		c453 : String, 
+
+		c454 : String, 
+
+		c455 : String, 
+
+		c456 : String, 
+
+		c457 : String, 
+
+		c458 : String, 
+
+		c459 : String, 
+
+		c460 : String, 
+
+		c461 : String, 
+
+		c462 : String, 
+
+		c463 : String, 
+
+		c464 : String, 
+
+		c465 : String, 
+
+		c466 : String, 
+
+		c467 : String, 
+
+		c468 : String, 
+
+		c469 : String, 
+
+		c470 : String, 
+
+		c471 : String, 
+
+		c472 : String, 
+
+		c473 : String, 
+
+		c474 : String, 
+
+		c475 : String, 
+
+		c476 : String, 
+
+		c477 : String, 
+
+		c478 : String, 
+
+		c479 : String, 
+
+		c480 : String, 
+
+		c481 : String, 
+
+		c482 : String, 
+
+		c483 : String, 
+
+		c484 : String, 
+
+		c485 : String, 
+
+		c486 : String, 
+
+		c487 : String, 
+
+		c488 : String, 
+
+		c489 : String, 
+
+		c490 : String, 
+
+		c491 : String, 
+
+		c492 : String, 
+
+		c493 : String, 
+
+		c494 : String, 
+
+		c495 : String, 
+
+		c496 : String, 
+
+		c497 : String, 
+
+		c498 : String, 
+
+		c499 : String, 
+
+		c500 : String
+	};
+
+	class com.cclip.model.geo.cadastre.aacc.AaccInmuebleNov #8DB4E3 #C5D9F1 {
+
+
+		id : String, 
+
+		erased : Boolean = false, 
+
+		auditDateCreate : Timestamp, 
+
+		auditUserCreate : String, 
+
+		c1 : String, 
+
+		c2 : String, 
+
+		c3 : String, 
+
+		c4 : String, 
+
+		c5 : String, 
+
+		c6 : String, 
+
+		c7 : String, 
+
+		c8 : String, 
+
+		c9 : String, 
+
+		c10 : String, 
+
+		c11 : String, 
+
+		c12 : String, 
+
+		c13 : String, 
+
+		c14 : String, 
+
+		c15 : String, 
+
+		c16 : String, 
+
+		c17 : String, 
+
+		c18 : String, 
+
+		c19 : String, 
+
+		c20 : String, 
+
+		c21 : String, 
+
+		c22 : String, 
+
+		c23 : String, 
+
+		c24 : String, 
+
+		c25 : String, 
+
+		c26 : String, 
+
+		c27 : String, 
+
+		c28 : String, 
+
+		c29 : String, 
+
+		c30 : String, 
+
+		c31 : String, 
+
+		c32 : String, 
+
+		c33 : String, 
+
+		c34 : String, 
+
+		c35 : String, 
+
+		c36 : String, 
+
+		c37 : String, 
+
+		c38 : String, 
+
+		c39 : String, 
+
+		c40 : String, 
+
+		c41 : String, 
+
+		c42 : String, 
+
+		c43 : String, 
+
+		c44 : String, 
+
+		c45 : String, 
+
+		c46 : String, 
+
+		c47 : String, 
+
+		c48 : String, 
+
+		c49 : String, 
+
+		c50 : String, 
+
+		c51 : String, 
+
+		c52 : String, 
+
+		c53 : String, 
+
+		c54 : String, 
+
+		c55 : String, 
+
+		c56 : String, 
+
+		c57 : String, 
+
+		c58 : String, 
+
+		c59 : String, 
+
+		c60 : String, 
+
+		c61 : String, 
+
+		c62 : String, 
+
+		c63 : String, 
+
+		c64 : String, 
+
+		c65 : String, 
+
+		c66 : String, 
+
+		c67 : String, 
+
+		c68 : String, 
+
+		c69 : String, 
+
+		c70 : String, 
+
+		c71 : String, 
+
+		c72 : String, 
+
+		c73 : String, 
+
+		c74 : String, 
+
+		c75 : String, 
+
+		c76 : String, 
+
+		c77 : String, 
+
+		c78 : String, 
+
+		c79 : String, 
+
+		c80 : String, 
+
+		c81 : String, 
+
+		c82 : String, 
+
+		c83 : String, 
+
+		c84 : String, 
+
+		c85 : String, 
+
+		c86 : String, 
+
+		c87 : String, 
+
+		c88 : String, 
+
+		c89 : String, 
+
+		c90 : String, 
+
+		c91 : String, 
+
+		c92 : String, 
+
+		c93 : String, 
+
+		c94 : String, 
+
+		c95 : String, 
+
+		c96 : String, 
+
+		c97 : String, 
+
+		c98 : String, 
+
+		c99 : String, 
+
+		c100 : String, 
+
+		c101 : String, 
+
+		c102 : String, 
+
+		c103 : String, 
+
+		c104 : String, 
+
+		c105 : String, 
+
+		c106 : String, 
+
+		c107 : String, 
+
+		c108 : String, 
+
+		c109 : String, 
+
+		c110 : String, 
+
+		c111 : String, 
+
+		c112 : String, 
+
+		c113 : String, 
+
+		c114 : String, 
+
+		c115 : String, 
+
+		c116 : String, 
+
+		c117 : String, 
+
+		c118 : String, 
+
+		c119 : String, 
+
+		c120 : String, 
+
+		c121 : String, 
+
+		c122 : String, 
+
+		c123 : String, 
+
+		c124 : String, 
+
+		c125 : String, 
+
+		c126 : String, 
+
+		c127 : String, 
+
+		c128 : String, 
+
+		c129 : String, 
+
+		c130 : String, 
+
+		c131 : String, 
+
+		c132 : String, 
+
+		c133 : String, 
+
+		c134 : String, 
+
+		c135 : String, 
+
+		c136 : String, 
+
+		c137 : String, 
+
+		c138 : String, 
+
+		c139 : String, 
+
+		c140 : String, 
+
+		c141 : String, 
+
+		c142 : String, 
+
+		c143 : String, 
+
+		c144 : String, 
+
+		c145 : String, 
+
+		c146 : String, 
+
+		c147 : String, 
+
+		c148 : String, 
+
+		c149 : String, 
+
+		c150 : String, 
+
+		c151 : String, 
+
+		c152 : String, 
+
+		c153 : String, 
+
+		c154 : String, 
+
+		c155 : String, 
+
+		c156 : String, 
+
+		c157 : String, 
+
+		c158 : String, 
+
+		c159 : String, 
+
+		c160 : String, 
+
+		c161 : String, 
+
+		c162 : String, 
+
+		c163 : String, 
+
+		c164 : String, 
+
+		c165 : String, 
+
+		c166 : String, 
+
+		c167 : String, 
+
+		c168 : String, 
+
+		c169 : String, 
+
+		c170 : String, 
+
+		c171 : String, 
+
+		c172 : String, 
+
+		c173 : String, 
+
+		c174 : String, 
+
+		c175 : String, 
+
+		c176 : String, 
+
+		c177 : String, 
+
+		c178 : String, 
+
+		c179 : String, 
+
+		c180 : String, 
+
+		c181 : String, 
+
+		c182 : String, 
+
+		c183 : String, 
+
+		c184 : String, 
+
+		c185 : String, 
+
+		c186 : String, 
+
+		c187 : String, 
+
+		c188 : String, 
+
+		c189 : String, 
+
+		c190 : String, 
+
+		c191 : String, 
+
+		c192 : String, 
+
+		c193 : String, 
+
+		c194 : String, 
+
+		c195 : String, 
+
+		c196 : String, 
+
+		c197 : String, 
+
+		c198 : String, 
+
+		c199 : String, 
+
+		c200 : String, 
+
+		c201 : String, 
+
+		c202 : String, 
+
+		c203 : String, 
+
+		c204 : String, 
+
+		c205 : String, 
+
+		c206 : String, 
+
+		c207 : String, 
+
+		c208 : String, 
+
+		c209 : String, 
+
+		c210 : String, 
+
+		c211 : String, 
+
+		c212 : String, 
+
+		c213 : String, 
+
+		c214 : String, 
+
+		c215 : String, 
+
+		c216 : String, 
+
+		c217 : String, 
+
+		c218 : String, 
+
+		c219 : String, 
+
+		c220 : String, 
+
+		c221 : String, 
+
+		c222 : String, 
+
+		c223 : String, 
+
+		c224 : String, 
+
+		c225 : String, 
+
+		c226 : String, 
+
+		c227 : String, 
+
+		c228 : String, 
+
+		c229 : String, 
+
+		c230 : String, 
+
+		c231 : String, 
+
+		c232 : String, 
+
+		c233 : String, 
+
+		c234 : String, 
+
+		c235 : String, 
+
+		c236 : String, 
+
+		c237 : String, 
+
+		c238 : String, 
+
+		c239 : String, 
+
+		c240 : String, 
+
+		c241 : String, 
+
+		c242 : String, 
+
+		c243 : String, 
+
+		c244 : String, 
+
+		c245 : String, 
+
+		c246 : String, 
+
+		c247 : String, 
+
+		c248 : String, 
+
+		c249 : String, 
+
+		c250 : String, 
+
+		c251 : String, 
+
+		c252 : String, 
+
+		c253 : String, 
+
+		c254 : String, 
+
+		c255 : String, 
+
+		c256 : String, 
+
+		c257 : String, 
+
+		c258 : String, 
+
+		c259 : String, 
+
+		c260 : String, 
+
+		c261 : String, 
+
+		c262 : String, 
+
+		c263 : String, 
+
+		c264 : String, 
+
+		c265 : String, 
+
+		c266 : String, 
+
+		c267 : String, 
+
+		c268 : String, 
+
+		c269 : String, 
+
+		c270 : String, 
+
+		c271 : String, 
+
+		c272 : String, 
+
+		c273 : String, 
+
+		c274 : String, 
+
+		c275 : String, 
+
+		c276 : String, 
+
+		c277 : String, 
+
+		c278 : String, 
+
+		c279 : String, 
+
+		c280 : String, 
+
+		c281 : String, 
+
+		c282 : String, 
+
+		c283 : String, 
+
+		c284 : String, 
+
+		c285 : String, 
+
+		c286 : String, 
+
+		c287 : String, 
+
+		c288 : String, 
+
+		c289 : String, 
+
+		c290 : String, 
+
+		c291 : String, 
+
+		c292 : String, 
+
+		c293 : String, 
+
+		c294 : String, 
+
+		c295 : String, 
+
+		c296 : String, 
+
+		c297 : String, 
+
+		c298 : String, 
+
+		c299 : String, 
+
+		c300 : String, 
+
+		c301 : String, 
+
+		c302 : String, 
+
+		c303 : String, 
+
+		c304 : String, 
+
+		c305 : String, 
+
+		c306 : String, 
+
+		c307 : String, 
+
+		c308 : String, 
+
+		c309 : String, 
+
+		c310 : String, 
+
+		c311 : String, 
+
+		c312 : String, 
+
+		c313 : String, 
+
+		c314 : String, 
+
+		c315 : String, 
+
+		c316 : String, 
+
+		c317 : String, 
+
+		c318 : String, 
+
+		c319 : String, 
+
+		c320 : String, 
+
+		c321 : String, 
+
+		c322 : String, 
+
+		c323 : String, 
+
+		c324 : String, 
+
+		c325 : String, 
+
+		c326 : String, 
+
+		c327 : String, 
+
+		c328 : String, 
+
+		c329 : String, 
+
+		c330 : String, 
+
+		c331 : String, 
+
+		c332 : String, 
+
+		c333 : String, 
+
+		c334 : String, 
+
+		c335 : String, 
+
+		c336 : String, 
+
+		c337 : String, 
+
+		c338 : String, 
+
+		c339 : String, 
+
+		c340 : String, 
+
+		c341 : String, 
+
+		c342 : String, 
+
+		c343 : String, 
+
+		c344 : String, 
+
+		c345 : String, 
+
+		c346 : String, 
+
+		c347 : String, 
+
+		c348 : String, 
+
+		c349 : String, 
+
+		c350 : String, 
+
+		c351 : String, 
+
+		c352 : String, 
+
+		c353 : String, 
+
+		c354 : String, 
+
+		c355 : String, 
+
+		c356 : String, 
+
+		c357 : String, 
+
+		c358 : String, 
+
+		c359 : String, 
+
+		c360 : String, 
+
+		c361 : String, 
+
+		c362 : String, 
+
+		c363 : String, 
+
+		c364 : String, 
+
+		c365 : String, 
+
+		c366 : String, 
+
+		c367 : String, 
+
+		c368 : String, 
+
+		c369 : String, 
+
+		c370 : String, 
+
+		c371 : String, 
+
+		c372 : String, 
+
+		c373 : String, 
+
+		c374 : String, 
+
+		c375 : String, 
+
+		c376 : String, 
+
+		c377 : String, 
+
+		c378 : String, 
+
+		c379 : String, 
+
+		c380 : String, 
+
+		c381 : String, 
+
+		c382 : String, 
+
+		c383 : String, 
+
+		c384 : String, 
+
+		c385 : String, 
+
+		c386 : String, 
+
+		c387 : String, 
+
+		c388 : String, 
+
+		c389 : String, 
+
+		c390 : String, 
+
+		c391 : String, 
+
+		c392 : String, 
+
+		c393 : String, 
+
+		c394 : String, 
+
+		c395 : String, 
+
+		c396 : String, 
+
+		c397 : String, 
+
+		c398 : String, 
+
+		c399 : String, 
+
+		c400 : String, 
+
+		c401 : String, 
+
+		c402 : String, 
+
+		c403 : String, 
+
+		c404 : String, 
+
+		c405 : String, 
+
+		c406 : String, 
+
+		c407 : String, 
+
+		c408 : String, 
+
+		c409 : String, 
+
+		c410 : String, 
+
+		c411 : String, 
+
+		c412 : String, 
+
+		c413 : String, 
+
+		c414 : String, 
+
+		c415 : String, 
+
+		c416 : String, 
+
+		c417 : String, 
+
+		c418 : String, 
+
+		c419 : String, 
+
+		c420 : String, 
+
+		c421 : String, 
+
+		c422 : String, 
+
+		c423 : String, 
+
+		c424 : String, 
+
+		c425 : String, 
+
+		c426 : String, 
+
+		c427 : String, 
+
+		c428 : String, 
+
+		c429 : String, 
+
+		c430 : String, 
+
+		c431 : String, 
+
+		c432 : String, 
+
+		c433 : String, 
+
+		c434 : String, 
+
+		c435 : String, 
+
+		c436 : String, 
+
+		c437 : String, 
+
+		c438 : String, 
+
+		c439 : String, 
+
+		c440 : String, 
+
+		c441 : String, 
+
+		c442 : String, 
+
+		c443 : String, 
+
+		c444 : String, 
+
+		c445 : String, 
+
+		c446 : String, 
+
+		c447 : String, 
+
+		c448 : String, 
+
+		c449 : String, 
+
+		c450 : String, 
+
+		c451 : String, 
+
+		c452 : String, 
+
+		c453 : String, 
+
+		c454 : String, 
+
+		c455 : String, 
+
+		c456 : String, 
+
+		c457 : String, 
+
+		c458 : String, 
+
+		c459 : String, 
+
+		c460 : String, 
+
+		c461 : String, 
+
+		c462 : String, 
+
+		c463 : String, 
+
+		c464 : String, 
+
+		c465 : String, 
+
+		c466 : String, 
+
+		c467 : String, 
+
+		c468 : String, 
+
+		c469 : String, 
+
+		c470 : String, 
+
+		c471 : String, 
+
+		c472 : String, 
+
+		c473 : String, 
+
+		c474 : String, 
+
+		c475 : String, 
+
+		c476 : String, 
+
+		c477 : String, 
+
+		c478 : String, 
+
+		c479 : String, 
+
+		c480 : String, 
+
+		c481 : String, 
+
+		c482 : String, 
+
+		c483 : String, 
+
+		c484 : String, 
+
+		c485 : String, 
+
+		c486 : String, 
+
+		c487 : String, 
+
+		c488 : String, 
+
+		c489 : String, 
+
+		c490 : String, 
+
+		c491 : String, 
+
+		c492 : String, 
+
+		c493 : String, 
+
+		c494 : String, 
+
+		c495 : String, 
+
+		c496 : String, 
+
+		c497 : String, 
+
+		c498 : String, 
+
+		c499 : String, 
+
+		c500 : String
+	};
+
+	class com.cclip.model.geo.cadastre.aacc.AaccSubcuentaNov #8DB4E3 #C5D9F1 {
+
+
+		id : String, 
+
+		erased : Boolean = false, 
+
+		auditDateCreate : Timestamp, 
+
+		auditUserCreate : String, 
+
+		c1 : String, 
+
+		c2 : String, 
+
+		c3 : String, 
+
+		c4 : String, 
+
+		c5 : String, 
+
+		c6 : String, 
+
+		c7 : String, 
+
+		c8 : String, 
+
+		c9 : String, 
+
+		c10 : String, 
+
+		c11 : String, 
+
+		c12 : String, 
+
+		c13 : String, 
+
+		c14 : String, 
+
+		c15 : String, 
+
+		c16 : String, 
+
+		c17 : String, 
+
+		c18 : String, 
+
+		c19 : String, 
+
+		c20 : String, 
+
+		c21 : String, 
+
+		c22 : String, 
+
+		c23 : String, 
+
+		c24 : String, 
+
+		c25 : String, 
+
+		c26 : String, 
+
+		c27 : String, 
+
+		c28 : String, 
+
+		c29 : String, 
+
+		c30 : String, 
+
+		c31 : String, 
+
+		c32 : String, 
+
+		c33 : String, 
+
+		c34 : String, 
+
+		c35 : String, 
+
+		c36 : String, 
+
+		c37 : String, 
+
+		c38 : String, 
+
+		c39 : String, 
+
+		c40 : String, 
+
+		c41 : String, 
+
+		c42 : String, 
+
+		c43 : String, 
+
+		c44 : String, 
+
+		c45 : String, 
+
+		c46 : String, 
+
+		c47 : String, 
+
+		c48 : String, 
+
+		c49 : String, 
+
+		c50 : String, 
+
+		c51 : String, 
+
+		c52 : String, 
+
+		c53 : String, 
+
+		c54 : String, 
+
+		c55 : String, 
+
+		c56 : String, 
+
+		c57 : String, 
+
+		c58 : String, 
+
+		c59 : String, 
+
+		c60 : String, 
+
+		c61 : String, 
+
+		c62 : String, 
+
+		c63 : String, 
+
+		c64 : String, 
+
+		c65 : String, 
+
+		c66 : String, 
+
+		c67 : String, 
+
+		c68 : String, 
+
+		c69 : String, 
+
+		c70 : String, 
+
+		c71 : String, 
+
+		c72 : String, 
+
+		c73 : String, 
+
+		c74 : String, 
+
+		c75 : String, 
+
+		c76 : String, 
+
+		c77 : String, 
+
+		c78 : String, 
+
+		c79 : String, 
+
+		c80 : String, 
+
+		c81 : String, 
+
+		c82 : String, 
+
+		c83 : String, 
+
+		c84 : String, 
+
+		c85 : String, 
+
+		c86 : String, 
+
+		c87 : String, 
+
+		c88 : String, 
+
+		c89 : String, 
+
+		c90 : String, 
+
+		c91 : String, 
+
+		c92 : String, 
+
+		c93 : String, 
+
+		c94 : String, 
+
+		c95 : String, 
+
+		c96 : String, 
+
+		c97 : String, 
+
+		c98 : String, 
+
+		c99 : String, 
+
+		c100 : String, 
+
+		c101 : String, 
+
+		c102 : String, 
+
+		c103 : String, 
+
+		c104 : String, 
+
+		c105 : String, 
+
+		c106 : String, 
+
+		c107 : String, 
+
+		c108 : String, 
+
+		c109 : String, 
+
+		c110 : String, 
+
+		c111 : String, 
+
+		c112 : String, 
+
+		c113 : String, 
+
+		c114 : String, 
+
+		c115 : String, 
+
+		c116 : String, 
+
+		c117 : String, 
+
+		c118 : String, 
+
+		c119 : String, 
+
+		c120 : String, 
+
+		c121 : String, 
+
+		c122 : String, 
+
+		c123 : String, 
+
+		c124 : String, 
+
+		c125 : String, 
+
+		c126 : String, 
+
+		c127 : String, 
+
+		c128 : String, 
+
+		c129 : String, 
+
+		c130 : String, 
+
+		c131 : String, 
+
+		c132 : String, 
+
+		c133 : String, 
+
+		c134 : String, 
+
+		c135 : String, 
+
+		c136 : String, 
+
+		c137 : String, 
+
+		c138 : String, 
+
+		c139 : String, 
+
+		c140 : String, 
+
+		c141 : String, 
+
+		c142 : String, 
+
+		c143 : String, 
+
+		c144 : String, 
+
+		c145 : String, 
+
+		c146 : String, 
+
+		c147 : String, 
+
+		c148 : String, 
+
+		c149 : String, 
+
+		c150 : String, 
+
+		c151 : String, 
+
+		c152 : String, 
+
+		c153 : String, 
+
+		c154 : String, 
+
+		c155 : String, 
+
+		c156 : String, 
+
+		c157 : String, 
+
+		c158 : String, 
+
+		c159 : String, 
+
+		c160 : String, 
+
+		c161 : String, 
+
+		c162 : String, 
+
+		c163 : String, 
+
+		c164 : String, 
+
+		c165 : String, 
+
+		c166 : String, 
+
+		c167 : String, 
+
+		c168 : String, 
+
+		c169 : String, 
+
+		c170 : String, 
+
+		c171 : String, 
+
+		c172 : String, 
+
+		c173 : String, 
+
+		c174 : String, 
+
+		c175 : String, 
+
+		c176 : String, 
+
+		c177 : String, 
+
+		c178 : String, 
+
+		c179 : String, 
+
+		c180 : String, 
+
+		c181 : String, 
+
+		c182 : String, 
+
+		c183 : String, 
+
+		c184 : String, 
+
+		c185 : String, 
+
+		c186 : String, 
+
+		c187 : String, 
+
+		c188 : String, 
+
+		c189 : String, 
+
+		c190 : String, 
+
+		c191 : String, 
+
+		c192 : String, 
+
+		c193 : String, 
+
+		c194 : String, 
+
+		c195 : String, 
+
+		c196 : String, 
+
+		c197 : String, 
+
+		c198 : String, 
+
+		c199 : String, 
+
+		c200 : String, 
+
+		c201 : String, 
+
+		c202 : String, 
+
+		c203 : String, 
+
+		c204 : String, 
+
+		c205 : String, 
+
+		c206 : String, 
+
+		c207 : String, 
+
+		c208 : String, 
+
+		c209 : String, 
+
+		c210 : String, 
+
+		c211 : String, 
+
+		c212 : String, 
+
+		c213 : String, 
+
+		c214 : String, 
+
+		c215 : String, 
+
+		c216 : String, 
+
+		c217 : String, 
+
+		c218 : String, 
+
+		c219 : String, 
+
+		c220 : String, 
+
+		c221 : String, 
+
+		c222 : String, 
+
+		c223 : String, 
+
+		c224 : String, 
+
+		c225 : String, 
+
+		c226 : String, 
+
+		c227 : String, 
+
+		c228 : String, 
+
+		c229 : String, 
+
+		c230 : String, 
+
+		c231 : String, 
+
+		c232 : String, 
+
+		c233 : String, 
+
+		c234 : String, 
+
+		c235 : String, 
+
+		c236 : String, 
+
+		c237 : String, 
+
+		c238 : String, 
+
+		c239 : String, 
+
+		c240 : String, 
+
+		c241 : String, 
+
+		c242 : String, 
+
+		c243 : String, 
+
+		c244 : String, 
+
+		c245 : String, 
+
+		c246 : String, 
+
+		c247 : String, 
+
+		c248 : String, 
+
+		c249 : String, 
+
+		c250 : String, 
+
+		c251 : String, 
+
+		c252 : String, 
+
+		c253 : String, 
+
+		c254 : String, 
+
+		c255 : String, 
+
+		c256 : String, 
+
+		c257 : String, 
+
+		c258 : String, 
+
+		c259 : String, 
+
+		c260 : String, 
+
+		c261 : String, 
+
+		c262 : String, 
+
+		c263 : String, 
+
+		c264 : String, 
+
+		c265 : String, 
+
+		c266 : String, 
+
+		c267 : String, 
+
+		c268 : String, 
+
+		c269 : String, 
+
+		c270 : String, 
+
+		c271 : String, 
+
+		c272 : String, 
+
+		c273 : String, 
+
+		c274 : String, 
+
+		c275 : String, 
+
+		c276 : String, 
+
+		c277 : String, 
+
+		c278 : String, 
+
+		c279 : String, 
+
+		c280 : String, 
+
+		c281 : String, 
+
+		c282 : String, 
+
+		c283 : String, 
+
+		c284 : String, 
+
+		c285 : String, 
+
+		c286 : String, 
+
+		c287 : String, 
+
+		c288 : String, 
+
+		c289 : String, 
+
+		c290 : String, 
+
+		c291 : String, 
+
+		c292 : String, 
+
+		c293 : String, 
+
+		c294 : String, 
+
+		c295 : String, 
+
+		c296 : String, 
+
+		c297 : String, 
+
+		c298 : String, 
+
+		c299 : String, 
+
+		c300 : String, 
+
+		c301 : String, 
+
+		c302 : String, 
+
+		c303 : String, 
+
+		c304 : String, 
+
+		c305 : String, 
+
+		c306 : String, 
+
+		c307 : String, 
+
+		c308 : String, 
+
+		c309 : String, 
+
+		c310 : String, 
+
+		c311 : String, 
+
+		c312 : String, 
+
+		c313 : String, 
+
+		c314 : String, 
+
+		c315 : String, 
+
+		c316 : String, 
+
+		c317 : String, 
+
+		c318 : String, 
+
+		c319 : String, 
+
+		c320 : String, 
+
+		c321 : String, 
+
+		c322 : String, 
+
+		c323 : String, 
+
+		c324 : String, 
+
+		c325 : String, 
+
+		c326 : String, 
+
+		c327 : String, 
+
+		c328 : String, 
+
+		c329 : String, 
+
+		c330 : String, 
+
+		c331 : String, 
+
+		c332 : String, 
+
+		c333 : String, 
+
+		c334 : String, 
+
+		c335 : String, 
+
+		c336 : String, 
+
+		c337 : String, 
+
+		c338 : String, 
+
+		c339 : String, 
+
+		c340 : String, 
+
+		c341 : String, 
+
+		c342 : String, 
+
+		c343 : String, 
+
+		c344 : String, 
+
+		c345 : String, 
+
+		c346 : String, 
+
+		c347 : String, 
+
+		c348 : String, 
+
+		c349 : String, 
+
+		c350 : String, 
+
+		c351 : String, 
+
+		c352 : String, 
+
+		c353 : String, 
+
+		c354 : String, 
+
+		c355 : String, 
+
+		c356 : String, 
+
+		c357 : String, 
+
+		c358 : String, 
+
+		c359 : String, 
+
+		c360 : String, 
+
+		c361 : String, 
+
+		c362 : String, 
+
+		c363 : String, 
+
+		c364 : String, 
+
+		c365 : String, 
+
+		c366 : String, 
+
+		c367 : String, 
+
+		c368 : String, 
+
+		c369 : String, 
+
+		c370 : String, 
+
+		c371 : String, 
+
+		c372 : String, 
+
+		c373 : String, 
+
+		c374 : String, 
+
+		c375 : String, 
+
+		c376 : String, 
+
+		c377 : String, 
+
+		c378 : String, 
+
+		c379 : String, 
+
+		c380 : String, 
+
+		c381 : String, 
+
+		c382 : String, 
+
+		c383 : String, 
+
+		c384 : String, 
+
+		c385 : String, 
+
+		c386 : String, 
+
+		c387 : String, 
+
+		c388 : String, 
+
+		c389 : String, 
+
+		c390 : String, 
+
+		c391 : String, 
+
+		c392 : String, 
+
+		c393 : String, 
+
+		c394 : String, 
+
+		c395 : String, 
+
+		c396 : String, 
+
+		c397 : String, 
+
+		c398 : String, 
+
+		c399 : String, 
+
+		c400 : String, 
+
+		c401 : String, 
+
+		c402 : String, 
+
+		c403 : String, 
+
+		c404 : String, 
+
+		c405 : String, 
+
+		c406 : String, 
+
+		c407 : String, 
+
+		c408 : String, 
+
+		c409 : String, 
+
+		c410 : String, 
+
+		c411 : String, 
+
+		c412 : String, 
+
+		c413 : String, 
+
+		c414 : String, 
+
+		c415 : String, 
+
+		c416 : String, 
+
+		c417 : String, 
+
+		c418 : String, 
+
+		c419 : String, 
+
+		c420 : String, 
+
+		c421 : String, 
+
+		c422 : String, 
+
+		c423 : String, 
+
+		c424 : String, 
+
+		c425 : String, 
+
+		c426 : String, 
+
+		c427 : String, 
+
+		c428 : String, 
+
+		c429 : String, 
+
+		c430 : String, 
+
+		c431 : String, 
+
+		c432 : String, 
+
+		c433 : String, 
+
+		c434 : String, 
+
+		c435 : String, 
+
+		c436 : String, 
+
+		c437 : String, 
+
+		c438 : String, 
+
+		c439 : String, 
+
+		c440 : String, 
+
+		c441 : String, 
+
+		c442 : String, 
+
+		c443 : String, 
+
+		c444 : String, 
+
+		c445 : String, 
+
+		c446 : String, 
+
+		c447 : String, 
+
+		c448 : String, 
+
+		c449 : String, 
+
+		c450 : String, 
+
+		c451 : String, 
+
+		c452 : String, 
+
+		c453 : String, 
+
+		c454 : String, 
+
+		c455 : String, 
+
+		c456 : String, 
+
+		c457 : String, 
+
+		c458 : String, 
+
+		c459 : String, 
+
+		c460 : String, 
+
+		c461 : String, 
+
+		c462 : String, 
+
+		c463 : String, 
+
+		c464 : String, 
+
+		c465 : String, 
+
+		c466 : String, 
+
+		c467 : String, 
+
+		c468 : String, 
+
+		c469 : String, 
+
+		c470 : String, 
+
+		c471 : String, 
+
+		c472 : String, 
+
+		c473 : String, 
+
+		c474 : String, 
+
+		c475 : String, 
+
+		c476 : String, 
+
+		c477 : String, 
+
+		c478 : String, 
+
+		c479 : String, 
+
+		c480 : String, 
+
+		c481 : String, 
+
+		c482 : String, 
+
+		c483 : String, 
+
+		c484 : String, 
+
+		c485 : String, 
+
+		c486 : String, 
+
+		c487 : String, 
+
+		c488 : String, 
+
+		c489 : String, 
+
+		c490 : String, 
+
+		c491 : String, 
+
+		c492 : String, 
+
+		c493 : String, 
+
+		c494 : String, 
+
+		c495 : String, 
+
+		c496 : String, 
+
+		c497 : String, 
+
+		c498 : String, 
+
+		c499 : String, 
+
+		c500 : String
+	};
+
+	class com.cclip.model.geo.cadastre.aacc.AaccSuperficieNov #8DB4E3 #C5D9F1 {
+
+
+		id : String, 
+
+		erased : Boolean = false, 
+
+		auditDateCreate : Timestamp, 
+
+		auditUserCreate : String, 
+
+		c1 : String, 
+
+		c2 : String, 
+
+		c3 : String, 
+
+		c4 : String, 
+
+		c5 : String, 
+
+		c6 : String, 
+
+		c7 : String, 
+
+		c8 : String, 
+
+		c9 : String, 
+
+		c10 : String, 
+
+		c11 : String, 
+
+		c12 : String, 
+
+		c13 : String, 
+
+		c14 : String, 
+
+		c15 : String, 
+
+		c16 : String, 
+
+		c17 : String, 
+
+		c18 : String, 
+
+		c19 : String, 
+
+		c20 : String, 
+
+		c21 : String, 
+
+		c22 : String, 
+
+		c23 : String, 
+
+		c24 : String, 
+
+		c25 : String, 
+
+		c26 : String, 
+
+		c27 : String, 
+
+		c28 : String, 
+
+		c29 : String, 
+
+		c30 : String, 
+
+		c31 : String, 
+
+		c32 : String, 
+
+		c33 : String, 
+
+		c34 : String, 
+
+		c35 : String, 
+
+		c36 : String, 
+
+		c37 : String, 
+
+		c38 : String, 
+
+		c39 : String, 
+
+		c40 : String, 
+
+		c41 : String, 
+
+		c42 : String, 
+
+		c43 : String, 
+
+		c44 : String, 
+
+		c45 : String, 
+
+		c46 : String, 
+
+		c47 : String, 
+
+		c48 : String, 
+
+		c49 : String, 
+
+		c50 : String, 
+
+		c51 : String, 
+
+		c52 : String, 
+
+		c53 : String, 
+
+		c54 : String, 
+
+		c55 : String, 
+
+		c56 : String, 
+
+		c57 : String, 
+
+		c58 : String, 
+
+		c59 : String, 
+
+		c60 : String, 
+
+		c61 : String, 
+
+		c62 : String, 
+
+		c63 : String, 
+
+		c64 : String, 
+
+		c65 : String, 
+
+		c66 : String, 
+
+		c67 : String, 
+
+		c68 : String, 
+
+		c69 : String, 
+
+		c70 : String, 
+
+		c71 : String, 
+
+		c72 : String, 
+
+		c73 : String, 
+
+		c74 : String, 
+
+		c75 : String, 
+
+		c76 : String, 
+
+		c77 : String, 
+
+		c78 : String, 
+
+		c79 : String, 
+
+		c80 : String, 
+
+		c81 : String, 
+
+		c82 : String, 
+
+		c83 : String, 
+
+		c84 : String, 
+
+		c85 : String, 
+
+		c86 : String, 
+
+		c87 : String, 
+
+		c88 : String, 
+
+		c89 : String, 
+
+		c90 : String, 
+
+		c91 : String, 
+
+		c92 : String, 
+
+		c93 : String, 
+
+		c94 : String, 
+
+		c95 : String, 
+
+		c96 : String, 
+
+		c97 : String, 
+
+		c98 : String, 
+
+		c99 : String, 
+
+		c100 : String, 
+
+		c101 : String, 
+
+		c102 : String, 
+
+		c103 : String, 
+
+		c104 : String, 
+
+		c105 : String, 
+
+		c106 : String, 
+
+		c107 : String, 
+
+		c108 : String, 
+
+		c109 : String, 
+
+		c110 : String, 
+
+		c111 : String, 
+
+		c112 : String, 
+
+		c113 : String, 
+
+		c114 : String, 
+
+		c115 : String, 
+
+		c116 : String, 
+
+		c117 : String, 
+
+		c118 : String, 
+
+		c119 : String, 
+
+		c120 : String, 
+
+		c121 : String, 
+
+		c122 : String, 
+
+		c123 : String, 
+
+		c124 : String, 
+
+		c125 : String, 
+
+		c126 : String, 
+
+		c127 : String, 
+
+		c128 : String, 
+
+		c129 : String, 
+
+		c130 : String, 
+
+		c131 : String, 
+
+		c132 : String, 
+
+		c133 : String, 
+
+		c134 : String, 
+
+		c135 : String, 
+
+		c136 : String, 
+
+		c137 : String, 
+
+		c138 : String, 
+
+		c139 : String, 
+
+		c140 : String, 
+
+		c141 : String, 
+
+		c142 : String, 
+
+		c143 : String, 
+
+		c144 : String, 
+
+		c145 : String, 
+
+		c146 : String, 
+
+		c147 : String, 
+
+		c148 : String, 
+
+		c149 : String, 
+
+		c150 : String, 
+
+		c151 : String, 
+
+		c152 : String, 
+
+		c153 : String, 
+
+		c154 : String, 
+
+		c155 : String, 
+
+		c156 : String, 
+
+		c157 : String, 
+
+		c158 : String, 
+
+		c159 : String, 
+
+		c160 : String, 
+
+		c161 : String, 
+
+		c162 : String, 
+
+		c163 : String, 
+
+		c164 : String, 
+
+		c165 : String, 
+
+		c166 : String, 
+
+		c167 : String, 
+
+		c168 : String, 
+
+		c169 : String, 
+
+		c170 : String, 
+
+		c171 : String, 
+
+		c172 : String, 
+
+		c173 : String, 
+
+		c174 : String, 
+
+		c175 : String, 
+
+		c176 : String, 
+
+		c177 : String, 
+
+		c178 : String, 
+
+		c179 : String, 
+
+		c180 : String, 
+
+		c181 : String, 
+
+		c182 : String, 
+
+		c183 : String, 
+
+		c184 : String, 
+
+		c185 : String, 
+
+		c186 : String, 
+
+		c187 : String, 
+
+		c188 : String, 
+
+		c189 : String, 
+
+		c190 : String, 
+
+		c191 : String, 
+
+		c192 : String, 
+
+		c193 : String, 
+
+		c194 : String, 
+
+		c195 : String, 
+
+		c196 : String, 
+
+		c197 : String, 
+
+		c198 : String, 
+
+		c199 : String, 
+
+		c200 : String, 
+
+		c201 : String, 
+
+		c202 : String, 
+
+		c203 : String, 
+
+		c204 : String, 
+
+		c205 : String, 
+
+		c206 : String, 
+
+		c207 : String, 
+
+		c208 : String, 
+
+		c209 : String, 
+
+		c210 : String, 
+
+		c211 : String, 
+
+		c212 : String, 
+
+		c213 : String, 
+
+		c214 : String, 
+
+		c215 : String, 
+
+		c216 : String, 
+
+		c217 : String, 
+
+		c218 : String, 
+
+		c219 : String, 
+
+		c220 : String, 
+
+		c221 : String, 
+
+		c222 : String, 
+
+		c223 : String, 
+
+		c224 : String, 
+
+		c225 : String, 
+
+		c226 : String, 
+
+		c227 : String, 
+
+		c228 : String, 
+
+		c229 : String, 
+
+		c230 : String, 
+
+		c231 : String, 
+
+		c232 : String, 
+
+		c233 : String, 
+
+		c234 : String, 
+
+		c235 : String, 
+
+		c236 : String, 
+
+		c237 : String, 
+
+		c238 : String, 
+
+		c239 : String, 
+
+		c240 : String, 
+
+		c241 : String, 
+
+		c242 : String, 
+
+		c243 : String, 
+
+		c244 : String, 
+
+		c245 : String, 
+
+		c246 : String, 
+
+		c247 : String, 
+
+		c248 : String, 
+
+		c249 : String, 
+
+		c250 : String, 
+
+		c251 : String, 
+
+		c252 : String, 
+
+		c253 : String, 
+
+		c254 : String, 
+
+		c255 : String, 
+
+		c256 : String, 
+
+		c257 : String, 
+
+		c258 : String, 
+
+		c259 : String, 
+
+		c260 : String, 
+
+		c261 : String, 
+
+		c262 : String, 
+
+		c263 : String, 
+
+		c264 : String, 
+
+		c265 : String, 
+
+		c266 : String, 
+
+		c267 : String, 
+
+		c268 : String, 
+
+		c269 : String, 
+
+		c270 : String, 
+
+		c271 : String, 
+
+		c272 : String, 
+
+		c273 : String, 
+
+		c274 : String, 
+
+		c275 : String, 
+
+		c276 : String, 
+
+		c277 : String, 
+
+		c278 : String, 
+
+		c279 : String, 
+
+		c280 : String, 
+
+		c281 : String, 
+
+		c282 : String, 
+
+		c283 : String, 
+
+		c284 : String, 
+
+		c285 : String, 
+
+		c286 : String, 
+
+		c287 : String, 
+
+		c288 : String, 
+
+		c289 : String, 
+
+		c290 : String, 
+
+		c291 : String, 
+
+		c292 : String, 
+
+		c293 : String, 
+
+		c294 : String, 
+
+		c295 : String, 
+
+		c296 : String, 
+
+		c297 : String, 
+
+		c298 : String, 
+
+		c299 : String, 
+
+		c300 : String, 
+
+		c301 : String, 
+
+		c302 : String, 
+
+		c303 : String, 
+
+		c304 : String, 
+
+		c305 : String, 
+
+		c306 : String, 
+
+		c307 : String, 
+
+		c308 : String, 
+
+		c309 : String, 
+
+		c310 : String, 
+
+		c311 : String, 
+
+		c312 : String, 
+
+		c313 : String, 
+
+		c314 : String, 
+
+		c315 : String, 
+
+		c316 : String, 
+
+		c317 : String, 
+
+		c318 : String, 
+
+		c319 : String, 
+
+		c320 : String, 
+
+		c321 : String, 
+
+		c322 : String, 
+
+		c323 : String, 
+
+		c324 : String, 
+
+		c325 : String, 
+
+		c326 : String, 
+
+		c327 : String, 
+
+		c328 : String, 
+
+		c329 : String, 
+
+		c330 : String, 
+
+		c331 : String, 
+
+		c332 : String, 
+
+		c333 : String, 
+
+		c334 : String, 
+
+		c335 : String, 
+
+		c336 : String, 
+
+		c337 : String, 
+
+		c338 : String, 
+
+		c339 : String, 
+
+		c340 : String, 
+
+		c341 : String, 
+
+		c342 : String, 
+
+		c343 : String, 
+
+		c344 : String, 
+
+		c345 : String, 
+
+		c346 : String, 
+
+		c347 : String, 
+
+		c348 : String, 
+
+		c349 : String, 
+
+		c350 : String, 
+
+		c351 : String, 
+
+		c352 : String, 
+
+		c353 : String, 
+
+		c354 : String, 
+
+		c355 : String, 
+
+		c356 : String, 
+
+		c357 : String, 
+
+		c358 : String, 
+
+		c359 : String, 
+
+		c360 : String, 
+
+		c361 : String, 
+
+		c362 : String, 
+
+		c363 : String, 
+
+		c364 : String, 
+
+		c365 : String, 
+
+		c366 : String, 
+
+		c367 : String, 
+
+		c368 : String, 
+
+		c369 : String, 
+
+		c370 : String, 
+
+		c371 : String, 
+
+		c372 : String, 
+
+		c373 : String, 
+
+		c374 : String, 
+
+		c375 : String, 
+
+		c376 : String, 
+
+		c377 : String, 
+
+		c378 : String, 
+
+		c379 : String, 
+
+		c380 : String, 
+
+		c381 : String, 
+
+		c382 : String, 
+
+		c383 : String, 
+
+		c384 : String, 
+
+		c385 : String, 
+
+		c386 : String, 
+
+		c387 : String, 
+
+		c388 : String, 
+
+		c389 : String, 
+
+		c390 : String, 
+
+		c391 : String, 
+
+		c392 : String, 
+
+		c393 : String, 
+
+		c394 : String, 
+
+		c395 : String, 
+
+		c396 : String, 
+
+		c397 : String, 
+
+		c398 : String, 
+
+		c399 : String, 
+
+		c400 : String, 
+
+		c401 : String, 
+
+		c402 : String, 
+
+		c403 : String, 
+
+		c404 : String, 
+
+		c405 : String, 
+
+		c406 : String, 
+
+		c407 : String, 
+
+		c408 : String, 
+
+		c409 : String, 
+
+		c410 : String, 
+
+		c411 : String, 
+
+		c412 : String, 
+
+		c413 : String, 
+
+		c414 : String, 
+
+		c415 : String, 
+
+		c416 : String, 
+
+		c417 : String, 
+
+		c418 : String, 
+
+		c419 : String, 
+
+		c420 : String, 
+
+		c421 : String, 
+
+		c422 : String, 
+
+		c423 : String, 
+
+		c424 : String, 
+
+		c425 : String, 
+
+		c426 : String, 
+
+		c427 : String, 
+
+		c428 : String, 
+
+		c429 : String, 
+
+		c430 : String, 
+
+		c431 : String, 
+
+		c432 : String, 
+
+		c433 : String, 
+
+		c434 : String, 
+
+		c435 : String, 
+
+		c436 : String, 
+
+		c437 : String, 
+
+		c438 : String, 
+
+		c439 : String, 
+
+		c440 : String, 
+
+		c441 : String, 
+
+		c442 : String, 
+
+		c443 : String, 
+
+		c444 : String, 
+
+		c445 : String, 
+
+		c446 : String, 
+
+		c447 : String, 
+
+		c448 : String, 
+
+		c449 : String, 
+
+		c450 : String, 
+
+		c451 : String, 
+
+		c452 : String, 
+
+		c453 : String, 
+
+		c454 : String, 
+
+		c455 : String, 
+
+		c456 : String, 
+
+		c457 : String, 
+
+		c458 : String, 
+
+		c459 : String, 
+
+		c460 : String, 
+
+		c461 : String, 
+
+		c462 : String, 
+
+		c463 : String, 
+
+		c464 : String, 
+
+		c465 : String, 
+
+		c466 : String, 
+
+		c467 : String, 
+
+		c468 : String, 
+
+		c469 : String, 
+
+		c470 : String, 
+
+		c471 : String, 
+
+		c472 : String, 
+
+		c473 : String, 
+
+		c474 : String, 
+
+		c475 : String, 
+
+		c476 : String, 
+
+		c477 : String, 
+
+		c478 : String, 
+
+		c479 : String, 
+
+		c480 : String, 
+
+		c481 : String, 
+
+		c482 : String, 
+
+		c483 : String, 
+
+		c484 : String, 
+
+		c485 : String, 
+
+		c486 : String, 
+
+		c487 : String, 
+
+		c488 : String, 
+
+		c489 : String, 
+
+		c490 : String, 
+
+		c491 : String, 
+
+		c492 : String, 
+
+		c493 : String, 
+
+		c494 : String, 
+
+		c495 : String, 
+
+		c496 : String, 
+
+		c497 : String, 
+
+		c498 : String, 
+
+		c499 : String, 
+
+		c500 : String
+	};
+
+	class com.cclip.model.geo.cadastre.aacc.AaccDatosPostalesNov #8DB4E3 #C5D9F1 {
+
+
+		id : String, 
+
+		erased : Boolean = false, 
+
+		auditDateCreate : Timestamp, 
+
+		auditUserCreate : String, 
+
+		c1 : String, 
+
+		c2 : String, 
+
+		c3 : String, 
+
+		c4 : String, 
+
+		c5 : String, 
+
+		c6 : String, 
+
+		c7 : String, 
+
+		c8 : String, 
+
+		c9 : String, 
+
+		c10 : String, 
+
+		c11 : String, 
+
+		c12 : String, 
+
+		c13 : String, 
+
+		c14 : String, 
+
+		c15 : String, 
+
+		c16 : String, 
+
+		c17 : String, 
+
+		c18 : String, 
+
+		c19 : String, 
+
+		c20 : String, 
+
+		c21 : String, 
+
+		c22 : String, 
+
+		c23 : String, 
+
+		c24 : String, 
+
+		c25 : String, 
+
+		c26 : String, 
+
+		c27 : String, 
+
+		c28 : String, 
+
+		c29 : String, 
+
+		c30 : String, 
+
+		c31 : String, 
+
+		c32 : String, 
+
+		c33 : String, 
+
+		c34 : String, 
+
+		c35 : String, 
+
+		c36 : String, 
+
+		c37 : String, 
+
+		c38 : String, 
+
+		c39 : String, 
+
+		c40 : String, 
+
+		c41 : String, 
+
+		c42 : String, 
+
+		c43 : String, 
+
+		c44 : String, 
+
+		c45 : String, 
+
+		c46 : String, 
+
+		c47 : String, 
+
+		c48 : String, 
+
+		c49 : String, 
+
+		c50 : String, 
+
+		c51 : String, 
+
+		c52 : String, 
+
+		c53 : String, 
+
+		c54 : String, 
+
+		c55 : String, 
+
+		c56 : String, 
+
+		c57 : String, 
+
+		c58 : String, 
+
+		c59 : String, 
+
+		c60 : String, 
+
+		c61 : String, 
+
+		c62 : String, 
+
+		c63 : String, 
+
+		c64 : String, 
+
+		c65 : String, 
+
+		c66 : String, 
+
+		c67 : String, 
+
+		c68 : String, 
+
+		c69 : String, 
+
+		c70 : String, 
+
+		c71 : String, 
+
+		c72 : String, 
+
+		c73 : String, 
+
+		c74 : String, 
+
+		c75 : String, 
+
+		c76 : String, 
+
+		c77 : String, 
+
+		c78 : String, 
+
+		c79 : String, 
+
+		c80 : String, 
+
+		c81 : String, 
+
+		c82 : String, 
+
+		c83 : String, 
+
+		c84 : String, 
+
+		c85 : String, 
+
+		c86 : String, 
+
+		c87 : String, 
+
+		c88 : String, 
+
+		c89 : String, 
+
+		c90 : String, 
+
+		c91 : String, 
+
+		c92 : String, 
+
+		c93 : String, 
+
+		c94 : String, 
+
+		c95 : String, 
+
+		c96 : String, 
+
+		c97 : String, 
+
+		c98 : String, 
+
+		c99 : String, 
+
+		c100 : String, 
+
+		c101 : String, 
+
+		c102 : String, 
+
+		c103 : String, 
+
+		c104 : String, 
+
+		c105 : String, 
+
+		c106 : String, 
+
+		c107 : String, 
+
+		c108 : String, 
+
+		c109 : String, 
+
+		c110 : String, 
+
+		c111 : String, 
+
+		c112 : String, 
+
+		c113 : String, 
+
+		c114 : String, 
+
+		c115 : String, 
+
+		c116 : String, 
+
+		c117 : String, 
+
+		c118 : String, 
+
+		c119 : String, 
+
+		c120 : String, 
+
+		c121 : String, 
+
+		c122 : String, 
+
+		c123 : String, 
+
+		c124 : String, 
+
+		c125 : String, 
+
+		c126 : String, 
+
+		c127 : String, 
+
+		c128 : String, 
+
+		c129 : String, 
+
+		c130 : String, 
+
+		c131 : String, 
+
+		c132 : String, 
+
+		c133 : String, 
+
+		c134 : String, 
+
+		c135 : String, 
+
+		c136 : String, 
+
+		c137 : String, 
+
+		c138 : String, 
+
+		c139 : String, 
+
+		c140 : String, 
+
+		c141 : String, 
+
+		c142 : String, 
+
+		c143 : String, 
+
+		c144 : String, 
+
+		c145 : String, 
+
+		c146 : String, 
+
+		c147 : String, 
+
+		c148 : String, 
+
+		c149 : String, 
+
+		c150 : String, 
+
+		c151 : String, 
+
+		c152 : String, 
+
+		c153 : String, 
+
+		c154 : String, 
+
+		c155 : String, 
+
+		c156 : String, 
+
+		c157 : String, 
+
+		c158 : String, 
+
+		c159 : String, 
+
+		c160 : String, 
+
+		c161 : String, 
+
+		c162 : String, 
+
+		c163 : String, 
+
+		c164 : String, 
+
+		c165 : String, 
+
+		c166 : String, 
+
+		c167 : String, 
+
+		c168 : String, 
+
+		c169 : String, 
+
+		c170 : String, 
+
+		c171 : String, 
+
+		c172 : String, 
+
+		c173 : String, 
+
+		c174 : String, 
+
+		c175 : String, 
+
+		c176 : String, 
+
+		c177 : String, 
+
+		c178 : String, 
+
+		c179 : String, 
+
+		c180 : String, 
+
+		c181 : String, 
+
+		c182 : String, 
+
+		c183 : String, 
+
+		c184 : String, 
+
+		c185 : String, 
+
+		c186 : String, 
+
+		c187 : String, 
+
+		c188 : String, 
+
+		c189 : String, 
+
+		c190 : String, 
+
+		c191 : String, 
+
+		c192 : String, 
+
+		c193 : String, 
+
+		c194 : String, 
+
+		c195 : String, 
+
+		c196 : String, 
+
+		c197 : String, 
+
+		c198 : String, 
+
+		c199 : String, 
+
+		c200 : String, 
+
+		c201 : String, 
+
+		c202 : String, 
+
+		c203 : String, 
+
+		c204 : String, 
+
+		c205 : String, 
+
+		c206 : String, 
+
+		c207 : String, 
+
+		c208 : String, 
+
+		c209 : String, 
+
+		c210 : String, 
+
+		c211 : String, 
+
+		c212 : String, 
+
+		c213 : String, 
+
+		c214 : String, 
+
+		c215 : String, 
+
+		c216 : String, 
+
+		c217 : String, 
+
+		c218 : String, 
+
+		c219 : String, 
+
+		c220 : String, 
+
+		c221 : String, 
+
+		c222 : String, 
+
+		c223 : String, 
+
+		c224 : String, 
+
+		c225 : String, 
+
+		c226 : String, 
+
+		c227 : String, 
+
+		c228 : String, 
+
+		c229 : String, 
+
+		c230 : String, 
+
+		c231 : String, 
+
+		c232 : String, 
+
+		c233 : String, 
+
+		c234 : String, 
+
+		c235 : String, 
+
+		c236 : String, 
+
+		c237 : String, 
+
+		c238 : String, 
+
+		c239 : String, 
+
+		c240 : String, 
+
+		c241 : String, 
+
+		c242 : String, 
+
+		c243 : String, 
+
+		c244 : String, 
+
+		c245 : String, 
+
+		c246 : String, 
+
+		c247 : String, 
+
+		c248 : String, 
+
+		c249 : String, 
+
+		c250 : String, 
+
+		c251 : String, 
+
+		c252 : String, 
+
+		c253 : String, 
+
+		c254 : String, 
+
+		c255 : String, 
+
+		c256 : String, 
+
+		c257 : String, 
+
+		c258 : String, 
+
+		c259 : String, 
+
+		c260 : String, 
+
+		c261 : String, 
+
+		c262 : String, 
+
+		c263 : String, 
+
+		c264 : String, 
+
+		c265 : String, 
+
+		c266 : String, 
+
+		c267 : String, 
+
+		c268 : String, 
+
+		c269 : String, 
+
+		c270 : String, 
+
+		c271 : String, 
+
+		c272 : String, 
+
+		c273 : String, 
+
+		c274 : String, 
+
+		c275 : String, 
+
+		c276 : String, 
+
+		c277 : String, 
+
+		c278 : String, 
+
+		c279 : String, 
+
+		c280 : String, 
+
+		c281 : String, 
+
+		c282 : String, 
+
+		c283 : String, 
+
+		c284 : String, 
+
+		c285 : String, 
+
+		c286 : String, 
+
+		c287 : String, 
+
+		c288 : String, 
+
+		c289 : String, 
+
+		c290 : String, 
+
+		c291 : String, 
+
+		c292 : String, 
+
+		c293 : String, 
+
+		c294 : String, 
+
+		c295 : String, 
+
+		c296 : String, 
+
+		c297 : String, 
+
+		c298 : String, 
+
+		c299 : String, 
+
+		c300 : String, 
+
+		c301 : String, 
+
+		c302 : String, 
+
+		c303 : String, 
+
+		c304 : String, 
+
+		c305 : String, 
+
+		c306 : String, 
+
+		c307 : String, 
+
+		c308 : String, 
+
+		c309 : String, 
+
+		c310 : String, 
+
+		c311 : String, 
+
+		c312 : String, 
+
+		c313 : String, 
+
+		c314 : String, 
+
+		c315 : String, 
+
+		c316 : String, 
+
+		c317 : String, 
+
+		c318 : String, 
+
+		c319 : String, 
+
+		c320 : String, 
+
+		c321 : String, 
+
+		c322 : String, 
+
+		c323 : String, 
+
+		c324 : String, 
+
+		c325 : String, 
+
+		c326 : String, 
+
+		c327 : String, 
+
+		c328 : String, 
+
+		c329 : String, 
+
+		c330 : String, 
+
+		c331 : String, 
+
+		c332 : String, 
+
+		c333 : String, 
+
+		c334 : String, 
+
+		c335 : String, 
+
+		c336 : String, 
+
+		c337 : String, 
+
+		c338 : String, 
+
+		c339 : String, 
+
+		c340 : String, 
+
+		c341 : String, 
+
+		c342 : String, 
+
+		c343 : String, 
+
+		c344 : String, 
+
+		c345 : String, 
+
+		c346 : String, 
+
+		c347 : String, 
+
+		c348 : String, 
+
+		c349 : String, 
+
+		c350 : String, 
+
+		c351 : String, 
+
+		c352 : String, 
+
+		c353 : String, 
+
+		c354 : String, 
+
+		c355 : String, 
+
+		c356 : String, 
+
+		c357 : String, 
+
+		c358 : String, 
+
+		c359 : String, 
+
+		c360 : String, 
+
+		c361 : String, 
+
+		c362 : String, 
+
+		c363 : String, 
+
+		c364 : String, 
+
+		c365 : String, 
+
+		c366 : String, 
+
+		c367 : String, 
+
+		c368 : String, 
+
+		c369 : String, 
+
+		c370 : String, 
+
+		c371 : String, 
+
+		c372 : String, 
+
+		c373 : String, 
+
+		c374 : String, 
+
+		c375 : String, 
+
+		c376 : String, 
+
+		c377 : String, 
+
+		c378 : String, 
+
+		c379 : String, 
+
+		c380 : String, 
+
+		c381 : String, 
+
+		c382 : String, 
+
+		c383 : String, 
+
+		c384 : String, 
+
+		c385 : String, 
+
+		c386 : String, 
+
+		c387 : String, 
+
+		c388 : String, 
+
+		c389 : String, 
+
+		c390 : String, 
+
+		c391 : String, 
+
+		c392 : String, 
+
+		c393 : String, 
+
+		c394 : String, 
+
+		c395 : String, 
+
+		c396 : String, 
+
+		c397 : String, 
+
+		c398 : String, 
+
+		c399 : String, 
+
+		c400 : String, 
+
+		c401 : String, 
+
+		c402 : String, 
+
+		c403 : String, 
+
+		c404 : String, 
+
+		c405 : String, 
+
+		c406 : String, 
+
+		c407 : String, 
+
+		c408 : String, 
+
+		c409 : String, 
+
+		c410 : String, 
+
+		c411 : String, 
+
+		c412 : String, 
+
+		c413 : String, 
+
+		c414 : String, 
+
+		c415 : String, 
+
+		c416 : String, 
+
+		c417 : String, 
+
+		c418 : String, 
+
+		c419 : String, 
+
+		c420 : String, 
+
+		c421 : String, 
+
+		c422 : String, 
+
+		c423 : String, 
+
+		c424 : String, 
+
+		c425 : String, 
+
+		c426 : String, 
+
+		c427 : String, 
+
+		c428 : String, 
+
+		c429 : String, 
+
+		c430 : String, 
+
+		c431 : String, 
+
+		c432 : String, 
+
+		c433 : String, 
+
+		c434 : String, 
+
+		c435 : String, 
+
+		c436 : String, 
+
+		c437 : String, 
+
+		c438 : String, 
+
+		c439 : String, 
+
+		c440 : String, 
+
+		c441 : String, 
+
+		c442 : String, 
+
+		c443 : String, 
+
+		c444 : String, 
+
+		c445 : String, 
+
+		c446 : String, 
+
+		c447 : String, 
+
+		c448 : String, 
+
+		c449 : String, 
+
+		c450 : String, 
+
+		c451 : String, 
+
+		c452 : String, 
+
+		c453 : String, 
+
+		c454 : String, 
+
+		c455 : String, 
+
+		c456 : String, 
+
+		c457 : String, 
+
+		c458 : String, 
+
+		c459 : String, 
+
+		c460 : String, 
+
+		c461 : String, 
+
+		c462 : String, 
+
+		c463 : String, 
+
+		c464 : String, 
+
+		c465 : String, 
+
+		c466 : String, 
+
+		c467 : String, 
+
+		c468 : String, 
+
+		c469 : String, 
+
+		c470 : String, 
+
+		c471 : String, 
+
+		c472 : String, 
+
+		c473 : String, 
+
+		c474 : String, 
+
+		c475 : String, 
+
+		c476 : String, 
+
+		c477 : String, 
+
+		c478 : String, 
+
+		c479 : String, 
+
+		c480 : String, 
+
+		c481 : String, 
+
+		c482 : String, 
+
+		c483 : String, 
+
+		c484 : String, 
+
+		c485 : String, 
+
+		c486 : String, 
+
+		c487 : String, 
+
+		c488 : String, 
+
+		c489 : String, 
+
+		c490 : String, 
+
+		c491 : String, 
+
+		c492 : String, 
+
+		c493 : String, 
+
+		c494 : String, 
+
+		c495 : String, 
+
+		c496 : String, 
+
+		c497 : String, 
+
+		c498 : String, 
+
+		c499 : String, 
+
+		c500 : String
+	};
+
+	class com.cclip.model.geo.cadastre.block.CadastreConstructiveType #FFB74D #FFCC80 {
+
+
+		id : String, 
+
+		erased : Boolean = false, 
+
+		name : String, 
+
+		comment : String
+	};
+
+	class com.cclip.model.geo.cadastre.block.CadastreDestinationType #FFB74D #FFCC80 {
+
+
+		id : String, 
+
+		erased : Boolean = false, 
+
+		name : String, 
+
+		comment : String
+	};
+
+	class com.cclip.model.geo.cadastre.block.CadastreBlock #FFB74D #FFCC80 {
+
+
+		id : String, 
+
+		erased : Boolean = false, 
+
+		yearBuilding : Integer, 
+
+		monthBuilding : Integer, 
+
+		m2Covered : Double, 
+
+		demolition : Boolean, 
+
+		comment : String, 
+
+		facade : String, 
+
+		roofStructure : String, 
+
+		homes : String, 
+
+		interiorWalls : String, 
+
+		ceiling : String, 
+
+		kitchen : String, 
+
+		toilets : String, 
+
+		entranceHall : String, 
+
+		facilities : String, 
+
+		carpentry : String, 
+
+		coverStructure : String, 
+
+		ornamentation : String, 
+
+		stainedGlassLighting : String, 
+
+		buffetDining : String, 
+
+		points : Integer, 
+
+		apc : Boolean, 
+
+		rate : Integer, 
+
+		apcDesc : String, 
+
+		auditDateCreate : Timestamp, 
+
+		auditUserCreate : String, 
+
+		auditDateUpdate : Timestamp, 
+
+		auditUserUpdate : String, 
+
+		auditVersion : Long, 
+
+		auditVersionCodeLabel : String, 
+
+		auditVersionLabel : String, 
+
+		cadastreActivityType : CadastreActivityType ,
+
+		cadastre : Cadastre ,
+
+		cadastreConstructiveType : CadastreConstructiveType ,
+
+		cadastreDestinationType : CadastreDestinationType 
+	};
+
+	class com.cclip.model.geo.cadastre.block.CadastreBlockCensus #D99795 #E6B9B8 {
+
+
+		id : String, 
+
+		erased : Boolean = false, 
+
+		yearBuilding : Integer, 
+
+		monthBuilding : Integer, 
+
+		m2Covered : Double, 
+
+		demolition : Boolean, 
+
+		comment : String, 
+
+		facade : String, 
+
+		roofStructure : String, 
+
+		homes : String, 
+
+		interiorWalls : String, 
+
+		ceiling : String, 
+
+		kitchen : String, 
+
+		toilets : String, 
+
+		entranceHall : String, 
+
+		facilities : String, 
+
+		carpentry : String, 
+
+		coverStructure : String, 
+
+		ornamentation : String, 
+
+		stainedGlassLighting : String, 
+
+		buffetDining : String, 
+
+		points : Integer, 
+
+		apc : Boolean, 
+
+		rate : Integer, 
+
+		apcDesc : String, 
+
+		auditDateCreate : Timestamp, 
+
+		auditUserCreate : String, 
+
+		auditDateUpdate : Timestamp, 
+
+		auditUserUpdate : String, 
+
+		auditVersion : Long, 
+
+		auditVersionCodeLabel : String, 
+
+		auditVersionLabel : String, 
+
+		cadastreActivityType : CadastreActivityType ,
+
+		cadastreCensus : CadastreCensus ,
+
+		cadastreConstructiveType : CadastreConstructiveType ,
+
+		cadastreDestinationType : CadastreDestinationType 
+	};
+
+	class com.cclip.model.geo.cadastre.subdivision.CadastreSubDivisionType #F48FB1 #F8BBD0 {
+
+
+		id : String, 
+
+		erased : Boolean = false, 
+
+		name : String, 
+
+		comment : String
+	};
+
+	class com.cclip.model.schedule.Schedule #C2D69A #D7E4BC {
+
+
+		id : String, 
+
+		erased : Boolean = false, 
+
+		year : Integer, 
+
+		dateFrom : Date, 
+
+		dateTo : Date, 
+
+		comment : String
+	};
+
+	class com.cclip.model.schedule.ScheduleBatch #C2D69A #D7E4BC {
+
+
+		id : String, 
+
+		erased : Boolean = false, 
+
+		createDate : Date, 
+
+		close : Date, 
+
+		delivered : Date, 
+
+		comment : String, 
+
+		numberBatch : Integer, 
+
+		schedule : Schedule 
+	};
+
+	class com.cclip.model.schedule.scanning.ScheduleScanning #FFEB3B #FFEE58 {
+
+
+		id : String, 
+
+		erased : Boolean = false, 
+
+		cadastralCode : String, 
+
+		numberScanning : Integer, 
+
+		comment : String, 
+
+		plannedDelivered : Date, 
+
+		createDate : Date, 
+
+		scanning : Date, 
+
+		recorded : Date, 
+
+		schedule : Schedule ,
+
+		censusTaker : CensusTaker 
+	};
+
+	class com.cclip.model.schedule.scanning.ScheduleScanningResult #FFEB3B #FFEE58 {
+
+
+		id : String, 
+
+		erased : Boolean = false, 
+
+		name : String, 
+
+		comment : String
+	};
+
+	class com.cclip.model.schedule.scanning.ScheduleScanningItem #FFEB3B #FFEE58 {
+
+
+		id : String, 
+
+		erased : Boolean = false, 
+
+		m2Construction : Double, 
+
+		progressConstruction : Double, 
+
+		comment : String, 
+
+		cadastre : Cadastre ,
+
+		scheduleScanningResult : ScheduleScanningResult ,
+
+		scheduleScanning : ScheduleScanning 
+	};
+
+	class com.cclip.model.schedule.census.ScheduleCensusResult #D99795 #E6B9B8 {
+
+
+		id : String, 
+
+		erased : Boolean = false, 
+
+		name : String, 
+
+		comment : String
+	};
+
+	class com.cclip.model.schedule.census.ScheduleCensus #D99795 #E6B9B8 {
+
+
+		id : String, 
+
+		erased : Boolean = false, 
+
+		cadastralCode : String, 
+
+		numberCensus : Integer, 
+
+		censused : Date, 
+
+		recorded : Date, 
+
+		m2ShedsGeneral : Double, 
+
+		m2GeneralBuilding : Double, 
+
+		m2BuildingsPublicEntertainment : Double, 
+
+		m2ProgressConstruction : Double, 
+
+		dniCensused : String, 
+
+		nameCensused : String, 
+
+		lastNameCensused : String, 
+
+		signatureCensused : Boolean, 
+
+		comment : String, 
+
+		insertCadastre : Boolean, 
+
+		deleteCadastre : Boolean, 
+
+		updateCadastre : Boolean, 
+
+		dateDelete : Timestamp, 
+
+		codeReasonLow : String, 
+
+		reasonLow : String, 
+
+		schedule : Schedule ,
+
+		censusTaker : CensusTaker ,
+
+		scheduleBatch : ScheduleBatch ,
+
+		cadastreActivityType : CadastreActivityType ,
+
+		scheduleCensusResult : ScheduleCensusResult 
+	};
+
+	class com.cclip.model.schedule.census.ScheduleCensusItem #D99795 #E6B9B8 {
+
+
+		id : String, 
+
+		erased : Boolean = false, 
+
+		cadastre : Cadastre ,
+
+		cadastreCensus : CadastreCensus ,
+
+		scheduleCensus : ScheduleCensus 
+	};
+
+	class com.cclip.model.person.Person #B2A1C7 #CCC0DA {
+
+
+		id : String, 
+
+		erased : Boolean = false, 
+
+		cuil : String, 
+
+		dni : String, 
+
+		givenName : String, 
+
+		middleName : String, 
+
+		familyName : String, 
+
+		masculine : Boolean, 
+
+		comment : String
+	};
+
+	class com.cclip.model.person.UserSystem extends Person #B2A1C7 #CCC0DA {
+
+
+		id : String, 
+
+		erased : Boolean = false, 
+
+		pass : String, 
+
+		email : String, 
+
+		comment : String
+	};
+
+	class com.cclip.model.person.CensusTaker extends Person #B2A1C7 #CCC0DA {
+
+
+		id : String, 
+
+		erased : Boolean = false, 
+
+		code : String, 
+
+		comment : String
+	};
+
+	class com.cclip.model.person.Uf #E1BEE7 #F3E5F5 {
+
+
+		id : String, 
+
+		erased : Boolean = false, 
+
+		name : String, 
+
+		dni : String, 
+
+		cuit : String, 
+
+		phone : String, 
+
+		comment : String, 
+
+		countryCode : String, 
+
+		country : String, 
+
+		adminAreaLevel1Code : String, 
+
+		adminAreaLevel1 : String, 
+
+		adminAreaLevel2 : String, 
+
+		locality : String, 
+
+		street : String, 
+
+		streetNumber : String, 
+
+		buildingFloor : String, 
+
+		buildingRoom : String, 
+
+		building : String, 
+
+		commentAddress : String, 
+
+		lat : Double, 
+
+		lng : Double, 
+
+		auditDateCreate : Timestamp, 
+
+		auditUserCreate : String, 
+
+		auditDateUpdate : Timestamp, 
+
+		auditUserUpdate : String, 
+
+		auditVersion : Long, 
+
+		auditVersionCodeLabel : String, 
+
+		auditVersionLabel : String, 
+
+		iva : Iva ,
+
+		neighbourhood : Neighbourhood 
+	};
+
+	class com.cclip.model.person.UfCensus #D99795 #E6B9B8 {
+
+
+		id : String, 
+
+		erased : Boolean = false, 
+
+		name : String, 
+
+		dni : String, 
+
+		cuit : String, 
+
+		phone : String, 
+
+		comment : String, 
+
+		countryCode : String, 
+
+		country : String, 
+
+		adminAreaLevel1Code : String, 
+
+		adminAreaLevel1 : String, 
+
+		adminAreaLevel2 : String, 
+
+		locality : String, 
+
+		street : String, 
+
+		streetNumber : String, 
+
+		buildingFloor : String, 
+
+		buildingRoom : String, 
+
+		building : String, 
+
+		commentAddress : String, 
+
+		lat : Double, 
+
+		lng : Double, 
+
+		auditDateCreate : Timestamp, 
+
+		auditUserCreate : String, 
+
+		auditDateUpdate : Timestamp, 
+
+		auditUserUpdate : String, 
+
+		auditVersion : Long, 
+
+		auditVersionCodeLabel : String, 
+
+		auditVersionLabel : String, 
+
+		iva : Iva ,
+
+		neighbourhood : Neighbourhood 
+	};
+
+	class com.cclip.model.person.Iva #8DB4E3 #C5D9F1 {
+
+
+		id : String, 
+
+		erased : Boolean = false, 
+
+		name : String, 
+
+		comment : String
+	};
+)

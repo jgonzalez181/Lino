@@ -1,0 +1,567 @@
+digraph G {
+
+	graph [
+		label="Modelo de Datos Simplificado de Cclip Censo y Barrido (Basado en Entity Relationship Diagram)"
+		rankdir="TB"
+		bgcolor="#FFFFFF"
+		labeljust="l"
+		nodesep="0.18"
+		ranksep="0.46"
+		fontname="Helvetica"
+		fontsize="8"
+	];
+	node [
+		fontname="Helvetica"
+		fontsize="9"
+		shape="plaintext"
+		
+	];
+	edge [
+		arrowsize="0.5"
+	];
+
+				//com.cclip.model.ConfSystem
+				conf_system [
+					label=<
+						<TABLE BORDER="0" CELLBORDER="0" CELLSPACING="0" BGCOLOR="#ffffff">
+				<TR><TD COLSPAN="3" BGCOLOR="#90CAF9" ALIGN="CENTER"><B>conf_system</B></TD></TR>
+
+				<TR><TD PORT="id" COLSPAN="3" BGCOLOR="#E3F2FD" ALIGN="LEFT"><B>  id</B> : varchar <B>pk  not null</B> </TD></TR>
+				<TR><TD PORT="erased" COLSPAN="3" BGCOLOR="#E3F2FD" ALIGN="LEFT">  <B>erased</B> : boolean <B>not null</B>   </TD></TR>
+				<TR><TD PORT="url_files" COLSPAN="3" BGCOLOR="#E3F2FD" ALIGN="LEFT">  <B>url_files</B> : varchar <B>not null</B>   </TD></TR>
+				<TR><TD PORT="url_in_files_import_db_ice" COLSPAN="3" BGCOLOR="#E3F2FD" ALIGN="LEFT">  <B>url_in_files_import_db_ice</B> : varchar <B>not null</B>   </TD></TR>
+						</TABLE>>
+						URL="com.cclip.model.ConfSystem.html"
+						tooltip="com.cclip.model.ConfSystem"
+				];
+
+							//com.cclip.model.geo.cadastre.aacc.AaccUnidad
+							aacc_unidad [
+								label=<
+									<TABLE BORDER="0" CELLBORDER="0" CELLSPACING="0" BGCOLOR="#ffffff">
+				<TR><TD COLSPAN="3" BGCOLOR="#90CAF9" ALIGN="CENTER"><B>aacc_unidad</B></TD></TR>
+
+				<TR><TD PORT="id" COLSPAN="3" BGCOLOR="#E3F2FD" ALIGN="LEFT"><B>  id</B> : varchar <B>pk  not null</B> </TD></TR>
+				<TR><TD PORT="erased" COLSPAN="3" BGCOLOR="#E3F2FD" ALIGN="LEFT">  <B>erased</B> : boolean <B>not null</B>   </TD></TR>
+				<TR><TD PORT="audit_date_create" COLSPAN="3" BGCOLOR="#E3F2FD" ALIGN="LEFT">  <B>audit_date_create</B> : timestamp <B>not null</B>   </TD></TR>
+				<TR><TD PORT="audit_user_create" COLSPAN="3" BGCOLOR="#E3F2FD" ALIGN="LEFT">  <B>audit_user_create</B> : varchar <B>not null</B>   </TD></TR>
+				<TR><TD PORT="audit_date_update" COLSPAN="3" BGCOLOR="#E3F2FD" ALIGN="LEFT">  <B>audit_date_update</B> : timestamp <B>not null</B>   </TD></TR>
+				<TR><TD PORT="audit_user_update" COLSPAN="3" BGCOLOR="#E3F2FD" ALIGN="LEFT">  <B>audit_user_update</B> : varchar <B>not null</B>   </TD></TR>
+				<TR><TD PORT="audit_version" COLSPAN="3" BGCOLOR="#E3F2FD" ALIGN="LEFT">  <B>audit_version</B> : bigint <B>not null</B>   </TD></TR>
+				<TR><TD PORT="unidad" COLSPAN="3" BGCOLOR="#E3F2FD" ALIGN="LEFT">  <B>unidad</B> : varchar <B>unique</B>  <B>not null</B>   </TD></TR>
+				<TR><TD PORT="unidad_alt" COLSPAN="3" BGCOLOR="#E3F2FD" ALIGN="LEFT">  unidad_alt : varchar  </TD></TR>
+				<TR><TD PORT="razon" COLSPAN="3" BGCOLOR="#E3F2FD" ALIGN="LEFT">  razon : varchar  </TD></TR>
+				<TR><TD PORT="usuario" COLSPAN="3" BGCOLOR="#E3F2FD" ALIGN="LEFT">  usuario : varchar  </TD></TR>
+				<TR><TD PORT="zona" COLSPAN="3" BGCOLOR="#E3F2FD" ALIGN="LEFT">  zona : varchar  </TD></TR>
+				<TR><TD PORT="calle" COLSPAN="3" BGCOLOR="#E3F2FD" ALIGN="LEFT">  calle : varchar  </TD></TR>
+				<TR><TD PORT="numero" COLSPAN="3" BGCOLOR="#E3F2FD" ALIGN="LEFT">  numero : varchar  </TD></TR>
+				<TR><TD PORT="piso" COLSPAN="3" BGCOLOR="#E3F2FD" ALIGN="LEFT">  piso : varchar  </TD></TR>
+				<TR><TD PORT="depto" COLSPAN="3" BGCOLOR="#E3F2FD" ALIGN="LEFT">  depto : varchar  </TD></TR>
+				<TR><TD PORT="dat_complem" COLSPAN="3" BGCOLOR="#E3F2FD" ALIGN="LEFT">  dat_complem : varchar  </TD></TR>
+				<TR><TD PORT="locali" COLSPAN="3" BGCOLOR="#E3F2FD" ALIGN="LEFT">  locali : varchar  </TD></TR>
+				<TR><TD PORT="cod_pos" COLSPAN="3" BGCOLOR="#E3F2FD" ALIGN="LEFT">  cod_pos : varchar  </TD></TR>
+				<TR><TD PORT="seccion" COLSPAN="3" BGCOLOR="#E3F2FD" ALIGN="LEFT">  seccion : varchar  </TD></TR>
+				<TR><TD PORT="manzana" COLSPAN="3" BGCOLOR="#E3F2FD" ALIGN="LEFT">  manzana : varchar  </TD></TR>
+				<TR><TD PORT="parcela" COLSPAN="3" BGCOLOR="#E3F2FD" ALIGN="LEFT">  parcela : varchar  </TD></TR>
+				<TR><TD PORT="subparcela" COLSPAN="3" BGCOLOR="#E3F2FD" ALIGN="LEFT">  subparcela : varchar  </TD></TR>
+				<TR><TD PORT="uni_fun" COLSPAN="3" BGCOLOR="#E3F2FD" ALIGN="LEFT">  uni_fun : varchar  </TD></TR>
+				<TR><TD PORT="cod_edi" COLSPAN="3" BGCOLOR="#E3F2FD" ALIGN="LEFT">  cod_edi : varchar  </TD></TR>
+				<TR><TD PORT="nom_edi" COLSPAN="3" BGCOLOR="#E3F2FD" ALIGN="LEFT">  nom_edi : varchar  </TD></TR>
+				<TR><TD PORT="dir_env" COLSPAN="3" BGCOLOR="#E3F2FD" ALIGN="LEFT">  dir_env : varchar  </TD></TR>
+				<TR><TD PORT="dir_cob" COLSPAN="3" BGCOLOR="#E3F2FD" ALIGN="LEFT">  dir_cob : varchar  </TD></TR>
+				<TR><TD PORT="reparto" COLSPAN="3" BGCOLOR="#E3F2FD" ALIGN="LEFT">  reparto : varchar  </TD></TR>
+				<TR><TD PORT="ruta_dis" COLSPAN="3" BGCOLOR="#E3F2FD" ALIGN="LEFT">  ruta_dis : varchar  </TD></TR>
+				<TR><TD PORT="tpo_doc" COLSPAN="3" BGCOLOR="#E3F2FD" ALIGN="LEFT">  tpo_doc : varchar  </TD></TR>
+				<TR><TD PORT="num_doc" COLSPAN="3" BGCOLOR="#E3F2FD" ALIGN="LEFT">  num_doc : varchar  </TD></TR>
+				<TR><TD PORT="tpo_iva" COLSPAN="3" BGCOLOR="#E3F2FD" ALIGN="LEFT">  tpo_iva : varchar  </TD></TR>
+				<TR><TD PORT="por_gra" COLSPAN="3" BGCOLOR="#E3F2FD" ALIGN="LEFT">  por_gra : varchar  </TD></TR>
+				<TR><TD PORT="cuenta" COLSPAN="3" BGCOLOR="#E3F2FD" ALIGN="LEFT">  cuenta : varchar  </TD></TR>
+				<TR><TD PORT="ite_agr" COLSPAN="3" BGCOLOR="#E3F2FD" ALIGN="LEFT">  ite_agr : varchar  </TD></TR>
+				<TR><TD PORT="val_atr_0" COLSPAN="3" BGCOLOR="#E3F2FD" ALIGN="LEFT">  val_atr_0 : varchar  </TD></TR>
+				<TR><TD PORT="val_atr_1" COLSPAN="3" BGCOLOR="#E3F2FD" ALIGN="LEFT">  val_atr_1 : varchar  </TD></TR>
+				<TR><TD PORT="val_atr_2" COLSPAN="3" BGCOLOR="#E3F2FD" ALIGN="LEFT">  val_atr_2 : varchar  </TD></TR>
+				<TR><TD PORT="val_atr_3" COLSPAN="3" BGCOLOR="#E3F2FD" ALIGN="LEFT">  val_atr_3 : varchar  </TD></TR>
+				<TR><TD PORT="val_atr_4" COLSPAN="3" BGCOLOR="#E3F2FD" ALIGN="LEFT">  val_atr_4 : varchar  </TD></TR>
+				<TR><TD PORT="val_atr_5" COLSPAN="3" BGCOLOR="#E3F2FD" ALIGN="LEFT">  val_atr_5 : varchar  </TD></TR>
+				<TR><TD PORT="val_atr_6" COLSPAN="3" BGCOLOR="#E3F2FD" ALIGN="LEFT">  val_atr_6 : varchar  </TD></TR>
+				<TR><TD PORT="val_atr_7" COLSPAN="3" BGCOLOR="#E3F2FD" ALIGN="LEFT">  val_atr_7 : varchar  </TD></TR>
+				<TR><TD PORT="val_atr_8" COLSPAN="3" BGCOLOR="#E3F2FD" ALIGN="LEFT">  val_atr_8 : varchar  </TD></TR>
+				<TR><TD PORT="val_atr_9" COLSPAN="3" BGCOLOR="#E3F2FD" ALIGN="LEFT">  val_atr_9 : varchar  </TD></TR>
+				<TR><TD PORT="nro_calle" COLSPAN="3" BGCOLOR="#E3F2FD" ALIGN="LEFT">  nro_calle : varchar  </TD></TR>
+				<TR><TD PORT="ult_act" COLSPAN="3" BGCOLOR="#E3F2FD" ALIGN="LEFT">  ult_act : varchar  </TD></TR>
+				<TR><TD PORT="usu_act" COLSPAN="3" BGCOLOR="#E3F2FD" ALIGN="LEFT">  usu_act : varchar  </TD></TR>
+				<TR><TD PORT="situacion" COLSPAN="3" BGCOLOR="#E3F2FD" ALIGN="LEFT">  situacion : varchar  </TD></TR>
+				<TR><TD PORT="usu_sit" COLSPAN="3" BGCOLOR="#E3F2FD" ALIGN="LEFT">  usu_sit : varchar  </TD></TR>
+				<TR><TD PORT="fec_sit" COLSPAN="3" BGCOLOR="#E3F2FD" ALIGN="LEFT">  fec_sit : varchar  </TD></TR>
+				<TR><TD PORT="cortable" COLSPAN="3" BGCOLOR="#E3F2FD" ALIGN="LEFT">  cortable : varchar  </TD></TR>
+				<TR><TD PORT="lec_obl" COLSPAN="3" BGCOLOR="#E3F2FD" ALIGN="LEFT">  lec_obl : varchar  </TD></TR>
+				<TR><TD PORT="rep_obl" COLSPAN="3" BGCOLOR="#E3F2FD" ALIGN="LEFT">  rep_obl : varchar  </TD></TR>
+				<TR><TD PORT="telefono" COLSPAN="3" BGCOLOR="#E3F2FD" ALIGN="LEFT">  telefono : varchar  </TD></TR>
+				<TR><TD PORT="val_atr_10" COLSPAN="3" BGCOLOR="#E3F2FD" ALIGN="LEFT">  val_atr_10 : varchar  </TD></TR>
+				<TR><TD PORT="val_atr_11" COLSPAN="3" BGCOLOR="#E3F2FD" ALIGN="LEFT">  val_atr_11 : varchar  </TD></TR>
+				<TR><TD PORT="val_atr_12" COLSPAN="3" BGCOLOR="#E3F2FD" ALIGN="LEFT">  val_atr_12 : varchar  </TD></TR>
+				<TR><TD PORT="val_atr_13" COLSPAN="3" BGCOLOR="#E3F2FD" ALIGN="LEFT">  val_atr_13 : varchar  </TD></TR>
+				<TR><TD PORT="val_atr_14" COLSPAN="3" BGCOLOR="#E3F2FD" ALIGN="LEFT">  val_atr_14 : varchar  </TD></TR>
+				<TR><TD PORT="val_atr_15" COLSPAN="3" BGCOLOR="#E3F2FD" ALIGN="LEFT">  val_atr_15 : varchar  </TD></TR>
+				<TR><TD PORT="val_atr_16" COLSPAN="3" BGCOLOR="#E3F2FD" ALIGN="LEFT">  val_atr_16 : varchar  </TD></TR>
+				<TR><TD PORT="val_atr_17" COLSPAN="3" BGCOLOR="#E3F2FD" ALIGN="LEFT">  val_atr_17 : varchar  </TD></TR>
+				<TR><TD PORT="val_atr_18" COLSPAN="3" BGCOLOR="#E3F2FD" ALIGN="LEFT">  val_atr_18 : varchar  </TD></TR>
+				<TR><TD PORT="val_atr_19" COLSPAN="3" BGCOLOR="#E3F2FD" ALIGN="LEFT">  val_atr_19 : varchar  </TD></TR>
+				<TR><TD PORT="val_atr_20" COLSPAN="3" BGCOLOR="#E3F2FD" ALIGN="LEFT">  val_atr_20 : varchar  </TD></TR>
+				<TR><TD PORT="val_atr_21" COLSPAN="3" BGCOLOR="#E3F2FD" ALIGN="LEFT">  val_atr_21 : varchar  </TD></TR>
+				<TR><TD PORT="val_atr_22" COLSPAN="3" BGCOLOR="#E3F2FD" ALIGN="LEFT">  val_atr_22 : varchar  </TD></TR>
+				<TR><TD PORT="val_atr_23" COLSPAN="3" BGCOLOR="#E3F2FD" ALIGN="LEFT">  val_atr_23 : varchar  </TD></TR>
+				<TR><TD PORT="val_atr_24" COLSPAN="3" BGCOLOR="#E3F2FD" ALIGN="LEFT">  val_atr_24 : varchar  </TD></TR>
+				<TR><TD PORT="val_atr_25" COLSPAN="3" BGCOLOR="#E3F2FD" ALIGN="LEFT">  val_atr_25 : varchar  </TD></TR>
+				<TR><TD PORT="val_atr_26" COLSPAN="3" BGCOLOR="#E3F2FD" ALIGN="LEFT">  val_atr_26 : varchar  </TD></TR>
+				<TR><TD PORT="val_atr_27" COLSPAN="3" BGCOLOR="#E3F2FD" ALIGN="LEFT">  val_atr_27 : varchar  </TD></TR>
+				<TR><TD PORT="val_atr_28" COLSPAN="3" BGCOLOR="#E3F2FD" ALIGN="LEFT">  val_atr_28 : varchar  </TD></TR>
+				<TR><TD PORT="val_atr_29" COLSPAN="3" BGCOLOR="#E3F2FD" ALIGN="LEFT">  val_atr_29 : varchar  </TD></TR>
+									</TABLE>>
+									URL="com.cclip.model.geo.cadastre.aacc.AaccUnidad.html"
+									tooltip="com.cclip.model.geo.cadastre.aacc.AaccUnidad"
+							];
+
+							//com.cclip.model.geo.cadastre.aacc.AaccUnidadBack
+							aacc_unidad_back [
+								label=<
+									<TABLE BORDER="0" CELLBORDER="0" CELLSPACING="0" BGCOLOR="#ffffff">
+				<TR><TD COLSPAN="3" BGCOLOR="#90CAF9" ALIGN="CENTER"><B>aacc_unidad_back</B></TD></TR>
+
+				<TR><TD PORT="id" COLSPAN="3" BGCOLOR="#E3F2FD" ALIGN="LEFT"><B>  id</B> : varchar <B>pk  not null</B> </TD></TR>
+				<TR><TD PORT="erased" COLSPAN="3" BGCOLOR="#E3F2FD" ALIGN="LEFT">  <B>erased</B> : boolean <B>not null</B>   </TD></TR>
+				<TR><TD PORT="audit_date_create" COLSPAN="3" BGCOLOR="#E3F2FD" ALIGN="LEFT">  <B>audit_date_create</B> : timestamp <B>not null</B>   </TD></TR>
+				<TR><TD PORT="audit_user_create" COLSPAN="3" BGCOLOR="#E3F2FD" ALIGN="LEFT">  <B>audit_user_create</B> : varchar <B>not null</B>   </TD></TR>
+				<TR><TD PORT="audit_date_update" COLSPAN="3" BGCOLOR="#E3F2FD" ALIGN="LEFT">  <B>audit_date_update</B> : timestamp <B>not null</B>   </TD></TR>
+				<TR><TD PORT="audit_user_update" COLSPAN="3" BGCOLOR="#E3F2FD" ALIGN="LEFT">  <B>audit_user_update</B> : varchar <B>not null</B>   </TD></TR>
+				<TR><TD PORT="audit_version" COLSPAN="3" BGCOLOR="#E3F2FD" ALIGN="LEFT">  <B>audit_version</B> : bigint <B>not null</B>   </TD></TR>
+				<TR><TD PORT="unidad" COLSPAN="3" BGCOLOR="#E3F2FD" ALIGN="LEFT">  <B>unidad</B> : varchar <B>unique</B>  <B>not null</B>   </TD></TR>
+				<TR><TD PORT="unidad_alt" COLSPAN="3" BGCOLOR="#E3F2FD" ALIGN="LEFT">  unidad_alt : varchar  </TD></TR>
+				<TR><TD PORT="razon" COLSPAN="3" BGCOLOR="#E3F2FD" ALIGN="LEFT">  razon : varchar  </TD></TR>
+				<TR><TD PORT="usuario" COLSPAN="3" BGCOLOR="#E3F2FD" ALIGN="LEFT">  usuario : varchar  </TD></TR>
+				<TR><TD PORT="zona" COLSPAN="3" BGCOLOR="#E3F2FD" ALIGN="LEFT">  zona : varchar  </TD></TR>
+				<TR><TD PORT="calle" COLSPAN="3" BGCOLOR="#E3F2FD" ALIGN="LEFT">  calle : varchar  </TD></TR>
+				<TR><TD PORT="numero" COLSPAN="3" BGCOLOR="#E3F2FD" ALIGN="LEFT">  numero : varchar  </TD></TR>
+				<TR><TD PORT="piso" COLSPAN="3" BGCOLOR="#E3F2FD" ALIGN="LEFT">  piso : varchar  </TD></TR>
+				<TR><TD PORT="depto" COLSPAN="3" BGCOLOR="#E3F2FD" ALIGN="LEFT">  depto : varchar  </TD></TR>
+				<TR><TD PORT="dat_complem" COLSPAN="3" BGCOLOR="#E3F2FD" ALIGN="LEFT">  dat_complem : varchar  </TD></TR>
+				<TR><TD PORT="locali" COLSPAN="3" BGCOLOR="#E3F2FD" ALIGN="LEFT">  locali : varchar  </TD></TR>
+				<TR><TD PORT="cod_pos" COLSPAN="3" BGCOLOR="#E3F2FD" ALIGN="LEFT">  cod_pos : varchar  </TD></TR>
+				<TR><TD PORT="seccion" COLSPAN="3" BGCOLOR="#E3F2FD" ALIGN="LEFT">  seccion : varchar  </TD></TR>
+				<TR><TD PORT="manzana" COLSPAN="3" BGCOLOR="#E3F2FD" ALIGN="LEFT">  manzana : varchar  </TD></TR>
+				<TR><TD PORT="parcela" COLSPAN="3" BGCOLOR="#E3F2FD" ALIGN="LEFT">  parcela : varchar  </TD></TR>
+				<TR><TD PORT="subparcela" COLSPAN="3" BGCOLOR="#E3F2FD" ALIGN="LEFT">  subparcela : varchar  </TD></TR>
+				<TR><TD PORT="uni_fun" COLSPAN="3" BGCOLOR="#E3F2FD" ALIGN="LEFT">  uni_fun : varchar  </TD></TR>
+				<TR><TD PORT="cod_edi" COLSPAN="3" BGCOLOR="#E3F2FD" ALIGN="LEFT">  cod_edi : varchar  </TD></TR>
+				<TR><TD PORT="nom_edi" COLSPAN="3" BGCOLOR="#E3F2FD" ALIGN="LEFT">  nom_edi : varchar  </TD></TR>
+				<TR><TD PORT="dir_env" COLSPAN="3" BGCOLOR="#E3F2FD" ALIGN="LEFT">  dir_env : varchar  </TD></TR>
+				<TR><TD PORT="dir_cob" COLSPAN="3" BGCOLOR="#E3F2FD" ALIGN="LEFT">  dir_cob : varchar  </TD></TR>
+				<TR><TD PORT="reparto" COLSPAN="3" BGCOLOR="#E3F2FD" ALIGN="LEFT">  reparto : varchar  </TD></TR>
+				<TR><TD PORT="ruta_dis" COLSPAN="3" BGCOLOR="#E3F2FD" ALIGN="LEFT">  ruta_dis : varchar  </TD></TR>
+				<TR><TD PORT="tpo_doc" COLSPAN="3" BGCOLOR="#E3F2FD" ALIGN="LEFT">  tpo_doc : varchar  </TD></TR>
+				<TR><TD PORT="num_doc" COLSPAN="3" BGCOLOR="#E3F2FD" ALIGN="LEFT">  num_doc : varchar  </TD></TR>
+				<TR><TD PORT="tpo_iva" COLSPAN="3" BGCOLOR="#E3F2FD" ALIGN="LEFT">  tpo_iva : varchar  </TD></TR>
+				<TR><TD PORT="por_gra" COLSPAN="3" BGCOLOR="#E3F2FD" ALIGN="LEFT">  por_gra : varchar  </TD></TR>
+				<TR><TD PORT="cuenta" COLSPAN="3" BGCOLOR="#E3F2FD" ALIGN="LEFT">  cuenta : varchar  </TD></TR>
+				<TR><TD PORT="ite_agr" COLSPAN="3" BGCOLOR="#E3F2FD" ALIGN="LEFT">  ite_agr : varchar  </TD></TR>
+				<TR><TD PORT="val_atr_0" COLSPAN="3" BGCOLOR="#E3F2FD" ALIGN="LEFT">  val_atr_0 : varchar  </TD></TR>
+				<TR><TD PORT="val_atr_1" COLSPAN="3" BGCOLOR="#E3F2FD" ALIGN="LEFT">  val_atr_1 : varchar  </TD></TR>
+				<TR><TD PORT="val_atr_2" COLSPAN="3" BGCOLOR="#E3F2FD" ALIGN="LEFT">  val_atr_2 : varchar  </TD></TR>
+				<TR><TD PORT="val_atr_3" COLSPAN="3" BGCOLOR="#E3F2FD" ALIGN="LEFT">  val_atr_3 : varchar  </TD></TR>
+				<TR><TD PORT="val_atr_4" COLSPAN="3" BGCOLOR="#E3F2FD" ALIGN="LEFT">  val_atr_4 : varchar  </TD></TR>
+				<TR><TD PORT="val_atr_5" COLSPAN="3" BGCOLOR="#E3F2FD" ALIGN="LEFT">  val_atr_5 : varchar  </TD></TR>
+				<TR><TD PORT="val_atr_6" COLSPAN="3" BGCOLOR="#E3F2FD" ALIGN="LEFT">  val_atr_6 : varchar  </TD></TR>
+				<TR><TD PORT="val_atr_7" COLSPAN="3" BGCOLOR="#E3F2FD" ALIGN="LEFT">  val_atr_7 : varchar  </TD></TR>
+				<TR><TD PORT="val_atr_8" COLSPAN="3" BGCOLOR="#E3F2FD" ALIGN="LEFT">  val_atr_8 : varchar  </TD></TR>
+				<TR><TD PORT="val_atr_9" COLSPAN="3" BGCOLOR="#E3F2FD" ALIGN="LEFT">  val_atr_9 : varchar  </TD></TR>
+				<TR><TD PORT="nro_calle" COLSPAN="3" BGCOLOR="#E3F2FD" ALIGN="LEFT">  nro_calle : varchar  </TD></TR>
+				<TR><TD PORT="ult_act" COLSPAN="3" BGCOLOR="#E3F2FD" ALIGN="LEFT">  ult_act : varchar  </TD></TR>
+				<TR><TD PORT="usu_act" COLSPAN="3" BGCOLOR="#E3F2FD" ALIGN="LEFT">  usu_act : varchar  </TD></TR>
+				<TR><TD PORT="situacion" COLSPAN="3" BGCOLOR="#E3F2FD" ALIGN="LEFT">  situacion : varchar  </TD></TR>
+				<TR><TD PORT="usu_sit" COLSPAN="3" BGCOLOR="#E3F2FD" ALIGN="LEFT">  usu_sit : varchar  </TD></TR>
+				<TR><TD PORT="fec_sit" COLSPAN="3" BGCOLOR="#E3F2FD" ALIGN="LEFT">  fec_sit : varchar  </TD></TR>
+				<TR><TD PORT="cortable" COLSPAN="3" BGCOLOR="#E3F2FD" ALIGN="LEFT">  cortable : varchar  </TD></TR>
+				<TR><TD PORT="lec_obl" COLSPAN="3" BGCOLOR="#E3F2FD" ALIGN="LEFT">  lec_obl : varchar  </TD></TR>
+				<TR><TD PORT="rep_obl" COLSPAN="3" BGCOLOR="#E3F2FD" ALIGN="LEFT">  rep_obl : varchar  </TD></TR>
+				<TR><TD PORT="telefono" COLSPAN="3" BGCOLOR="#E3F2FD" ALIGN="LEFT">  telefono : varchar  </TD></TR>
+				<TR><TD PORT="val_atr_10" COLSPAN="3" BGCOLOR="#E3F2FD" ALIGN="LEFT">  val_atr_10 : varchar  </TD></TR>
+				<TR><TD PORT="val_atr_11" COLSPAN="3" BGCOLOR="#E3F2FD" ALIGN="LEFT">  val_atr_11 : varchar  </TD></TR>
+				<TR><TD PORT="val_atr_12" COLSPAN="3" BGCOLOR="#E3F2FD" ALIGN="LEFT">  val_atr_12 : varchar  </TD></TR>
+				<TR><TD PORT="val_atr_13" COLSPAN="3" BGCOLOR="#E3F2FD" ALIGN="LEFT">  val_atr_13 : varchar  </TD></TR>
+				<TR><TD PORT="val_atr_14" COLSPAN="3" BGCOLOR="#E3F2FD" ALIGN="LEFT">  val_atr_14 : varchar  </TD></TR>
+				<TR><TD PORT="val_atr_15" COLSPAN="3" BGCOLOR="#E3F2FD" ALIGN="LEFT">  val_atr_15 : varchar  </TD></TR>
+				<TR><TD PORT="val_atr_16" COLSPAN="3" BGCOLOR="#E3F2FD" ALIGN="LEFT">  val_atr_16 : varchar  </TD></TR>
+				<TR><TD PORT="val_atr_17" COLSPAN="3" BGCOLOR="#E3F2FD" ALIGN="LEFT">  val_atr_17 : varchar  </TD></TR>
+				<TR><TD PORT="val_atr_18" COLSPAN="3" BGCOLOR="#E3F2FD" ALIGN="LEFT">  val_atr_18 : varchar  </TD></TR>
+				<TR><TD PORT="val_atr_19" COLSPAN="3" BGCOLOR="#E3F2FD" ALIGN="LEFT">  val_atr_19 : varchar  </TD></TR>
+				<TR><TD PORT="val_atr_20" COLSPAN="3" BGCOLOR="#E3F2FD" ALIGN="LEFT">  val_atr_20 : varchar  </TD></TR>
+				<TR><TD PORT="val_atr_21" COLSPAN="3" BGCOLOR="#E3F2FD" ALIGN="LEFT">  val_atr_21 : varchar  </TD></TR>
+				<TR><TD PORT="val_atr_22" COLSPAN="3" BGCOLOR="#E3F2FD" ALIGN="LEFT">  val_atr_22 : varchar  </TD></TR>
+				<TR><TD PORT="val_atr_23" COLSPAN="3" BGCOLOR="#E3F2FD" ALIGN="LEFT">  val_atr_23 : varchar  </TD></TR>
+				<TR><TD PORT="val_atr_24" COLSPAN="3" BGCOLOR="#E3F2FD" ALIGN="LEFT">  val_atr_24 : varchar  </TD></TR>
+				<TR><TD PORT="val_atr_25" COLSPAN="3" BGCOLOR="#E3F2FD" ALIGN="LEFT">  val_atr_25 : varchar  </TD></TR>
+				<TR><TD PORT="val_atr_26" COLSPAN="3" BGCOLOR="#E3F2FD" ALIGN="LEFT">  val_atr_26 : varchar  </TD></TR>
+				<TR><TD PORT="val_atr_27" COLSPAN="3" BGCOLOR="#E3F2FD" ALIGN="LEFT">  val_atr_27 : varchar  </TD></TR>
+				<TR><TD PORT="val_atr_28" COLSPAN="3" BGCOLOR="#E3F2FD" ALIGN="LEFT">  val_atr_28 : varchar  </TD></TR>
+				<TR><TD PORT="val_atr_29" COLSPAN="3" BGCOLOR="#E3F2FD" ALIGN="LEFT">  val_atr_29 : varchar  </TD></TR>
+									</TABLE>>
+									URL="com.cclip.model.geo.cadastre.aacc.AaccUnidadBack.html"
+									tooltip="com.cclip.model.geo.cadastre.aacc.AaccUnidadBack"
+							];
+
+							//com.cclip.model.geo.cadastre.aacc.AaccInmueble
+							aacc_inmueble [
+								label=<
+									<TABLE BORDER="0" CELLBORDER="0" CELLSPACING="0" BGCOLOR="#ffffff">
+				<TR><TD COLSPAN="3" BGCOLOR="#90CAF9" ALIGN="CENTER"><B>aacc_inmueble</B></TD></TR>
+
+				<TR><TD PORT="id" COLSPAN="3" BGCOLOR="#E3F2FD" ALIGN="LEFT"><B>  id</B> : varchar <B>pk  not null</B> </TD></TR>
+				<TR><TD PORT="erased" COLSPAN="3" BGCOLOR="#E3F2FD" ALIGN="LEFT">  <B>erased</B> : boolean <B>not null</B>   </TD></TR>
+				<TR><TD PORT="audit_date_create" COLSPAN="3" BGCOLOR="#E3F2FD" ALIGN="LEFT">  <B>audit_date_create</B> : timestamp <B>not null</B>   </TD></TR>
+				<TR><TD PORT="audit_user_create" COLSPAN="3" BGCOLOR="#E3F2FD" ALIGN="LEFT">  <B>audit_user_create</B> : varchar <B>not null</B>   </TD></TR>
+				<TR><TD PORT="audit_date_update" COLSPAN="3" BGCOLOR="#E3F2FD" ALIGN="LEFT">  <B>audit_date_update</B> : timestamp <B>not null</B>   </TD></TR>
+				<TR><TD PORT="audit_user_update" COLSPAN="3" BGCOLOR="#E3F2FD" ALIGN="LEFT">  <B>audit_user_update</B> : varchar <B>not null</B>   </TD></TR>
+				<TR><TD PORT="audit_version" COLSPAN="3" BGCOLOR="#E3F2FD" ALIGN="LEFT">  <B>audit_version</B> : bigint <B>not null</B>   </TD></TR>
+				<TR><TD PORT="distrito" COLSPAN="3" BGCOLOR="#E3F2FD" ALIGN="LEFT">  distrito : varchar  </TD></TR>
+				<TR><TD PORT="cuenta" COLSPAN="3" BGCOLOR="#E3F2FD" ALIGN="LEFT">  cuenta : varchar  </TD></TR>
+				<TR><TD PORT="dv" COLSPAN="3" BGCOLOR="#E3F2FD" ALIGN="LEFT">  dv : varchar  </TD></TR>
+				<TR><TD PORT="fecha_alta" COLSPAN="3" BGCOLOR="#E3F2FD" ALIGN="LEFT">  fecha_alta : varchar  </TD></TR>
+				<TR><TD PORT="tipo_inmueble" COLSPAN="3" BGCOLOR="#E3F2FD" ALIGN="LEFT">  tipo_inmueble : varchar  </TD></TR>
+				<TR><TD PORT="locali" COLSPAN="3" BGCOLOR="#E3F2FD" ALIGN="LEFT">  locali : varchar  </TD></TR>
+				<TR><TD PORT="cod_pos" COLSPAN="3" BGCOLOR="#E3F2FD" ALIGN="LEFT">  cod_pos : varchar  </TD></TR>
+				<TR><TD PORT="nro_calle" COLSPAN="3" BGCOLOR="#E3F2FD" ALIGN="LEFT">  nro_calle : varchar  </TD></TR>
+				<TR><TD PORT="calle" COLSPAN="3" BGCOLOR="#E3F2FD" ALIGN="LEFT">  calle : varchar  </TD></TR>
+				<TR><TD PORT="numero" COLSPAN="3" BGCOLOR="#E3F2FD" ALIGN="LEFT">  numero : varchar  </TD></TR>
+				<TR><TD PORT="dat_complem" COLSPAN="3" BGCOLOR="#E3F2FD" ALIGN="LEFT">  dat_complem : varchar  </TD></TR>
+				<TR><TD PORT="seccion" COLSPAN="3" BGCOLOR="#E3F2FD" ALIGN="LEFT">  seccion : varchar  </TD></TR>
+				<TR><TD PORT="manzana" COLSPAN="3" BGCOLOR="#E3F2FD" ALIGN="LEFT">  manzana : varchar  </TD></TR>
+				<TR><TD PORT="parcela" COLSPAN="3" BGCOLOR="#E3F2FD" ALIGN="LEFT">  parcela : varchar  </TD></TR>
+				<TR><TD PORT="cant_unidades" COLSPAN="3" BGCOLOR="#E3F2FD" ALIGN="LEFT">  cant_unidades : varchar  </TD></TR>
+				<TR><TD PORT="cod_ser_uf" COLSPAN="3" BGCOLOR="#E3F2FD" ALIGN="LEFT">  cod_ser_uf : varchar  </TD></TR>
+				<TR><TD PORT="fecha_baja" COLSPAN="3" BGCOLOR="#E3F2FD" ALIGN="LEFT">  fecha_baja : varchar  </TD></TR>
+				<TR><TD PORT="motivo_baja" COLSPAN="3" BGCOLOR="#E3F2FD" ALIGN="LEFT">  motivo_baja : varchar  </TD></TR>
+				<TR><TD PORT="descrip_baja" COLSPAN="3" BGCOLOR="#E3F2FD" ALIGN="LEFT">  descrip_baja : varchar  </TD></TR>
+				<TR><TD PORT="sup_terreno" COLSPAN="3" BGCOLOR="#E3F2FD" ALIGN="LEFT">  sup_terreno : varchar  </TD></TR>
+				<TR><TD PORT="sup_cubierta_pro" COLSPAN="3" BGCOLOR="#E3F2FD" ALIGN="LEFT">  sup_cubierta_pro : varchar  </TD></TR>
+				<TR><TD PORT="sup_scubierta_pro" COLSPAN="3" BGCOLOR="#E3F2FD" ALIGN="LEFT">  sup_scubierta_pro : varchar  </TD></TR>
+				<TR><TD PORT="sup_cubierta_com" COLSPAN="3" BGCOLOR="#E3F2FD" ALIGN="LEFT">  sup_cubierta_com : varchar  </TD></TR>
+				<TR><TD PORT="sup_scubierta_com" COLSPAN="3" BGCOLOR="#E3F2FD" ALIGN="LEFT">  sup_scubierta_com : varchar  </TD></TR>
+				<TR><TD PORT="sup_cubierta_amp" COLSPAN="3" BGCOLOR="#E3F2FD" ALIGN="LEFT">  sup_cubierta_amp : varchar  </TD></TR>
+				<TR><TD PORT="sup_scubierta_amp" COLSPAN="3" BGCOLOR="#E3F2FD" ALIGN="LEFT">  sup_scubierta_amp : varchar  </TD></TR>
+				<TR><TD PORT="regularizado" COLSPAN="3" BGCOLOR="#E3F2FD" ALIGN="LEFT">  regularizado : varchar  </TD></TR>
+				<TR><TD PORT="plancheta" COLSPAN="3" BGCOLOR="#E3F2FD" ALIGN="LEFT">  plancheta : varchar  </TD></TR>
+				<TR><TD PORT="subplancheta" COLSPAN="3" BGCOLOR="#E3F2FD" ALIGN="LEFT">  subplancheta : varchar  </TD></TR>
+				<TR><TD PORT="subtipo_inmueble" COLSPAN="3" BGCOLOR="#E3F2FD" ALIGN="LEFT">  subtipo_inmueble : varchar  </TD></TR>
+				<TR><TD PORT="estado" COLSPAN="3" BGCOLOR="#E3F2FD" ALIGN="LEFT">  estado : varchar  </TD></TR>
+									</TABLE>>
+									URL="com.cclip.model.geo.cadastre.aacc.AaccInmueble.html"
+									tooltip="com.cclip.model.geo.cadastre.aacc.AaccInmueble"
+							];
+
+							//com.cclip.model.geo.cadastre.aacc.AaccInmuebleBack
+							aacc_inmueble_back [
+								label=<
+									<TABLE BORDER="0" CELLBORDER="0" CELLSPACING="0" BGCOLOR="#ffffff">
+				<TR><TD COLSPAN="3" BGCOLOR="#90CAF9" ALIGN="CENTER"><B>aacc_inmueble_back</B></TD></TR>
+
+				<TR><TD PORT="id" COLSPAN="3" BGCOLOR="#E3F2FD" ALIGN="LEFT"><B>  id</B> : varchar <B>pk  not null</B> </TD></TR>
+				<TR><TD PORT="erased" COLSPAN="3" BGCOLOR="#E3F2FD" ALIGN="LEFT">  <B>erased</B> : boolean <B>not null</B>   </TD></TR>
+				<TR><TD PORT="audit_date_create" COLSPAN="3" BGCOLOR="#E3F2FD" ALIGN="LEFT">  <B>audit_date_create</B> : timestamp <B>not null</B>   </TD></TR>
+				<TR><TD PORT="audit_user_create" COLSPAN="3" BGCOLOR="#E3F2FD" ALIGN="LEFT">  <B>audit_user_create</B> : varchar <B>not null</B>   </TD></TR>
+				<TR><TD PORT="audit_date_update" COLSPAN="3" BGCOLOR="#E3F2FD" ALIGN="LEFT">  <B>audit_date_update</B> : timestamp <B>not null</B>   </TD></TR>
+				<TR><TD PORT="audit_user_update" COLSPAN="3" BGCOLOR="#E3F2FD" ALIGN="LEFT">  <B>audit_user_update</B> : varchar <B>not null</B>   </TD></TR>
+				<TR><TD PORT="audit_version" COLSPAN="3" BGCOLOR="#E3F2FD" ALIGN="LEFT">  <B>audit_version</B> : bigint <B>not null</B>   </TD></TR>
+				<TR><TD PORT="distrito" COLSPAN="3" BGCOLOR="#E3F2FD" ALIGN="LEFT">  distrito : varchar  </TD></TR>
+				<TR><TD PORT="cuenta" COLSPAN="3" BGCOLOR="#E3F2FD" ALIGN="LEFT">  cuenta : varchar  </TD></TR>
+				<TR><TD PORT="dv" COLSPAN="3" BGCOLOR="#E3F2FD" ALIGN="LEFT">  dv : varchar  </TD></TR>
+				<TR><TD PORT="fecha_alta" COLSPAN="3" BGCOLOR="#E3F2FD" ALIGN="LEFT">  fecha_alta : varchar  </TD></TR>
+				<TR><TD PORT="tipo_inmueble" COLSPAN="3" BGCOLOR="#E3F2FD" ALIGN="LEFT">  tipo_inmueble : varchar  </TD></TR>
+				<TR><TD PORT="locali" COLSPAN="3" BGCOLOR="#E3F2FD" ALIGN="LEFT">  locali : varchar  </TD></TR>
+				<TR><TD PORT="cod_pos" COLSPAN="3" BGCOLOR="#E3F2FD" ALIGN="LEFT">  cod_pos : varchar  </TD></TR>
+				<TR><TD PORT="nro_calle" COLSPAN="3" BGCOLOR="#E3F2FD" ALIGN="LEFT">  nro_calle : varchar  </TD></TR>
+				<TR><TD PORT="calle" COLSPAN="3" BGCOLOR="#E3F2FD" ALIGN="LEFT">  calle : varchar  </TD></TR>
+				<TR><TD PORT="numero" COLSPAN="3" BGCOLOR="#E3F2FD" ALIGN="LEFT">  numero : varchar  </TD></TR>
+				<TR><TD PORT="dat_complem" COLSPAN="3" BGCOLOR="#E3F2FD" ALIGN="LEFT">  dat_complem : varchar  </TD></TR>
+				<TR><TD PORT="seccion" COLSPAN="3" BGCOLOR="#E3F2FD" ALIGN="LEFT">  seccion : varchar  </TD></TR>
+				<TR><TD PORT="manzana" COLSPAN="3" BGCOLOR="#E3F2FD" ALIGN="LEFT">  manzana : varchar  </TD></TR>
+				<TR><TD PORT="parcela" COLSPAN="3" BGCOLOR="#E3F2FD" ALIGN="LEFT">  parcela : varchar  </TD></TR>
+				<TR><TD PORT="cant_unidades" COLSPAN="3" BGCOLOR="#E3F2FD" ALIGN="LEFT">  cant_unidades : varchar  </TD></TR>
+				<TR><TD PORT="cod_ser_uf" COLSPAN="3" BGCOLOR="#E3F2FD" ALIGN="LEFT">  cod_ser_uf : varchar  </TD></TR>
+				<TR><TD PORT="fecha_baja" COLSPAN="3" BGCOLOR="#E3F2FD" ALIGN="LEFT">  fecha_baja : varchar  </TD></TR>
+				<TR><TD PORT="motivo_baja" COLSPAN="3" BGCOLOR="#E3F2FD" ALIGN="LEFT">  motivo_baja : varchar  </TD></TR>
+				<TR><TD PORT="descrip_baja" COLSPAN="3" BGCOLOR="#E3F2FD" ALIGN="LEFT">  descrip_baja : varchar  </TD></TR>
+				<TR><TD PORT="sup_terreno" COLSPAN="3" BGCOLOR="#E3F2FD" ALIGN="LEFT">  sup_terreno : varchar  </TD></TR>
+				<TR><TD PORT="sup_cubierta_pro" COLSPAN="3" BGCOLOR="#E3F2FD" ALIGN="LEFT">  sup_cubierta_pro : varchar  </TD></TR>
+				<TR><TD PORT="sup_scubierta_pro" COLSPAN="3" BGCOLOR="#E3F2FD" ALIGN="LEFT">  sup_scubierta_pro : varchar  </TD></TR>
+				<TR><TD PORT="sup_cubierta_com" COLSPAN="3" BGCOLOR="#E3F2FD" ALIGN="LEFT">  sup_cubierta_com : varchar  </TD></TR>
+				<TR><TD PORT="sup_scubierta_com" COLSPAN="3" BGCOLOR="#E3F2FD" ALIGN="LEFT">  sup_scubierta_com : varchar  </TD></TR>
+				<TR><TD PORT="sup_cubierta_amp" COLSPAN="3" BGCOLOR="#E3F2FD" ALIGN="LEFT">  sup_cubierta_amp : varchar  </TD></TR>
+				<TR><TD PORT="sup_scubierta_amp" COLSPAN="3" BGCOLOR="#E3F2FD" ALIGN="LEFT">  sup_scubierta_amp : varchar  </TD></TR>
+				<TR><TD PORT="regularizado" COLSPAN="3" BGCOLOR="#E3F2FD" ALIGN="LEFT">  regularizado : varchar  </TD></TR>
+				<TR><TD PORT="plancheta" COLSPAN="3" BGCOLOR="#E3F2FD" ALIGN="LEFT">  plancheta : varchar  </TD></TR>
+				<TR><TD PORT="subplancheta" COLSPAN="3" BGCOLOR="#E3F2FD" ALIGN="LEFT">  subplancheta : varchar  </TD></TR>
+				<TR><TD PORT="subtipo_inmueble" COLSPAN="3" BGCOLOR="#E3F2FD" ALIGN="LEFT">  subtipo_inmueble : varchar  </TD></TR>
+				<TR><TD PORT="estado" COLSPAN="3" BGCOLOR="#E3F2FD" ALIGN="LEFT">  estado : varchar  </TD></TR>
+									</TABLE>>
+									URL="com.cclip.model.geo.cadastre.aacc.AaccInmuebleBack.html"
+									tooltip="com.cclip.model.geo.cadastre.aacc.AaccInmuebleBack"
+							];
+
+							//com.cclip.model.geo.cadastre.aacc.AaccSubcuenta
+							aacc_subcuenta [
+								label=<
+									<TABLE BORDER="0" CELLBORDER="0" CELLSPACING="0" BGCOLOR="#ffffff">
+				<TR><TD COLSPAN="3" BGCOLOR="#90CAF9" ALIGN="CENTER"><B>aacc_subcuenta</B></TD></TR>
+
+				<TR><TD PORT="id" COLSPAN="3" BGCOLOR="#E3F2FD" ALIGN="LEFT"><B>  id</B> : varchar <B>pk  not null</B> </TD></TR>
+				<TR><TD PORT="erased" COLSPAN="3" BGCOLOR="#E3F2FD" ALIGN="LEFT">  <B>erased</B> : boolean <B>not null</B>   </TD></TR>
+				<TR><TD PORT="audit_date_create" COLSPAN="3" BGCOLOR="#E3F2FD" ALIGN="LEFT">  <B>audit_date_create</B> : timestamp <B>not null</B>   </TD></TR>
+				<TR><TD PORT="audit_user_create" COLSPAN="3" BGCOLOR="#E3F2FD" ALIGN="LEFT">  <B>audit_user_create</B> : varchar <B>not null</B>   </TD></TR>
+				<TR><TD PORT="audit_date_update" COLSPAN="3" BGCOLOR="#E3F2FD" ALIGN="LEFT">  <B>audit_date_update</B> : timestamp <B>not null</B>   </TD></TR>
+				<TR><TD PORT="audit_user_update" COLSPAN="3" BGCOLOR="#E3F2FD" ALIGN="LEFT">  <B>audit_user_update</B> : varchar <B>not null</B>   </TD></TR>
+				<TR><TD PORT="audit_version" COLSPAN="3" BGCOLOR="#E3F2FD" ALIGN="LEFT">  <B>audit_version</B> : bigint <B>not null</B>   </TD></TR>
+				<TR><TD PORT="distrito" COLSPAN="3" BGCOLOR="#E3F2FD" ALIGN="LEFT">  distrito : varchar  </TD></TR>
+				<TR><TD PORT="cuenta" COLSPAN="3" BGCOLOR="#E3F2FD" ALIGN="LEFT">  cuenta : varchar  </TD></TR>
+				<TR><TD PORT="subcuenta" COLSPAN="3" BGCOLOR="#E3F2FD" ALIGN="LEFT">  subcuenta : varchar  </TD></TR>
+				<TR><TD PORT="dv" COLSPAN="3" BGCOLOR="#E3F2FD" ALIGN="LEFT">  dv : varchar  </TD></TR>
+				<TR><TD PORT="fecha_alta" COLSPAN="3" BGCOLOR="#E3F2FD" ALIGN="LEFT">  fecha_alta : varchar  </TD></TR>
+				<TR><TD PORT="tipo_subcta" COLSPAN="3" BGCOLOR="#E3F2FD" ALIGN="LEFT">  tipo_subcta : varchar  </TD></TR>
+				<TR><TD PORT="sub_tipo" COLSPAN="3" BGCOLOR="#E3F2FD" ALIGN="LEFT">  sub_tipo : varchar  </TD></TR>
+				<TR><TD PORT="factura" COLSPAN="3" BGCOLOR="#E3F2FD" ALIGN="LEFT">  factura : varchar  </TD></TR>
+				<TR><TD PORT="titular" COLSPAN="3" BGCOLOR="#E3F2FD" ALIGN="LEFT">  titular : varchar  </TD></TR>
+				<TR><TD PORT="tpo_doc" COLSPAN="3" BGCOLOR="#E3F2FD" ALIGN="LEFT">  tpo_doc : varchar  </TD></TR>
+				<TR><TD PORT="nro_doc" COLSPAN="3" BGCOLOR="#E3F2FD" ALIGN="LEFT">  nro_doc : varchar  </TD></TR>
+				<TR><TD PORT="tomo" COLSPAN="3" BGCOLOR="#E3F2FD" ALIGN="LEFT">  tomo : varchar  </TD></TR>
+				<TR><TD PORT="folio" COLSPAN="3" BGCOLOR="#E3F2FD" ALIGN="LEFT">  folio : varchar  </TD></TR>
+				<TR><TD PORT="numero" COLSPAN="3" BGCOLOR="#E3F2FD" ALIGN="LEFT">  numero : varchar  </TD></TR>
+				<TR><TD PORT="anio" COLSPAN="3" BGCOLOR="#E3F2FD" ALIGN="LEFT">  anio : varchar  </TD></TR>
+				<TR><TD PORT="piso" COLSPAN="3" BGCOLOR="#E3F2FD" ALIGN="LEFT">  piso : varchar  </TD></TR>
+				<TR><TD PORT="depto" COLSPAN="3" BGCOLOR="#E3F2FD" ALIGN="LEFT">  depto : varchar  </TD></TR>
+				<TR><TD PORT="subparcela" COLSPAN="3" BGCOLOR="#E3F2FD" ALIGN="LEFT">  subparcela : varchar  </TD></TR>
+				<TR><TD PORT="porc_particip" COLSPAN="3" BGCOLOR="#E3F2FD" ALIGN="LEFT">  porc_particip : varchar  </TD></TR>
+				<TR><TD PORT="medido" COLSPAN="3" BGCOLOR="#E3F2FD" ALIGN="LEFT">  medido : varchar  </TD></TR>
+				<TR><TD PORT="medido_vig_d" COLSPAN="3" BGCOLOR="#E3F2FD" ALIGN="LEFT">  medido_vig_d : varchar  </TD></TR>
+				<TR><TD PORT="actividad" COLSPAN="3" BGCOLOR="#E3F2FD" ALIGN="LEFT">  actividad : varchar  </TD></TR>
+				<TR><TD PORT="tbm" COLSPAN="3" BGCOLOR="#E3F2FD" ALIGN="LEFT">  tbm : varchar  </TD></TR>
+				<TR><TD PORT="ibm" COLSPAN="3" BGCOLOR="#E3F2FD" ALIGN="LEFT">  ibm : varchar  </TD></TR>
+				<TR><TD PORT="base_libre" COLSPAN="3" BGCOLOR="#E3F2FD" ALIGN="LEFT">  base_libre : varchar  </TD></TR>
+				<TR><TD PORT="prom_const" COLSPAN="3" BGCOLOR="#E3F2FD" ALIGN="LEFT">  prom_const : varchar  </TD></TR>
+				<TR><TD PORT="unidad" COLSPAN="3" BGCOLOR="#E3F2FD" ALIGN="LEFT">  unidad : varchar  </TD></TR>
+				<TR><TD PORT="cat_tar" COLSPAN="3" BGCOLOR="#E3F2FD" ALIGN="LEFT">  cat_tar : varchar  </TD></TR>
+				<TR><TD PORT="frec_fac" COLSPAN="3" BGCOLOR="#E3F2FD" ALIGN="LEFT">  frec_fac : varchar  </TD></TR>
+				<TR><TD PORT="orden" COLSPAN="3" BGCOLOR="#E3F2FD" ALIGN="LEFT">  orden : varchar  </TD></TR>
+				<TR><TD PORT="frec_fac_desde" COLSPAN="3" BGCOLOR="#E3F2FD" ALIGN="LEFT">  frec_fac_desde : varchar  </TD></TR>
+				<TR><TD PORT="jubilado" COLSPAN="3" BGCOLOR="#E3F2FD" ALIGN="LEFT">  jubilado : varchar  </TD></TR>
+				<TR><TD PORT="jubilado_desde" COLSPAN="3" BGCOLOR="#E3F2FD" ALIGN="LEFT">  jubilado_desde : varchar  </TD></TR>
+				<TR><TD PORT="otro_desc_1" COLSPAN="3" BGCOLOR="#E3F2FD" ALIGN="LEFT">  otro_desc_1 : varchar  </TD></TR>
+				<TR><TD PORT="otro_desc_1_desde" COLSPAN="3" BGCOLOR="#E3F2FD" ALIGN="LEFT">  otro_desc_1_desde : varchar  </TD></TR>
+				<TR><TD PORT="otro_desc_1_hasta" COLSPAN="3" BGCOLOR="#E3F2FD" ALIGN="LEFT">  otro_desc_1_hasta : varchar  </TD></TR>
+				<TR><TD PORT="otro_desc_2" COLSPAN="3" BGCOLOR="#E3F2FD" ALIGN="LEFT">  otro_desc_2 : varchar  </TD></TR>
+				<TR><TD PORT="otro_desc_2_desde" COLSPAN="3" BGCOLOR="#E3F2FD" ALIGN="LEFT">  otro_desc_2_desde : varchar  </TD></TR>
+				<TR><TD PORT="otro_desc_2_hasta" COLSPAN="3" BGCOLOR="#E3F2FD" ALIGN="LEFT">  otro_desc_2_hasta : varchar  </TD></TR>
+				<TR><TD PORT="construccion" COLSPAN="3" BGCOLOR="#E3F2FD" ALIGN="LEFT">  construccion : varchar  </TD></TR>
+				<TR><TD PORT="independiente" COLSPAN="3" BGCOLOR="#E3F2FD" ALIGN="LEFT">  independiente : varchar  </TD></TR>
+									</TABLE>>
+									URL="com.cclip.model.geo.cadastre.aacc.AaccSubcuenta.html"
+									tooltip="com.cclip.model.geo.cadastre.aacc.AaccSubcuenta"
+							];
+
+							//com.cclip.model.geo.cadastre.aacc.AaccSubcuentaBack
+							aacc_subcuenta_back [
+								label=<
+									<TABLE BORDER="0" CELLBORDER="0" CELLSPACING="0" BGCOLOR="#ffffff">
+				<TR><TD COLSPAN="3" BGCOLOR="#90CAF9" ALIGN="CENTER"><B>aacc_subcuenta_back</B></TD></TR>
+
+				<TR><TD PORT="id" COLSPAN="3" BGCOLOR="#E3F2FD" ALIGN="LEFT"><B>  id</B> : varchar <B>pk  not null</B> </TD></TR>
+				<TR><TD PORT="erased" COLSPAN="3" BGCOLOR="#E3F2FD" ALIGN="LEFT">  <B>erased</B> : boolean <B>not null</B>   </TD></TR>
+				<TR><TD PORT="audit_date_create" COLSPAN="3" BGCOLOR="#E3F2FD" ALIGN="LEFT">  <B>audit_date_create</B> : timestamp <B>not null</B>   </TD></TR>
+				<TR><TD PORT="audit_user_create" COLSPAN="3" BGCOLOR="#E3F2FD" ALIGN="LEFT">  <B>audit_user_create</B> : varchar <B>not null</B>   </TD></TR>
+				<TR><TD PORT="audit_date_update" COLSPAN="3" BGCOLOR="#E3F2FD" ALIGN="LEFT">  <B>audit_date_update</B> : timestamp <B>not null</B>   </TD></TR>
+				<TR><TD PORT="audit_user_update" COLSPAN="3" BGCOLOR="#E3F2FD" ALIGN="LEFT">  <B>audit_user_update</B> : varchar <B>not null</B>   </TD></TR>
+				<TR><TD PORT="audit_version" COLSPAN="3" BGCOLOR="#E3F2FD" ALIGN="LEFT">  <B>audit_version</B> : bigint <B>not null</B>   </TD></TR>
+				<TR><TD PORT="distrito" COLSPAN="3" BGCOLOR="#E3F2FD" ALIGN="LEFT">  distrito : varchar  </TD></TR>
+				<TR><TD PORT="cuenta" COLSPAN="3" BGCOLOR="#E3F2FD" ALIGN="LEFT">  cuenta : varchar  </TD></TR>
+				<TR><TD PORT="subcuenta" COLSPAN="3" BGCOLOR="#E3F2FD" ALIGN="LEFT">  subcuenta : varchar  </TD></TR>
+				<TR><TD PORT="dv" COLSPAN="3" BGCOLOR="#E3F2FD" ALIGN="LEFT">  dv : varchar  </TD></TR>
+				<TR><TD PORT="fecha_alta" COLSPAN="3" BGCOLOR="#E3F2FD" ALIGN="LEFT">  fecha_alta : varchar  </TD></TR>
+				<TR><TD PORT="tipo_subcta" COLSPAN="3" BGCOLOR="#E3F2FD" ALIGN="LEFT">  tipo_subcta : varchar  </TD></TR>
+				<TR><TD PORT="sub_tipo" COLSPAN="3" BGCOLOR="#E3F2FD" ALIGN="LEFT">  sub_tipo : varchar  </TD></TR>
+				<TR><TD PORT="factura" COLSPAN="3" BGCOLOR="#E3F2FD" ALIGN="LEFT">  factura : varchar  </TD></TR>
+				<TR><TD PORT="titular" COLSPAN="3" BGCOLOR="#E3F2FD" ALIGN="LEFT">  titular : varchar  </TD></TR>
+				<TR><TD PORT="tpo_doc" COLSPAN="3" BGCOLOR="#E3F2FD" ALIGN="LEFT">  tpo_doc : varchar  </TD></TR>
+				<TR><TD PORT="nro_doc" COLSPAN="3" BGCOLOR="#E3F2FD" ALIGN="LEFT">  nro_doc : varchar  </TD></TR>
+				<TR><TD PORT="tomo" COLSPAN="3" BGCOLOR="#E3F2FD" ALIGN="LEFT">  tomo : varchar  </TD></TR>
+				<TR><TD PORT="folio" COLSPAN="3" BGCOLOR="#E3F2FD" ALIGN="LEFT">  folio : varchar  </TD></TR>
+				<TR><TD PORT="numero" COLSPAN="3" BGCOLOR="#E3F2FD" ALIGN="LEFT">  numero : varchar  </TD></TR>
+				<TR><TD PORT="anio" COLSPAN="3" BGCOLOR="#E3F2FD" ALIGN="LEFT">  anio : varchar  </TD></TR>
+				<TR><TD PORT="piso" COLSPAN="3" BGCOLOR="#E3F2FD" ALIGN="LEFT">  piso : varchar  </TD></TR>
+				<TR><TD PORT="depto" COLSPAN="3" BGCOLOR="#E3F2FD" ALIGN="LEFT">  depto : varchar  </TD></TR>
+				<TR><TD PORT="subparcela" COLSPAN="3" BGCOLOR="#E3F2FD" ALIGN="LEFT">  subparcela : varchar  </TD></TR>
+				<TR><TD PORT="porc_particip" COLSPAN="3" BGCOLOR="#E3F2FD" ALIGN="LEFT">  porc_particip : varchar  </TD></TR>
+				<TR><TD PORT="medido" COLSPAN="3" BGCOLOR="#E3F2FD" ALIGN="LEFT">  medido : varchar  </TD></TR>
+				<TR><TD PORT="medido_vig_d" COLSPAN="3" BGCOLOR="#E3F2FD" ALIGN="LEFT">  medido_vig_d : varchar  </TD></TR>
+				<TR><TD PORT="actividad" COLSPAN="3" BGCOLOR="#E3F2FD" ALIGN="LEFT">  actividad : varchar  </TD></TR>
+				<TR><TD PORT="tbm" COLSPAN="3" BGCOLOR="#E3F2FD" ALIGN="LEFT">  tbm : varchar  </TD></TR>
+				<TR><TD PORT="ibm" COLSPAN="3" BGCOLOR="#E3F2FD" ALIGN="LEFT">  ibm : varchar  </TD></TR>
+				<TR><TD PORT="base_libre" COLSPAN="3" BGCOLOR="#E3F2FD" ALIGN="LEFT">  base_libre : varchar  </TD></TR>
+				<TR><TD PORT="prom_const" COLSPAN="3" BGCOLOR="#E3F2FD" ALIGN="LEFT">  prom_const : varchar  </TD></TR>
+				<TR><TD PORT="unidad" COLSPAN="3" BGCOLOR="#E3F2FD" ALIGN="LEFT">  unidad : varchar  </TD></TR>
+				<TR><TD PORT="cat_tar" COLSPAN="3" BGCOLOR="#E3F2FD" ALIGN="LEFT">  cat_tar : varchar  </TD></TR>
+				<TR><TD PORT="frec_fac" COLSPAN="3" BGCOLOR="#E3F2FD" ALIGN="LEFT">  frec_fac : varchar  </TD></TR>
+				<TR><TD PORT="orden" COLSPAN="3" BGCOLOR="#E3F2FD" ALIGN="LEFT">  orden : varchar  </TD></TR>
+				<TR><TD PORT="frec_fac_desde" COLSPAN="3" BGCOLOR="#E3F2FD" ALIGN="LEFT">  frec_fac_desde : varchar  </TD></TR>
+				<TR><TD PORT="jubilado" COLSPAN="3" BGCOLOR="#E3F2FD" ALIGN="LEFT">  jubilado : varchar  </TD></TR>
+				<TR><TD PORT="jubilado_desde" COLSPAN="3" BGCOLOR="#E3F2FD" ALIGN="LEFT">  jubilado_desde : varchar  </TD></TR>
+				<TR><TD PORT="otro_desc_1" COLSPAN="3" BGCOLOR="#E3F2FD" ALIGN="LEFT">  otro_desc_1 : varchar  </TD></TR>
+				<TR><TD PORT="otro_desc_1_desde" COLSPAN="3" BGCOLOR="#E3F2FD" ALIGN="LEFT">  otro_desc_1_desde : varchar  </TD></TR>
+				<TR><TD PORT="otro_desc_1_hasta" COLSPAN="3" BGCOLOR="#E3F2FD" ALIGN="LEFT">  otro_desc_1_hasta : varchar  </TD></TR>
+				<TR><TD PORT="otro_desc_2" COLSPAN="3" BGCOLOR="#E3F2FD" ALIGN="LEFT">  otro_desc_2 : varchar  </TD></TR>
+				<TR><TD PORT="otro_desc_2_desde" COLSPAN="3" BGCOLOR="#E3F2FD" ALIGN="LEFT">  otro_desc_2_desde : varchar  </TD></TR>
+				<TR><TD PORT="otro_desc_2_hasta" COLSPAN="3" BGCOLOR="#E3F2FD" ALIGN="LEFT">  otro_desc_2_hasta : varchar  </TD></TR>
+				<TR><TD PORT="construccion" COLSPAN="3" BGCOLOR="#E3F2FD" ALIGN="LEFT">  construccion : varchar  </TD></TR>
+				<TR><TD PORT="independiente" COLSPAN="3" BGCOLOR="#E3F2FD" ALIGN="LEFT">  independiente : varchar  </TD></TR>
+									</TABLE>>
+									URL="com.cclip.model.geo.cadastre.aacc.AaccSubcuentaBack.html"
+									tooltip="com.cclip.model.geo.cadastre.aacc.AaccSubcuentaBack"
+							];
+
+							//com.cclip.model.geo.cadastre.aacc.AaccSuperficie
+							aacc_superficie [
+								label=<
+									<TABLE BORDER="0" CELLBORDER="0" CELLSPACING="0" BGCOLOR="#ffffff">
+				<TR><TD COLSPAN="3" BGCOLOR="#90CAF9" ALIGN="CENTER"><B>aacc_superficie</B></TD></TR>
+
+				<TR><TD PORT="id" COLSPAN="3" BGCOLOR="#E3F2FD" ALIGN="LEFT"><B>  id</B> : varchar <B>pk  not null</B> </TD></TR>
+				<TR><TD PORT="erased" COLSPAN="3" BGCOLOR="#E3F2FD" ALIGN="LEFT">  <B>erased</B> : boolean <B>not null</B>   </TD></TR>
+				<TR><TD PORT="audit_date_create" COLSPAN="3" BGCOLOR="#E3F2FD" ALIGN="LEFT">  <B>audit_date_create</B> : timestamp <B>not null</B>   </TD></TR>
+				<TR><TD PORT="audit_user_create" COLSPAN="3" BGCOLOR="#E3F2FD" ALIGN="LEFT">  <B>audit_user_create</B> : varchar <B>not null</B>   </TD></TR>
+				<TR><TD PORT="audit_date_update" COLSPAN="3" BGCOLOR="#E3F2FD" ALIGN="LEFT">  <B>audit_date_update</B> : timestamp <B>not null</B>   </TD></TR>
+				<TR><TD PORT="audit_user_update" COLSPAN="3" BGCOLOR="#E3F2FD" ALIGN="LEFT">  <B>audit_user_update</B> : varchar <B>not null</B>   </TD></TR>
+				<TR><TD PORT="audit_version" COLSPAN="3" BGCOLOR="#E3F2FD" ALIGN="LEFT">  <B>audit_version</B> : bigint <B>not null</B>   </TD></TR>
+				<TR><TD PORT="distrito" COLSPAN="3" BGCOLOR="#E3F2FD" ALIGN="LEFT">  distrito : varchar  </TD></TR>
+				<TR><TD PORT="cuenta" COLSPAN="3" BGCOLOR="#E3F2FD" ALIGN="LEFT">  cuenta : varchar  </TD></TR>
+				<TR><TD PORT="subcuenta" COLSPAN="3" BGCOLOR="#E3F2FD" ALIGN="LEFT">  subcuenta : varchar  </TD></TR>
+				<TR><TD PORT="dv" COLSPAN="3" BGCOLOR="#E3F2FD" ALIGN="LEFT">  dv : varchar  </TD></TR>
+				<TR><TD PORT="nro_sec" COLSPAN="3" BGCOLOR="#E3F2FD" ALIGN="LEFT">  nro_sec : varchar  </TD></TR>
+				<TR><TD PORT="tipo_tar_sup" COLSPAN="3" BGCOLOR="#E3F2FD" ALIGN="LEFT">  tipo_tar_sup : varchar  </TD></TR>
+				<TR><TD PORT="sup_cub_com" COLSPAN="3" BGCOLOR="#E3F2FD" ALIGN="LEFT">  sup_cub_com : varchar  </TD></TR>
+				<TR><TD PORT="sup_scub_com" COLSPAN="3" BGCOLOR="#E3F2FD" ALIGN="LEFT">  sup_scub_com : varchar  </TD></TR>
+				<TR><TD PORT="sup_cub_propia" COLSPAN="3" BGCOLOR="#E3F2FD" ALIGN="LEFT">  sup_cub_propia : varchar  </TD></TR>
+				<TR><TD PORT="sup_scub_propia" COLSPAN="3" BGCOLOR="#E3F2FD" ALIGN="LEFT">  sup_scub_propia : varchar  </TD></TR>
+				<TR><TD PORT="sup_cub_amp" COLSPAN="3" BGCOLOR="#E3F2FD" ALIGN="LEFT">  sup_cub_amp : varchar  </TD></TR>
+				<TR><TD PORT="sup_scub_amp" COLSPAN="3" BGCOLOR="#E3F2FD" ALIGN="LEFT">  sup_scub_amp : varchar  </TD></TR>
+				<TR><TD PORT="tipo_const" COLSPAN="3" BGCOLOR="#E3F2FD" ALIGN="LEFT">  tipo_const : varchar  </TD></TR>
+				<TR><TD PORT="destino_const" COLSPAN="3" BGCOLOR="#E3F2FD" ALIGN="LEFT">  destino_const : varchar  </TD></TR>
+				<TR><TD PORT="anio_const" COLSPAN="3" BGCOLOR="#E3F2FD" ALIGN="LEFT">  anio_const : varchar  </TD></TR>
+									</TABLE>>
+									URL="com.cclip.model.geo.cadastre.aacc.AaccSuperficie.html"
+									tooltip="com.cclip.model.geo.cadastre.aacc.AaccSuperficie"
+							];
+
+							//com.cclip.model.geo.cadastre.aacc.AaccSuperficieBack
+							aacc_superficie_back [
+								label=<
+									<TABLE BORDER="0" CELLBORDER="0" CELLSPACING="0" BGCOLOR="#ffffff">
+				<TR><TD COLSPAN="3" BGCOLOR="#90CAF9" ALIGN="CENTER"><B>aacc_superficie_back</B></TD></TR>
+
+				<TR><TD PORT="id" COLSPAN="3" BGCOLOR="#E3F2FD" ALIGN="LEFT"><B>  id</B> : varchar <B>pk  not null</B> </TD></TR>
+				<TR><TD PORT="erased" COLSPAN="3" BGCOLOR="#E3F2FD" ALIGN="LEFT">  <B>erased</B> : boolean <B>not null</B>   </TD></TR>
+				<TR><TD PORT="audit_date_create" COLSPAN="3" BGCOLOR="#E3F2FD" ALIGN="LEFT">  <B>audit_date_create</B> : timestamp <B>not null</B>   </TD></TR>
+				<TR><TD PORT="audit_user_create" COLSPAN="3" BGCOLOR="#E3F2FD" ALIGN="LEFT">  <B>audit_user_create</B> : varchar <B>not null</B>   </TD></TR>
+				<TR><TD PORT="audit_date_update" COLSPAN="3" BGCOLOR="#E3F2FD" ALIGN="LEFT">  <B>audit_date_update</B> : timestamp <B>not null</B>   </TD></TR>
+				<TR><TD PORT="audit_user_update" COLSPAN="3" BGCOLOR="#E3F2FD" ALIGN="LEFT">  <B>audit_user_update</B> : varchar <B>not null</B>   </TD></TR>
+				<TR><TD PORT="audit_version" COLSPAN="3" BGCOLOR="#E3F2FD" ALIGN="LEFT">  <B>audit_version</B> : bigint <B>not null</B>   </TD></TR>
+				<TR><TD PORT="distrito" COLSPAN="3" BGCOLOR="#E3F2FD" ALIGN="LEFT">  distrito : varchar  </TD></TR>
+				<TR><TD PORT="cuenta" COLSPAN="3" BGCOLOR="#E3F2FD" ALIGN="LEFT">  cuenta : varchar  </TD></TR>
+				<TR><TD PORT="subcuenta" COLSPAN="3" BGCOLOR="#E3F2FD" ALIGN="LEFT">  subcuenta : varchar  </TD></TR>
+				<TR><TD PORT="dv" COLSPAN="3" BGCOLOR="#E3F2FD" ALIGN="LEFT">  dv : varchar  </TD></TR>
+				<TR><TD PORT="nro_sec" COLSPAN="3" BGCOLOR="#E3F2FD" ALIGN="LEFT">  nro_sec : varchar  </TD></TR>
+				<TR><TD PORT="tipo_tar_sup" COLSPAN="3" BGCOLOR="#E3F2FD" ALIGN="LEFT">  tipo_tar_sup : varchar  </TD></TR>
+				<TR><TD PORT="sup_cub_com" COLSPAN="3" BGCOLOR="#E3F2FD" ALIGN="LEFT">  sup_cub_com : varchar  </TD></TR>
+				<TR><TD PORT="sup_scub_com" COLSPAN="3" BGCOLOR="#E3F2FD" ALIGN="LEFT">  sup_scub_com : varchar  </TD></TR>
+				<TR><TD PORT="sup_cub_propia" COLSPAN="3" BGCOLOR="#E3F2FD" ALIGN="LEFT">  sup_cub_propia : varchar  </TD></TR>
+				<TR><TD PORT="sup_scub_propia" COLSPAN="3" BGCOLOR="#E3F2FD" ALIGN="LEFT">  sup_scub_propia : varchar  </TD></TR>
+				<TR><TD PORT="sup_cub_amp" COLSPAN="3" BGCOLOR="#E3F2FD" ALIGN="LEFT">  sup_cub_amp : varchar  </TD></TR>
+				<TR><TD PORT="sup_scub_amp" COLSPAN="3" BGCOLOR="#E3F2FD" ALIGN="LEFT">  sup_scub_amp : varchar  </TD></TR>
+				<TR><TD PORT="tipo_const" COLSPAN="3" BGCOLOR="#E3F2FD" ALIGN="LEFT">  tipo_const : varchar  </TD></TR>
+				<TR><TD PORT="destino_const" COLSPAN="3" BGCOLOR="#E3F2FD" ALIGN="LEFT">  destino_const : varchar  </TD></TR>
+				<TR><TD PORT="anio_const" COLSPAN="3" BGCOLOR="#E3F2FD" ALIGN="LEFT">  anio_const : varchar  </TD></TR>
+									</TABLE>>
+									URL="com.cclip.model.geo.cadastre.aacc.AaccSuperficieBack.html"
+									tooltip="com.cclip.model.geo.cadastre.aacc.AaccSuperficieBack"
+							];
+
+							//com.cclip.model.geo.cadastre.aacc.AaccDatosPostales
+							aacc_datos_postales [
+								label=<
+									<TABLE BORDER="0" CELLBORDER="0" CELLSPACING="0" BGCOLOR="#ffffff">
+				<TR><TD COLSPAN="3" BGCOLOR="#90CAF9" ALIGN="CENTER"><B>aacc_datos_postales</B></TD></TR>
+
+				<TR><TD PORT="id" COLSPAN="3" BGCOLOR="#E3F2FD" ALIGN="LEFT"><B>  id</B> : varchar <B>pk  not null</B> </TD></TR>
+				<TR><TD PORT="erased" COLSPAN="3" BGCOLOR="#E3F2FD" ALIGN="LEFT">  <B>erased</B> : boolean <B>not null</B>   </TD></TR>
+				<TR><TD PORT="audit_date_create" COLSPAN="3" BGCOLOR="#E3F2FD" ALIGN="LEFT">  <B>audit_date_create</B> : timestamp <B>not null</B>   </TD></TR>
+				<TR><TD PORT="audit_user_create" COLSPAN="3" BGCOLOR="#E3F2FD" ALIGN="LEFT">  <B>audit_user_create</B> : varchar <B>not null</B>   </TD></TR>
+				<TR><TD PORT="audit_date_update" COLSPAN="3" BGCOLOR="#E3F2FD" ALIGN="LEFT">  <B>audit_date_update</B> : timestamp <B>not null</B>   </TD></TR>
+				<TR><TD PORT="audit_user_update" COLSPAN="3" BGCOLOR="#E3F2FD" ALIGN="LEFT">  <B>audit_user_update</B> : varchar <B>not null</B>   </TD></TR>
+				<TR><TD PORT="audit_version" COLSPAN="3" BGCOLOR="#E3F2FD" ALIGN="LEFT">  <B>audit_version</B> : bigint <B>not null</B>   </TD></TR>
+				<TR><TD PORT="unidad" COLSPAN="3" BGCOLOR="#E3F2FD" ALIGN="LEFT">  unidad : varchar  </TD></TR>
+				<TR><TD PORT="unidad_alt" COLSPAN="3" BGCOLOR="#E3F2FD" ALIGN="LEFT">  unidad_alt : varchar  </TD></TR>
+				<TR><TD PORT="usuario" COLSPAN="3" BGCOLOR="#E3F2FD" ALIGN="LEFT">  usuario : varchar  </TD></TR>
+				<TR><TD PORT="cliente" COLSPAN="3" BGCOLOR="#E3F2FD" ALIGN="LEFT">  cliente : varchar  </TD></TR>
+				<TR><TD PORT="dat_complem" COLSPAN="3" BGCOLOR="#E3F2FD" ALIGN="LEFT">  dat_complem : varchar  </TD></TR>
+				<TR><TD PORT="calle" COLSPAN="3" BGCOLOR="#E3F2FD" ALIGN="LEFT">  calle : varchar  </TD></TR>
+				<TR><TD PORT="numero" COLSPAN="3" BGCOLOR="#E3F2FD" ALIGN="LEFT">  numero : varchar  </TD></TR>
+				<TR><TD PORT="piso" COLSPAN="3" BGCOLOR="#E3F2FD" ALIGN="LEFT">  piso : varchar  </TD></TR>
+				<TR><TD PORT="depto" COLSPAN="3" BGCOLOR="#E3F2FD" ALIGN="LEFT">  depto : varchar  </TD></TR>
+				<TR><TD PORT="cod_locali" COLSPAN="3" BGCOLOR="#E3F2FD" ALIGN="LEFT">  cod_locali : varchar  </TD></TR>
+				<TR><TD PORT="locali" COLSPAN="3" BGCOLOR="#E3F2FD" ALIGN="LEFT">  locali : varchar  </TD></TR>
+				<TR><TD PORT="cod_pos" COLSPAN="3" BGCOLOR="#E3F2FD" ALIGN="LEFT">  cod_pos : varchar  </TD></TR>
+				<TR><TD PORT="telefono" COLSPAN="3" BGCOLOR="#E3F2FD" ALIGN="LEFT">  telefono : varchar  </TD></TR>
+				<TR><TD PORT="nro_calle" COLSPAN="3" BGCOLOR="#E3F2FD" ALIGN="LEFT">  nro_calle : varchar  </TD></TR>
+				<TR><TD PORT="provin" COLSPAN="3" BGCOLOR="#E3F2FD" ALIGN="LEFT">  provin : varchar  </TD></TR>
+				<TR><TD PORT="desc_prov" COLSPAN="3" BGCOLOR="#E3F2FD" ALIGN="LEFT">  desc_prov : varchar  </TD></TR>
+				<TR><TD PORT="tiene_clie" COLSPAN="3" BGCOLOR="#E3F2FD" ALIGN="LEFT">  tiene_clie : varchar  </TD></TR>
+				<TR><TD PORT="reparto" COLSPAN="3" BGCOLOR="#E3F2FD" ALIGN="LEFT">  reparto : varchar  </TD></TR>
+				<TR><TD PORT="ruta_dis" COLSPAN="3" BGCOLOR="#E3F2FD" ALIGN="LEFT">  ruta_dis : varchar  </TD></TR>
+									</TABLE>>
+									URL="com.cclip.model.geo.cadastre.aacc.AaccDatosPostales.html"
+									tooltip="com.cclip.model.geo.cadastre.aacc.AaccDatosPostales"
+							];
+
+							//com.cclip.model.geo.cadastre.aacc.AaccDatosPostalesBack
+							aacc_datos_postales_back [
+								label=<
+									<TABLE BORDER="0" CELLBORDER="0" CELLSPACING="0" BGCOLOR="#ffffff">
+				<TR><TD COLSPAN="3" BGCOLOR="#90CAF9" ALIGN="CENTER"><B>aacc_datos_postales_back</B></TD></TR>
+
+				<TR><TD PORT="id" COLSPAN="3" BGCOLOR="#E3F2FD" ALIGN="LEFT"><B>  id</B> : varchar <B>pk  not null</B> </TD></TR>
+				<TR><TD PORT="erased" COLSPAN="3" BGCOLOR="#E3F2FD" ALIGN="LEFT">  <B>erased</B> : boolean <B>not null</B>   </TD></TR>
+				<TR><TD PORT="audit_date_create" COLSPAN="3" BGCOLOR="#E3F2FD" ALIGN="LEFT">  <B>audit_date_create</B> : timestamp <B>not null</B>   </TD></TR>
+				<TR><TD PORT="audit_user_create" COLSPAN="3" BGCOLOR="#E3F2FD" ALIGN="LEFT">  <B>audit_user_create</B> : varchar <B>not null</B>   </TD></TR>
+				<TR><TD PORT="audit_date_update" COLSPAN="3" BGCOLOR="#E3F2FD" ALIGN="LEFT">  <B>audit_date_update</B> : timestamp <B>not null</B>   </TD></TR>
+				<TR><TD PORT="audit_user_update" COLSPAN="3" BGCOLOR="#E3F2FD" ALIGN="LEFT">  <B>audit_user_update</B> : varchar <B>not null</B>   </TD></TR>
+				<TR><TD PORT="audit_version" COLSPAN="3" BGCOLOR="#E3F2FD" ALIGN="LEFT">  <B>audit_version</B> : bigint <B>not null</B>   </TD></TR>
+				<TR><TD PORT="unidad" COLSPAN="3" BGCOLOR="#E3F2FD" ALIGN="LEFT">  unidad : varchar  </TD></TR>
+				<TR><TD PORT="unidad_alt" COLSPAN="3" BGCOLOR="#E3F2FD" ALIGN="LEFT">  unidad_alt : varchar  </TD></TR>
+				<TR><TD PORT="usuario" COLSPAN="3" BGCOLOR="#E3F2FD" ALIGN="LEFT">  usuario : varchar  </TD></TR>
+				<TR><TD PORT="cliente" COLSPAN="3" BGCOLOR="#E3F2FD" ALIGN="LEFT">  cliente : varchar  </TD></TR>
+				<TR><TD PORT="dat_complem" COLSPAN="3" BGCOLOR="#E3F2FD" ALIGN="LEFT">  dat_complem : varchar  </TD></TR>
+				<TR><TD PORT="calle" COLSPAN="3" BGCOLOR="#E3F2FD" ALIGN="LEFT">  calle : varchar  </TD></TR>
+				<TR><TD PORT="numero" COLSPAN="3" BGCOLOR="#E3F2FD" ALIGN="LEFT">  numero : varchar  </TD></TR>
+				<TR><TD PORT="piso" COLSPAN="3" BGCOLOR="#E3F2FD" ALIGN="LEFT">  piso : varchar  </TD></TR>
+				<TR><TD PORT="depto" COLSPAN="3" BGCOLOR="#E3F2FD" ALIGN="LEFT">  depto : varchar  </TD></TR>
+				<TR><TD PORT="cod_locali" COLSPAN="3" BGCOLOR="#E3F2FD" ALIGN="LEFT">  cod_locali : varchar  </TD></TR>
+				<TR><TD PORT="locali" COLSPAN="3" BGCOLOR="#E3F2FD" ALIGN="LEFT">  locali : varchar  </TD></TR>
+				<TR><TD PORT="cod_pos" COLSPAN="3" BGCOLOR="#E3F2FD" ALIGN="LEFT">  cod_pos : varchar  </TD></TR>
+				<TR><TD PORT="telefono" COLSPAN="3" BGCOLOR="#E3F2FD" ALIGN="LEFT">  telefono : varchar  </TD></TR>
+				<TR><TD PORT="nro_calle" COLSPAN="3" BGCOLOR="#E3F2FD" ALIGN="LEFT">  nro_calle : varchar  </TD></TR>
+				<TR><TD PORT="provin" COLSPAN="3" BGCOLOR="#E3F2FD" ALIGN="LEFT">  provin : varchar  </TD></TR>
+				<TR><TD PORT="desc_prov" COLSPAN="3" BGCOLOR="#E3F2FD" ALIGN="LEFT">  desc_prov : varchar  </TD></TR>
+				<TR><TD PORT="tiene_clie" COLSPAN="3" BGCOLOR="#E3F2FD" ALIGN="LEFT">  tiene_clie : varchar  </TD></TR>
+				<TR><TD PORT="reparto" COLSPAN="3" BGCOLOR="#E3F2FD" ALIGN="LEFT">  reparto : varchar  </TD></TR>
+				<TR><TD PORT="ruta_dis" COLSPAN="3" BGCOLOR="#E3F2FD" ALIGN="LEFT">  ruta_dis : varchar  </TD></TR>
+									</TABLE>>
+									URL="com.cclip.model.geo.cadastre.aacc.AaccDatosPostalesBack.html"
+									tooltip="com.cclip.model.geo.cadastre.aacc.AaccDatosPostalesBack"
+							];
+}

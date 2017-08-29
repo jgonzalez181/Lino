@@ -1,0 +1,40 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<beans xmlns='http://www.springframework.org/schema/beans'
+	xmlns:xsi='http://www.w3.org/2001/XMLSchema-instance' xmlns:aop='http://www.springframework.org/schema/aop'
+	xmlns:tx='http://www.springframework.org/schema/tx'
+	xsi:schemaLocation='
+	http://www.springframework.org/schema/beans
+	http://www.springframework.org/schema/beans/spring-beans-3.0.xsd
+	http://www.springframework.org/schema/tx 
+	http://www.springframework.org/schema/tx/spring-tx.xsd
+	http://www.springframework.org/schema/aop 
+	http://www.springframework.org/schema/aop/spring-aop.xsd'>
+
+
+	<!-- <bean id='propertyConfigurer' class='org.springframework.beans.factory.config.PropertyPlaceholderConfigurer'> -->
+	<!-- <property name='locations'> -->
+	<!-- <list> -->
+	<!-- <value>spring/jdbc.properties</value> -->
+	<!-- </list> -->
+	<!-- </property> -->
+	<!-- </bean> -->
+
+	<!-- <bean id='dataSource' class='org.apache.commons.dbcp.BasicDataSource' 
+		destroy-method='close'> -->
+	<!-- <property name='driverClassName' value='${jdbc.model.driverClassName}' 
+		/> -->
+	<!-- <property name='url' value='${jdbc.model.url}' /> -->
+	<!-- <property name='username' value='${jdbc.model.username}' /> -->
+	<!-- <property name='password' value='${jdbc.model.password}' /> -->
+	<!-- </bean> -->
+
+	<!-- <bean id='dataSource' class='org.springframework.jndi.JndiObjectFactoryBean'> 
+		<property name='jndiName' value='${jdbc.model.jndiName}' /> </bean> -->
+
+<!-- 	<bean id='dataSourceWrapper' class='org.utiljdbcdao.DataSourceWrapper'> -->
+<!-- 		<constructor-arg ref='dataSource' /> -->
+<!-- 	</bean> -->
+
+<!-- 	<bean id='utilJdbc' class='org.utiljdbcdao.UtilJdbc' scope='prototype' /> -->
+
+</beans>

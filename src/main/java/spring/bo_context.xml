@@ -1,0 +1,40 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<beans xmlns='http://www.springframework.org/schema/beans'
+	xmlns:xsi='http://www.w3.org/2001/XMLSchema-instance' xmlns:aop='http://www.springframework.org/schema/aop'
+	xmlns:tx='http://www.springframework.org/schema/tx'
+	xsi:schemaLocation='
+	http://www.springframework.org/schema/beans
+	http://www.springframework.org/schema/beans/spring-beans-3.0.xsd
+	http://www.springframework.org/schema/tx 
+	http://www.springframework.org/schema/tx/spring-tx.xsd
+	http://www.springframework.org/schema/aop 
+	http://www.springframework.org/schema/aop/spring-aop.xsd'>
+
+
+
+
+
+	<bean id='scheduleScanningBo' class='com.cclip.bo.schedule.scanning.ScheduleScanningBo'>
+		<property name='dataSourceWrapper' ref='dataSourceWrapper' />
+		<property name='dao' ref='scheduleScanningDao' />
+	</bean>
+
+	<bean id='scheduleScanningResultBo' class='com.cclip.bo.schedule.scanning.ScheduleScanningResultBo'>
+		<property name='dataSourceWrapper' ref='dataSourceWrapper' />
+		<property name='dao' ref='scheduleScanningResultDao' />
+	</bean>
+
+	<bean id='scheduleScanningItemBo' class='com.cclip.bo.schedule.scanning.ScheduleScanningItemBo'>
+		<property name='dataSourceWrapper' ref='dataSourceWrapper' />
+		<property name='dao' ref='scheduleScanningItemDao' />
+	</bean>
+
+
+
+	<bean id='ufCensusBo' class='com.cclip.bo.person.UfCensusBo'>
+		<property name='dataSourceWrapper' ref='dataSourceWrapper' />
+		<property name='dao' ref='ufCensusDao' />
+	</bean>
+
+
+</beans>

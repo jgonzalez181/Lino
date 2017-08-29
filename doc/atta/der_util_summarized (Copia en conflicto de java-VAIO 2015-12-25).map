@@ -1,0 +1,13 @@
+<map id="G" name="G">
+<area shape="rect" id="node1" href="com.cclip.model.ConfSystem.html" title="com.cclip.model.ConfSystem" alt="" coords="5,5,112,53"/>
+<area shape="rect" id="node2" href="com.cclip.model.geo.cadastre.aacc.AaccUnidad.html" title="com.cclip.model.geo.cadastre.aacc.AaccUnidad" alt="" coords="130,5,233,53"/>
+<area shape="rect" id="node3" href="com.cclip.model.geo.cadastre.aacc.AaccUnidadBack.html" title="com.cclip.model.geo.cadastre.aacc.AaccUnidadBack" alt="" coords="251,5,389,53"/>
+<area shape="rect" id="node4" href="com.cclip.model.geo.cadastre.aacc.AaccInmueble.html" title="com.cclip.model.geo.cadastre.aacc.AaccInmueble" alt="" coords="407,5,526,53"/>
+<area shape="rect" id="node5" href="com.cclip.model.geo.cadastre.aacc.AaccInmuebleBack.html" title="com.cclip.model.geo.cadastre.aacc.AaccInmuebleBack" alt="" coords="543,5,694,53"/>
+<area shape="rect" id="node6" href="com.cclip.model.geo.cadastre.aacc.AaccSubcuenta.html" title="com.cclip.model.geo.cadastre.aacc.AaccSubcuenta" alt="" coords="711,5,838,53"/>
+<area shape="rect" id="node7" href="com.cclip.model.geo.cadastre.aacc.AaccSubcuentaBack.html" title="com.cclip.model.geo.cadastre.aacc.AaccSubcuentaBack" alt="" coords="855,5,1014,53"/>
+<area shape="rect" id="node8" href="com.cclip.model.geo.cadastre.aacc.AaccSuperficie.html" title="com.cclip.model.geo.cadastre.aacc.AaccSuperficie" alt="" coords="1032,5,1155,53"/>
+<area shape="rect" id="node9" href="com.cclip.model.geo.cadastre.aacc.AaccSuperficieBack.html" title="com.cclip.model.geo.cadastre.aacc.AaccSuperficieBack" alt="" coords="1173,5,1331,53"/>
+<area shape="rect" id="node10" href="com.cclip.model.geo.cadastre.aacc.AaccDatosPostales.html" title="com.cclip.model.geo.cadastre.aacc.AaccDatosPostales" alt="" coords="1349,5,1504,53"/>
+<area shape="rect" id="node11" href="com.cclip.model.geo.cadastre.aacc.AaccDatosPostalesBack.html" title="com.cclip.model.geo.cadastre.aacc.AaccDatosPostalesBack" alt="" coords="1521,5,1708,53"/>
+</map>

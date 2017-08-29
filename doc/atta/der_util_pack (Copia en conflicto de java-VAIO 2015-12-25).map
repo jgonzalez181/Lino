@@ -1,0 +1,13 @@
+<map id="G" name="G">
+<area shape="rect" id="node1" href="com.cclip.model.ConfSystem.html" title="com.cclip.model.ConfSystem" alt="" coords="49,889,341,994"/>
+<area shape="rect" id="node2" href="com.cclip.model.geo.cadastre.aacc.AaccUnidad.html" title="com.cclip.model.geo.cadastre.aacc.AaccUnidad" alt="" coords="2892,217,3153,1666"/>
+<area shape="rect" id="node3" href="com.cclip.model.geo.cadastre.aacc.AaccUnidadBack.html" title="com.cclip.model.geo.cadastre.aacc.AaccUnidadBack" alt="" coords="2613,217,2875,1666"/>
+<area shape="rect" id="node4" href="com.cclip.model.geo.cadastre.aacc.AaccInmueble.html" title="com.cclip.model.geo.cadastre.aacc.AaccInmueble" alt="" coords="2335,571,2596,1311"/>
+<area shape="rect" id="node5" href="com.cclip.model.geo.cadastre.aacc.AaccInmuebleBack.html" title="com.cclip.model.geo.cadastre.aacc.AaccInmuebleBack" alt="" coords="2056,571,2317,1311"/>
+<area shape="rect" id="node6" href="com.cclip.model.geo.cadastre.aacc.AaccSubcuenta.html" title="com.cclip.model.geo.cadastre.aacc.AaccSubcuenta" alt="" coords="1777,478,2039,1405"/>
+<area shape="rect" id="node7" href="com.cclip.model.geo.cadastre.aacc.AaccSubcuentaBack.html" title="com.cclip.model.geo.cadastre.aacc.AaccSubcuentaBack" alt="" coords="1499,478,1760,1405"/>
+<area shape="rect" id="node8" href="com.cclip.model.geo.cadastre.aacc.AaccSuperficie.html" title="com.cclip.model.geo.cadastre.aacc.AaccSuperficie" alt="" coords="1220,721,1481,1162"/>
+<area shape="rect" id="node9" href="com.cclip.model.geo.cadastre.aacc.AaccSuperficieBack.html" title="com.cclip.model.geo.cadastre.aacc.AaccSuperficieBack" alt="" coords="941,721,1203,1162"/>
+<area shape="rect" id="node10" href="com.cclip.model.geo.cadastre.aacc.AaccDatosPostales.html" title="com.cclip.model.geo.cadastre.aacc.AaccDatosPostales" alt="" coords="663,683,924,1199"/>
+<area shape="rect" id="node11" href="com.cclip.model.geo.cadastre.aacc.AaccDatosPostalesBack.html" title="com.cclip.model.geo.cadastre.aacc.AaccDatosPostalesBack" alt="" coords="384,683,645,1199"/>
+</map>

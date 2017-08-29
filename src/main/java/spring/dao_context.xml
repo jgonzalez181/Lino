@@ -1,0 +1,60 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<beans xmlns='http://www.springframework.org/schema/beans'
+	xmlns:xsi='http://www.w3.org/2001/XMLSchema-instance' xmlns:aop='http://www.springframework.org/schema/aop'
+	xmlns:tx='http://www.springframework.org/schema/tx'
+	xsi:schemaLocation='
+	http://www.springframework.org/schema/beans
+	http://www.springframework.org/schema/beans/spring-beans-3.0.xsd
+	http://www.springframework.org/schema/tx 
+	http://www.springframework.org/schema/tx/spring-tx.xsd
+	http://www.springframework.org/schema/aop 
+	http://www.springframework.org/schema/aop/spring-aop.xsd'>
+
+
+
+
+
+	<bean id='cadastreDao' class='com.cclip.dao.geo.cadastre.CadastreDao'>
+		<property name='UtilJdbc' ref='utilJdbc' />
+	</bean>
+
+
+
+
+
+
+	<bean id='scheduleScanningDao' class='com.cclip.dao.schedule.scanning.ScheduleScanningDao'>
+		<property name='UtilJdbc' ref='utilJdbc' />
+	</bean>
+
+	<bean id='scheduleScanningResultDao'
+		class='com.cclip.dao.schedule.scanning.ScheduleScanningResultDao'>
+		<property name='UtilJdbc' ref='utilJdbc' />
+	</bean>
+
+	<bean id='scheduleScanningItemDao' class='com.cclip.dao.schedule.scanning.ScheduleScanningItemDao'>
+		<property name='UtilJdbc' ref='utilJdbc' />
+	</bean>
+
+
+	<bean id='scheduleCensusDao' class='com.cclip.dao.schedule.census.ScheduleCensusDao'>
+		<property name='UtilJdbc' ref='utilJdbc' />
+	</bean>
+
+	<bean id='scheduleCensusItemDao' class='com.cclip.dao.schedule.census.ScheduleCensusItemDao'>
+		<property name='UtilJdbc' ref='utilJdbc' />
+	</bean>
+
+
+
+	<bean id='ufDao' class='com.cclip.dao.person.UfDao'>
+		<property name='UtilJdbc' ref='utilJdbc' />
+	</bean>
+
+	<bean id='ufCensusDao' class='com.cclip.dao.person.UfCensusDao'>
+		<property name='UtilJdbc' ref='utilJdbc' />
+	</bean>
+
+
+
+</beans>

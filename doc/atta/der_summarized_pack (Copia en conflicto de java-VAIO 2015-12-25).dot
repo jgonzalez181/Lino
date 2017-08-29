@@ -1,0 +1,414 @@
+digraph G {
+
+	graph [
+		label="Modelo de Datos Simplificado de Cclip Censo y Barrido (Basado en Entity Relationship Diagram)"
+		rankdir="RL"
+		bgcolor="#FFFFFF"
+		labeljust="l"
+		nodesep="0.18"
+		ranksep="0.46"
+		fontname="Helvetica"
+		fontsize="8"
+	];
+	node [
+		fontname="Helvetica"
+		fontsize="9"
+		shape="plaintext"
+		
+	];
+	edge [
+		arrowsize="0.5"
+	];
+
+	subgraph clustercom {
+		color="#E3F2FD";
+		label = "Package com";
+
+		subgraph clustercom_cclip {
+			color="#E3F2FD";
+			label = "Package com.cclip";
+
+			subgraph clustercom_cclip_model {
+				color="#E3F2FD";
+				label = "Package com.cclip.model";
+
+				subgraph clustercom_cclip_model_geo {
+					color="#E3F2FD";
+					label = "Package com.cclip.model.geo";
+
+					//com.cclip.model.geo.CityArea
+					city_area [
+						label=<
+							<TABLE BORDER="0" CELLBORDER="0" CELLSPACING="0" BGCOLOR="#ffffff">
+				<TR><TD COLSPAN="3" BGCOLOR="#90CAF9" ALIGN="CENTER"><B>city_area</B></TD></TR>
+
+							</TABLE>>
+							URL="com.cclip.model.geo.CityArea.html"
+							tooltip="com.cclip.model.geo.CityArea"
+					];
+
+					//com.cclip.model.geo.Neighbourhood
+					neighbourhood [
+						label=<
+							<TABLE BORDER="0" CELLBORDER="0" CELLSPACING="0" BGCOLOR="#ffffff">
+				<TR><TD COLSPAN="3" BGCOLOR="#90CAF9" ALIGN="CENTER"><B>neighbourhood</B></TD></TR>
+
+							</TABLE>>
+							URL="com.cclip.model.geo.Neighbourhood.html"
+							tooltip="com.cclip.model.geo.Neighbourhood"
+					];
+
+					subgraph clustercom_cclip_model_geo_cadastre {
+						color="#E3F2FD";
+						label = "Package com.cclip.model.geo.cadastre";
+
+						//com.cclip.model.geo.cadastre.CadastreType
+						cadastre_type [
+							label=<
+								<TABLE BORDER="0" CELLBORDER="0" CELLSPACING="0" BGCOLOR="#ffffff">
+				<TR><TD COLSPAN="3" BGCOLOR="#90CAF9" ALIGN="CENTER"><B>cadastre_type</B></TD></TR>
+
+								</TABLE>>
+								URL="com.cclip.model.geo.cadastre.CadastreType.html"
+								tooltip="com.cclip.model.geo.cadastre.CadastreType"
+						];
+
+						//com.cclip.model.geo.cadastre.CadastreSituation
+						cadastre_situation [
+							label=<
+								<TABLE BORDER="0" CELLBORDER="0" CELLSPACING="0" BGCOLOR="#ffffff">
+				<TR><TD COLSPAN="3" BGCOLOR="#90CAF9" ALIGN="CENTER"><B>cadastre_situation</B></TD></TR>
+
+								</TABLE>>
+								URL="com.cclip.model.geo.cadastre.CadastreSituation.html"
+								tooltip="com.cclip.model.geo.cadastre.CadastreSituation"
+						];
+
+						//com.cclip.model.geo.cadastre.UserWaterSituation
+						user_water_situation [
+							label=<
+								<TABLE BORDER="0" CELLBORDER="0" CELLSPACING="0" BGCOLOR="#ffffff">
+				<TR><TD COLSPAN="3" BGCOLOR="#90CAF9" ALIGN="CENTER"><B>user_water_situation</B></TD></TR>
+
+								</TABLE>>
+								URL="com.cclip.model.geo.cadastre.UserWaterSituation.html"
+								tooltip="com.cclip.model.geo.cadastre.UserWaterSituation"
+						];
+
+						//com.cclip.model.geo.cadastre.Cadastre
+						cadastre [
+							label=<
+								<TABLE BORDER="0" CELLBORDER="0" CELLSPACING="0" BGCOLOR="#ffffff">
+				<TR><TD COLSPAN="3" BGCOLOR="#90CAF9" ALIGN="CENTER"><B>cadastre</B></TD></TR>
+
+								</TABLE>>
+								URL="com.cclip.model.geo.cadastre.Cadastre.html"
+								tooltip="com.cclip.model.geo.cadastre.Cadastre"
+						];
+
+						//com.cclip.model.geo.cadastre.CadastreActivityType
+						cadastre_activity_type [
+							label=<
+								<TABLE BORDER="0" CELLBORDER="0" CELLSPACING="0" BGCOLOR="#ffffff">
+				<TR><TD COLSPAN="3" BGCOLOR="#90CAF9" ALIGN="CENTER"><B>cadastre_activity_type</B></TD></TR>
+
+								</TABLE>>
+								URL="com.cclip.model.geo.cadastre.CadastreActivityType.html"
+								tooltip="com.cclip.model.geo.cadastre.CadastreActivityType"
+						];
+
+						subgraph clustercom_cclip_model_geo_cadastre_aacc {
+							color="#E3F2FD";
+							label = "Package com.cclip.model.geo.cadastre.aacc";
+
+						}
+
+						subgraph clustercom_cclip_model_geo_cadastre_block {
+							color="#E3F2FD";
+							label = "Package com.cclip.model.geo.cadastre.block";
+
+							//com.cclip.model.geo.cadastre.block.CadastreConstructiveType
+							cadastre_constructive_type [
+								label=<
+									<TABLE BORDER="0" CELLBORDER="0" CELLSPACING="0" BGCOLOR="#ffffff">
+				<TR><TD COLSPAN="3" BGCOLOR="#90CAF9" ALIGN="CENTER"><B>cadastre_constructive_type</B></TD></TR>
+
+									</TABLE>>
+									URL="com.cclip.model.geo.cadastre.block.CadastreConstructiveType.html"
+									tooltip="com.cclip.model.geo.cadastre.block.CadastreConstructiveType"
+							];
+
+							//com.cclip.model.geo.cadastre.block.CadastreDestinationType
+							cadastre_destination_type [
+								label=<
+									<TABLE BORDER="0" CELLBORDER="0" CELLSPACING="0" BGCOLOR="#ffffff">
+				<TR><TD COLSPAN="3" BGCOLOR="#90CAF9" ALIGN="CENTER"><B>cadastre_destination_type</B></TD></TR>
+
+									</TABLE>>
+									URL="com.cclip.model.geo.cadastre.block.CadastreDestinationType.html"
+									tooltip="com.cclip.model.geo.cadastre.block.CadastreDestinationType"
+							];
+
+							//com.cclip.model.geo.cadastre.block.CadastreBlock
+							cadastre_block [
+								label=<
+									<TABLE BORDER="0" CELLBORDER="0" CELLSPACING="0" BGCOLOR="#ffffff">
+				<TR><TD COLSPAN="3" BGCOLOR="#90CAF9" ALIGN="CENTER"><B>cadastre_block</B></TD></TR>
+
+									</TABLE>>
+									URL="com.cclip.model.geo.cadastre.block.CadastreBlock.html"
+									tooltip="com.cclip.model.geo.cadastre.block.CadastreBlock"
+							];
+
+						}
+
+						subgraph clustercom_cclip_model_geo_cadastre_subdivision {
+							color="#E3F2FD";
+							label = "Package com.cclip.model.geo.cadastre.subdivision";
+
+							//com.cclip.model.geo.cadastre.subdivision.CadastreSubDivisionType
+							cadastre_sub_division_type [
+								label=<
+									<TABLE BORDER="0" CELLBORDER="0" CELLSPACING="0" BGCOLOR="#ffffff">
+				<TR><TD COLSPAN="3" BGCOLOR="#90CAF9" ALIGN="CENTER"><B>cadastre_sub_division_type</B></TD></TR>
+
+									</TABLE>>
+									URL="com.cclip.model.geo.cadastre.subdivision.CadastreSubDivisionType.html"
+									tooltip="com.cclip.model.geo.cadastre.subdivision.CadastreSubDivisionType"
+							];
+
+							//com.cclip.model.geo.cadastre.subdivision.CadastreSubDivision
+							cadastre_sub_division [
+								label=<
+									<TABLE BORDER="0" CELLBORDER="0" CELLSPACING="0" BGCOLOR="#ffffff">
+				<TR><TD COLSPAN="3" BGCOLOR="#90CAF9" ALIGN="CENTER"><B>cadastre_sub_division</B></TD></TR>
+
+									</TABLE>>
+									URL="com.cclip.model.geo.cadastre.subdivision.CadastreSubDivision.html"
+									tooltip="com.cclip.model.geo.cadastre.subdivision.CadastreSubDivision"
+							];
+
+						}
+
+					}
+
+				}
+
+				subgraph clustercom_cclip_model_schedule {
+					color="#E3F2FD";
+					label = "Package com.cclip.model.schedule";
+
+					//com.cclip.model.schedule.Schedule
+					schedule [
+						label=<
+							<TABLE BORDER="0" CELLBORDER="0" CELLSPACING="0" BGCOLOR="#ffffff">
+				<TR><TD COLSPAN="3" BGCOLOR="#90CAF9" ALIGN="CENTER"><B>schedule</B></TD></TR>
+
+							</TABLE>>
+							URL="com.cclip.model.schedule.Schedule.html"
+							tooltip="com.cclip.model.schedule.Schedule"
+					];
+
+					//com.cclip.model.schedule.ScheduleBatch
+					schedule_batch [
+						label=<
+							<TABLE BORDER="0" CELLBORDER="0" CELLSPACING="0" BGCOLOR="#ffffff">
+				<TR><TD COLSPAN="3" BGCOLOR="#90CAF9" ALIGN="CENTER"><B>schedule_batch</B></TD></TR>
+
+							</TABLE>>
+							URL="com.cclip.model.schedule.ScheduleBatch.html"
+							tooltip="com.cclip.model.schedule.ScheduleBatch"
+					];
+
+					subgraph clustercom_cclip_model_schedule_scanning {
+						color="#E3F2FD";
+						label = "Package com.cclip.model.schedule.scanning";
+
+						//com.cclip.model.schedule.scanning.ScheduleScanning
+						schedule_scanning [
+							label=<
+								<TABLE BORDER="0" CELLBORDER="0" CELLSPACING="0" BGCOLOR="#ffffff">
+				<TR><TD COLSPAN="3" BGCOLOR="#90CAF9" ALIGN="CENTER"><B>schedule_scanning</B></TD></TR>
+
+								</TABLE>>
+								URL="com.cclip.model.schedule.scanning.ScheduleScanning.html"
+								tooltip="com.cclip.model.schedule.scanning.ScheduleScanning"
+						];
+
+						//com.cclip.model.schedule.scanning.ScheduleScanningResult
+						schedule_scanning_result [
+							label=<
+								<TABLE BORDER="0" CELLBORDER="0" CELLSPACING="0" BGCOLOR="#ffffff">
+				<TR><TD COLSPAN="3" BGCOLOR="#90CAF9" ALIGN="CENTER"><B>schedule_scanning_result</B></TD></TR>
+
+								</TABLE>>
+								URL="com.cclip.model.schedule.scanning.ScheduleScanningResult.html"
+								tooltip="com.cclip.model.schedule.scanning.ScheduleScanningResult"
+						];
+
+						//com.cclip.model.schedule.scanning.ScheduleScanningItem
+						schedule_scanning_item [
+							label=<
+								<TABLE BORDER="0" CELLBORDER="0" CELLSPACING="0" BGCOLOR="#ffffff">
+				<TR><TD COLSPAN="3" BGCOLOR="#90CAF9" ALIGN="CENTER"><B>schedule_scanning_item</B></TD></TR>
+
+								</TABLE>>
+								URL="com.cclip.model.schedule.scanning.ScheduleScanningItem.html"
+								tooltip="com.cclip.model.schedule.scanning.ScheduleScanningItem"
+						];
+
+					}
+
+					subgraph clustercom_cclip_model_schedule_census {
+						color="#E3F2FD";
+						label = "Package com.cclip.model.schedule.census";
+
+						//com.cclip.model.schedule.census.ScheduleCensusResult
+						schedule_census_result [
+							label=<
+								<TABLE BORDER="0" CELLBORDER="0" CELLSPACING="0" BGCOLOR="#ffffff">
+				<TR><TD COLSPAN="3" BGCOLOR="#90CAF9" ALIGN="CENTER"><B>schedule_census_result</B></TD></TR>
+
+								</TABLE>>
+								URL="com.cclip.model.schedule.census.ScheduleCensusResult.html"
+								tooltip="com.cclip.model.schedule.census.ScheduleCensusResult"
+						];
+
+						//com.cclip.model.schedule.census.ScheduleCensus
+						schedule_census [
+							label=<
+								<TABLE BORDER="0" CELLBORDER="0" CELLSPACING="0" BGCOLOR="#ffffff">
+				<TR><TD COLSPAN="3" BGCOLOR="#90CAF9" ALIGN="CENTER"><B>schedule_census</B></TD></TR>
+
+								</TABLE>>
+								URL="com.cclip.model.schedule.census.ScheduleCensus.html"
+								tooltip="com.cclip.model.schedule.census.ScheduleCensus"
+						];
+
+						//com.cclip.model.schedule.census.CadastreInsDel
+						cadastre_ins_del [
+							label=<
+								<TABLE BORDER="0" CELLBORDER="0" CELLSPACING="0" BGCOLOR="#ffffff">
+				<TR><TD COLSPAN="3" BGCOLOR="#90CAF9" ALIGN="CENTER"><B>cadastre_ins_del</B></TD></TR>
+
+								</TABLE>>
+								URL="com.cclip.model.schedule.census.CadastreInsDel.html"
+								tooltip="com.cclip.model.schedule.census.CadastreInsDel"
+						];
+
+						//com.cclip.model.schedule.census.CadastreInsDel extends com.cclip.model.geo.cadastre.Cadastre
+	"cadastre_ins_del":"id":w -> "cadastre":"id":e [arrowhead=none, dir=back, arrowtail=crowodot, arrowhead=none, headlabel = "1", taillabel = "N", fontsize="8", color="#BBDEFB"];
+
+					}
+
+				}
+
+				subgraph clustercom_cclip_model_person {
+					color="#E3F2FD";
+					label = "Package com.cclip.model.person";
+
+					//com.cclip.model.person.Person
+					person [
+						label=<
+							<TABLE BORDER="0" CELLBORDER="0" CELLSPACING="0" BGCOLOR="#ffffff">
+				<TR><TD COLSPAN="3" BGCOLOR="#90CAF9" ALIGN="CENTER"><B>person</B></TD></TR>
+
+							</TABLE>>
+							URL="com.cclip.model.person.Person.html"
+							tooltip="com.cclip.model.person.Person"
+					];
+
+					//com.cclip.model.person.UserSystem
+					user_system [
+						label=<
+							<TABLE BORDER="0" CELLBORDER="0" CELLSPACING="0" BGCOLOR="#ffffff">
+				<TR><TD COLSPAN="3" BGCOLOR="#90CAF9" ALIGN="CENTER"><B>user_system</B></TD></TR>
+
+							</TABLE>>
+							URL="com.cclip.model.person.UserSystem.html"
+							tooltip="com.cclip.model.person.UserSystem"
+					];
+
+					//com.cclip.model.person.UserSystem extends com.cclip.model.person.Person
+	"user_system":"id":w -> "person":"id":e [arrowhead=none, dir=back, arrowtail=crowodot, arrowhead=none, headlabel = "1", taillabel = "N", fontsize="8", color="#BBDEFB"];
+
+					//com.cclip.model.person.CensusTaker
+					census_taker [
+						label=<
+							<TABLE BORDER="0" CELLBORDER="0" CELLSPACING="0" BGCOLOR="#ffffff">
+				<TR><TD COLSPAN="3" BGCOLOR="#90CAF9" ALIGN="CENTER"><B>census_taker</B></TD></TR>
+
+							</TABLE>>
+							URL="com.cclip.model.person.CensusTaker.html"
+							tooltip="com.cclip.model.person.CensusTaker"
+					];
+
+					//com.cclip.model.person.CensusTaker extends com.cclip.model.person.Person
+	"census_taker":"id":w -> "person":"id":e [arrowhead=none, dir=back, arrowtail=crowodot, arrowhead=none, headlabel = "1", taillabel = "N", fontsize="8", color="#BBDEFB"];
+
+					//com.cclip.model.person.Uf
+					uf [
+						label=<
+							<TABLE BORDER="0" CELLBORDER="0" CELLSPACING="0" BGCOLOR="#ffffff">
+				<TR><TD COLSPAN="3" BGCOLOR="#90CAF9" ALIGN="CENTER"><B>uf</B></TD></TR>
+
+							</TABLE>>
+							URL="com.cclip.model.person.Uf.html"
+							tooltip="com.cclip.model.person.Uf"
+					];
+
+					//com.cclip.model.person.Iva
+					iva [
+						label=<
+							<TABLE BORDER="0" CELLBORDER="0" CELLSPACING="0" BGCOLOR="#ffffff">
+				<TR><TD COLSPAN="3" BGCOLOR="#90CAF9" ALIGN="CENTER"><B>iva</B></TD></TR>
+
+							</TABLE>>
+							URL="com.cclip.model.person.Iva.html"
+							tooltip="com.cclip.model.person.Iva"
+					];
+
+				}
+
+			}
+
+		}
+
+	}
+	"uf":"iva_id":w -> "iva":"id":e [arrowhead=none, dir=back, arrowtail=crowodot, arrowhead=none, headlabel = "1", taillabel = "N", fontsize="8", color="#BBDEFB"];
+	"cadastre":"user_iva_id":w -> "iva":"id":e [arrowhead=none, dir=back, arrowtail=crowodot, arrowhead=none, headlabel = "1", taillabel = "N", fontsize="8", color="#BBDEFB"];
+	"cadastre_sub_division":"user_iva_id":w -> "iva":"id":e [arrowhead=none, dir=back, arrowtail=crowodot, arrowhead=none, headlabel = "1", taillabel = "N", fontsize="8", color="#BBDEFB"];
+	"cadastre":"user_water_situation_id":w -> "user_water_situation":"id":e [arrowhead=none, dir=back, arrowtail=crowodot, arrowhead=none, headlabel = "1", taillabel = "N", fontsize="8", color="#BBDEFB"];
+	"cadastre_sub_division":"user_water_situation_id":w -> "user_water_situation":"id":e [arrowhead=none, dir=back, arrowtail=crowodot, arrowhead=none, headlabel = "1", taillabel = "N", fontsize="8", color="#BBDEFB"];
+	"cadastre":"uf_id":w -> "uf":"id":e [arrowhead=none, dir=back, arrowtail=crowodot, arrowhead=none, headlabel = "1", taillabel = "N", fontsize="8", color="#BBDEFB"];
+	"cadastre_sub_division":"uf_id":w -> "uf":"id":e [arrowhead=none, dir=back, arrowtail=crowodot, arrowhead=none, headlabel = "1", taillabel = "N", fontsize="8", color="#BBDEFB"];
+	"cadastre_block":"cadastre_activity_type_id":w -> "cadastre_activity_type":"id":e [arrowhead=none, dir=back, arrowtail=crowodot, arrowhead=none, headlabel = "1", taillabel = "N", fontsize="8", color="#BBDEFB"];
+	"cadastre_sub_division":"cadastre_activity_type_id":w -> "cadastre_activity_type":"id":e [arrowhead=none, dir=back, arrowtail=crowodot, arrowhead=none, headlabel = "1", taillabel = "N", fontsize="8", color="#BBDEFB"];
+	"cadastre":"city_area_id":w -> "city_area":"id":e [arrowhead=none, dir=back, arrowtail=crowodot, arrowhead=none, headlabel = "1", taillabel = "N", fontsize="8", color="#BBDEFB"];
+	"cadastre_sub_division":"city_area_id":w -> "city_area":"id":e [arrowhead=none, dir=back, arrowtail=crowodot, arrowhead=none, headlabel = "1", taillabel = "N", fontsize="8", color="#BBDEFB"];
+	"schedule_batch":"schedule_id":w -> "schedule":"id":e [arrowhead=none, dir=back, arrowtail=crowodot, arrowhead=none, headlabel = "1", taillabel = "N", fontsize="8", color="#BBDEFB"];
+	"schedule_scanning":"schedule_id":w -> "schedule":"id":e [arrowhead=none, dir=back, arrowtail=crowodot, arrowhead=none, headlabel = "1", taillabel = "N", fontsize="8", color="#BBDEFB"];
+	"cadastre_block":"cadastre_id":w -> "cadastre":"id":e [arrowhead=none, dir=back, arrowtail=crowodot, arrowhead=none, headlabel = "1", taillabel = "N", fontsize="8", color="#BBDEFB"];
+	"cadastre_sub_division":"cadastre_id":w -> "cadastre":"id":e [arrowhead=none, dir=back, arrowtail=crowodot, arrowhead=none, headlabel = "1", taillabel = "N", fontsize="8", color="#BBDEFB"];
+	"schedule_scanning_item":"cadastre_id":w -> "cadastre":"id":e [arrowhead=none, dir=back, arrowtail=crowodot, arrowhead=none, headlabel = "1", taillabel = "N", fontsize="8", color="#BBDEFB"];
+	"schedule_scanning_item":"schedule_scanning_result_id":w -> "schedule_scanning_result":"id":e [arrowhead=none, dir=back, arrowtail=crowodot, arrowhead=none, headlabel = "1", taillabel = "N", fontsize="8", color="#BBDEFB"];
+	"schedule_scanning":"census_taker_id":w -> "census_taker":"id":e [arrowhead=none, dir=back, arrowtail=crowodot, arrowhead=none, headlabel = "1", taillabel = "N", fontsize="8", color="#BBDEFB"];
+	"schedule_scanning_item":"schedule_scanning_id":w -> "schedule_scanning":"id":e [arrowhead=none, dir=back, arrowtail=crowodot, arrowhead=none, headlabel = "1", taillabel = "N", fontsize="8", color="#BBDEFB"];
+	"cadastre":"cadastre_type_id":w -> "cadastre_type":"id":e [arrowhead=none, dir=back, arrowtail=crowodot, arrowhead=none, headlabel = "1", taillabel = "N", fontsize="8", color="#BBDEFB"];
+	"cadastre":"cadastre_situation_id":w -> "cadastre_situation":"id":e [arrowhead=none, dir=back, arrowtail=crowodot, arrowhead=none, headlabel = "1", taillabel = "N", fontsize="8", color="#BBDEFB"];
+	"cadastre":"inm_neighbourhood_id":w -> "neighbourhood":"id":e [arrowhead=none, dir=back, arrowtail=crowodot, arrowhead=none, headlabel = "1", taillabel = "N", fontsize="8", color="#BBDEFB"];
+	"cadastre_block":"cadastre_constructive_type_id":w -> "cadastre_constructive_type":"id":e [arrowhead=none, dir=back, arrowtail=crowodot, arrowhead=none, headlabel = "1", taillabel = "N", fontsize="8", color="#BBDEFB"];
+	"cadastre_block":"cadastre_destination_type_id":w -> "cadastre_destination_type":"id":e [arrowhead=none, dir=back, arrowtail=crowodot, arrowhead=none, headlabel = "1", taillabel = "N", fontsize="8", color="#BBDEFB"];
+	"cadastre_sub_division":"cadastre_sub_division_type_id":w -> "cadastre_sub_division_type":"id":e [arrowhead=none, dir=back, arrowtail=crowodot, arrowhead=none, headlabel = "1", taillabel = "N", fontsize="8", color="#BBDEFB"];
+	"schedule_census":"schedule_id":w -> "schedule":"id":e [arrowhead=none, dir=back, arrowtail=crowodot, arrowhead=none, headlabel = "1", taillabel = "N", fontsize="8", color="#BBDEFB"];
+	"schedule_census":"cadastre_id":w -> "cadastre":"id":e [arrowhead=none, dir=back, arrowtail=crowodot, arrowhead=none, headlabel = "1", taillabel = "N", fontsize="8", color="#BBDEFB"];
+	"schedule_census":"census_taker_id":w -> "census_taker":"id":e [arrowhead=none, dir=back, arrowtail=crowodot, arrowhead=none, headlabel = "1", taillabel = "N", fontsize="8", color="#BBDEFB"];
+	"schedule_census":"schedule_batch_id":w -> "schedule_batch":"id":e [arrowhead=none, dir=back, arrowtail=crowodot, arrowhead=none, headlabel = "1", taillabel = "N", fontsize="8", color="#BBDEFB"];
+	"schedule_census":"cadastre_activity_type_id":w -> "cadastre_activity_type":"id":e [arrowhead=none, dir=back, arrowtail=crowodot, arrowhead=none, headlabel = "1", taillabel = "N", fontsize="8", color="#BBDEFB"];
+	"schedule_census":"schedule_census_result_id":w -> "schedule_census_result":"id":e [arrowhead=none, dir=back, arrowtail=crowodot, arrowhead=none, headlabel = "1", taillabel = "N", fontsize="8", color="#BBDEFB"];
+	"cadastre_ins_del":"schedule_id":w -> "schedule":"id":e [arrowhead=none, dir=back, arrowtail=crowodot, arrowhead=none, headlabel = "1", taillabel = "N", fontsize="8", color="#BBDEFB"];
+	"cadastre_ins_del":"census_taker_id":w -> "census_taker":"id":e [arrowhead=none, dir=back, arrowtail=crowodot, arrowhead=none, headlabel = "1", taillabel = "N", fontsize="8", color="#BBDEFB"];
+	"cadastre_ins_del":"schedule_batch_id":w -> "schedule_batch":"id":e [arrowhead=none, dir=back, arrowtail=crowodot, arrowhead=none, headlabel = "1", taillabel = "N", fontsize="8", color="#BBDEFB"];
+	"cadastre":"cadastre_ins_del_id":w -> "cadastre_ins_del":"id":e [arrowhead=none, dir=back, arrowtail=crowodot, arrowhead=none, headlabel = "1", taillabel = "N", fontsize="8", color="#BBDEFB"];
+	"uf":"neighbourhood_id":w -> "neighbourhood":"id":e [arrowhead=none, dir=back, arrowtail=crowodot, arrowhead=none, headlabel = "1", taillabel = "N", fontsize="8", color="#BBDEFB"];
+}
