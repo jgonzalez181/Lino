@@ -48,8 +48,8 @@ public class JPanelSchedule extends JPanelList {
 		jPanelScheduleBatchForm = new JPanelScheduleBatchForm();
 
 		addColumnMetaData("id", String.class, 0);
-		addColumnMetaData("Cronograma (año)", Integer.class, 130);
 		addColumnMetaData("N°", Integer.class, 50);
+		addColumnMetaData("Cronograma (año)", Integer.class, 130);
 		addColumnMetaData("Cerrado", Date.class, 90);
 		addColumnMetaData("Entregado", Date.class, 90);
 		addColumnMetaData("Comentario", Integer.class, -1);
