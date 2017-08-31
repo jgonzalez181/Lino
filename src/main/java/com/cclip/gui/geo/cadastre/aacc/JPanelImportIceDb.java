@@ -388,6 +388,7 @@ public class JPanelImportIceDb extends JPanel {
 				jRadioButton2ActionPerformed(evt);
 			}
 		});
+		jRadioButton2.setVisible(false);
 
 		jButton6.setFont(new java.awt.Font("Dialog", 1, 24)); // NOI18N
 		jButton6.setText("Importar Archivos");
