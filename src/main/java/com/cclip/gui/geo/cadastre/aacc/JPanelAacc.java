@@ -80,7 +80,7 @@ public class JPanelAacc extends JPanel {
 		// jTabbedPane3.addTab("5 DATOS_POSTALES", jPanelDatosPostales2);
 
 		jTabbedPane1.addTab("Base de Datos Congelada", jTabbedPane2);
-		jTabbedPane1.addTab("Novedades", jTabbedPane3);
+		//jTabbedPane1.addTab("Novedades", jTabbedPane3);
 		jTabbedPane1.addTab("Importar Archivos", jPanelImportIceDb);
 
 		// jTabbedPane1.setBackgroundAt(0, new Color(192, 0, 0));
