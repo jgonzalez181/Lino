@@ -1,0 +1,47 @@
+// dot 2.38.0 on Linux 4.10.0-32-generic
+digraph "v_reporte_planilla_barrido_detail" {
+  graph [
+    rankdir="RL"
+    bgcolor="#f7f7f7"
+  ];
+  node [
+    fontname="Helvetica"
+    fontsize="11"
+    shape="plaintext"
+  ];
+  edge [
+    arrowsize="0.8"
+  ];
+  "v_reporte_planilla_barrido_detail" [
+    label=<
+    <TABLE BORDER="0" CELLBORDER="1" CELLSPACING="0" BGCOLOR="#ffffff">
+      <TR><TD PORT="v_reporte_planilla_barrido_detail.heading" COLSPAN="3" BGCOLOR="#9bab96" ALIGN="CENTER">v_reporte_planilla_barrido_detail</TD></TR>
+      <TR><TD PORT="fid" COLSPAN="3" ALIGN="LEFT">fid</TD></TR>
+      <TR><TD PORT="cadastre_id" COLSPAN="3" ALIGN="LEFT">cadastre_id</TD></TR>
+      <TR><TD PORT="fuf" COLSPAN="3" ALIGN="LEFT">fuf</TD></TR>
+      <TR><TD PORT="fparcela_a" COLSPAN="3" ALIGN="LEFT">fparcela_a</TD></TR>
+      <TR><TD PORT="fparcela" COLSPAN="3" ALIGN="LEFT">fparcela</TD></TR>
+      <TR><TD PORT="fctacli" COLSPAN="3" ALIGN="LEFT">fctacli</TD></TR>
+      <TR><TD PORT="cr1x" COLSPAN="3" ALIGN="LEFT">cr1x</TD></TR>
+      <TR><TD PORT="cr2x" COLSPAN="3" ALIGN="LEFT">cr2x</TD></TR>
+      <TR><TD PORT="ffua" COLSPAN="3" ALIGN="LEFT">ffua</TD></TR>
+      <TR><TD PORT="ffub" COLSPAN="3" ALIGN="LEFT">ffub</TD></TR>
+      <TR><TD PORT="fdetec" COLSPAN="3" ALIGN="LEFT">fdetec</TD></TR>
+      <TR><TD PORT="fsup" COLSPAN="3" ALIGN="LEFT">fsup</TD></TR>
+      <TR><TD PORT="fav" COLSPAN="3" ALIGN="LEFT">fav</TD></TR>
+      <TR><TD PORT="fsupac" COLSPAN="3" ALIGN="LEFT">fsupac</TD></TR>
+      <TR><TD PORT="fobs" COLSPAN="3" ALIGN="LEFT">fobs</TD></TR>
+      <TR><TD PORT="ftitular" COLSPAN="3" ALIGN="LEFT">ftitular</TD></TR>
+      <TR><TD PORT="funid" COLSPAN="3" ALIGN="LEFT">funid</TD></TR>
+      <TR><TD PORT="fmedido" COLSPAN="3" ALIGN="LEFT">fmedido</TD></TR>
+      <TR><TD PORT="schedule_scanning_id" COLSPAN="3" ALIGN="LEFT">schedule_scanning_id</TD></TR>
+      <TR><TD PORT="blocks" COLSPAN="3" ALIGN="LEFT">blocks</TD></TR>
+      <TR><TD PORT="cr1" COLSPAN="3" ALIGN="LEFT">cr1</TD></TR>
+      <TR><TD PORT="fanterior" COLSPAN="3" ALIGN="LEFT">fanterior</TD></TR>
+      <TR><TD PORT="cr" COLSPAN="3" ALIGN="LEFT">cr</TD></TR>
+      <TR><TD ALIGN="LEFT" BGCOLOR="#f7f7f7">  </TD><TD ALIGN="RIGHT" BGCOLOR="#f7f7f7">view</TD><TD ALIGN="RIGHT" BGCOLOR="#f7f7f7">  </TD></TR>
+    </TABLE>>
+    URL="tables/v_reporte_planilla_barrido_detail.html#"
+    tooltip="v_reporte_planilla_barrido_detail"
+  ];
+}

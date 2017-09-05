@@ -1,0 +1,52 @@
+// dot 2.38.0 on Linux 4.10.0-32-generic
+digraph "v_schedule_scanning" {
+  graph [
+    rankdir="RL"
+    bgcolor="#f7f7f7"
+  ];
+  node [
+    fontname="Helvetica"
+    fontsize="11"
+    shape="plaintext"
+  ];
+  edge [
+    arrowsize="0.8"
+  ];
+  "v_schedule_scanning" [
+    label=<
+    <TABLE BORDER="0" CELLBORDER="1" CELLSPACING="0" BGCOLOR="#ffffff">
+      <TR><TD PORT="v_schedule_scanning.heading" COLSPAN="3" BGCOLOR="#9bab96" ALIGN="CENTER">v_schedule_scanning</TD></TR>
+      <TR><TD PORT="id" COLSPAN="3" ALIGN="LEFT">id</TD></TR>
+      <TR><TD PORT="erased" COLSPAN="3" ALIGN="LEFT">erased</TD></TR>
+      <TR><TD PORT="cadastral_code" COLSPAN="3" ALIGN="LEFT">cadastral_code</TD></TR>
+      <TR><TD PORT="number_scanning" COLSPAN="3" ALIGN="LEFT">number_scanning</TD></TR>
+      <TR><TD PORT="comment" COLSPAN="3" ALIGN="LEFT">comment</TD></TR>
+      <TR><TD PORT="planned_delivered" COLSPAN="3" ALIGN="LEFT">planned_delivered</TD></TR>
+      <TR><TD PORT="create_date" COLSPAN="3" ALIGN="LEFT">create_date</TD></TR>
+      <TR><TD PORT="scanning" COLSPAN="3" ALIGN="LEFT">scanning</TD></TR>
+      <TR><TD PORT="recorded" COLSPAN="3" ALIGN="LEFT">recorded</TD></TR>
+      <TR><TD PORT="schedule_id" COLSPAN="3" ALIGN="LEFT">schedule_id</TD></TR>
+      <TR><TD PORT="schedule_erased" COLSPAN="3" ALIGN="LEFT">schedule_erased</TD></TR>
+      <TR><TD PORT="schedule_year" COLSPAN="3" ALIGN="LEFT">schedule_year</TD></TR>
+      <TR><TD PORT="schedule_date_from" COLSPAN="3" ALIGN="LEFT">schedule_date_from</TD></TR>
+      <TR><TD PORT="schedule_date_to" COLSPAN="3" ALIGN="LEFT">schedule_date_to</TD></TR>
+      <TR><TD PORT="schedule_comment" COLSPAN="3" ALIGN="LEFT">schedule_comment</TD></TR>
+      <TR><TD PORT="census_taker_id" COLSPAN="3" ALIGN="LEFT">census_taker_id</TD></TR>
+      <TR><TD PORT="census_taker_erased" COLSPAN="3" ALIGN="LEFT">census_taker_erased</TD></TR>
+      <TR><TD PORT="census_taker_code" COLSPAN="3" ALIGN="LEFT">census_taker_code</TD></TR>
+      <TR><TD PORT="census_taker_comment" COLSPAN="3" ALIGN="LEFT">census_taker_comment</TD></TR>
+      <TR><TD PORT="person_id" COLSPAN="3" ALIGN="LEFT">person_id</TD></TR>
+      <TR><TD PORT="person_erased" COLSPAN="3" ALIGN="LEFT">person_erased</TD></TR>
+      <TR><TD PORT="person_cuil" COLSPAN="3" ALIGN="LEFT">person_cuil</TD></TR>
+      <TR><TD PORT="person_dni" COLSPAN="3" ALIGN="LEFT">person_dni</TD></TR>
+      <TR><TD PORT="person_given_name" COLSPAN="3" ALIGN="LEFT">person_given_name</TD></TR>
+      <TR><TD PORT="person_middle_name" COLSPAN="3" ALIGN="LEFT">person_middle_name</TD></TR>
+      <TR><TD PORT="person_family_name" COLSPAN="3" ALIGN="LEFT">person_family_name</TD></TR>
+      <TR><TD PORT="person_masculine" COLSPAN="3" ALIGN="LEFT">person_masculine</TD></TR>
+      <TR><TD PORT="person_comment" COLSPAN="3" ALIGN="LEFT">person_comment</TD></TR>
+      <TR><TD ALIGN="LEFT" BGCOLOR="#f7f7f7">  </TD><TD ALIGN="RIGHT" BGCOLOR="#f7f7f7">view</TD><TD ALIGN="RIGHT" BGCOLOR="#f7f7f7">  </TD></TR>
+    </TABLE>>
+    URL="tables/v_schedule_scanning.html#"
+    tooltip="v_schedule_scanning"
+  ];
+}

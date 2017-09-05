@@ -1,0 +1,31 @@
+// dot 2.38.0 on Linux 4.10.0-32-generic
+digraph "v_schedule_scanning_result_total" {
+  graph [
+    rankdir="RL"
+    bgcolor="#f7f7f7"
+  ];
+  node [
+    fontname="Helvetica"
+    fontsize="11"
+    shape="plaintext"
+  ];
+  edge [
+    arrowsize="0.8"
+  ];
+  "v_schedule_scanning_result_total" [
+    label=<
+    <TABLE BORDER="0" CELLBORDER="1" CELLSPACING="0" BGCOLOR="#ffffff">
+      <TR><TD PORT="v_schedule_scanning_result_total.heading" COLSPAN="3" BGCOLOR="#9bab96" ALIGN="CENTER">v_schedule_scanning_result_total</TD></TR>
+      <TR><TD PORT="id" COLSPAN="3" ALIGN="LEFT">id</TD></TR>
+      <TR><TD PORT="erased" COLSPAN="3" ALIGN="LEFT">erased</TD></TR>
+      <TR><TD PORT="code" COLSPAN="3" ALIGN="LEFT">code</TD></TR>
+      <TR><TD PORT="name" COLSPAN="3" ALIGN="LEFT">name</TD></TR>
+      <TR><TD PORT="comment" COLSPAN="3" ALIGN="LEFT">comment</TD></TR>
+      <TR><TD PORT="total" COLSPAN="3" ALIGN="LEFT">total</TD></TR>
+      <TR><TD PORT="schedule_scanning_id" COLSPAN="3" ALIGN="LEFT">schedule_scanning_id</TD></TR>
+      <TR><TD ALIGN="LEFT" BGCOLOR="#f7f7f7">  </TD><TD ALIGN="RIGHT" BGCOLOR="#f7f7f7">view</TD><TD ALIGN="RIGHT" BGCOLOR="#f7f7f7">  </TD></TR>
+    </TABLE>>
+    URL="tables/v_schedule_scanning_result_total.html#"
+    tooltip="v_schedule_scanning_result_total"
+  ];
+}

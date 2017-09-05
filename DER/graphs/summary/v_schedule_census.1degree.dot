@@ -1,0 +1,35 @@
+// dot 2.38.0 on Linux 4.10.0-32-generic
+digraph "v_schedule_census" {
+  graph [
+    rankdir="RL"
+    bgcolor="#f7f7f7"
+  ];
+  node [
+    fontname="Helvetica"
+    fontsize="11"
+    shape="plaintext"
+  ];
+  edge [
+    arrowsize="0.8"
+  ];
+  "v_schedule_census" [
+    label=<
+    <TABLE BORDER="0" CELLBORDER="1" CELLSPACING="0" BGCOLOR="#ffffff">
+      <TR><TD PORT="v_schedule_census.heading" COLSPAN="3" BGCOLOR="#9bab96" ALIGN="CENTER">v_schedule_census</TD></TR>
+      <TR><TD PORT="id" COLSPAN="3" ALIGN="LEFT">id</TD></TR>
+      <TR><TD PORT="year" COLSPAN="3" ALIGN="LEFT">year</TD></TR>
+      <TR><TD PORT="cadastral_code" COLSPAN="3" ALIGN="LEFT">cadastral_code</TD></TR>
+      <TR><TD PORT="uf_id" COLSPAN="3" ALIGN="LEFT">uf_id</TD></TR>
+      <TR><TD PORT="cta_cli" COLSPAN="3" ALIGN="LEFT">cta_cli</TD></TR>
+      <TR><TD PORT="censused" COLSPAN="3" ALIGN="LEFT">censused</TD></TR>
+      <TR><TD PORT="person" COLSPAN="3" ALIGN="LEFT">person</TD></TR>
+      <TR><TD PORT="schedule_census_result" COLSPAN="3" ALIGN="LEFT">schedule_census_result</TD></TR>
+      <TR><TD PORT="number_batch" COLSPAN="3" ALIGN="LEFT">number_batch</TD></TR>
+      <TR><TD PORT="close" COLSPAN="3" ALIGN="LEFT">close</TD></TR>
+      <TR><TD PORT="schedule_batch_id" COLSPAN="3" ALIGN="LEFT">schedule_batch_id</TD></TR>
+      <TR><TD ALIGN="LEFT" BGCOLOR="#f7f7f7">  </TD><TD ALIGN="RIGHT" BGCOLOR="#f7f7f7">view</TD><TD ALIGN="RIGHT" BGCOLOR="#f7f7f7">  </TD></TR>
+    </TABLE>>
+    URL="tables/v_schedule_census.html#"
+    tooltip="v_schedule_census"
+  ];
+}

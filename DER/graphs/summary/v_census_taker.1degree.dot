@@ -1,0 +1,37 @@
+// dot 2.38.0 on Linux 4.10.0-32-generic
+digraph "v_census_taker" {
+  graph [
+    rankdir="RL"
+    bgcolor="#f7f7f7"
+  ];
+  node [
+    fontname="Helvetica"
+    fontsize="11"
+    shape="plaintext"
+  ];
+  edge [
+    arrowsize="0.8"
+  ];
+  "v_census_taker" [
+    label=<
+    <TABLE BORDER="0" CELLBORDER="1" CELLSPACING="0" BGCOLOR="#ffffff">
+      <TR><TD PORT="v_census_taker.heading" COLSPAN="3" BGCOLOR="#9bab96" ALIGN="CENTER">v_census_taker</TD></TR>
+      <TR><TD PORT="id" COLSPAN="3" ALIGN="LEFT">id</TD></TR>
+      <TR><TD PORT="erased" COLSPAN="3" ALIGN="LEFT">erased</TD></TR>
+      <TR><TD PORT="code" COLSPAN="3" ALIGN="LEFT">code</TD></TR>
+      <TR><TD PORT="comment" COLSPAN="3" ALIGN="LEFT">comment</TD></TR>
+      <TR><TD PORT="person_id" COLSPAN="3" ALIGN="LEFT">person_id</TD></TR>
+      <TR><TD PORT="person_erased" COLSPAN="3" ALIGN="LEFT">person_erased</TD></TR>
+      <TR><TD PORT="person_cuil" COLSPAN="3" ALIGN="LEFT">person_cuil</TD></TR>
+      <TR><TD PORT="person_dni" COLSPAN="3" ALIGN="LEFT">person_dni</TD></TR>
+      <TR><TD PORT="person_given_name" COLSPAN="3" ALIGN="LEFT">person_given_name</TD></TR>
+      <TR><TD PORT="person_middle_name" COLSPAN="3" ALIGN="LEFT">person_middle_name</TD></TR>
+      <TR><TD PORT="person_family_name" COLSPAN="3" ALIGN="LEFT">person_family_name</TD></TR>
+      <TR><TD PORT="person_masculine" COLSPAN="3" ALIGN="LEFT">person_masculine</TD></TR>
+      <TR><TD PORT="person_comment" COLSPAN="3" ALIGN="LEFT">person_comment</TD></TR>
+      <TR><TD ALIGN="LEFT" BGCOLOR="#f7f7f7">  </TD><TD ALIGN="RIGHT" BGCOLOR="#f7f7f7">view</TD><TD ALIGN="RIGHT" BGCOLOR="#f7f7f7">  </TD></TR>
+    </TABLE>>
+    URL="tables/v_census_taker.html#"
+    tooltip="v_census_taker"
+  ];
+}

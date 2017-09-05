@@ -1,0 +1,29 @@
+// dot 2.38.0 on Linux 4.10.0-32-generic
+digraph "v_cadastre_for_build_schedule_scanning" {
+  graph [
+    rankdir="RL"
+    bgcolor="#f7f7f7"
+  ];
+  node [
+    fontname="Helvetica"
+    fontsize="11"
+    shape="plaintext"
+  ];
+  edge [
+    arrowsize="0.8"
+  ];
+  "v_cadastre_for_build_schedule_scanning" [
+    label=<
+    <TABLE BORDER="0" CELLBORDER="1" CELLSPACING="0" BGCOLOR="#ffffff">
+      <TR><TD PORT="v_cadastre_for_build_schedule_scanning.heading" COLSPAN="3" BGCOLOR="#9bab96" ALIGN="CENTER">v_cadastre_for_build_schedule_scanning</TD></TR>
+      <TR><TD PORT="id" COLSPAN="3" ALIGN="LEFT">id</TD></TR>
+      <TR><TD PORT="erased" COLSPAN="3" ALIGN="LEFT">erased</TD></TR>
+      <TR><TD PORT="date_create" COLSPAN="3" ALIGN="LEFT">date_create</TD></TR>
+      <TR><TD PORT="date_delete" COLSPAN="3" ALIGN="LEFT">date_delete</TD></TR>
+      <TR><TD PORT="cadastral_code" COLSPAN="3" ALIGN="LEFT">cadastral_code</TD></TR>
+      <TR><TD ALIGN="LEFT" BGCOLOR="#f7f7f7">  </TD><TD ALIGN="RIGHT" BGCOLOR="#f7f7f7">view</TD><TD ALIGN="RIGHT" BGCOLOR="#f7f7f7">  </TD></TR>
+    </TABLE>>
+    URL="tables/v_cadastre_for_build_schedule_scanning.html#"
+    tooltip="v_cadastre_for_build_schedule_scanning"
+  ];
+}

@@ -1,0 +1,54 @@
+// dot 2.38.0 on Linux 4.10.0-32-generic
+digraph "uf_new_case" {
+  graph [
+    rankdir="RL"
+    bgcolor="#f7f7f7"
+  ];
+  node [
+    fontname="Helvetica"
+    fontsize="11"
+    shape="plaintext"
+  ];
+  edge [
+    arrowsize="0.8"
+  ];
+  "uf_new_case" [
+    label=<
+    <TABLE BORDER="0" CELLBORDER="1" CELLSPACING="0" BGCOLOR="#ffffff">
+      <TR><TD PORT="uf_new_case.heading" COLSPAN="3" BGCOLOR="#9bab96" ALIGN="CENTER">uf_new_case</TD></TR>
+      <TR><TD PORT="id" COLSPAN="3" BGCOLOR="#bed1b8" ALIGN="LEFT">id</TD></TR>
+      <TR><TD PORT="erased" COLSPAN="3" ALIGN="LEFT">erased</TD></TR>
+      <TR><TD PORT="name" COLSPAN="3" ALIGN="LEFT">name</TD></TR>
+      <TR><TD PORT="dni" COLSPAN="3" ALIGN="LEFT">dni</TD></TR>
+      <TR><TD PORT="cuit" COLSPAN="3" ALIGN="LEFT">cuit</TD></TR>
+      <TR><TD PORT="phone" COLSPAN="3" ALIGN="LEFT">phone</TD></TR>
+      <TR><TD PORT="comment" COLSPAN="3" ALIGN="LEFT">comment</TD></TR>
+      <TR><TD PORT="country_code" COLSPAN="3" ALIGN="LEFT">country_code</TD></TR>
+      <TR><TD PORT="country" COLSPAN="3" ALIGN="LEFT">country</TD></TR>
+      <TR><TD PORT="admin_area_level1_code" COLSPAN="3" ALIGN="LEFT">admin_area_level1_code</TD></TR>
+      <TR><TD PORT="admin_area_level1" COLSPAN="3" ALIGN="LEFT">admin_area_level1</TD></TR>
+      <TR><TD PORT="admin_area_level2" COLSPAN="3" ALIGN="LEFT">admin_area_level2</TD></TR>
+      <TR><TD PORT="locality" COLSPAN="3" ALIGN="LEFT">locality</TD></TR>
+      <TR><TD PORT="street" COLSPAN="3" ALIGN="LEFT">street</TD></TR>
+      <TR><TD PORT="street_number" COLSPAN="3" ALIGN="LEFT">street_number</TD></TR>
+      <TR><TD PORT="building_floor" COLSPAN="3" ALIGN="LEFT">building_floor</TD></TR>
+      <TR><TD PORT="building_room" COLSPAN="3" ALIGN="LEFT">building_room</TD></TR>
+      <TR><TD PORT="building" COLSPAN="3" ALIGN="LEFT">building</TD></TR>
+      <TR><TD PORT="comment_address" COLSPAN="3" ALIGN="LEFT">comment_address</TD></TR>
+      <TR><TD PORT="lat" COLSPAN="3" ALIGN="LEFT">lat</TD></TR>
+      <TR><TD PORT="lng" COLSPAN="3" ALIGN="LEFT">lng</TD></TR>
+      <TR><TD PORT="audit_date_create" COLSPAN="3" ALIGN="LEFT">audit_date_create</TD></TR>
+      <TR><TD PORT="audit_user_create" COLSPAN="3" ALIGN="LEFT">audit_user_create</TD></TR>
+      <TR><TD PORT="audit_date_update" COLSPAN="3" ALIGN="LEFT">audit_date_update</TD></TR>
+      <TR><TD PORT="audit_user_update" COLSPAN="3" ALIGN="LEFT">audit_user_update</TD></TR>
+      <TR><TD PORT="audit_version" COLSPAN="3" ALIGN="LEFT">audit_version</TD></TR>
+      <TR><TD PORT="audit_version_code_label" COLSPAN="3" ALIGN="LEFT">audit_version_code_label</TD></TR>
+      <TR><TD PORT="audit_version_label" COLSPAN="3" ALIGN="LEFT">audit_version_label</TD></TR>
+      <TR><TD PORT="iva_id" COLSPAN="3" ALIGN="LEFT">iva_id</TD></TR>
+      <TR><TD PORT="neighbourhood_id" COLSPAN="3" ALIGN="LEFT">neighbourhood_id</TD></TR>
+      <TR><TD ALIGN="LEFT" BGCOLOR="#f7f7f7">  </TD><TD ALIGN="RIGHT" BGCOLOR="#f7f7f7">186.808 rows</TD><TD ALIGN="RIGHT" BGCOLOR="#f7f7f7">  </TD></TR>
+    </TABLE>>
+    URL="tables/uf_new_case.html#"
+    tooltip="uf_new_case"
+  ];
+}

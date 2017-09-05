@@ -1,0 +1,38 @@
+// dot 2.38.0 on Linux 4.10.0-32-generic
+digraph "v_cadastre_ph_list" {
+  graph [
+    rankdir="RL"
+    bgcolor="#f7f7f7"
+  ];
+  node [
+    fontname="Helvetica"
+    fontsize="11"
+    shape="plaintext"
+  ];
+  edge [
+    arrowsize="0.8"
+  ];
+  "v_cadastre_ph_list" [
+    label=<
+    <TABLE BORDER="0" CELLBORDER="1" CELLSPACING="0" BGCOLOR="#ffffff">
+      <TR><TD PORT="v_cadastre_ph_list.heading" COLSPAN="3" BGCOLOR="#9bab96" ALIGN="CENTER">v_cadastre_ph_list</TD></TR>
+      <TR><TD PORT="id" COLSPAN="3" ALIGN="LEFT">id</TD></TR>
+      <TR><TD PORT="ppp" COLSPAN="3" ALIGN="LEFT">ppp</TD></TR>
+      <TR><TD PORT="uf_id" COLSPAN="3" ALIGN="LEFT">uf_id</TD></TR>
+      <TR><TD PORT="cta_cli" COLSPAN="3" ALIGN="LEFT">cta_cli</TD></TR>
+      <TR><TD PORT="m2_covered" COLSPAN="3" ALIGN="LEFT">m2_covered</TD></TR>
+      <TR><TD PORT="m2_percent" COLSPAN="3" ALIGN="LEFT">m2_percent</TD></TR>
+      <TR><TD PORT="cadastre_sub_division_type_id" COLSPAN="3" ALIGN="LEFT">cadastre_sub_division_type_id</TD></TR>
+      <TR><TD PORT="cadastre_activity_type_id" COLSPAN="3" ALIGN="LEFT">cadastre_activity_type_id</TD></TR>
+      <TR><TD PORT="inm_building_floor" COLSPAN="3" ALIGN="LEFT">inm_building_floor</TD></TR>
+      <TR><TD PORT="inm_building_room" COLSPAN="3" ALIGN="LEFT">inm_building_room</TD></TR>
+      <TR><TD PORT="inm_street" COLSPAN="3" ALIGN="LEFT">inm_street</TD></TR>
+      <TR><TD PORT="inm_street_number" COLSPAN="3" ALIGN="LEFT">inm_street_number</TD></TR>
+      <TR><TD PORT="inm_street_number_estimated" COLSPAN="3" ALIGN="LEFT">inm_street_number_estimated</TD></TR>
+      <TR><TD PORT="cadastral_code" COLSPAN="3" ALIGN="LEFT">cadastral_code</TD></TR>
+      <TR><TD ALIGN="LEFT" BGCOLOR="#f7f7f7">  </TD><TD ALIGN="RIGHT" BGCOLOR="#f7f7f7">view</TD><TD ALIGN="RIGHT" BGCOLOR="#f7f7f7">  </TD></TR>
+    </TABLE>>
+    URL="tables/v_cadastre_ph_list.html#"
+    tooltip="v_cadastre_ph_list"
+  ];
+}

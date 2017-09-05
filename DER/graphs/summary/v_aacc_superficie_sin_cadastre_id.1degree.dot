@@ -1,0 +1,64 @@
+// dot 2.38.0 on Linux 4.10.0-32-generic
+digraph "v_aacc_superficie_sin_cadastre_id" {
+  graph [
+    rankdir="RL"
+    bgcolor="#f7f7f7"
+  ];
+  node [
+    fontname="Helvetica"
+    fontsize="11"
+    shape="plaintext"
+  ];
+  edge [
+    arrowsize="0.8"
+  ];
+  "v_aacc_superficie_sin_cadastre_id" [
+    label=<
+    <TABLE BORDER="0" CELLBORDER="1" CELLSPACING="0" BGCOLOR="#ffffff">
+      <TR><TD PORT="v_aacc_superficie_sin_cadastre_id.heading" COLSPAN="3" BGCOLOR="#9bab96" ALIGN="CENTER">v_aacc_superficie_sin_cadastre_id</TD></TR>
+      <TR><TD PORT="id" COLSPAN="3" ALIGN="LEFT">id</TD></TR>
+      <TR><TD PORT="erased" COLSPAN="3" ALIGN="LEFT">erased</TD></TR>
+      <TR><TD PORT="year_building" COLSPAN="3" ALIGN="LEFT">year_building</TD></TR>
+      <TR><TD PORT="month_building" COLSPAN="3" ALIGN="LEFT">month_building</TD></TR>
+      <TR><TD PORT="m2_covered" COLSPAN="3" ALIGN="LEFT">m2_covered</TD></TR>
+      <TR><TD PORT="demolition" COLSPAN="3" ALIGN="LEFT">demolition</TD></TR>
+      <TR><TD PORT="comment" COLSPAN="3" ALIGN="LEFT">comment</TD></TR>
+      <TR><TD PORT="facade" COLSPAN="3" ALIGN="LEFT">facade</TD></TR>
+      <TR><TD PORT="roof_structure" COLSPAN="3" ALIGN="LEFT">roof_structure</TD></TR>
+      <TR><TD PORT="homes" COLSPAN="3" ALIGN="LEFT">homes</TD></TR>
+      <TR><TD PORT="interior_walls" COLSPAN="3" ALIGN="LEFT">interior_walls</TD></TR>
+      <TR><TD PORT="ceiling" COLSPAN="3" ALIGN="LEFT">ceiling</TD></TR>
+      <TR><TD PORT="kitchen" COLSPAN="3" ALIGN="LEFT">kitchen</TD></TR>
+      <TR><TD PORT="toilets" COLSPAN="3" ALIGN="LEFT">toilets</TD></TR>
+      <TR><TD PORT="entrance_hall" COLSPAN="3" ALIGN="LEFT">entrance_hall</TD></TR>
+      <TR><TD PORT="facilities" COLSPAN="3" ALIGN="LEFT">facilities</TD></TR>
+      <TR><TD PORT="carpentry" COLSPAN="3" ALIGN="LEFT">carpentry</TD></TR>
+      <TR><TD PORT="cover_structure" COLSPAN="3" ALIGN="LEFT">cover_structure</TD></TR>
+      <TR><TD PORT="ornamentation" COLSPAN="3" ALIGN="LEFT">ornamentation</TD></TR>
+      <TR><TD PORT="stained_glass_lighting" COLSPAN="3" ALIGN="LEFT">stained_glass_lighting</TD></TR>
+      <TR><TD PORT="buffet_dining" COLSPAN="3" ALIGN="LEFT">buffet_dining</TD></TR>
+      <TR><TD PORT="points" COLSPAN="3" ALIGN="LEFT">points</TD></TR>
+      <TR><TD PORT="apc" COLSPAN="3" ALIGN="LEFT">apc</TD></TR>
+      <TR><TD PORT="rate" COLSPAN="3" ALIGN="LEFT">rate</TD></TR>
+      <TR><TD PORT="apc_desc" COLSPAN="3" ALIGN="LEFT">apc_desc</TD></TR>
+      <TR><TD PORT="audit_date_create" COLSPAN="3" ALIGN="LEFT">audit_date_create</TD></TR>
+      <TR><TD PORT="audit_user_create" COLSPAN="3" ALIGN="LEFT">audit_user_create</TD></TR>
+      <TR><TD PORT="audit_date_update" COLSPAN="3" ALIGN="LEFT">audit_date_update</TD></TR>
+      <TR><TD PORT="audit_user_update" COLSPAN="3" ALIGN="LEFT">audit_user_update</TD></TR>
+      <TR><TD PORT="audit_version" COLSPAN="3" ALIGN="LEFT">audit_version</TD></TR>
+      <TR><TD PORT="audit_version_code_label" COLSPAN="3" ALIGN="LEFT">audit_version_code_label</TD></TR>
+      <TR><TD PORT="audit_version_label" COLSPAN="3" ALIGN="LEFT">audit_version_label</TD></TR>
+      <TR><TD PORT="cadastre_activity_type_id" COLSPAN="3" ALIGN="LEFT">cadastre_activity_type_id</TD></TR>
+      <TR><TD PORT="cadastre_id" COLSPAN="3" ALIGN="LEFT">cadastre_id</TD></TR>
+      <TR><TD PORT="cadastre_constructive_type_id" COLSPAN="3" ALIGN="LEFT">cadastre_constructive_type_id</TD></TR>
+      <TR><TD PORT="cadastre_destination_type_id" COLSPAN="3" ALIGN="LEFT">cadastre_destination_type_id</TD></TR>
+      <TR><TD PORT="sub_cta" COLSPAN="3" ALIGN="LEFT">sub_cta</TD></TR>
+      <TR><TD PORT="cta_cli" COLSPAN="3" ALIGN="LEFT">cta_cli</TD></TR>
+      <TR><TD PORT="city_area_id" COLSPAN="3" ALIGN="LEFT">city_area_id</TD></TR>
+      <TR><TD PORT="dv" COLSPAN="3" ALIGN="LEFT">dv</TD></TR>
+      <TR><TD ALIGN="LEFT" BGCOLOR="#f7f7f7">  </TD><TD ALIGN="RIGHT" BGCOLOR="#f7f7f7">view</TD><TD ALIGN="RIGHT" BGCOLOR="#f7f7f7">  </TD></TR>
+    </TABLE>>
+    URL="tables/v_aacc_superficie_sin_cadastre_id.html#"
+    tooltip="v_aacc_superficie_sin_cadastre_id"
+  ];
+}

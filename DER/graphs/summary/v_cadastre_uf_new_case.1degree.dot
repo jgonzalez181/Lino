@@ -1,0 +1,25 @@
+// dot 2.38.0 on Linux 4.10.0-32-generic
+digraph "v_cadastre_uf_new_case" {
+  graph [
+    rankdir="RL"
+    bgcolor="#f7f7f7"
+  ];
+  node [
+    fontname="Helvetica"
+    fontsize="11"
+    shape="plaintext"
+  ];
+  edge [
+    arrowsize="0.8"
+  ];
+  "v_cadastre_uf_new_case" [
+    label=<
+    <TABLE BORDER="0" CELLBORDER="1" CELLSPACING="0" BGCOLOR="#ffffff">
+      <TR><TD PORT="v_cadastre_uf_new_case.heading" COLSPAN="3" BGCOLOR="#9bab96" ALIGN="CENTER">v_cadastre_uf_new_case</TD></TR>
+      <TR><TD PORT="id" COLSPAN="3" ALIGN="LEFT">id</TD></TR>
+      <TR><TD ALIGN="LEFT" BGCOLOR="#f7f7f7">  </TD><TD ALIGN="RIGHT" BGCOLOR="#f7f7f7">view</TD><TD ALIGN="RIGHT" BGCOLOR="#f7f7f7">  </TD></TR>
+    </TABLE>>
+    URL="tables/v_cadastre_uf_new_case.html#"
+    tooltip="v_cadastre_uf_new_case"
+  ];
+}
