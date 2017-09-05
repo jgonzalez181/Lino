@@ -225,6 +225,7 @@ public class JDialogScheduleScanningGeneralForm extends javax.swing.JDialog impl
 
 				if (y == yy) {
 					jComboBox6.setSelectedIndex(i);
+					break;
 				}
 			}
 
@@ -233,6 +234,7 @@ public class JDialogScheduleScanningGeneralForm extends javax.swing.JDialog impl
 
 				if (m == mm) {
 					jComboBox5.setSelectedIndex(i);
+					break;
 				}
 			}
 
@@ -241,6 +243,7 @@ public class JDialogScheduleScanningGeneralForm extends javax.swing.JDialog impl
 
 				if (d == dd) {
 					jComboBox4.setSelectedIndex(i);
+					break;
 				}
 			}
 
@@ -278,7 +281,7 @@ public class JDialogScheduleScanningGeneralForm extends javax.swing.JDialog impl
 						if (scheduleList[i].getId().equals(scheduleScanning.getSchedule().getId())) {
 
 							jComboBoxSchedule.setSelectedIndex(i);
-
+							break;
 						}
 					}
 
@@ -329,7 +332,7 @@ public class JDialogScheduleScanningGeneralForm extends javax.swing.JDialog impl
 						if (censusTakerList[i].getId().equals(scheduleScanning.getCensusTaker().getId())) {
 
 							jComboBox3.setSelectedIndex(i);
-
+							break;
 						}
 					}
 
