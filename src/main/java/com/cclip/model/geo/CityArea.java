@@ -2,8 +2,7 @@ package com.cclip.model.geo;
 
 
 /** Area (Zona) de Ciudad */
-public class CityArea {
-
+public class CityArea extends Object  {
 
 	/**id */
 	private String id = null;

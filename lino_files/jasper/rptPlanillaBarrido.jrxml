@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <jasperReport xmlns="http://jasperreports.sourceforge.net/jasperreports" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://jasperreports.sourceforge.net/jasperreports http://jasperreports.sourceforge.net/xsd/jasperreport.xsd" name="rptPlanillaBarrido" pageWidth="842" pageHeight="595" orientation="Landscape" whenNoDataType="AllSectionsNoDetail" columnWidth="802" leftMargin="20" rightMargin="20" topMargin="20" bottomMargin="10" isSummaryWithPageHeaderAndFooter="true" isFloatColumnFooter="true" uuid="e8124f72-aa3e-4f17-9857-d9c700856263">
-	<property name="ireport.zoom" value="3.0"/>
-	<property name="ireport.x" value="0"/>
-	<property name="ireport.y" value="0"/>
+	<property name="ireport.zoom" value="2.1961500000000007"/>
+	<property name="ireport.x" value="599"/>
+	<property name="ireport.y" value="109"/>
 	<style name="Title" forecolor="#FFFFFF" fontName="Arial" fontSize="26" isBold="true" pdfFontName="Helvetica-Bold"/>
 	<style name="SubTitle" forecolor="#666666" fontName="Arial" fontSize="18"/>
 	<style name="Column header" forecolor="#666666" fontName="Arial" fontSize="12" isBold="true"/>
@@ -94,7 +94,7 @@ from cclip.v_reporte_planilla_barrido_Labels]]>
 					<rightPen lineWidth="0.75" lineColor="#CCCCCC"/>
 				</box>
 				<textElement textAlignment="Center" verticalAlignment="Middle" markup="none">
-					<font fontName="SansSerif" size="8" isBold="false"/>
+					<font fontName="SansSerif" size="6" isBold="false"/>
 				</textElement>
 				<textFieldExpression><![CDATA[$F{t7}]]></textFieldExpression>
 			</textField>
@@ -108,7 +108,7 @@ from cclip.v_reporte_planilla_barrido_Labels]]>
 					<rightPen lineWidth="0.75" lineColor="#CCCCCC"/>
 				</box>
 				<textElement textAlignment="Center" verticalAlignment="Middle" markup="none">
-					<font fontName="SansSerif" size="8" isBold="false"/>
+					<font fontName="SansSerif" size="6" isBold="false"/>
 				</textElement>
 				<textFieldExpression><![CDATA[$F{t12}]]></textFieldExpression>
 			</textField>
@@ -192,7 +192,7 @@ from cclip.v_reporte_planilla_barrido_Labels]]>
 					<rightPen lineWidth="0.75" lineColor="#CCCCCC"/>
 				</box>
 				<textElement textAlignment="Center" verticalAlignment="Middle" markup="styled">
-					<font fontName="SansSerif" size="8" isBold="false"/>
+					<font fontName="SansSerif" size="6" isBold="false"/>
 				</textElement>
 				<textFieldExpression><![CDATA[$F{t8}]]></textFieldExpression>
 			</textField>
@@ -206,7 +206,7 @@ from cclip.v_reporte_planilla_barrido_Labels]]>
 					<rightPen lineWidth="0.75" lineColor="#CCCCCC"/>
 				</box>
 				<textElement textAlignment="Center" verticalAlignment="Middle" markup="none">
-					<font fontName="SansSerif" size="8" isBold="false"/>
+					<font fontName="SansSerif" size="6" isBold="false"/>
 				</textElement>
 				<textFieldExpression><![CDATA[$F{t11}]]></textFieldExpression>
 			</textField>
@@ -220,7 +220,7 @@ from cclip.v_reporte_planilla_barrido_Labels]]>
 					<rightPen lineWidth="0.75" lineColor="#CCCCCC"/>
 				</box>
 				<textElement textAlignment="Center" verticalAlignment="Middle" markup="none">
-					<font fontName="SansSerif" size="8" isBold="false"/>
+					<font fontName="SansSerif" size="6" isBold="false"/>
 				</textElement>
 				<textFieldExpression><![CDATA[$F{t14}]]></textFieldExpression>
 			</textField>
@@ -234,7 +234,7 @@ from cclip.v_reporte_planilla_barrido_Labels]]>
 					<rightPen lineWidth="0.75" lineColor="#CCCCCC"/>
 				</box>
 				<textElement textAlignment="Center" verticalAlignment="Middle" markup="none">
-					<font fontName="SansSerif" size="8" isBold="false"/>
+					<font fontName="SansSerif" size="6" isBold="false"/>
 				</textElement>
 				<textFieldExpression><![CDATA[$F{t13}]]></textFieldExpression>
 			</textField>
@@ -248,7 +248,7 @@ from cclip.v_reporte_planilla_barrido_Labels]]>
 					<rightPen lineWidth="0.75" lineColor="#CCCCCC"/>
 				</box>
 				<textElement textAlignment="Center" verticalAlignment="Middle" markup="none">
-					<font fontName="SansSerif" size="8" isBold="false"/>
+					<font fontName="SansSerif" size="6" isBold="false"/>
 				</textElement>
 				<textFieldExpression><![CDATA[$F{t10}]]></textFieldExpression>
 			</textField>
@@ -262,12 +262,12 @@ from cclip.v_reporte_planilla_barrido_Labels]]>
 					<rightPen lineWidth="0.75" lineColor="#CCCCCC"/>
 				</box>
 				<textElement textAlignment="Center" verticalAlignment="Middle" markup="none">
-					<font fontName="SansSerif" size="8" isBold="false"/>
+					<font fontName="SansSerif" size="6" isBold="false"/>
 				</textElement>
 				<textFieldExpression><![CDATA[$F{t9}]]></textFieldExpression>
 			</textField>
 			<subreport>
-				<reportElement x="-12" y="75" width="819" height="16" uuid="76c19992-2328-4e29-b77a-690eaa8c3017"/>
+				<reportElement x="-14" y="76" width="815" height="16" uuid="76c19992-2328-4e29-b77a-690eaa8c3017"/>
 				<subreportParameter name="pId">
 					<subreportParameterExpression><![CDATA[$P{pId}]]></subreportParameterExpression>
 				</subreportParameter>
