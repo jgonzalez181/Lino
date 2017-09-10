@@ -13,6 +13,7 @@ import javax.swing.event.ListSelectionListener;
 import javax.swing.table.DefaultTableModel;
 import javax.swing.table.TableColumn;
 
+import com.cclip.gui.schedule.census.JDialogCensusHeaderFormCustom;
 import com.cclip.model.geo.cadastre.Cadastre;
 import com.cclip.model.geo.cadastre.CadastreCensus;
 import com.cclip.services.Services;
@@ -127,6 +128,16 @@ public class JPanelCadastreViewCustom extends JPanelCadastreView {
 			public void mouseClicked(MouseEvent e) {
 				if (e.getClickCount() == 2) {
 					editUser();
+				}
+			}
+		});
+		
+		//---------------HEADER CENSUS-----------------------------------------
+		jPanel6.addMouseListener(new MouseAdapter() {
+			@Override
+			public void mouseClicked(MouseEvent e) {
+				if (e.getClickCount() == 2) {
+					editHeader();
 				}
 			}
 		});
@@ -1281,6 +1292,10 @@ public class JPanelCadastreViewCustom extends JPanelCadastreView {
 
 	private void editCadastreBlock() {
 		new JDialogCadastreBlockCustom(cadastre, this);
+	}
+	
+	private void editHeader() {
+		new JDialogCensusHeaderFormCustom(cadastre, this);
 	}
 
 }
