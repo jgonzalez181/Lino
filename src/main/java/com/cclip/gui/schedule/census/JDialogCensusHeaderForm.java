@@ -204,7 +204,7 @@ public class JDialogCensusHeaderForm extends javax.swing.JDialog {
                     }
                 });
                 dialog.setVisible(true);
-            }
+            } 
         });
     }
 
