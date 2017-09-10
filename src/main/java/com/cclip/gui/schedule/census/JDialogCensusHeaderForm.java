@@ -37,7 +37,7 @@ public class JDialogCensusHeaderForm extends javax.swing.JDialog {
         jLabel5 = new javax.swing.JLabel();
         jComboBoxReasonLow = new javax.swing.JComboBox();
         jComboBoxSchedule = new javax.swing.JComboBox();
-        jComboBox3 = new javax.swing.JComboBox();
+        jComboBoxBatch = new javax.swing.JComboBox();
         jComboBoxScheduleCensusResult = new javax.swing.JComboBox();
         jTextField1 = new javax.swing.JTextField();
         jLabel6 = new javax.swing.JLabel();
@@ -97,7 +97,7 @@ public class JDialogCensusHeaderForm extends javax.swing.JDialog {
                                 .addGap(69, 69, 69)
                                 .addComponent(jButtonCancel))
                             .addComponent(jComboBoxScheduleCensusResult, javax.swing.GroupLayout.PREFERRED_SIZE, 204, javax.swing.GroupLayout.PREFERRED_SIZE)
-                            .addComponent(jComboBox3, javax.swing.GroupLayout.PREFERRED_SIZE, 100, javax.swing.GroupLayout.PREFERRED_SIZE)))
+                            .addComponent(jComboBoxBatch, javax.swing.GroupLayout.PREFERRED_SIZE, 100, javax.swing.GroupLayout.PREFERRED_SIZE)))
                     .addGroup(jPanel1Layout.createSequentialGroup()
                         .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                             .addComponent(jLabel2)
@@ -136,7 +136,7 @@ public class JDialogCensusHeaderForm extends javax.swing.JDialog {
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
                 .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
                     .addComponent(jLabel4)
-                    .addComponent(jComboBox3, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
+                    .addComponent(jComboBoxBatch, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
                 .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
                     .addComponent(jLabel5)
@@ -213,7 +213,7 @@ public class JDialogCensusHeaderForm extends javax.swing.JDialog {
     protected javax.swing.JButton jButtonCancel;
     public javax.swing.JComboBox jComboBoxReasonLow;
     protected javax.swing.JComboBox jComboBoxSchedule;
-    private javax.swing.JComboBox jComboBox3;
+    private javax.swing.JComboBox jComboBoxBatch;
     protected javax.swing.JComboBox jComboBoxScheduleCensusResult;
     protected javax.swing.JComboBox jComboBoxCensusTaker;
     public javax.swing.JLabel jLabel1;

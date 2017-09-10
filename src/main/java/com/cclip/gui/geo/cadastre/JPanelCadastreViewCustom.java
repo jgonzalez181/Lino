@@ -141,6 +141,15 @@ public class JPanelCadastreViewCustom extends JPanelCadastreView {
 				}
 			}
 		});
+		
+		jPanel12.addMouseListener(new MouseAdapter() {
+			@Override
+			public void mouseClicked(MouseEvent e) {
+				if (e.getClickCount() == 2) {
+					editHeader();
+				}
+			}
+		});
 
 		// ---------------------------------------------------
 

@@ -1016,7 +1016,7 @@ public class JPanelCadastreView extends JPanelForm {
     protected javax.swing.JLabel jLabelSubCtaCli;
     protected javax.swing.JLabel jLabelUfId;
     protected javax.swing.JLabel jLabelWaterMeter;
-    private javax.swing.JPanel jPanel12;
+    protected javax.swing.JPanel jPanel12;
     protected javax.swing.JPanel jPanel6;
     protected javax.swing.JPanel jPanelAudit;
     protected javax.swing.JPanel jPanelBlock;
