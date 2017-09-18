@@ -36,13 +36,8 @@ public class JDialogCensusHeaderForm extends javax.swing.JDialog {
         jLabel3 = new javax.swing.JLabel();
         jLabel4 = new javax.swing.JLabel();
         jLabel5 = new javax.swing.JLabel();
-<<<<<<< HEAD
         jComboBox2 = new javax.swing.JComboBox();
-=======
-        jComboBoxReasonLow = new javax.swing.JComboBox();
-        jComboBoxSchedule = new javax.swing.JComboBox();
-        jComboBoxBatch = new javax.swing.JComboBox();
->>>>>>> 6cb1e5f1f30e12d21158fa70bb2cdd60f0f75b9c
+
         jComboBoxScheduleCensusResult = new javax.swing.JComboBox();
         jComboBoxCensusTaker = new javax.swing.JComboBox();
         jTextField1 = new javax.swing.JTextField();
@@ -129,14 +124,11 @@ public class JDialogCensusHeaderForm extends javax.swing.JDialog {
                                 .addComponent(jButtonSave)
                                 .addGap(69, 69, 69)
                                 .addComponent(jButtonCancel))
-<<<<<<< HEAD
+
                             .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING, false)
                                 .addComponent(jComboBoxScheduleCensusResult, javax.swing.GroupLayout.Alignment.LEADING, 0, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
                                 .addComponent(jComboBoxCensusTaker, javax.swing.GroupLayout.Alignment.LEADING, 0, 204, Short.MAX_VALUE))))
-=======
-                            .addComponent(jComboBoxScheduleCensusResult, javax.swing.GroupLayout.PREFERRED_SIZE, 204, javax.swing.GroupLayout.PREFERRED_SIZE)
-                            .addComponent(jComboBoxBatch, javax.swing.GroupLayout.PREFERRED_SIZE, 100, javax.swing.GroupLayout.PREFERRED_SIZE)))
->>>>>>> 6cb1e5f1f30e12d21158fa70bb2cdd60f0f75b9c
+
                     .addGroup(jPanel1Layout.createSequentialGroup()
                         .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                             .addComponent(jLabel2)
@@ -187,12 +179,9 @@ public class JDialogCensusHeaderForm extends javax.swing.JDialog {
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
                 .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
                     .addComponent(jLabel4)
-<<<<<<< HEAD
+
                     .addComponent(jComboBoxScheduleCensusResult, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
-=======
-                    .addComponent(jComboBoxBatch, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
->>>>>>> 6cb1e5f1f30e12d21158fa70bb2cdd60f0f75b9c
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
+               .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
                 .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
                     .addComponent(jLabel5)
                     .addComponent(jComboBoxCensusTaker, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
@@ -270,16 +259,11 @@ public class JDialogCensusHeaderForm extends javax.swing.JDialog {
     // Variables declaration - do not modify                     
     private javax.swing.ButtonGroup buttonGroup1;
     protected javax.swing.JButton jButtonCancel;
-<<<<<<< HEAD
+
     protected javax.swing.JButton jButtonSave;
     protected javax.swing.JComboBox jComboBox2;
     protected javax.swing.JComboBox jComboBox5;
-=======
-    public javax.swing.JComboBox jComboBoxReasonLow;
-    protected javax.swing.JComboBox jComboBoxSchedule;
-    private javax.swing.JComboBox jComboBoxBatch;
-    protected javax.swing.JComboBox jComboBoxScheduleCensusResult;
->>>>>>> 6cb1e5f1f30e12d21158fa70bb2cdd60f0f75b9c
+
     protected javax.swing.JComboBox jComboBoxCensusTaker;
     protected javax.swing.JComboBox jComboBoxScheduleCensusResult;
     protected javax.swing.JLabel jLabel1;
