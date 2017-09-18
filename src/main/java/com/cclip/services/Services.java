@@ -347,7 +347,7 @@ public class Services {
 				if (where.length() > 0) {
 					where += " AND ";
 				}
-				where += " census_Taker_Id like ?";
+				where += " census_Taker like ?";
 				
 				censusTakerId = '%' + censusTakerId + '%';
 				
