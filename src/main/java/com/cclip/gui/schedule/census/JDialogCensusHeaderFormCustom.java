@@ -5,63 +5,62 @@ import java.awt.Frame;
 import java.awt.Toolkit;
 import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
-import java.awt.event.MouseAdapter;
-import java.awt.event.MouseEvent;
+import java.awt.event.ItemEvent;
+import java.awt.event.ItemListener;
+import java.sql.Date;
 import java.sql.Timestamp;
-import java.text.ParseException;
 import java.text.SimpleDateFormat;
-import java.util.Date;
 
 import javax.swing.ImageIcon;
-import javax.swing.JComboBox;
 import javax.swing.JDialog;
 import javax.swing.JOptionPane;
 
+import com.cclip.Context;
 import com.cclip.gui.JFrameMainGui;
-import com.cclip.gui.geo.cadastre.JPanelCadastreViewCustom;
 import com.cclip.gui.util.ComboItem;
-import com.cclip.model.geo.CityArea;
-import com.cclip.model.geo.cadastre.Cadastre;
 import com.cclip.model.geo.cadastre.CadastreCensus;
-import com.cclip.model.geo.cadastre.CadastreSituation;
-import com.cclip.model.geo.cadastre.CadastreType;
-import com.cclip.model.geo.cadastre.WaterMeterType;
 import com.cclip.model.person.CensusTaker;
+import com.cclip.model.person.UserSystem;
 import com.cclip.model.schedule.Schedule;
+import com.cclip.model.schedule.ScheduleBatch;
+import com.cclip.model.schedule.census.ScheduleCensus;
 import com.cclip.model.schedule.census.ScheduleCensusResult;
 import com.cclip.services.Services;
 import com.cclip.util.UtilComponent;
 
-public class JDialogCensusHeaderFormCustom extends JDialogCensusHeaderForm implements ActionListener {
+public class JDialogCensusHeaderFormCustom extends JDialogCensusHeaderForm
+		implements ActionListener {
 
 	/**
 	 * 
 	 */
 	private static final long serialVersionUID = 1L;
-	private JPanelCadastreViewCustom jPanelCadastreViewCustom;
-	private Cadastre cadastre;
+
+	private ScheduleCensus scheduleCensus;
+	private JPanelCensusViewCustom jPanelCensusViewCustom;
 	private Schedule[] scheduleList;
-	private ScheduleCensusResult[] scheduleCensusResultList;
-	private Object[][] reasonLowList;
+	private ScheduleBatch[] scheduleBatchList;
 	private CensusTaker[] censusTakerList;
-	
+	private ScheduleCensusResult[] scheduleCensusResultList;
 
 	public JDialogCensusHeaderFormCustom(Frame parent, boolean modal) {
 		super(parent, modal);
 		// TODO Auto-generated constructor stub
 	}
-	
-	public JDialogCensusHeaderFormCustom(Cadastre cadastre, JPanelCadastreViewCustom jPanelCadastreViewCustom) {
+
+	public JDialogCensusHeaderFormCustom(ScheduleCensus scheduleCensus,
+			JPanelCensusViewCustom jPanelCensusViewCustom) {
 		super(null, true);
 
-		this.jPanelCadastreViewCustom = jPanelCadastreViewCustom;
-
-		this.cadastre = cadastre;
+		this.scheduleCensus = scheduleCensus;
+		this.jPanelCensusViewCustom = jPanelCensusViewCustom;
 
 		this.setDefaultCloseOperation(JDialog.DO_NOTHING_ON_CLOSE);
 
-		jButtonSave.setIcon(new ImageIcon((JFrameMainGui.iconPath + "document-save.png"))); // NOI18N
-		jButtonCancel.setIcon(new ImageIcon((JFrameMainGui.iconPath + "application-exit.png"))); // NOI18N
+		jButtonSave.setIcon(new ImageIcon(
+				(JFrameMainGui.iconPath + "document-save.png"))); // NOI18N
+		jButtonCancel.setIcon(new ImageIcon(
+				(JFrameMainGui.iconPath + "application-exit.png"))); // NOI18N
 
 		Dimension dimension = Toolkit.getDefaultToolkit().getScreenSize();
 		int x = (int) ((dimension.getWidth() - this.getWidth()) / 2);
@@ -70,38 +69,134 @@ public class JDialogCensusHeaderFormCustom extends JDialogCensusHeaderForm imple
 
 		jButtonSave.addActionListener(this);
 		jButtonCancel.addActionListener(this);
-		
-		//razon
-		jComboBoxReasonLowLoadData();
-		//cronograma
+
 		scheduleLoadData();
-		if (jComboBoxSchedule.getItemCount() > 0) {
-			jComboBoxSchedule.setSelectedIndex(0);
+		if (jComboBox2.getItemCount() > 0) {
+			jComboBox2.setSelectedIndex(0);
 		}
-		//rtado censo
-		jComboBoxScheduleCensusResult = new JComboBox<ComboItem>();
+
+		batchLoadData();
+
+		class ItemChangeListener1 implements ItemListener {
+
+			public void itemStateChanged(ItemEvent event) {
+				if (event.getStateChange() == ItemEvent.SELECTED) {
+
+					batchLoadData();
+				}
+			}
+		}
+
+		jComboBox2.addItemListener(new ItemChangeListener1());
+
 		scheduleCensusResultLoadData();
 		if (jComboBoxScheduleCensusResult.getItemCount() > 0) {
 			jComboBoxScheduleCensusResult.setSelectedIndex(0);
 		}
-		//censistas
-		jComboBoxCensusTaker = new JComboBox<ComboItem>();
-		jComboBoxCensusTaker.setToolTipText("Buscar por censista");
+
+		// censistas
 		censusTakerLoadData();
 		if (jComboBoxCensusTaker.getItemCount() > 0) {
 			jComboBoxCensusTaker.setSelectedIndex(0);
 		}
-		
 
-		//printClear();
-		//print();
+		printClear();
+		print();
 
 		pack();
 
 		setVisible(true);
+	}
+
+	private void printClear() {
+		jTextField1.setText("");
+
+		jRadioButton1.setSelected(true);
+
+		if (jComboBox2.getItemCount() > 0) {
+			jComboBox2.setSelectedIndex(0);
+		}
+		if (jComboBox5.getItemCount() > 0) {
+			jComboBox5.setSelectedIndex(0);
+		}
+		if (jComboBoxScheduleCensusResult.getItemCount() > 0) {
+			jComboBoxScheduleCensusResult.setSelectedIndex(0);
+		}
+		if (jComboBoxCensusTaker.getItemCount() > 0) {
+			jComboBoxCensusTaker.setSelectedIndex(0);
+		}
 
 	}
-	
+
+	private void print() {
+		if (scheduleCensus == null) {
+			return;
+		}
+
+		if (scheduleCensus.getUpdateCadastre() != null
+				&& scheduleCensus.getUpdateCadastre() == true) {
+			jRadioButton1.setSelected(true);
+		} else {
+			jRadioButton1.setSelected(false);
+		}
+
+		if (scheduleCensus.getInsertCadastre() != null
+				&& scheduleCensus.getInsertCadastre() == true) {
+			jRadioButton2.setSelected(true);
+		} else {
+			jRadioButton2.setSelected(false);
+		}
+
+		if (scheduleCensus.getDeleteCadastre() != null
+				&& scheduleCensus.getDeleteCadastre() == true) {
+			jRadioButton3.setSelected(true);
+		} else {
+			jRadioButton3.setSelected(false);
+		}
+
+		if (scheduleCensus.getSchedule() != null) {
+			for (int i = 0; i < scheduleList.length; i++) {
+
+				if (scheduleList[i].getId().equals(
+						scheduleCensus.getSchedule().getId())) {
+
+					jComboBox2.setSelectedIndex(i);
+					break;
+				}
+			}
+		}
+		if (scheduleCensus.getCensusTaker() != null) {
+
+			for (int i = 0; i < censusTakerList.length; i++) {
+
+				if (censusTakerList[i].getId().equals(
+						scheduleCensus.getCensusTaker().getId())) {
+
+					jComboBoxCensusTaker.setSelectedIndex(i);
+					break;
+				}
+			}
+		}
+
+		if (scheduleCensus.getScheduleCensusResult() != null) {
+			for (int i = 0; i < scheduleCensusResultList.length; i++) {
+
+				if (scheduleCensusResultList[i].getId().equals(
+						scheduleCensus.getScheduleCensusResult().getId())) {
+
+					jComboBoxScheduleCensusResult.setSelectedIndex(i);
+					break;
+				}
+			}
+		}
+
+		if (scheduleCensus.getCensused() != null) {
+			jTextField1.setText(new SimpleDateFormat("ddMMyyyy")
+					.format(scheduleCensus.getCensused()));
+		}
+
+	}
+
 	public void actionPerformed(ActionEvent e) {
 
 		if (e.getSource().equals(jButtonSave)) {
@@ -112,11 +207,10 @@ public class JDialogCensusHeaderFormCustom extends JDialogCensusHeaderForm imple
 
 			try {
 				formToDto();
-				//update();
-				if (cadastre != null && cadastre instanceof CadastreCensus) {
-					jPanelCadastreViewCustom.setCadastreCensusId(cadastre.getId());
-				} else {
-					jPanelCadastreViewCustom.setCadastreId(cadastre.getId());
+				update();
+				if (scheduleCensus != null) {
+					jPanelCensusViewCustom.setScheduleCensusId(scheduleCensus
+							.getId());
 				}
 			} catch (Exception e1) {
 				return;
@@ -127,338 +221,135 @@ public class JDialogCensusHeaderFormCustom extends JDialogCensusHeaderForm imple
 		dispose();
 
 	}
-	
+
+	private void update() {
+		
+		// hacer el servicio de update en la base si es M o B
+		// el insert no lo hagas !!
+		
+		if (scheduleCensus.getUpdateCadastre()
+				|| scheduleCensus.getDeleteCadastre()) {
+			
+			Services.getInstance().updateScheduleCensus(scheduleCensus, Context.getBean("userSystem", UserSystem.class));
+
+			// Services.getInstance().updateCadastreCensusGeneral(cadastre,
+			// Context.getBean("userSystem", UserSystem.class));
+		}
+	}
+
 	private void formToDto() throws Exception {
 
-		if (cadastre == null) {
+		if (scheduleCensus == null) {
 			return;
 		}
-		
-		if (jComboBoxReasonLow.getItemCount() > 0 && jComboBoxReasonLow.getSelectedIndex() > -1 && reasonLowList.length > 0) {
-
-			if (jComboBoxReasonLow.getSelectedIndex() > 0) {
-				cadastre.setCodeReasonLow(reasonLowList[jComboBoxReasonLow.getSelectedIndex() - 1][0].toString());
-				cadastre.setReasonLow(reasonLowList[jComboBoxReasonLow.getSelectedIndex() - 1][1].toString());
-			} else {
-				cadastre.setCodeReasonLow(null);
-				cadastre.setReasonLow(null);
-			}
+		//Cronograma
+		if (jComboBox2.getItemCount() > 0 && jComboBox2.getSelectedIndex() > -1
+				&& scheduleList.length > 0) {
+			Schedule schedule = new Schedule();
+			schedule.setId(scheduleList[jComboBox2.getSelectedIndex()].getId());
+			schedule.setYear(scheduleList[jComboBox2.getSelectedIndex()]
+					.getYear());
+			scheduleCensus.setSchedule(schedule);
+		} else {
+			scheduleCensus.setSchedule(null);
 		}
-
-//
-//		if (jComboBoxCityArea.getItemCount() > 0 && jComboBoxCityArea.getSelectedIndex() > -1 && cityAreaList.length > 0) {
-//			CityArea cityArea = new CityArea();
-//			cityArea.setId(cityAreaList[jComboBoxCityArea.getSelectedIndex()][0].toString());
-//			cityArea.setName(cityAreaList[jComboBoxCityArea.getSelectedIndex()][1].toString());
-//			cadastre.setCityArea(cityArea);
-//		} else {
-//			cadastre.setCityArea(null);
-//		}
-//
-//		if (jTextFieldCadastralCode.getText() != null && jTextFieldCadastralCode.getText().trim().length() > 0) {
-//			cadastre.setCadastralCode(jTextFieldCadastralCode.getText().trim());
-//			cadastre.setSubCtaCli(jTextFieldCadastralCode.getText().trim().substring(10, 13));
-//		} else {
-//			cadastre.setCadastralCode(null);
-//			cadastre.setSubCtaCli(null);
-//		}
-//
-//		if (jTextFieldCtaCli.getText() != null && jTextFieldCtaCli.getText().trim().length() > 0) {
-//			cadastre.setCtaCli(jTextFieldCtaCli.getText().trim());
-//		} else {
-//			cadastre.setCtaCli(null);
-//		}
-//
-//		if (jTextFieldDv.getText() != null && jTextFieldDv.getText().trim().length() > 0) {
-//			cadastre.setDv(jTextFieldDv.getText().trim());
-//		} else {
-//			cadastre.setDv(null);
-//		}
-//
-//		if (jTextFieldM2.getText() != null && jTextFieldM2.getText().trim().length() > 0) {
-//			cadastre.setM2(Double.parseDouble(jTextFieldM2.getText().trim()));
-//		} else {
-//			cadastre.setM2(0.0);
-//		}
-//
-//		if (jTextFieldM2Covered.getText() != null && jTextFieldM2Covered.getText().trim().length() > 0) {
-//			cadastre.setM2Covered(Double.parseDouble(jTextFieldM2Covered.getText().trim()));
-//		} else {
-//			cadastre.setM2Covered(0.0);
-//		}
-//
-//		if (jTextFieldM2CoveredShared.getText() != null && jTextFieldM2CoveredShared.getText().trim().length() > 0) {
-//			cadastre.setM2CoveredShared(Double.parseDouble(jTextFieldM2CoveredShared.getText().trim()));
-//		} else {
-//			cadastre.setM2CoveredShared(0.0);
-//		}
-//
-//		if (jComboBoxCadastreType.getItemCount() > 0 && jComboBoxCadastreType.getSelectedIndex() > -1 && cadastreTypeList.length > 0) {
-//			CadastreType cadastreType = new CadastreType();
-//			cadastreType.setId(cadastreTypeList[jComboBoxCadastreType.getSelectedIndex()][0].toString());
-//			cadastreType.setName(cadastreTypeList[jComboBoxCadastreType.getSelectedIndex()][1].toString());
-//			cadastre.setCadastreType(cadastreType);
-//		} else {
-//			cadastre.setCadastreType(null);
-//		}
-//
-//		if (jComboBoxCadastreSituation.getItemCount() > 0 && jComboBoxCadastreSituation.getSelectedIndex() > -1 && cadastreSituationList.length > 0) {
-//			CadastreSituation cadastreSituation = new CadastreSituation();
-//			cadastreSituation.setId(cadastreSituationList[jComboBoxCadastreSituation.getSelectedIndex()][0].toString());
-//			cadastreSituation.setName(cadastreSituationList[jComboBoxCadastreSituation.getSelectedIndex()][1].toString());
-//			cadastre.setCadastreSituation(cadastreSituation);
-//		} else {
-//			cadastre.setCadastreSituation(null);
-//		}
-//
-//		if (jComboBoxWaterMeterType.getItemCount() > 0 && jComboBoxWaterMeterType.getSelectedIndex() > -1 && waterMeterTypeList.length > 0) {
-//			WaterMeterType waterMeterType = new WaterMeterType();
-//			waterMeterType.setId(waterMeterTypeList[jComboBoxWaterMeterType.getSelectedIndex()][0].toString());
-//			waterMeterType.setName(waterMeterTypeList[jComboBoxWaterMeterType.getSelectedIndex()][1].toString());
-//			cadastre.setWaterMeterType(waterMeterType);
-//		} else {
-//			cadastre.setWaterMeterType(null);
-//		}
-//
-//
-//		if (jTextFieldDateCreate.getText() != null && jTextFieldDateCreate.getText().trim().length() > 0) {
-//			cadastre.setDateCreate(new Timestamp(new SimpleDateFormat("ddMMyyyy").parse(jTextFieldDateCreate.getText().trim()).getTime()));
-//		} else {
-//			cadastre.setDateCreate(null);
-//		}
-//
-//		if (jTextFieldDateDelete.getText() != null && jTextFieldDateDelete.getText().trim().length() > 0) {
-//			cadastre.setDateDelete(new Timestamp(new SimpleDateFormat("ddMMyyyy").parse(jTextFieldDateDelete.getText().trim()).getTime()));
-//		} else {
-//			cadastre.setDateDelete(null);
-//		}
-//
-//		cadastre.setWaterMeter(jCheckBoxWaterMeter.isSelected());
+		//Lote
+		if (jComboBox5.getItemCount() > 0 && jComboBox5.getSelectedIndex() > -1
+				&& scheduleBatchList.length > 0) {
+			ScheduleBatch scheduleBatch = new ScheduleBatch();
+			scheduleBatch
+					.setId(scheduleBatchList[jComboBox5.getSelectedIndex()]
+							.getId());
+			scheduleBatch.setNumberBatch(scheduleBatchList[jComboBox5
+					.getSelectedIndex()].getNumberBatch());
+			scheduleCensus.setScheduleBatch(scheduleBatch);
+		} else {
+			scheduleCensus.setScheduleBatch(null);
+		}
+		//Resultado
+		if (jComboBoxScheduleCensusResult.getItemCount() > 0
+				&& jComboBoxScheduleCensusResult.getSelectedIndex() > -1
+				&& scheduleCensusResultList.length > 0) {
+			ScheduleCensusResult scheduleCensusResult = new ScheduleCensusResult();
+			scheduleCensusResult
+					.setId(scheduleCensusResultList[jComboBoxScheduleCensusResult
+							.getSelectedIndex()].getId());
+			scheduleCensusResult
+					.setName(scheduleCensusResultList[jComboBoxScheduleCensusResult
+							.getSelectedIndex()].getName());
+			scheduleCensus.setScheduleCensusResult(scheduleCensusResult);
+		} else {
+			scheduleCensus.setScheduleCensusResult(null);
+		}
+		//Censista
+		if (jComboBoxCensusTaker.getItemCount() > 0
+				&& jComboBoxCensusTaker.getSelectedIndex() > -1
+				&& censusTakerList.length > 0) {
+			CensusTaker censusTaker = new CensusTaker();
+			censusTaker.setId(censusTakerList[jComboBoxCensusTaker
+					.getSelectedIndex()].getId());
+			censusTaker.setCode(censusTakerList[jComboBoxCensusTaker
+					.getSelectedIndex()].getCode());
+			scheduleCensus.setCensusTaker(censusTaker);
+		} else {
+			scheduleCensus.setCensusTaker(null);
+		}
+		//Fecha
+		if (jTextField1.getText() != null
+				&& jTextField1.getText().trim().length() > 0) {
+			scheduleCensus.setCensused(new Date(
+					new SimpleDateFormat("ddMMyyyy").parse(
+							jTextField1.getText().trim()).getTime()));
+		} else {
+			scheduleCensus.setCensused(null);
+		}
+		//Motivo
+		scheduleCensus.setUpdateCadastre(jRadioButton1.isSelected());
+		scheduleCensus.setInsertCadastre(jRadioButton2.isSelected());
+		scheduleCensus.setDeleteCadastre(jRadioButton3.isSelected());
 
 	}
-	
+
 	private boolean validateForm() {
 
-//		// CODIGO CATASTRAL ---------------------------------------------------------------------------------
-//
-//		if (jTextFieldCadastralCode.getText() != null && jTextFieldCadastralCode.getText().trim().length() > 0) {
-//
-//			if (jTextFieldCadastralCode.getText().trim().length() != "DDZZMMMPPPppp".length()) {
-//				JOptionPane.showMessageDialog(this, "El código catastral deben contener 13 caracteres, ej DDZZMMMPPPppp = 0102003004005", "Error", JOptionPane.ERROR_MESSAGE);
-//				return false;
-//			}
-//			try {
-//
-//				char[] chars = jTextFieldCadastralCode.getText().trim().toCharArray();
-//				for (char c : chars) {
-//					Integer.valueOf(c);
-//				}
-//
-//			} catch (Exception e) {
-//				JOptionPane.showMessageDialog(this, "El código catastral debe contener solo caracteres numéricos, ej. 0-9", "Error", JOptionPane.ERROR_MESSAGE);
-//				return false;
-//			}
-//		} else {
-//			JOptionPane.showMessageDialog(this, "El código catastral no puede estar vacio", "Error", JOptionPane.ERROR_MESSAGE);
-//			return false;
-//		}
-//
-//		// CUENTA CLIENTE ---------------------------------------------------------------------------------
-//
-//		if (jTextFieldCtaCli.getText() != null && jTextFieldCtaCli.getText().trim().length() > 0) {
-//
-//			if (jTextFieldCtaCli.getText().trim().length() != "123456".length()) {
-//				JOptionPane.showMessageDialog(this, "La cuenta cliente deben contener 6 caracteres, ej 1234567", "Error", JOptionPane.ERROR_MESSAGE);
-//				return false;
-//			}
-//			try {
-//
-//				char[] chars = jTextFieldCtaCli.getText().trim().toCharArray();
-//				for (char c : chars) {
-//					Integer.valueOf(c);
-//				}
-//
-//			} catch (Exception e) {
-//				JOptionPane.showMessageDialog(this, "La cuenta cliente debe contener solo caracteres numéricos, ej. 0-9", "Error", JOptionPane.ERROR_MESSAGE);
-//				return false;
-//			}
-//		} else {
-//			JOptionPane.showMessageDialog(this, "La cuenta cliente no puede estar vacio", "Error", JOptionPane.ERROR_MESSAGE);
-//			return false;
-//		}
-//
-//		// DIGITO VERIFICADOR ---------------------------------------------------------------------------------
-//
-//		if (jTextFieldDv.getText() != null && jTextFieldDv.getText().trim().length() > 0) {
-//			if (jTextFieldDv.getText().trim().length() != 1) {
-//				JOptionPane.showMessageDialog(this, "El dígito verificador deben ser un valor entero de un caracter", "Error", JOptionPane.ERROR_MESSAGE);
-//				return false;
-//			}
-//			try {
-//				Integer.valueOf(jTextFieldDv.getText());
-//			} catch (Exception e) {
-//				JOptionPane.showMessageDialog(this, "El dígito verificador deben ser un valor entero de un caracter", "Error", JOptionPane.ERROR_MESSAGE);
-//				return false;
-//			}
-//		}
-//
-//		// METROS TERRENO ---------------------------------------------------------------------------------
-//
-//		if (jTextFieldM2.getText() != null && jTextFieldM2.getText().trim().length() > 0) {
-//			try {
-//				Double.valueOf(jTextFieldM2.getText());
-//			} catch (Exception e) {
-//				JOptionPane.showMessageDialog(this, "Los metros cuadrados de terreno deben ser un valor decimal, ej. 459.1078", "Error", JOptionPane.ERROR_MESSAGE);
-//				return false;
-//			}
-//		}
-//
-//		// METROS CUBIERTOS ---------------------------------------------------------------------------------
-//
-//		if (jTextFieldM2Covered.getText() != null && jTextFieldM2Covered.getText().trim().length() > 0) {
-//			try {
-//				Double.valueOf(jTextFieldM2Covered.getText());
-//			} catch (Exception e) {
-//				JOptionPane.showMessageDialog(this, "Los metros cuadrados cubiertos deben ser un valor decimal, ej. 459.1078", "Error", JOptionPane.ERROR_MESSAGE);
-//				return false;
-//			}
-//		}
-//
-//		// METROS COMPARTIDOS ---------------------------------------------------------------------------------
-//
-//		if (jTextFieldM2CoveredShared.getText() != null && jTextFieldM2CoveredShared.getText().trim().length() > 0) {
-//			try {
-//				Double.valueOf(jTextFieldM2CoveredShared.getText());
-//			} catch (Exception e) {
-//				JOptionPane.showMessageDialog(this, "Los metros cuadrados compartidos deben ser un valor decimal, ej. 459.1078", "Error", JOptionPane.ERROR_MESSAGE);
-//				return false;
-//			}
-//		}
-//
-//		// ALTA ---------------------------------------------------------------------------------
-//
-//		if (jTextFieldDateCreate.getText() != null && jTextFieldDateCreate.getText().trim().length() > 0) {
-//			try {
-//				new Timestamp(new SimpleDateFormat("ddMMyyyy").parse(jTextFieldDateCreate.getText().trim()).getTime());
-//			} catch (Exception e) {
-//				JOptionPane.showMessageDialog(this, "La fecha de Alta debe tener un formato ddMMyyyy", "Error", JOptionPane.ERROR_MESSAGE);
-//				return false;
-//			}
-//		}
-//
-//		// BAJA ---------------------------------------------------------------------------------
-//
-//		if (jTextFieldDateDelete.getText() != null && jTextFieldDateDelete.getText().trim().length() > 0) {
-//			try {
-//				new Timestamp(new SimpleDateFormat("ddMMyyyy").parse(jTextFieldDateDelete.getText().trim()).getTime());
-//			} catch (Exception e) {
-//				JOptionPane.showMessageDialog(this, "La fecha de Baja debe tener un formato ddMMyyyy", "Error", JOptionPane.ERROR_MESSAGE);
-//				return false;
-//			}
-//
-//			if (jComboBoxReasonLow.getSelectedIndex() < 1) {
-//				JOptionPane.showMessageDialog(this, "El motivode Baja es requerida para poder cargar una fecha de baja", "Error", JOptionPane.ERROR_MESSAGE);
-//				return false;
-//			}
-//		} else if (jComboBoxReasonLow.getSelectedIndex() > 0) {
-//			JOptionPane.showMessageDialog(this, "La fecha de Baja requerida para poder cargar un motivo de baja", "Error", JOptionPane.ERROR_MESSAGE);
-//			return false;
-//		}
-//
-//		// ALTA < BAJA ---------------------------------------------------------------------------------
-//
-//		if (jTextFieldDateCreate.getText() != null && jTextFieldDateCreate.getText().trim().length() > 0 && jTextFieldDateDelete.getText() != null
-//				&& jTextFieldDateDelete.getText().trim().length() > 0) {
-//
-//			try {
-//				Date d1 = new SimpleDateFormat("ddMMyyyy").parse(jTextFieldDateCreate.getText().trim());
-//				Date d2 = new SimpleDateFormat("ddMMyyyy").parse(jTextFieldDateDelete.getText().trim());
-//
-//				int r = d1.compareTo(d2);
-//
-//				if (r > 0) {
-//					JOptionPane.showMessageDialog(this, "La fecha de Baja debe ser mayor o igual a la de Alta", "Error", JOptionPane.ERROR_MESSAGE);
-//					return false;
-//				}
-//
-//			} catch (ParseException e) {
-//
-//			}
-//
-//		}
+		if (jComboBox2.getSelectedIndex() < 0) {
+			return false;
+		}
+		if (jComboBox5.getSelectedIndex() < 0) {
+			return false;
+		}
+		if (jComboBoxScheduleCensusResult.getSelectedIndex() < 0) {
+			return false;
+		}
+		if (jComboBoxCensusTaker.getSelectedIndex() < 0) {
+			return false;
+		}
+
+		if (jTextField1.getText() != null
+				&& jTextField1.getText().trim().length() > 0) {
+			try {
+				new Timestamp(new SimpleDateFormat("ddMMyyyy").parse(
+						jTextField1.getText().trim()).getTime());
+			} catch (Exception e) {
+				JOptionPane.showMessageDialog(this,
+						"La fecha de Baja debe tener un formato ddMMyyyy",
+						"Error", JOptionPane.ERROR_MESSAGE);
+				return false;
+			}
+
+		}
 
 		return true;
 	}
-	
-	public void scheduleLoadData() {
 
-		try {
-
-			jComboBoxSchedule.removeAllItems();
-
-			Object[][] table = Services.getInstance().findSchedule();
-			scheduleList = new Schedule[table.length];
-
-			for (int i = 0; i < table.length; i++) {
-				Schedule schedule = new Schedule();
-				schedule.setId(table[i][0].toString());
-				if (table[i][1] != null) {
-					schedule.setYear(Integer.valueOf(table[i][1].toString()));
-				}
-				scheduleList[i] = schedule;
-			}
-
-			if (scheduleList != null) {
-
-				for (int i = 0; i < scheduleList.length; i++) {
-					jComboBoxSchedule.addItem(new ComboItem(scheduleList[i].getYear().toString(), scheduleList[i].getId()));
-				}
-			}
-
-		} catch (Exception e) {
-
-			UtilComponent.logger(e);
-		}
-
-		jComboBoxSchedule.addItem(new ComboItem("", null));
-	}
-	
-	private void jComboBoxReasonLowLoadData() {
-
-		try {
-
-			jComboBoxReasonLow.removeAllItems();
-
-			reasonLowList = Services.getInstance().findReasonLow();
-
-			if (reasonLowList != null) {
-
-				jComboBoxReasonLow.addItem(new ComboItem("", ""));
-
-				for (int i = 0; i < reasonLowList.length; i++) {
-					jComboBoxReasonLow.addItem(new ComboItem("(" + reasonLowList[i][0] + ") " + reasonLowList[i][1], reasonLowList[i][0].toString()));
-				}
-
-				if (reasonLowList.length > 0) {
-					jComboBoxReasonLow.setSelectedIndex(0);
-
-				}
-
-			}
-
-		} catch (Exception e) {
-
-			UtilComponent.logger(e);
-		}
-	}
-	
 	private void scheduleCensusResultLoadData() {
 
 		try {
 
-			jComboBoxScheduleCensusResult.addItem(new ComboItem("", null));
+			// jComboBoxScheduleCensusResult.addItem(new ComboItem("", null));
 
-			Object[][] table = Services.getInstance().findScheduleCensusResult();
+			Object[][] table = Services.getInstance()
+					.findScheduleCensusResult();
 			scheduleCensusResultList = new ScheduleCensusResult[table.length];
 
 			for (int i = 0; i < table.length; i++) {
@@ -473,7 +364,10 @@ public class JDialogCensusHeaderFormCustom extends JDialogCensusHeaderForm imple
 			if (scheduleCensusResultList != null) {
 
 				for (int i = 0; i < scheduleCensusResultList.length; i++) {
-					jComboBoxScheduleCensusResult.addItem(new ComboItem("(" + scheduleCensusResultList[i].getId() + ") " + scheduleCensusResultList[i].getName(), scheduleCensusResultList[i].getId()));
+					jComboBoxScheduleCensusResult.addItem(new ComboItem("("
+							+ scheduleCensusResultList[i].getId() + ") "
+							+ scheduleCensusResultList[i].getName(),
+							scheduleCensusResultList[i].getId()));
 				}
 			}
 
@@ -487,7 +381,7 @@ public class JDialogCensusHeaderFormCustom extends JDialogCensusHeaderForm imple
 
 		try {
 
-			jComboBoxCensusTaker.addItem(new ComboItem("", null));
+			// jComboBoxCensusTaker.addItem(new ComboItem("", null));
 
 			Object[][] table = Services.getInstance().findCensusTaker();
 			censusTakerList = new CensusTaker[table.length];
@@ -505,7 +399,10 @@ public class JDialogCensusHeaderFormCustom extends JDialogCensusHeaderForm imple
 			if (censusTakerList != null) {
 
 				for (int i = 0; i < censusTakerList.length; i++) {
-					jComboBoxCensusTaker.addItem(new ComboItem(censusTakerList[i].getFamilyName() + " " + censusTakerList[i].getGivenName(), censusTakerList[i].getId()));
+					jComboBoxCensusTaker.addItem(new ComboItem(
+							censusTakerList[i].getFamilyName() + " "
+									+ censusTakerList[i].getGivenName(),
+							censusTakerList[i].getId()));
 				}
 			}
 
@@ -513,6 +410,90 @@ public class JDialogCensusHeaderFormCustom extends JDialogCensusHeaderForm imple
 
 			UtilComponent.logger(e);
 		}
+	}
+
+	private void scheduleLoadData() {
+
+		try {
+
+			jComboBox2.removeAllItems();
+
+			Object[][] table = Services.getInstance().findSchedule();
+			scheduleList = new Schedule[table.length];
+
+			for (int i = 0; i < table.length; i++) {
+				Schedule schedule = new Schedule();
+				schedule.setId(table[i][0].toString());
+				if (table[i][1] != null) {
+					schedule.setYear(Integer.valueOf(table[i][1].toString()));
+				}
+				scheduleList[i] = schedule;
+			}
+
+			if (scheduleList != null) {
+
+				for (int i = 0; i < scheduleList.length; i++) {
+
+					jComboBox2.addItem(new ComboItem(scheduleList[i].getYear()
+							.toString(), scheduleList[i].getId()));
+
+				}
+			}
+
+			// jComboBox2.addItem(new ComboItem("", null));
+
+		} catch (Exception e) {
+
+			UtilComponent.logger(e);
+		}
+
+	}
+
+	private void batchLoadData() {
+
+		try {
+
+			ComboItem scheduleComboItem = (ComboItem) jComboBox2
+					.getItemAt(jComboBox2.getSelectedIndex());
+
+			jComboBox5.removeAllItems();
+
+			Object[][] table = Services.getInstance()
+					.findScheduleBatchByscheduleId(scheduleComboItem.getId());
+			scheduleBatchList = new ScheduleBatch[table.length];
+
+			for (int i = 0; i < table.length; i++) {
+				ScheduleBatch scheduleBatch = new ScheduleBatch();
+				scheduleBatch.setId(table[i][0].toString());
+				if (table[i][1] != null) {
+					scheduleBatch.setNumberBatch(Integer.valueOf(table[i][1]
+							.toString()));
+				}
+				scheduleBatchList[i] = scheduleBatch;
+			}
+
+			if (scheduleBatchList != null) {
+
+				for (int i = 0; i < scheduleBatchList.length; i++) {
+
+					jComboBox5.addItem(new ComboItem(scheduleBatchList[i]
+							.getNumberBatch().toString(), scheduleBatchList[i]
+							.getId()));
+
+				}
+			}
+
+			// jComboBox5.addItem(new ComboItem("", null));
+
+			if (jComboBox5.getItemCount() > 0) {
+				jComboBox5.setSelectedIndex(0);
+			}
+
+		} catch (Exception e) {
+
+			UtilComponent.logger(e);
+		}
+
 	}
 
 }

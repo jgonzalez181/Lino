@@ -355,7 +355,7 @@ public class JPanelCensusView extends JPanelForm {
     protected javax.swing.JLabel jLabelType;
     public com.cclip.gui.geo.cadastre.JPanelCadastreViewCustomW jPanelCadastreView;
     protected javax.swing.JPanel jPanelFooter;
-    private javax.swing.JPanel jPanelGeneralBuildong;
+    protected javax.swing.JPanel jPanelGeneralBuildong;
     protected javax.swing.JPanel jPanelHeader;
     protected javax.swing.JPanel jPanelView;
     private javax.swing.JScrollPane jScrollPane7;

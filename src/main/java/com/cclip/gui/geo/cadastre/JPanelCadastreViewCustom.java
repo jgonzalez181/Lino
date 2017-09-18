@@ -133,23 +133,23 @@ public class JPanelCadastreViewCustom extends JPanelCadastreView {
 		});
 		
 		//---------------HEADER CENSUS-----------------------------------------
-		jPanel6.addMouseListener(new MouseAdapter() {
-			@Override
-			public void mouseClicked(MouseEvent e) {
-				if (e.getClickCount() == 2) {
-					editHeader();
-				}
-			}
-		});
-		
-		jPanel12.addMouseListener(new MouseAdapter() {
-			@Override
-			public void mouseClicked(MouseEvent e) {
-				if (e.getClickCount() == 2) {
-					editHeader();
-				}
-			}
-		});
+//		jPanel6.addMouseListener(new MouseAdapter() {
+//			@Override
+//			public void mouseClicked(MouseEvent e) {
+//				if (e.getClickCount() == 2) {
+//					editHeader();
+//				}
+//			}
+//		});
+//		
+//		jPanel12.addMouseListener(new MouseAdapter() {
+//			@Override
+//			public void mouseClicked(MouseEvent e) {
+//				if (e.getClickCount() == 2) {
+//					editHeader();
+//				}
+//			}
+//		});
 
 		// ---------------------------------------------------
 
@@ -1303,8 +1303,8 @@ public class JPanelCadastreViewCustom extends JPanelCadastreView {
 		new JDialogCadastreBlockCustom(cadastre, this);
 	}
 	
-	private void editHeader() {
-		new JDialogCensusHeaderFormCustom(cadastre, this);
-	}
+//	private void editHeader() {
+//		new JDialogCensusHeaderFormCustom(cadastre, this);
+//	}
 
 }

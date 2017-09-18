@@ -199,16 +199,20 @@ public class JPanelScheduleCensusList extends JPanelList {
 		String scheduleCensusResultId = null;
 
 		if (jComboBoxSchedule.getSelectedItem() != null) {
-			scheduleId = ((ComboItem) jComboBoxSchedule.getSelectedItem()).getId();
+			scheduleId = ((ComboItem) jComboBoxSchedule.getSelectedItem()).getName();
 		}
+		
+		
 		if (jComboBoxCensusTaker.getSelectedItem() != null) {
-			censusTakerId = ((ComboItem) jComboBoxCensusTaker.getSelectedItem()).getId();
+			censusTakerId = ((ComboItem) jComboBoxCensusTaker.getSelectedItem()).getName();
 		}
 		if (jComboBoxScheduleCensusResult.getSelectedItem() != null) {
-			scheduleCensusResultId = ((ComboItem) jComboBoxScheduleCensusResult.getSelectedItem()).getId();
+			scheduleCensusResultId = ((ComboItem) jComboBoxScheduleCensusResult.getSelectedItem()).getName();
 		}
 
-		rl = Services.getInstance().findScheduleCensusListByExample(offSet, limit);
+		//rl = Services.getInstance().findScheduleCensusListByExample(offSet, limit);
+		rl = Services.getInstance().findScheduleCensusListByExample(scheduleId, cadastralCode, censusTakerId, scheduleCensusResultId, 
+				scheduleBatchCode, scheduleBatch, scheduleBatchClose, offSet, limit);
 
 		model = (Object[][]) rl.getList();
 
