@@ -1,0 +1,110 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<jasperReport xmlns="http://jasperreports.sourceforge.net/jasperreports" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://jasperreports.sourceforge.net/jasperreports http://jasperreports.sourceforge.net/xsd/jasperreport.xsd" name="rptCensosXPersona" language="groovy" pageWidth="595" pageHeight="842" columnWidth="555" leftMargin="20" rightMargin="20" topMargin="20" bottomMargin="20" uuid="c2afc8f2-fedb-4a18-afb2-908c67cb224f">
+	<property name="ireport.zoom" value="1.5"/>
+	<property name="ireport.x" value="0"/>
+	<property name="ireport.y" value="0"/>
+	<parameter name="p_mes" class="java.lang.Integer">
+		<defaultValueExpression><![CDATA[]]></defaultValueExpression>
+	</parameter>
+	<queryString>
+		<![CDATA[select per.cuil, per.dni, (per.family_name||', '|| per.given_name) censista, c.code, count(ss.id) cantidad
+from cclip.schedule_scanning ss
+join cclip.census_taker c on ss.census_taker_id = c.id
+join cclip.person per on c.id = per.id
+group by per.cuil, per.dni, per.given_name, per.family_name, c.code
+order by 3,4]]>
+	</queryString>
+	<field name="cuil" class="java.lang.String"/>
+	<field name="dni" class="java.lang.String"/>
+	<field name="censista" class="java.lang.String"/>
+	<field name="code" class="java.lang.String"/>
+	<field name="cantidad" class="java.lang.Long"/>
+	<background>
+		<band splitType="Stretch"/>
+	</background>
+	<title>
+		<band height="50" splitType="Stretch">
+			<staticText>
+				<reportElement x="0" y="0" width="555" height="50" uuid="7afbff74-d233-49b6-80f5-3d16212726bb"/>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font size="24" isBold="true"/>
+				</textElement>
+				<text><![CDATA[Censos por Personas]]></text>
+			</staticText>
+		</band>
+	</title>
+	<pageHeader>
+		<band height="23" splitType="Stretch">
+			<staticText>
+				<reportElement x="0" y="2" width="56" height="20" uuid="9fb8ca74-1ae8-45dd-9ef9-4306aed8394f"/>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font isBold="true"/>
+				</textElement>
+				<text><![CDATA[Filtros:]]></text>
+			</staticText>
+			<textField>
+				<reportElement x="56" y="2" width="100" height="20" uuid="39552db4-9919-41ad-b352-00f92701f3ae"/>
+				<textElement textAlignment="Center" verticalAlignment="Middle"/>
+				<textFieldExpression><![CDATA["Mes: " + $P{p_mes}]]></textFieldExpression>
+			</textField>
+			<line>
+				<reportElement x="0" y="2" width="555" height="1" uuid="61a6a400-4460-43da-9309-a2945cc8e43e"/>
+			</line>
+		</band>
+	</pageHeader>
+	<pageFooter>
+		<band height="26" splitType="Stretch">
+			<line>
+				<reportElement x="0" y="2" width="555" height="1" uuid="c8a73155-22ad-46aa-b298-7fe39edd0725"/>
+			</line>
+			<textField>
+				<reportElement x="405" y="3" width="84" height="20" uuid="2fa95808-9763-4826-ad73-1197d7168ad1"/>
+				<textElement textAlignment="Right" verticalAlignment="Middle"/>
+				<textFieldExpression><![CDATA["Página " + $V{PAGE_NUMBER}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="520" y="3" width="35" height="20" uuid="02454298-434b-45b7-a5c1-d9f39cfcaadf"/>
+				<textElement verticalAlignment="Middle"/>
+				<textFieldExpression><![CDATA[$V{PAGE_COUNT}]]></textFieldExpression>
+			</textField>
+			<staticText>
+				<reportElement x="489" y="3" width="31" height="20" uuid="4377fd95-c7c0-4b87-8d10-dc9ff1a10290"/>
+				<textElement textAlignment="Center" verticalAlignment="Middle"/>
+				<text><![CDATA[de]]></text>
+			</staticText>
+			<textField>
+				<reportElement x="0" y="3" width="100" height="20" uuid="38cdb89f-5b48-466f-bed7-a8db1846cdc9"/>
+				<textFieldExpression><![CDATA[new java.util.Date()]]></textFieldExpression>
+			</textField>
+		</band>
+	</pageFooter>
+	<summary>
+		<band height="292" splitType="Stretch">
+			<bar3DChart>
+				<chart>
+					<reportElement x="0" y="41" width="555" height="195" uuid="b165f233-6170-4ebf-be6b-a7d58f0b9473"/>
+					<chartTitle/>
+					<chartSubtitle/>
+					<chartLegend/>
+				</chart>
+				<categoryDataset>
+					<categorySeries>
+						<seriesExpression><![CDATA["Total Censos"]]></seriesExpression>
+						<categoryExpression><![CDATA[$F{censista}]]></categoryExpression>
+						<valueExpression><![CDATA[$F{cantidad}]]></valueExpression>
+					</categorySeries>
+				</categoryDataset>
+				<bar3DPlot>
+					<plot/>
+					<itemLabel/>
+					<categoryAxisFormat>
+						<axisFormat/>
+					</categoryAxisFormat>
+					<valueAxisFormat>
+						<axisFormat/>
+					</valueAxisFormat>
+				</bar3DPlot>
+			</bar3DChart>
+		</band>
+	</summary>
+</jasperReport>

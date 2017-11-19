@@ -1,0 +1,129 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<jasperReport xmlns="http://jasperreports.sourceforge.net/jasperreports" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://jasperreports.sourceforge.net/jasperreports http://jasperreports.sourceforge.net/xsd/jasperreport.xsd" name="rptCensosXMes" pageWidth="595" pageHeight="842" whenNoDataType="AllSectionsNoDetail" columnWidth="555" leftMargin="20" rightMargin="20" topMargin="20" bottomMargin="20" isSummaryWithPageHeaderAndFooter="true" uuid="c2afc8f2-fedb-4a18-afb2-908c67cb224f">
+	<property name="ireport.zoom" value="1.0"/>
+	<property name="ireport.x" value="0"/>
+	<property name="ireport.y" value="0"/>
+	<parameter name="p_censista" class="java.lang.String"/>
+	<parameter name="p_mes" class="java.lang.Integer">
+		<defaultValueExpression><![CDATA[]]></defaultValueExpression>
+	</parameter>
+	<parameter name="p_censistaId" class="java.lang.String"/>
+	<parameter name="SUBREPORT_DIR" class="java.lang.String" isForPrompting="false">
+		<defaultValueExpression><![CDATA["E:\\Proyectos\\Cclip\\Lino\\reports\\"]]></defaultValueExpression>
+	</parameter>
+	<queryString>
+		<![CDATA[]]>
+	</queryString>
+	<field name="cuil" class="java.lang.String"/>
+	<field name="dni" class="java.lang.String"/>
+	<field name="censista" class="java.lang.String"/>
+	<field name="code" class="java.lang.String"/>
+	<field name="cantidad" class="java.lang.Long"/>
+	<background>
+		<band splitType="Stretch"/>
+	</background>
+	<title>
+		<band height="50" splitType="Stretch">
+			<staticText>
+				<reportElement x="0" y="0" width="555" height="50" uuid="7afbff74-d233-49b6-80f5-3d16212726bb"/>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font size="24" isBold="true"/>
+				</textElement>
+				<text><![CDATA[Cierre Mensual por Censista]]></text>
+			</staticText>
+		</band>
+	</title>
+	<pageHeader>
+		<band height="23" splitType="Stretch">
+			<staticText>
+				<reportElement x="0" y="2" width="56" height="20" uuid="9fb8ca74-1ae8-45dd-9ef9-4306aed8394f"/>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font isBold="true"/>
+				</textElement>
+				<text><![CDATA[Filtros:]]></text>
+			</staticText>
+			<textField>
+				<reportElement x="198" y="2" width="100" height="20" uuid="39552db4-9919-41ad-b352-00f92701f3ae"/>
+				<textElement textAlignment="Center" verticalAlignment="Middle"/>
+				<textFieldExpression><![CDATA["Mes: " + $P{p_mes}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="56" y="2" width="120" height="20" uuid="c0912e55-bdab-4336-ba93-d3def3b4ad4a"/>
+				<textElement textAlignment="Center" verticalAlignment="Middle"/>
+				<textFieldExpression><![CDATA["Censista: " + $P{p_censista}]]></textFieldExpression>
+			</textField>
+			<line>
+				<reportElement x="0" y="2" width="555" height="1" uuid="61a6a400-4460-43da-9309-a2945cc8e43e"/>
+			</line>
+		</band>
+	</pageHeader>
+	<pageFooter>
+		<band height="26" splitType="Stretch">
+			<line>
+				<reportElement x="0" y="2" width="555" height="1" uuid="c8a73155-22ad-46aa-b298-7fe39edd0725"/>
+			</line>
+			<textField>
+				<reportElement x="405" y="3" width="84" height="20" uuid="2fa95808-9763-4826-ad73-1197d7168ad1"/>
+				<textElement textAlignment="Right" verticalAlignment="Middle"/>
+				<textFieldExpression><![CDATA["Página " + $V{PAGE_NUMBER}]]></textFieldExpression>
+			</textField>
+			<staticText>
+				<reportElement x="489" y="3" width="31" height="20" uuid="4377fd95-c7c0-4b87-8d10-dc9ff1a10290"/>
+				<textElement textAlignment="Center" verticalAlignment="Middle"/>
+				<text><![CDATA[de]]></text>
+			</staticText>
+			<textField>
+				<reportElement x="0" y="3" width="100" height="20" uuid="38cdb89f-5b48-466f-bed7-a8db1846cdc9"/>
+				<textFieldExpression><![CDATA[new java.util.Date()]]></textFieldExpression>
+			</textField>
+			<textField evaluationTime="Report">
+				<reportElement x="521" y="3" width="29" height="20" uuid="64c2fe2a-7d2b-4508-9a60-da76ab1b592d"/>
+				<textElement verticalAlignment="Middle"/>
+				<textFieldExpression><![CDATA[$V{PAGE_NUMBER}]]></textFieldExpression>
+			</textField>
+		</band>
+	</pageFooter>
+	<summary>
+		<band height="115" splitType="Stretch">
+			<subreport>
+				<reportElement x="0" y="0" width="520" height="29" uuid="63f5eb8a-f21e-4eb3-898b-63f3700aa7e5"/>
+				<subreportParameter name="SUBREPORT_DIR">
+					<subreportParameterExpression><![CDATA[$P{SUBREPORT_DIR}]]></subreportParameterExpression>
+				</subreportParameter>
+				<subreportParameter name="p_mes">
+					<subreportParameterExpression><![CDATA[$P{p_mes}]]></subreportParameterExpression>
+				</subreportParameter>
+				<subreportParameter name="p_censistaId">
+					<subreportParameterExpression><![CDATA[$P{p_censistaId}]]></subreportParameterExpression>
+				</subreportParameter>
+				<subreportParameter name="p_censista">
+					<subreportParameterExpression><![CDATA[$P{p_censista}]]></subreportParameterExpression>
+				</subreportParameter>
+				<connectionExpression><![CDATA[$P{REPORT_CONNECTION}]]></connectionExpression>
+				<subreportExpression><![CDATA[$P{SUBREPORT_DIR} + "rptCensosXMes_subreport1.jasper"]]></subreportExpression>
+			</subreport>
+			<subreport>
+				<reportElement positionType="Float" x="0" y="36" width="520" height="34" uuid="c3bf363c-a9b1-4ff1-86cf-ac3e60acc72c"/>
+				<subreportParameter name="p_censistaId">
+					<subreportParameterExpression><![CDATA[$P{p_censistaId}]]></subreportParameterExpression>
+				</subreportParameter>
+				<subreportParameter name="p_mes">
+					<subreportParameterExpression><![CDATA[$P{p_mes}]]></subreportParameterExpression>
+				</subreportParameter>
+				<connectionExpression><![CDATA[$P{REPORT_CONNECTION}]]></connectionExpression>
+				<subreportExpression><![CDATA[$P{SUBREPORT_DIR} + "rptCensosXMes_subManzanas.jasper"]]></subreportExpression>
+			</subreport>
+			<subreport>
+				<reportElement positionType="Float" x="0" y="81" width="520" height="32" uuid="35208aa0-a313-41c0-bbe2-c166dbdee3c3"/>
+				<subreportParameter name="p_censistaId">
+					<subreportParameterExpression><![CDATA[$P{p_censistaId}]]></subreportParameterExpression>
+				</subreportParameter>
+				<subreportParameter name="p_mes">
+					<subreportParameterExpression><![CDATA[$P{p_mes}]]></subreportParameterExpression>
+				</subreportParameter>
+				<connectionExpression><![CDATA[$P{REPORT_CONNECTION}]]></connectionExpression>
+				<subreportExpression><![CDATA[$P{SUBREPORT_DIR} + "rptCensosXMes_subBarridoItem.jasper"]]></subreportExpression>
+			</subreport>
+		</band>
+	</summary>
+</jasperReport>

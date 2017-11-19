@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<jasperReport xmlns="http://jasperreports.sourceforge.net/jasperreports" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://jasperreports.sourceforge.net/jasperreports http://jasperreports.sourceforge.net/xsd/jasperreport.xsd" name="rptCensosXMes_Barrido" pageWidth="555" pageHeight="802" columnWidth="555" leftMargin="0" rightMargin="0" topMargin="0" bottomMargin="0" uuid="45e59320-64a4-4dfe-85cc-c479b9c249f8">
+	<property name="ireport.zoom" value="1.0"/>
+	<property name="ireport.x" value="0"/>
+	<property name="ireport.y" value="0"/>
+	<parameter name="p_censistaId" class="java.lang.String"/>
+	<parameter name="p_mes" class="java.lang.Integer"/>
+	<queryString>
+		<![CDATA[
+select ('Total General') censista, ssr.name item,  count(ssi.id)cantidad
+from cclip.schedule_scanning ss
+join cclip.schedule_scanning_item ssi on ssi.schedule_scanning_id = ss.id
+join cclip.schedule_scanning_result ssr on ssr.id = ssi.schedule_scanning_result_id
+where extract(MONTH FROM ss.recorded) = $P{p_mes}
+group by ssr.name
+
+
+union all
+
+select (per.family_name||', '|| per.given_name) censista, ssr.name item, count(ssi.id)cantidad
+from cclip.schedule_scanning ss
+join cclip.schedule_scanning_item ssi on ssi.schedule_scanning_id = ss.id
+join cclip.schedule_scanning_result ssr on ssr.id = ssi.schedule_scanning_result_id
+join cclip.census_taker ct on ss.census_taker_id = ct.id
+join cclip.person per on ct.id = per.id AND per.dni=$P{p_censistaId}
+where extract(MONTH FROM ss.recorded) = $P{p_mes}
+group by per.family_name, per.given_name,ssr.name
+order by 3,2]]>
+	</queryString>
+	<field name="censista" class="java.lang.String"/>
+	<field name="item" class="java.lang.String"/>
+	<field name="cantidad" class="java.lang.Long"/>
+	<background>
+		<band splitType="Stretch"/>
+	</background>
+	<title>
+		<band height="40">
+			<staticText>
+				<reportElement x="38" y="0" width="333" height="40" uuid="546fddf9-8649-4469-b715-72ded2e46a64"/>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font size="14" isBold="true"/>
+				</textElement>
+				<text><![CDATA[Barrido por Item]]></text>
+			</staticText>
+		</band>
+	</title>
+	<summary>
+		<band height="165" splitType="Stretch">
+			<bar3DChart>
+				<chart>
+					<reportElement x="12" y="0" width="509" height="162" uuid="8d5f21d4-5125-4c69-a2a7-77aed5c2ecf7"/>
+					<chartTitle/>
+					<chartSubtitle/>
+					<chartLegend/>
+				</chart>
+				<categoryDataset>
+					<categorySeries>
+						<seriesExpression><![CDATA[$F{censista}]]></seriesExpression>
+						<categoryExpression><![CDATA[$F{item}]]></categoryExpression>
+						<valueExpression><![CDATA[$F{cantidad}]]></valueExpression>
+					</categorySeries>
+				</categoryDataset>
+				<bar3DPlot>
+					<plot/>
+					<itemLabel/>
+					<categoryAxisFormat>
+						<axisFormat/>
+					</categoryAxisFormat>
+					<valueAxisFormat>
+						<axisFormat/>
+					</valueAxisFormat>
+				</bar3DPlot>
+			</bar3DChart>
+		</band>
+	</summary>
+</jasperReport>

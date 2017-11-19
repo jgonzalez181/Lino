@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<jasperReport xmlns="http://jasperreports.sourceforge.net/jasperreports" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://jasperreports.sourceforge.net/jasperreports http://jasperreports.sourceforge.net/xsd/jasperreport.xsd" name="rptM2XMes" pageWidth="555" pageHeight="802" columnWidth="555" leftMargin="0" rightMargin="0" topMargin="0" bottomMargin="0" uuid="45e59320-64a4-4dfe-85cc-c479b9c249f8">
+	<property name="ireport.zoom" value="1.0"/>
+	<property name="ireport.x" value="0"/>
+	<property name="ireport.y" value="0"/>
+	<parameter name="p_censistaId" class="java.lang.String"/>
+	<parameter name="p_mes" class="java.lang.Integer"/>
+	<queryString>
+		<![CDATA[select '' censistaId, '' cuil, '' dni, ('Total General') censista, '' code, count(ss.id) cantidad
+from cclip.schedule_scanning ss
+join cclip.census_taker c on ss.census_taker_id = c.id
+join cclip.person per on c.id = per.id
+where extract(MONTH FROM ss.recorded) = $P{p_mes}
+group by 1,2,3,4
+union all
+select c.id censistaId, per.cuil, per.dni, (per.family_name||', '|| per.given_name) censista, c.code, count(ss.id) cantidad
+from cclip.schedule_scanning ss
+join cclip.census_taker c on ss.census_taker_id = c.id
+join cclip.person per on c.id = per.id and per.dni=$P{p_censistaId}
+where extract(MONTH FROM ss.recorded) = $P{p_mes}
+group by c.id, per.cuil, per.dni, per.given_name, per.family_name, c.code
+order by 3,4]]>
+	</queryString>
+	<field name="censistaid" class="java.lang.String"/>
+	<field name="cuil" class="java.lang.String"/>
+	<field name="dni" class="java.lang.String"/>
+	<field name="censista" class="java.lang.String"/>
+	<field name="code" class="java.lang.String"/>
+	<field name="cantidad" class="java.lang.Long"/>
+	<background>
+		<band splitType="Stretch"/>
+	</background>
+	<title>
+		<band height="40">
+			<staticText>
+				<reportElement x="38" y="0" width="333" height="40" uuid="546fddf9-8649-4469-b715-72ded2e46a64"/>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font size="14" isBold="true"/>
+				</textElement>
+				<text><![CDATA[Total de Planillas de Barrido]]></text>
+			</staticText>
+		</band>
+	</title>
+	<summary>
+		<band height="242" splitType="Stretch">
+			<pie3DChart>
+				<chart>
+					<reportElement x="38" y="15" width="333" height="211" uuid="e624419a-3b37-47c7-8261-e7e1a0ad7024"/>
+					<chartTitle/>
+					<chartSubtitle/>
+					<chartLegend/>
+				</chart>
+				<pieDataset>
+					<keyExpression><![CDATA[$F{censista}]]></keyExpression>
+					<valueExpression><![CDATA[$F{cantidad}]]></valueExpression>
+					<labelExpression><![CDATA[$F{censista} + " - " + $F{cantidad}]]></labelExpression>
+				</pieDataset>
+				<pie3DPlot>
+					<plot/>
+					<itemLabel/>
+				</pie3DPlot>
+			</pie3DChart>
+		</band>
+	</summary>
+</jasperReport>

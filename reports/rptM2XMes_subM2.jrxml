@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<jasperReport xmlns="http://jasperreports.sourceforge.net/jasperreports" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://jasperreports.sourceforge.net/jasperreports http://jasperreports.sourceforge.net/xsd/jasperreport.xsd" name="rptM2XMes" pageWidth="555" pageHeight="802" columnWidth="555" leftMargin="0" rightMargin="0" topMargin="0" bottomMargin="0" uuid="45e59320-64a4-4dfe-85cc-c479b9c249f8">
+	<property name="ireport.zoom" value="1.0"/>
+	<property name="ireport.x" value="0"/>
+	<property name="ireport.y" value="0"/>
+	<parameter name="p_censistaId" class="java.lang.String"/>
+	<parameter name="p_mes" class="java.lang.Integer"/>
+	<queryString>
+		<![CDATA[select ('Total General') censista, sum(c.m2_covered)m2
+from cclip.cadastre c
+join cclip.schedule_scanning ss on substring( ss.cadastral_code,0,8) = substring( c.cadastral_code,0,8)
+and extract(MONTH FROM ss.recorded) = $P{p_mes}
+
+union all
+
+select (per.family_name||', '|| per.given_name) censista, sum(c.m2_covered_expanded)m2
+from cclip.cadastre_census c
+join cclip.schedule_scanning ss on substring( ss.cadastral_code,0,8) = substring( c.cadastral_code,0,8)
+and extract(MONTH FROM ss.recorded) = $P{p_mes}
+join cclip.census_taker ct on ss.census_taker_id = ct.id --and c.id = 'f973fe31-e432-4808-8817-6253b390ab63'
+join cclip.person per on ct.id = per.id AND per.dni=$P{p_censistaId}
+group by per.family_name, per.given_name
+order by 1]]>
+	</queryString>
+	<field name="censista" class="java.lang.String"/>
+	<field name="m2" class="java.lang.Double"/>
+	<background>
+		<band splitType="Stretch"/>
+	</background>
+	<summary>
+		<band height="291" splitType="Stretch">
+			<pie3DChart>
+				<chart>
+					<reportElement x="38" y="15" width="410" height="252" uuid="e624419a-3b37-47c7-8261-e7e1a0ad7024"/>
+					<chartTitle/>
+					<chartSubtitle/>
+					<chartLegend/>
+				</chart>
+				<pieDataset>
+					<keyExpression><![CDATA[$F{censista}]]></keyExpression>
+					<valueExpression><![CDATA[$F{m2}]]></valueExpression>
+					<labelExpression><![CDATA[$F{censista} + " - " + $F{m2}]]></labelExpression>
+				</pieDataset>
+				<pie3DPlot>
+					<plot/>
+					<itemLabel/>
+				</pie3DPlot>
+			</pie3DChart>
+		</band>
+	</summary>
+</jasperReport>
