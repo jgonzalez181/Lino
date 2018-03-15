@@ -52,7 +52,7 @@ public class JDialogLogin extends javax.swing.JDialog implements ActionListener 
 
 			public void keyReleased(KeyEvent e) {
 				if (e.getKeyCode() == KeyEvent.VK_ENTER) {
-					jButton1ActionPerformed(null);
+					jButton1ActionPerformed();
 				}
 
 			}
@@ -72,7 +72,7 @@ public class JDialogLogin extends javax.swing.JDialog implements ActionListener 
 
 			public void keyReleased(KeyEvent e) {
 				if (e.getKeyCode() == KeyEvent.VK_ENTER) {
-					jButton1ActionPerformed(null);
+					jButton1ActionPerformed();
 				}
 
 			}
@@ -108,7 +108,7 @@ public class JDialogLogin extends javax.swing.JDialog implements ActionListener 
 		setVisible(true);
 	}
 
-	private void jButton1ActionPerformed(java.awt.event.ActionEvent evt) {
+	private void jButton1ActionPerformed() {
 		try {
 
 //			CustomUserSystemBo bo = Context.getBean("customUserSystemBo", CustomUserSystemBo.class);
