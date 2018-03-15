@@ -9,7 +9,7 @@
 	http://www.springframework.org/schema/aop 
 	http://www.springframework.org/schema/aop/spring-aop.xsd'>
 
-	<import resource='commons_context.xml'/>
+	<!-- <import resource='commons_context.xml'/> -->
 	<import resource='dao_context.xml'/>
 	<import resource='bo_context.xml'/>
 	<import resource='custom_context.xml'/>
