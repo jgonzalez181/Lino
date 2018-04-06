@@ -40,6 +40,7 @@ public class JFrameMainGui extends JFrame {
 	// 0101040001 REV PV
 
 	private JTabbedPane jTabbedPane1;
+	
 	private JPanelScheduleScanning jPanelScheduleScanning1;
 	private JPanelScheduleCensusList jPanelScheduleCensusList;
 	private JPanelCadastreList jPanelCadastreList;

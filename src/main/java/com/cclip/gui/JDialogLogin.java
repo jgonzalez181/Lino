@@ -33,6 +33,7 @@ public class JDialogLogin extends javax.swing.JDialog implements ActionListener 
 		jFrameMainGui = (JFrameMainGui) parent;
 
 		initComponents();
+		
 		jPasswordField1.setText("");
 
 		LinoProperties linoProperties = Context.getBean("linoProperties", LinoProperties.class);
@@ -52,6 +53,7 @@ public class JDialogLogin extends javax.swing.JDialog implements ActionListener 
 
 			public void keyReleased(KeyEvent e) {
 				if (e.getKeyCode() == KeyEvent.VK_ENTER) {
+					
 					jButton1ActionPerformed();
 				}
 
@@ -98,9 +100,12 @@ public class JDialogLogin extends javax.swing.JDialog implements ActionListener 
 		setLocation(x, y);
 
 		jButton1.addActionListener(new java.awt.event.ActionListener() {
+			
 			public void actionPerformed(java.awt.event.ActionEvent evt) {
-				jButton1ActionPerformed(evt);
+				
+				jButton1ActionPerformed();
 			}
+			
 		});
 
 		pack();
